@@ -13,7 +13,7 @@ export const ProductionData = [
             { name: 'Content Creation', link: '' }
         ],
         image: americanTourister,
-        link: '/work/case-studys/american-tourister',
+        link: '/work/case-studies/american-tourister',
         brand: "American Tourister",
         department: 'Production'
     },

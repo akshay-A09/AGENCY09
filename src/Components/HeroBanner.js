@@ -37,7 +37,7 @@ const HeroBanner = () => {
       imageLogo: rgiLogo,
       title: "Product Communication  <br>for Reliance General  <br>Insurance",
       description: '',
-      btnLink: '/work/case-studys/product-communication-for-reliance-general-insurance',
+      btnLink: '/work/case-studies/product-communication-for-reliance-general-insurance',
       className: 'rgiSlider',
     },
     { 
@@ -45,7 +45,7 @@ const HeroBanner = () => {
       imageLogo: lakmeLogo,
       title: "Content Creation & Event<br> Coverage for 6 Seasons of <br> Lakme Fashion Week",
       description: '',
-      btnLink: '/work/case-studys/lakme-fashionweek',
+      btnLink: '/work/case-studies/lakme-fashionweek',
       className: 'lakmeSlider',
     },
     { 
@@ -53,7 +53,7 @@ const HeroBanner = () => {
       imageLogo: americantouristerLogo,
       title: "Series of Product<br> Films for <br> American Tourister",
       description: '',
-      btnLink: '/work/case-studys/american-tourister',
+      btnLink: '/work/case-studies/american-tourister',
       className: 'americanTouristerSlider',
       video: americanTourister,
     },

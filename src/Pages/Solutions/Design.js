@@ -155,7 +155,7 @@ const CaseStudyData = [
         { name: 'Infographics', }
     ],
     image: barc,
-    link: '/work/case-studys/barc-india-yearbook',
+    link: '/work/case-studies/barc-india-yearbook',
     brand: "BARC India Yearbook",
     department: 'Design'
 },

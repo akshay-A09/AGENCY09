@@ -23,7 +23,7 @@ export const allData = [
             { name: 'Web Development', }
         ],
         image: Bitspilani,
-        link: '/work/case-studys/bits-pilani',
+        link: '/work/case-studies/bits-pilani',
         brand: "Bits Pilani",
         department: 'Tech'
     }, {
@@ -35,7 +35,7 @@ export const allData = [
             { name: 'IP Creation', }
         ],
         image: godrejlaffaire,
-        link: '/work/case-studys/godrej-laffaire',
+        link: '/work/case-studies/godrej-laffaire',
         brand: "Godrej Laffaire",
         department: 'Content'
     },
@@ -49,7 +49,7 @@ export const allData = [
             { name: 'Content Management Systems', link: '' }
         ],
         image: Ryan,
-        link: '/work/case-studys/ryangroup',
+        link: '/work/case-studies/ryangroup',
         brand: 'Ryan International Group of Institutions',
         department: 'Tech'
     },
@@ -62,7 +62,7 @@ export const allData = [
             { name: 'Web Development', }
         ],
         image: TataMotors,
-        link: '/work/case-studys/tata-trucks',
+        link: '/work/case-studies/tata-trucks',
         brand: 'TATA Trucks',
         department: 'Tech'
     },
@@ -75,7 +75,7 @@ export const allData = [
             { name: 'Web Development', }
         ],
         image: Tribevibe,
-        link: '/work/case-studys/tribevibe',
+        link: '/work/case-studies/tribevibe',
         brand: "Tribevibe",
         department: 'Tech'
     },
@@ -91,7 +91,7 @@ export const allData = [
             { name: 'UI/UX Design', link: '' }
         ],
         image: GroupSoft,
-        link: '/work/case-studys/groupsoft',
+        link: '/work/case-studies/groupsoft',
         brand: 'Groupsoft US Inc',
         department: 'Tech'
 
@@ -107,7 +107,7 @@ export const allData = [
             { name: 'UI/UX Design', link: '' }
         ],
         image: Siyarams,
-        link: '/work/case-studys/siyaram',
+        link: '/work/case-studies/siyaram',
         brand: "Siyaram's",
         department: 'Tech'
     },
@@ -124,7 +124,7 @@ export const allData = [
             { name: 'Infographics', }
         ],
         image: barc,
-        link: '/work/case-studys/barc-india-yearbook',
+        link: '/work/case-studies/barc-india-yearbook',
         brand: "BARC India Yearbook",
         department: 'Design'
     },
@@ -139,7 +139,7 @@ export const allData = [
             { name: 'Multi-Channel Communication', link: '' }
         ],
         image: RGI,
-        link: '/work/case-studys/product-communication-for-reliance-general-insurance',
+        link: '/work/case-studies/product-communication-for-reliance-general-insurance',
         brand: "Product Communication for Reliance General Insurance",
         department: 'Content'
     },
@@ -151,7 +151,7 @@ export const allData = [
             { name: 'Event Coverage', link: '' }
         ],
         image: lakme,
-        link: '/work/case-studys/lakme-fashionweek',
+        link: '/work/case-studies/lakme-fashionweek',
         brand: "Lakme Fashion Week",
         department: 'Content'
     },
@@ -163,7 +163,7 @@ export const allData = [
             { name: 'Content Creation', link: '' }
         ],
         image: americanTourister,
-        link: '/work/case-studys/american-tourister',
+        link: '/work/case-studies/american-tourister',
         brand: "American Tourister",
         department: 'Production'
     },

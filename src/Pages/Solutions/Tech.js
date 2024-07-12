@@ -288,7 +288,7 @@ const CaseStudyData = [
         { name: 'Web Development', }
     ],
     image: TataMotors,
-    link: '/work/case-studys/tata-trucks',
+    link: '/work/case-studies/tata-trucks',
     brand: 'TATA Trucks',
     department: 'Tech'
 },
@@ -301,7 +301,7 @@ const CaseStudyData = [
         { name: 'Content Management Systems', link: '' }
     ],
     image: Ryan,
-    link: '/work/case-studys/ryangroup',
+    link: '/work/case-studies/ryangroup',
     brand: 'Ryan International Group of Institutions',
     department: 'Tech'
 },
@@ -314,7 +314,7 @@ const CaseStudyData = [
         { name: 'UI/UX Design', link: '' }
     ],
     image: GroupSoft,
-    link: '/work/case-studys/groupsoft',
+    link: '/work/case-studies/groupsoft',
     brand: 'Groupsoft US Inc',
     department: 'Tech'
 
@@ -328,7 +328,7 @@ const CaseStudyData = [
         { name: 'UI/UX Design', link: '' }
     ],
     image: Siyarams,
-    link: '/work/case-studys/siyaram',
+    link: '/work/case-studies/siyaram',
     brand: "Siyaram's",
     department: 'Tech'
 },
@@ -341,7 +341,7 @@ const CaseStudyData = [
         { name: 'Web Development', }
     ],
     image: Bitspilani,
-    link: '/work/case-studys/bits-pilani',
+    link: '/work/case-studies/bits-pilani',
     brand: "Bits Pilani",
     department: 'Tech'
 },
@@ -356,7 +356,7 @@ const CaseStudyData = [
         { name: 'Web Development', }
     ],
     image: Tribevibe,
-    link: '/work/case-studys/tribevibe',
+    link: '/work/case-studies/tribevibe',
     brand: "Tribevibe",
     department: 'Tech'
 },
