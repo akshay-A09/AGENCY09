@@ -1,145 +1,139 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import moment from 'moment';
 import { Helmet } from 'react-helmet';
-import { PiArrowCircleRightThin } from "react-icons/pi";
-
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import useLenisScroll from '../../Hooks/useLenisScroll';
 import Header from '../../Components/Header';
 import Footer from '../../Components/Footer';
 
-import blog1 from '../../Assets/Images/blog-1.jpg';
-import blog2 from '../../Assets/Images/blog-2.jpg';
-
 const Blog = () => {
     const location = useLocation();
+    const { cat_slug } = useParams();
     useLenisScroll();
+
+    const [categories, setCategories] = useState([]);
+    const [posts, setPosts] = useState([]);
+    const [currentPage, setCurrentPage] = useState(1);
+    const postsPerPage = 5;
+
+    useEffect(() => {
+        const fetchCategories = async () => {
+            try {
+                const response = await axios.get('http://127.0.0.1:8000/api/getCategory');
+                setCategories(response.data.category);
+            } catch (error) {
+                console.error('Error fetching categories:', error);
+            }
+        };
+
+        const fetchPosts = async () => {
+            try {
+                let apiUrl = 'http://127.0.0.1:8000/api/getPosts';
+                if (cat_slug) {
+                    apiUrl += `?cat=${cat_slug}`;
+                }
+                const response = await axios.get(apiUrl);
+                setPosts(response.data.posts);
+            } catch (error) {
+                console.error('Error fetching posts:', error);
+            }
+        };
+
+        fetchCategories();
+        fetchPosts();
+    }, [cat_slug]);
+
+    // Get current posts
+    const indexOfLastPost = currentPage * postsPerPage;
+    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
+    // Pagination
+    const pageNumbers = [];
+    for (let i = 1; i <= Math.ceil(posts.length / postsPerPage); i++) {
+        pageNumbers.push(i);
+    }
+
+    // Change page
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
     return (
         <>
+            <Helmet>
+                <title> Blog – AGENCY09</title>
+                <meta name="description" content="Clients achieve better ROI with integrated digital & inbound marketing strategies. Peek at our lead based campaigns, website designs, SEO and ORM." />
+            </Helmet>
 
-        <Helmet>
-            <title> Blog – AGENCY09</title>
-            <meta name="description" content="Clients achieve better ROI with integrated digital & inbound marketing strategies. Peek at our lead based campaigns, website designs, SEO and ORM."/>
-            {/* <link rel="canonical" href="https://www.agency09.in/work/case-studies"/>
+            <Header />
+            <div className="spacer"></div>
 
-            <meta property="og:title" content=" Case Study – AGENCY09 "/> 
-            <meta property="og:description" content=" Clients achieve better ROI with integrated digital & inbound marketing strategies. Peek at our lead based campaigns, website designs, SEO and ORM."/> 
-            <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
-            <meta property="og:type" content="website"/> 
+            <section className='blogMain'>
+                <div className='container'>
+                    <div className='Heading center HeadingIcon'>
+                        <h2 className='sizeH1 uppercase'>Blogs</h2>
+                    </div>
 
-            <meta name="twitter:card" content="summary"/> 
-            <meta name="twitter:site" content="@AGENCY09"/> 
-            <meta name="twitter:creator" content="@AGENCY09"/> 
-            <meta name="twitter:url" content="https://www.agency09.in/work/case-studies"/> 
-            <meta name="twitter:description" content=" Clients achieve better ROI with integrated digital & inbound marketing strategies. Peek at our lead based campaigns, website designs, SEO and ORM. "/> 
-            <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/>  */}
-        </Helmet>
+                    <div className="blog-main-header">
+                        <ul className='navBarC'>
+                            <li><Link to='/blog' className={cat_slug === undefined ? 'active' : ''}>All</Link></li>
+                            {/* Render categories dynamically */}
+                            {categories.map(category => (
+                                <li key={category.cat_slug}>
+                                    <Link to={`/blog/${category.cat_slug}`} className={cat_slug === category.cat_slug ? 'active' : ''}>{category.cat_name}</Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
 
-        <Header />
-        <div className="spacer"></div>
-        
-        <section className='blogMain'>
-            <div className='container'>
-
-            <div className='Heading center HeadingIcon'>
-                <h2 className='sizeH1 uppercase'>Blogs</h2>
-            </div>
-
-            <div className="blog-main-header">
-                <ul className='navBarC'>
-                    <li><Link to='/' className={location.pathname === '/work/case-studies' ? 'active' : ''}>All</Link></li>
-                    <li><Link to='/' className={location.pathname === '/work/our-clients' ? 'active' : ''}>MARKETING</Link></li>
-                </ul>
-            </div>
-
-            <div className="blog-min-box">
-
-
-                <div className="blog-list">
-                    <Link to="blog-detail">
-                        <div className="blog-img">
-                            <img src={blog1} alt="blog" />
-                            <div className="hover-overlay">
-                                <div className="hover-text">
-                                    <h3>View Details</h3>
-                                </div>
+                    <div className="blog-min-box">
+                        {currentPosts.map(post => (
+                            <div className="blog-list" key={post.id}>
+                                <Link to={`/blog/${post.cat_slug}/${post.slug}`}>
+                                    <div className="blog-img">
+                                        <img src={`http://127.0.0.1:8000/uploads/${post.featured_image}`} alt={post.post_name} />
+                                        <div className="hover-overlay">
+                                            <div className="hover-text">
+                                                <h3>View Details</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="blog-list-heading">
+                                        {post.categories.length > 0 && (
+                                            <span className="blog-category">
+                                            {post.categories.map(category => category.name).join(' | ')}
+                                            </span>
+                                        )}
+                                        {/* <span><a href="#">{post.cat_name || 'Uncategorized'}</a></span> */}
+                                        <h2><a href="#">{post.post_name}</a></h2>
+                                        <ul>
+                                            <li><a href="#">{moment(post.created_at).format('D-MMMM-YYYY')}</a></li>
+                                            <li><a href="#">{post.view} VIEWS</a></li>
+                                            <li><a href="#"><b>Author:</b> {post.user_name}</a></li>
+                                        </ul>
+                                        <div className='blogDecription'>
+                                            <p>{post.description}</p>
+                                        </div>
+                                        <div className="list-btn"><span>View Post</span></div>
+                                    </div>
+                                </Link>
                             </div>
-                        </div>
-                        <div className="blog-list-heading">
-                            <span><a href="#">MARKETING</a></span>
-                            <h2><a href="#">Must Have Tools For Social Media Marketers</a></h2>
-                            <ul>
-                                <li><a href="#">FEBRUARY 27</a></li>
-                                <li><a href="#">81 VIEWS</a></li>
-                                <li><a href="#"><b>Author:</b> HARSH MEHTA</a></li>
-                            </ul>
-                            <div className='blogDecription'>
-                              <p>Introduction: Hey there, social media enthusiasts! Ready to kick your online presence up a notch? Get ready to discover the essential tools that’ll revolutionize your social media strategy. Join us…</p>
-                            </div>
-                            <div className="list-btn"><span>View Post</span></div>
-                        </div>
-                    </Link>
+                        ))}
+                    </div>
+
+                    {/* Pagination */}
+                    <div className="pagination">
+                        {[...Array(Math.ceil(posts.length / postsPerPage)).keys()].map(number => (
+                            <button key={number + 1} onClick={() => paginate(number + 1)}>
+                                {number + 1}
+                            </button>
+                        ))}
+                    </div>
                 </div>
-
-                <div className="blog-list">
-                    <Link to="blog-detail">
-                        <div className="blog-img">
-                            <img src={blog1} alt="blog" />
-                            <div className="hover-overlay">
-                                <div className="hover-text">
-                                    <h3>View Details</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="blog-list-heading">
-                            <span><a href="#">MARKETING</a></span>
-                            <h2><a href="#">Must Have Tools For Social Media Marketers</a></h2>
-                            <ul>
-                                <li><a href="#">FEBRUARY 27</a></li>
-                                <li><a href="#">81 VIEWS</a></li>
-                                <li><a href="#"><b>Author:</b> HARSH MEHTA</a></li>
-                            </ul>
-                            <div className='blogDecription'>
-                              <p>Introduction: Hey there, social media enthusiasts! Ready to kick your online presence up a notch? Get ready to discover the essential tools that’ll revolutionize your social media strategy. Join us…</p>
-                            </div>
-                            <div className="list-btn"><span>View Post</span></div>
-                        </div>
-                    </Link>
-                </div>
-
-                <div className="blog-list">
-                    <Link to="blog-detail">
-                        <div className="blog-img">
-                            <img src={blog1} alt="blog" />
-                            <div className="hover-overlay">
-                                <div className="hover-text">
-                                    <h3>View Details</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="blog-list-heading">
-                            <span><a href="#">MARKETING</a></span>
-                            <h2><a href="#">Must Have Tools For Social Media Marketers</a></h2>
-                            <ul>
-                                <li><a href="#">FEBRUARY 27</a></li>
-                                <li><a href="#">81 VIEWS</a></li>
-                                <li><a href="#"><b>Author:</b> HARSH MEHTA</a></li>
-                            </ul>
-                            <div className='blogDecription'>
-                              <p>Introduction: Hey there, social media enthusiasts! Ready to kick your online presence up a notch? Get ready to discover the essential tools that’ll revolutionize your social media strategy. Join us…</p>
-                            </div>
-                            <div className="list-btn"><span>View Post</span></div>
-                        </div>
-                    </Link>
-                </div>
-
-
-            </div>
-            </div>
-        </section>
-
-        <Footer />
-    </>
-    )
-}
+            </section>
+            <Footer />
+        </>
+    );
+};
 
 export default Blog;

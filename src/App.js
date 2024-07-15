@@ -74,7 +74,9 @@ function App() {
           <Route exact path='/sitemap' element={<Sitemap09 />} />
           <Route exact path='*' element={<Error />} />
           <Route exact path='/blog/' element={<Blog />} />
+          <Route exact path='/blog/:cat_slug' element={<Blog />} />
           <Route exact path='/blog/blog-detail' element={<BlogDetail />} />
+          <Route exact path="/blog/:cat_slug/:post_id" element={<BlogDetail />} /> {/* Dynamic blog detail route */}
         </Routes>
       </AnimatePresence>
     </div>

@@ -1,155 +1,171 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
+import axios from 'axios';
+import moment from 'moment';
+import { useParams, Navigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import Header from '../../Components/Header';
 import Footer from '../../Components/Footer';
-
-import useLenisScroll from '../../Hooks/useLenisScroll';
-
-import blog1 from '../../Assets/Images/blog-1.jpg';
-import blog2 from '../../Assets/Images/blog-2.jpg';
-
-import { FaFacebook } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { IoLogoWhatsapp } from "react-icons/io";
-import { IoLogoLinkedin } from "react-icons/io";
-// Images end
+import Cookies from 'js-cookie'; // Import Cookies library or any preferred cookie handling library
 
 const BlogDetail = () => {
-  useLenisScroll();
-  
+  const { cat_slug, post_id } = useParams(); // Including cat_slug in useParams
+
+  const [post, setPost] = useState(null);
+  const [categories, setCategories] = useState([]);
+  const [previousPost, setPreviousPost] = useState(null);
+  const [nextPost, setNextPost] = useState(null);
+  const [relatedPosts, setRelatedPosts] = useState([]);
+  const [isValid, setIsValid] = useState(true); // State to handle validation
+  const [isLoading, setIsLoading] = useState(true); // Loading state
+
+  const hasFetched = useRef(false);
+
+  useEffect(() => {
+    if (hasFetched.current) return;
+
+    const fetchPostData = async () => {
+      try {
+        const response = await axios.get(`http://127.0.0.1:8000/api/getPosts/${post_id}`);
+        const { post, categories, previous_post, next_post, related_posts } = response.data;
+
+        // Validate if the post's category slug matches the cat_slug from URL
+        if (!validateCategorySlug(categories, cat_slug)) {
+          setIsValid(false); // Slugs do not match, set isValid to false
+          setIsLoading(false);
+          return;
+        }
+
+        setPost(post);
+        setCategories(categories);
+        setPreviousPost(previous_post);
+        setNextPost(next_post);
+        setRelatedPosts(related_posts);
+        hasFetched.current = true;
+
+        // Increase view count via API and store in cookie
+        if (!Cookies.get(`post_${post.id}_viewed`)) {
+          await axios.get(`http://127.0.0.1:8000/api/view/${post.id}`);
+          Cookies.set(`post_${post.id}_viewed`, 'true', { expires: 1 }); // Store cookie for 1 day
+        }
+      } catch (error) {
+        console.error('Error fetching post data:', error);
+        setIsValid(false); // In case of error, set isValid to false
+      } finally {
+        setIsLoading(false); // Set loading state to false after fetch operation
+      }
+    };
+
+    fetchPostData();
+  }, [cat_slug, post_id]);
+
+  const validateCategorySlug = (categories, cat_slug) => {
+    // Check if the category slug exists in the categories array
+    return categories.some(category => category.cat_slug === cat_slug);
+  };
+
+  if (!isValid && !isLoading) {
+    return <Navigate to="/404" />; // Redirect to 404 page if validation fails
+  }
+
+  if (isLoading) {
+    return <div>Loading...</div>; // Add a loading state here
+  }
+
+  if (!post) {
+    return null; // You can add error handling here
+  }
 
   return (
-  <>
-    <Header />
+    <>
+      <Helmet>
+        <title>{post.post_name} - AGENCY09</title>
+        <meta name="description" content="Detailed blog post about social media tools." />
+      </Helmet>
 
-    <div classNameName="spacer"></div>
+      <Header />
 
-    <section className='blogDetail'>
-<div className="container">
-<div className="blog-detail">
+      <div className="spacer"></div>
+
+      <section className="blogDetail">
+        <div className="container">
+          <div className="blog-detail">
             <div className="blog-header">
-            <span className="blog-category">MARKETING</span>
-                <h1 className='sizeH3'>Must Have Tools For Social Media Marketers</h1>
-                <div className="blog-meta blog-list-heading">
-                    <ul>
-                        <li>FEBRUARY 27</li>
-                        <li>81 VIEWS</li>
-                        <li>HARSH MEHTA</li>
-                    </ul>
-                </div>
-                <div className="blog-image">
-                    <img src={blog1} alt="Must Have Tools For Social Media Marketers"/>
-                </div>
+              {categories.length > 0 && (
+                <span className="blog-category">
+                  {categories.map(category => category.cat_name).join(' | ')}
+                </span>
+              )}
+              <h1 className="sizeH3">{post.post_name}</h1>
+              <div className="blog-meta blog-list-heading">
+                <ul>
+                  <li>{moment(post.created_at).format('D-MMMM-YYYY')}</li>
+                  <li>{post.view} VIEWS</li>
+                  <li>{post.user_name}</li>
+                </ul>
+              </div>
+              <div className="blog-image">
+                <img src={`http://127.0.0.1:8000/uploads/${post.featured_image}`} alt={post.post_name} />
+              </div>
             </div>
+
             <div className="blog-content">
-            <div className="blog-social-sticky">
-                    <ul>
-                        <li><a href="#"><FaFacebook /></a></li>
-                        <li><a href="#"><FaXTwitter /></a></li>
-                        <li><a href="#"><IoLogoWhatsapp/></a></li>
-                        <li><a href="#"><IoLogoLinkedin/></a></li>
-                    </ul>
-                </div>
-                <div className="blog-body">
-                    <p><strong>Introduction:</strong></p>
-                   <p>Hey there, social media enthusiasts! Ready to kick your online presence up a notch? Get ready to discover the essential tools that’ll revolutionize your social media strategy. Join us at <a href="">Agency09</a> as we uncover the secrets to taking your social media game from good to great!</p>
-                  
-                    <h4>Auditing Tools:</h4>
+              {/* Render your blog content here */}
+              <div className="blog-body">
+                <p><strong>Introduction:</strong></p>
+                <p>{post.description}</p>
 
-                    <div className="blog-image">
-                    <img src={blog2} alt="Must Have Tools For Social Media Marketers"/>
-                </div>
+                {/* Example of rendering related tags */}
+                {post.tags.length > 0 && (
+                  <div className="related-topics">
+                    <h3>Related Topics</h3>
+                    <div className="topics">
+                      {post.tags.map(tag => (
+                        <a key={tag.id} href="#">#{tag.tag_name}</a>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
-                <p>First things first, let’s talk about auditing tools. Ever wondered how well your social media efforts are paying off? These tools are like your personal social media detectives. They analyze your posts, help you plan content, and even track what people are saying about your brand. It’s like having a backstage pass to your social media success!</p>
-
-                <h4>Tools we recommend:</h4>
-                    <ul>
-                        <li>hootsuite: <a href="#">https://www.hootsuite.com</a></li>
-                        <li>sproutsocial: <a href="#">https://sproutsocial.com/</a></li>
-                        <li>brandmentions: <a href="#"> https://brandmentions.com/</a></li>
-                    </ul>
-
-                    <p><strong>Competitor Analysis Tools:</strong></p>
-                    <div className="blog-image">
-                 
-                </div>
-
-                  
-                    <p>Next up, let’s dive into competitor analysis tools. Curious to see what your competitors are up to? These tools give you the inside scoop on their strategies. From their latest posts to their top-performing content, it’s like peeking behind the curtain of their social media playbook!</p>
-                   
-                    <h4>Tools we recommend:</h4>
-                    <ul>
-                        <li>Tool 1: <a href="#">www.toolone.com</a></li>
-                        <li>Tool 2: <a href="#">www.tooltwo.com</a></li>
-                        <li>Tool 3: <a href="#">www.toolthree.com</a></li>
-                    </ul>
-                </div>
+              </div>
             </div>
-            <div className="blog-share">
-                <a href="#" className="share-btn">Share</a>
-                       <a href="#"><FaFacebook /></a>
-                       <a href="#"><FaXTwitter /></a>
-                       <a href="#"><IoLogoWhatsapp/></a>
-                       <a href="#"><IoLogoLinkedin/></a>
-            </div>
-            <div className="author-info">
-               
-                <p>harsh mehta</p>
-            </div>
-            <div className="related-topics">
-                <h3>Related Topics</h3>
-                <div className="topics">
-                    <a href="#">#AI TOOLS FOR MARKETERS</a>
-                    <a href="#">#AUDIENCE ENGAGEMENT</a>
-                    <a href="#">#AUDIENCE INSIGHTS</a>
-                    <a href="#">#BRAND MANAGEMENT TOOLS</a>
-                    <a href="#">#BRAND MONITORING</a>
-                    <a href="#">#CAMPAIGN OPTIMIZATION</a>
-                    <a href="#">#COMPETITOR ANALYSIS TOOLS</a>
-                    <a href="#">#CONTENT CREATION</a>
-                    <a href="#">#CONTENT MARKETING TOOLS</a>
-                    <a href="#">#CONTENT PLANNING TOOLS</a>
-                    <a href="#">#CUSTOMER RELATIONSHIP MANAGEMENT (CRM) TOOLS</a>
-                    <a href="#">#CUSTOMER RETENTION STRATEGIES</a>
-                    <a href="#">#DATA ANALYTICS</a>
-                    <a href="#">#DIGITAL MARKETING TOOLS</a>
-                    <a href="#">#EMAIL MARKETING SOFTWARE</a>
-                    <a href="#">#GRAMMAR TOOLS</a>
-                    <a href="#">#INFLUENCER MARKETING TOOLS</a>
-                    <a href="#">#LEAD GENERATION TOOLS</a>
-                    <a href="#">#MARKETING AUTOMATION</a>
-                    <a href="#">#MARKETING AUTOMATION SOFTWARE</a>
-                    <a href="#">#MARKETING INSIGHTS</a>
-                    <a href="#">#MARKETING INTELLIGENCE</a>
-                    <a href="#">#MARKETING STRATEGIES</a>
-                    <a href="#">#MARKETING TECHNOLOGY</a>
-                    <a href="#">#MUST-HAVE SOCIAL MEDIA TOOLS</a>
-                    <a href="#">#ONLINE MARKETING SOLUTIONS</a>
-                    <a href="#">#ONLINE PRESENCE</a>
-                    <a href="#">#ONLINE VISIBILITY</a>
-                    <a href="#">#SCHEDULING AND POSTING TOOLS</a>
-                    <a href="#">#SEO TOOLS</a>
-                    <a href="#">#SOCIAL MEDIA ANALYTICS</a>
-                    <a href="#">#SOCIAL MEDIA ENGAGEMENT</a>
-                    <a href="#">#SOCIAL MEDIA MANAGEMENT</a>
-                    <a href="#">#SOCIAL MEDIA MONITORING</a>
-                    <a href="#">#SOCIAL MEDIA OPTIMIZATION</a>
-                    <a href="#">#SOCIAL MEDIA REPORTING</a>
-                    <a href="#">#SOCIAL MEDIA SCHEDULING</a>
-                    <a href="#">#SOCIAL MEDIA STRATEGY</a>
-                    <a href="#">#SOCIAL MEDIA TOOLS</a>
-                    <a href="#">#SOCIAL MEDIA TRENDS</a>
-                </div>
-                </div>
-            
-   
-   
-   </div>
-   </div>
-   </section>
 
-    <Footer />
-  </>
-  )
-}
+            {/* Example of rendering previous and next posts */}
+            <div className="blog-navigation">
+              {previousPost && (
+                <div className="prev-post">
+                  <a href={`/blog/${previousPost.cat_slug}/${previousPost.slug}`}>Previous</a>
+                </div>
+              )}
+              {nextPost && (
+                <div className="next-post">
+                  <a href={`/blog/${nextPost.cat_slug}/${nextPost.slug}`}>Next</a>
+                </div>
+              )}
+            </div>
 
-export default BlogDetail
+            {/* Example of rendering related posts */}
+            {relatedPosts.length > 0 && (
+              <div className="related-topics">
+                <h3>Related Post</h3>
+                <div className="related-posts">
+                  {relatedPosts.map(relatedPost => (
+                    <div className="related-post" key={relatedPost.id}>
+                      <img src={`http://127.0.0.1:8000/uploads/${relatedPost.featured_image}`} alt={relatedPost.post_name} />
+                      <h4>{relatedPost.post_name}</h4>
+                      <p>{moment(relatedPost.created_at).format('D-MMMM-YYYY')}</p>
+                      <a href={`/blog/${relatedPost.cat_slug}/${relatedPost.slug}`}>Read More</a>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </>
+  );
+};
+
+export default BlogDetail;
