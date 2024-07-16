@@ -20,7 +20,7 @@ const Blog = () => {
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const response = await axios.get('http://127.0.0.1:8000/api/getCategory');
+                const response = await axios.get('https://www.agency09.in/cms/api/getCategory');
                 setCategories(response.data.category);
             } catch (error) {
                 console.error('Error fetching categories:', error);
@@ -29,7 +29,7 @@ const Blog = () => {
 
         const fetchPosts = async () => {
             try {
-                let apiUrl = 'http://127.0.0.1:8000/api/getPosts';
+                let apiUrl = 'https://www.agency09.in/cms/api/getPosts';
                 if (cat_slug) {
                     apiUrl += `?cat=${cat_slug}`;
                 }
@@ -91,7 +91,7 @@ const Blog = () => {
                             <div className="blog-list" key={post.id}>
                                 <Link to={`/blog/${post.cat_slug}/${post.slug}`}>
                                     <div className="blog-img">
-                                        <img src={`http://127.0.0.1:8000/uploads/${post.featured_image}`} alt={post.post_name} />
+                                        <img src={`https://www.agency09.in/cms/uploads/${post.featured_image}`} alt={post.post_name} />
                                         <div className="hover-overlay">
                                             <div className="hover-text">
                                                 <h3>View Details</h3>

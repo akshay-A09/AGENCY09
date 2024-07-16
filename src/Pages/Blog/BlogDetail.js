@@ -5,7 +5,15 @@ import { useParams, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import Header from '../../Components/Header';
 import Footer from '../../Components/Footer';
-import Cookies from 'js-cookie'; // Import Cookies library or any preferred cookie handling library
+import Cookies from 'js-cookie'; // Import Cookies library
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  LinkedinShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  LinkedinIcon
+} from 'react-share'; // Import react-share components
 
 const BlogDetail = () => {
   const { cat_slug, post_id } = useParams(); // Including cat_slug in useParams
@@ -25,7 +33,7 @@ const BlogDetail = () => {
 
     const fetchPostData = async () => {
       try {
-        const response = await axios.get(`http://127.0.0.1:8000/api/getPosts/${post_id}`);
+        const response = await axios.get(`https://www.agency09.in/cms/api/getPosts/${post_id}`);
         const { post, categories, previous_post, next_post, related_posts } = response.data;
 
         // Validate if the post's category slug matches the cat_slug from URL
@@ -44,7 +52,7 @@ const BlogDetail = () => {
 
         // Increase view count via API and store in cookie
         if (!Cookies.get(`post_${post.id}_viewed`)) {
-          await axios.get(`http://127.0.0.1:8000/api/view/${post.id}`);
+          await axios.get(`https://www.agency09.in/cms/api/view/${post.id}`);
           Cookies.set(`post_${post.id}_viewed`, 'true', { expires: 1 }); // Store cookie for 1 day
         }
       } catch (error) {
@@ -75,6 +83,8 @@ const BlogDetail = () => {
     return null; // You can add error handling here
   }
 
+  const shareUrl = window.location.href;
+
   return (
     <>
       <Helmet>
@@ -104,17 +114,15 @@ const BlogDetail = () => {
                 </ul>
               </div>
               <div className="blog-image">
-                <img src={`http://127.0.0.1:8000/uploads/${post.featured_image}`} alt={post.post_name} />
+                <img src={`https://www.agency09.in/cms/uploads/${post.featured_image}`} alt={post.post_name} />
               </div>
             </div>
 
             <div className="blog-content">
               {/* Render your blog content here */}
               <div className="blog-body">
-                <p><strong>Introduction:</strong></p>
-                <p>{post.description}</p>
+                <div dangerouslySetInnerHTML={{ __html: post.content }} />
 
-                {/* Example of rendering related tags */}
                 {post.tags.length > 0 && (
                   <div className="related-topics">
                     <h3>Related Topics</h3>
@@ -126,10 +134,22 @@ const BlogDetail = () => {
                   </div>
                 )}
 
+                {/* Social media share buttons */}
+                <div className="share-buttons">
+                  <FacebookShareButton url={shareUrl} quote={post.post_name}>
+                    <FacebookIcon size={32} round />
+                  </FacebookShareButton>
+                  <TwitterShareButton url={shareUrl} title={post.post_name}>
+                    <TwitterIcon size={32} round />
+                  </TwitterShareButton>
+                  <LinkedinShareButton url={shareUrl} title={post.post_name}>
+                    <LinkedinIcon size={32} round />
+                  </LinkedinShareButton>
+                </div>
+
               </div>
             </div>
 
-            {/* Example of rendering previous and next posts */}
             <div className="blog-navigation">
               {previousPost && (
                 <div className="prev-post">
@@ -143,14 +163,13 @@ const BlogDetail = () => {
               )}
             </div>
 
-            {/* Example of rendering related posts */}
             {relatedPosts.length > 0 && (
               <div className="related-topics">
                 <h3>Related Post</h3>
                 <div className="related-posts">
                   {relatedPosts.map(relatedPost => (
                     <div className="related-post" key={relatedPost.id}>
-                      <img src={`http://127.0.0.1:8000/uploads/${relatedPost.featured_image}`} alt={relatedPost.post_name} />
+                      <img src={`https://www.agency09.in/cms/uploads/${relatedPost.featured_image}`} alt={relatedPost.post_name} />
                       <h4>{relatedPost.post_name}</h4>
                       <p>{moment(relatedPost.created_at).format('D-MMMM-YYYY')}</p>
                       <a href={`/blog/${relatedPost.cat_slug}/${relatedPost.slug}`}>Read More</a>
