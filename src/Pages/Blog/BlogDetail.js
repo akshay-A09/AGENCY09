@@ -101,11 +101,11 @@ const BlogDetail = () => {
           <div className="blog-detail">
             <div className="blog-header">
               {categories.length > 0 && (
-                <span className="blog-category">
+                <span className="blog-category sizeH5 uppercase bold">
                   {categories.map(category => category.cat_name).join(' | ')}
                 </span>
               )}
-              <h1 className="sizeH3">{post.post_name}</h1>
+              <h1 className="sizeH1 uppercase">{post.post_name}</h1>
               <div className="blog-meta blog-list-heading">
                 <ul>
                   <li>{moment(post.created_at).format('D-MMMM-YYYY')}</li>
@@ -120,22 +120,8 @@ const BlogDetail = () => {
 
             <div className="blog-content">
               {/* Render your blog content here */}
-              <div className="blog-body">
-                <div dangerouslySetInnerHTML={{ __html: post.content }} />
-
-                {post.tags.length > 0 && (
-                  <div className="related-topics">
-                    <h3>Related Topics</h3>
-                    <div className="topics">
-                      {post.tags.map(tag => (
-                        <a key={tag.id} href="#">#{tag.tag_name}</a>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* Social media share buttons */}
-                <div className="share-buttons">
+              <aside className='aside-links'>
+              <div className="share-buttons">
                   <FacebookShareButton url={shareUrl} quote={post.post_name}>
                     <FacebookIcon size={32} round />
                   </FacebookShareButton>
@@ -146,6 +132,23 @@ const BlogDetail = () => {
                     <LinkedinIcon size={32} round />
                   </LinkedinShareButton>
                 </div>
+              </aside>
+              <div className="blog-body">
+                <div dangerouslySetInnerHTML={{ __html: post.content }} />
+
+                {post.tags.length > 0 && (
+                  <div className="related-topics">
+                    <h1 className="sizeH1 uppercase">Related Topics</h1>
+                    <div className="topics">
+                      {post.tags.map(tag => (
+                        <a key={tag.id} href="#">#{tag.tag_name}</a>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Social media share buttons */}
+                
 
               </div>
             </div>
@@ -165,7 +168,7 @@ const BlogDetail = () => {
 
             {relatedPosts.length > 0 && (
               <div className="related-topics">
-                <h3>Related Post</h3>
+                <h1 className='sizeH1 uppercase'>Related Post</h1>
                 <div className="related-posts">
                   {relatedPosts.map(relatedPost => (
                     <div className="related-post" key={relatedPost.id}>

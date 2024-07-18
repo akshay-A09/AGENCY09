@@ -97,7 +97,9 @@ const Blog = () => {
                                 <div className="blog-list" key={post.id}>
                                     <Link to={`/blog/${post.cat_slug}/${post.slug}`}>
                                         <div className="blog-img">
-                                            <img src={`https://www.agency09.in/cms/uploads/${post.featured_image}`} alt={post.post_name} />
+                                            <div className='thumb-img'>
+                                            <img src={`https://www.agency09.in/cms/uploads/${post.featured_image}`} alt={post.post_name} width="1000" height="517" />
+                                            </div>
                                             <div className="hover-overlay">
                                                 <div className="hover-text">
                                                     <h3>View Details</h3>
