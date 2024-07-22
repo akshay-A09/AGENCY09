@@ -17,10 +17,10 @@ import { IoStarSharp } from "react-icons/io5";
 import { SlArrowRightCircle } from "react-icons/sl";
 import SVGCurveLine from '../Hooks/SVGCurveLine'; 
 // Images
-import barc from '../Assets/Images/work/BARC.jpg';
-import godrejlaffaire from '../Assets/Images/work/Laffaire.jpg';
-import TataMotors from '../Assets/Images/work/TataMotors.jpg';
-import Tribevibe from '../Assets/Images/work/TribeVibe.jpg';
+import barc from '../Assets/Images/work/BARC.webp';
+import godrejlaffaire from '../Assets/Images/work/Laffaire.webp';
+import TataMotors from '../Assets/Images/work/TataMotors.webp';
+import Tribevibe from '../Assets/Images/work/TribeVibe.webp';
 
 // Images end
 

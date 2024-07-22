@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import barc from '../../../Assets/Images/work/BARC.jpg';
+import barc from '../../../Assets/Images/work/BARC.webp';
 
 // Tech
 export const BrandDesignData = [

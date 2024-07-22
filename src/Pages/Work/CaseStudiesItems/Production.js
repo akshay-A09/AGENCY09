@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import americanTourister from '../../../Assets/Images/work/AmericanTourister.jpg';
+import americanTourister from '../../../Assets/Images/work/AmericanTourister.webp';
 
 // Production
 export const ProductionData = [

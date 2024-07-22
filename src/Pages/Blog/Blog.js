@@ -15,7 +15,6 @@ const Blog = () => {
     const [categories, setCategories] = useState([]);
     const [posts, setPosts] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const [loading, setLoading] = useState(true);
     const postsPerPage = 5;
 
     useEffect(() => {
@@ -38,8 +37,6 @@ const Blog = () => {
                 setPosts(response.data.posts);
             } catch (error) {
                 console.error('Error fetching posts:', error);
-            } finally {
-                setLoading(false);
             }
         };
 
@@ -64,7 +61,7 @@ const Blog = () => {
     return (
         <>
             <Helmet>
-                <title>Blog – AGENCY09</title>
+                <title> Blog – AGENCY09</title>
                 <meta name="description" content="Clients achieve better ROI with integrated digital & inbound marketing strategies. Peek at our lead based campaigns, website designs, SEO and ORM." />
             </Helmet>
 
@@ -89,45 +86,42 @@ const Blog = () => {
                         </ul>
                     </div>
 
-                    {loading ? (
-                        <div className="loading">Loading...</div>
-                    ) : (
-                        <div className="blog-min-box">
-                            {currentPosts.map(post => (
-                                <div className="blog-list" key={post.id}>
-                                    <Link to={`/blog/${post.cat_slug}/${post.slug}`}>
-                                        <div className="blog-img">
-                                            <div className='thumb-img'>
-                                            <img src={`https://www.agency09.in/cms/uploads/${post.featured_image}`} alt={post.post_name} width="1000" height="517" />
-                                            </div>
-                                            <div className="hover-overlay">
-                                                <div className="hover-text">
-                                                    <h3>View Details</h3>
-                                                </div>
+                    <div className="blog-min-box">
+                        {currentPosts.map(post => (
+                            <div className="blog-list" key={post.id}>
+                                <Link to={`/blog/${post.cat_slug}/${post.slug}`}>
+                                    <div className="blog-img">
+                                        <div className='thumb-img'>
+                                        <img src={`https://www.agency09.in/cms/uploads/${post.featured_image}`} alt={post.post_name} width="1000" height="517" />
+                                        </div>
+                                        <div className="hover-overlay">
+                                            <div className="hover-text">
+                                                <h3>View Details</h3>
                                             </div>
                                         </div>
-                                        <div className="blog-list-heading">
-                                            {post.categories.length > 0 && (
-                                                <span className="blog-category">
-                                                    {post.categories.map(category => category.name).join(' | ')}
-                                                </span>
-                                            )}
-                                            <h2><a href="#">{post.post_name}</a></h2>
-                                            <ul>
-                                                <li><a href="#">{moment(post.created_at).format('D-MMMM-YYYY')}</a></li>
-                                                <li><a href="#">{post.view} VIEWS</a></li>
-                                                <li><a href="#"><b>Author:</b> {post.user_name}</a></li>
-                                            </ul>
-                                            <div className='blogDecription'>
-                                                <p>{post.description}</p>
-                                            </div>
-                                            <div className="list-btn"><span>View Post</span></div>
+                                    </div>
+                                    <div className="blog-list-heading">
+                                        {post.categories.length > 0 && (
+                                            <span className="blog-category">
+                                            {post.categories.map(category => category.name).join(' | ')}
+                                            </span>
+                                        )}
+                                        {/* <span><a href="#">{post.cat_name || 'Uncategorized'}</a></span> */}
+                                        <h2><a href="#">{post.post_name}</a></h2>
+                                        <ul>
+                                            <li><a href="#">{moment(post.created_at).format('D-MMMM-YYYY')}</a></li>
+                                            <li><a href="#">{post.view} VIEWS</a></li>
+                                            <li><a href="#"><b>Author:</b> {post.user_name}</a></li>
+                                        </ul>
+                                        <div className='blogDecription'>
+                                            <p>{post.description}</p>
                                         </div>
-                                    </Link>
-                                </div>
-                            ))}
-                        </div>
-                    )}
+                                        <div className="list-btn"><span>View Post</span></div>
+                                    </div>
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
 
                     {/* Pagination */}
                     <div className="pagination">

@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import TataMotors from '../../../Assets/Images/work/TataMotors.jpg';
-import Ryan from '../../../Assets/Images/work/Ryan.jpg';
-import GroupSoft from '../../../Assets/Images/work/GroupSoft.jpg';
-import Siyarams from '../../../Assets/Images/work/siyarams.jpg';
-import Bitspilani from '../../../Assets/Images/work/Bitspilani.jpg';
-import Tribevibe from '../../../Assets/Images/work/TribeVibe.jpg';
-import americanTourister from '../../../Assets/Images/work/AmericanTourister.jpg';
-import godrejlaffaire from '../../../Assets/Images/work/Laffaire.jpg';
-import RGI from '../../../Assets/Images/work/rgi.jpg';
-import lakme from '../../../Assets/Images/work/lakme.jpg';
-import barc from '../../../Assets/Images/work/BARC.jpg';
+import TataMotors from '../../../Assets/Images/work/TataMotors.webp';
+import Ryan from '../../../Assets/Images/work/Ryan.webp';
+import GroupSoft from '../../../Assets/Images/work/GroupSoft.webp';
+import Siyarams from '../../../Assets/Images/work/siyarams.webp';
+import Bitspilani from '../../../Assets/Images/work/Bitspilani.webp';
+import Tribevibe from '../../../Assets/Images/work/TribeVibe.webp';
+import americanTourister from '../../../Assets/Images/work/AmericanTourister.webp';
+import godrejlaffaire from '../../../Assets/Images/work/Laffaire.webp';
+import RGI from '../../../Assets/Images/work/rgi.webp';
+import lakme from '../../../Assets/Images/work/lakme.webp';
+import barc from '../../../Assets/Images/work/BARC.webp';
 
 // Tech
 export const allData = [

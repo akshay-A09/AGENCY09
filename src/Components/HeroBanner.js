@@ -5,8 +5,8 @@ import 'slick-carousel/slick/slick.css';
 import { motion } from 'framer-motion'; 
 
 // Images
-import rgiLogo from '../Assets/Images/hero/rgi-logo.png'
-import rgiBG from '../Assets/Images/hero/rgi-bg.png';
+import rgiLogo from '../Assets/Images/hero/rgi-logo.webp'
+import rgiBG from '../Assets/Images/hero/rgi-bg.webp';
 import americanTourister from '../Assets/Video/AmericanTouristerOrbiterProduct.mp4';
 import lakmeLogo from '../Assets/Images/logos/work/fashion_lifestyle/lakme.png';
 import americantouristerLogo from '../Assets/Images/logos/work/retail_fmcg/american-tourister.png';

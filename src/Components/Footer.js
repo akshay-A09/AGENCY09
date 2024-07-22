@@ -8,8 +8,8 @@ import SVGCurveLine from '../Hooks/SVGCurveLine';
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 // Images
-import gaming from '../Assets/Images/icons/gaming.png'
-import AGENCY09W from '../Assets/Images/agency-light.png'
+import gaming from '../Assets/Images/icons/gaming.webp'
+import AGENCY09W from '../Assets/Images/agency-light.webp'
 import a09storeW from '../Assets/Images/logos/a09storeW.png'
 import AZ9w from '../Assets/Images/logos/academy-zero-nineW.png'
 import Instaw from '../Assets/Images/logos/insta-holidaysW.png'

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import godrejlaffaire from '../../../Assets/Images/work/Laffaire.jpg';
-import RGI from '../../../Assets/Images/work/rgi.jpg';
-import lakme from '../../../Assets/Images/work/lakme.jpg';
+import godrejlaffaire from '../../../Assets/Images/work/Laffaire.webp';
+import RGI from '../../../Assets/Images/work/rgi.webp';
+import lakme from '../../../Assets/Images/work/lakme.webp';
 // Content
 export const ContentData = [
     {
