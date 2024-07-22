@@ -65,7 +65,7 @@ $purple: #9f00ff;
     outline: none;
     box-sizing: border-box;
 }
-
+#gameMin{display: none;}
 .game09{
     position: fixed;
     right: 0;
@@ -74,6 +74,7 @@ $purple: #9f00ff;
     height: 40px;
     overflow: hidden;
     border-radius: 15px 0 0 15px;
+    transition: all 0.3s ease-in-out;
     a{
         display: block;
         background: $yellow;
@@ -82,11 +83,15 @@ $purple: #9f00ff;
         line-height: 20px;
         padding: 5px 10px;
         line-height: normal;
-        transition: all 0.2s ease-in-out;
-        &:hover{
-            background: $blue;
-            color: $yellow;
-        }
+        transition: all 0.5s ease-in-out;
+    }
+    &:hover{
+     scale: 1.4;
+     right: 10px;  
+     a{
+        background-color: $blue;
+        color: $white;
+     }
     }
 }
 .Breakout09{
