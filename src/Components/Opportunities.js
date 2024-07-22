@@ -111,21 +111,21 @@ const jobData = [
   },
 
 
-  {
-    key: "4",
-    title: "Graphic Designer",
-    jobBrief: "AGENCY09 is looking for a Graphic Designer that can communicate ideas in pixels and pallets. We’re looking for a mind that is inline with current trends and has the outlook to feel future trends. A firm believer in ideas who can be an asset to our curious and efficient team of designers.",
-    experience: "2+ of Designing experience in a Digital Agency or Advertising Agency",
-    responsibility: ["You will be a part of the design team that constantly brings new ideas to the market Primary - Social Media Content, Website Designing, Campaigns"],
-    tasks: ["Brand Communication, Brochure, Video Slides", "Participate in the creation process of story creation and brainstorming", "Ability to present your Ideas virtually","Research and Referencing capabilities", "Understanding the analytics and implementing learnings", "Decoding briefs and interfacing with the Account Manager/Clients for briefings and pitches", "Work closely and collaboratively with the people around you and partaking in the creative process", "Willingness to continue learning and pursue education or enhance skills along with the job."],
-    qualification:["Graduate degree or above from Art School or a portfolio that doesn’t raise the question"],
-    skills: [
-      "Well Versed with Designing Softwares like (Illustrator/Photoshop/CorelDraw/Dreamweaver/InDesign and others) - Working experience with Sketch, Invision, and Adobe design tools. Having knowledge of Typography and Layout",
-      "Ability to have fun in the creating process",
-    ],
-    location: "Open for working from our office in Mumbai. (Bandra).",
-    applyEmail: "info@agency09.in"
-  },
+  // {
+  //   key: "4",
+  //   title: "Graphic Designer",
+  //   jobBrief: "AGENCY09 is looking for a Graphic Designer that can communicate ideas in pixels and pallets. We’re looking for a mind that is inline with current trends and has the outlook to feel future trends. A firm believer in ideas who can be an asset to our curious and efficient team of designers.",
+  //   experience: "2+ of Designing experience in a Digital Agency or Advertising Agency",
+  //   responsibility: ["You will be a part of the design team that constantly brings new ideas to the market Primary - Social Media Content, Website Designing, Campaigns"],
+  //   tasks: ["Brand Communication, Brochure, Video Slides", "Participate in the creation process of story creation and brainstorming", "Ability to present your Ideas virtually","Research and Referencing capabilities", "Understanding the analytics and implementing learnings", "Decoding briefs and interfacing with the Account Manager/Clients for briefings and pitches", "Work closely and collaboratively with the people around you and partaking in the creative process", "Willingness to continue learning and pursue education or enhance skills along with the job."],
+  //   qualification:["Graduate degree or above from Art School or a portfolio that doesn’t raise the question"],
+  //   skills: [
+  //     "Well Versed with Designing Softwares like (Illustrator/Photoshop/CorelDraw/Dreamweaver/InDesign and others) - Working experience with Sketch, Invision, and Adobe design tools. Having knowledge of Typography and Layout",
+  //     "Ability to have fun in the creating process",
+  //   ],
+  //   location: "Open for working from our office in Mumbai. (Bandra).",
+  //   applyEmail: "info@agency09.in"
+  // },
 ];
 
 const Opportunities = () => {

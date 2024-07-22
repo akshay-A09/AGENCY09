@@ -65,8 +65,58 @@ $purple: #9f00ff;
     outline: none;
     box-sizing: border-box;
 }
-.lg-outer{
+
+.game09{
+    position: fixed;
+    right: 0;
+    bottom: 10%;
+    z-index: 222;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 15px 0 0 15px;
+    a{
+        display: block;
+        background: $yellow;
+        color: $black;
+        font-size: 30px;
+        line-height: 20px;
+        padding: 5px 10px;
+        line-height: normal;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            background: $blue;
+            color: $yellow;
+        }
+    }
 }
+.Breakout09{
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: #000;
+    z-index: 999999999;
+    .modalClose{
+        position: absolute;
+        right: 1%;
+        top: 2%;
+        cursor: pointer;
+        z-index: 2;
+        background: none;
+        border: none;
+        font-size:30px;
+        color: $yellow;
+    }
+    iframe{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
 .App{
     overflow: hidden;
 }
@@ -560,7 +610,7 @@ p {
     .slick-arrow{
         top: 0;
         bottom: 0;
-        background-image: url(../Images/icons/arrow-right.png);
+        background-image: url(../Images/icons/arrow-right.webp);
         opacity: 1;
         background-color: transparent;
         background-repeat: no-repeat;
@@ -1720,7 +1770,7 @@ footer{
                 background: radial-gradient(circle, rgba(62,179,174,1) 30%, rgba(51,153,141,1) 100%); 
             }
             &.lakmeSlider .HeroImage{
-                background: url(../Images/hero/heroLakme.jpg);
+                background: url(../Images/hero/heroLakme.webp);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: top center;
@@ -2719,7 +2769,7 @@ footer{
     position: inherit!important;
     .slick-arrow{
         position: absolute;
-        background: url('../Images/icons/arrow-right2.png') no-repeat;
+        background: url('../Images/icons/arrow-right2.webp') no-repeat;
         background-position: center;
         background-size: 26%;
         width: 40px;
@@ -2825,7 +2875,7 @@ footer{
     position: inherit!important;
     .slick-arrow{
         position: absolute;
-        background: url('../Images/icons/arrow-right2.png') no-repeat;
+        background: url('../Images/icons/arrow-right2.webp') no-repeat;
         background-position: center;
           background-size: 26%;
         width: 40px;
@@ -3872,7 +3922,7 @@ footer{
     padding-bottom: 30px;
     .slick-arrow{
         position: absolute;
-        background: url('../Images/icons/arrow-right2.png') no-repeat;
+        background: url('../Images/icons/arrow-right2.webp') no-repeat;
         background-position: center;
           background-size: 26%;
         width: 40px;
@@ -3921,7 +3971,7 @@ footer{
             &::after{
                 content: '';
                 position: absolute;
-                background: url('../Images/icons/Vector.png') no-repeat;
+                background: url('../Images/icons/Vector.webp') no-repeat;
                 background-size: contain;
                 width: 50px;
                 height: 50px;
@@ -4263,7 +4313,7 @@ footer{
                 display: block;
                 width: 70px;
                 height: 70px;
-                background: url(../Images/icons/video.png) no-repeat;
+                background: url(../Images/icons/video.webp) no-repeat;
                 background-size: contain;
                 position: absolute;
                 inset: 0;
@@ -4281,7 +4331,7 @@ footer{
 .mainslider{
     position: relative;
     .slick-arrow{
-        background-image:url('../Images/icons/arrow-right2.png');
+        background-image:url('../Images/icons/arrow-right2.webp');
         background-repeat: no-repeat;
         background-size: contain;
         width: 35px;
@@ -4387,7 +4437,7 @@ footer{
         &::after{
             content: '';
             display: block;
-            background: url('../Images/icons/Vector.png') no-repeat;
+            background: url('../Images/icons/Vector.webp') no-repeat;
             background-size: contain;
             width: 50px;
             height: 50px;
@@ -5042,12 +5092,15 @@ footer{
     .related-topics {width: 100%;}
     .blog-share {width: 100%;}
     .related-post{width: 100%;}
+    .game09{
+        border-radius: 10px 0 0 10px;
+        height: 30px;
+        a{font-size: 20px;line-height: 17px;}
+    }
 }
 
 
-.errorText {
-    color : red;
-}
+.errorText {color : red;}
 // Mobile Responsive css End
 
 //gaurav for blog detail page
