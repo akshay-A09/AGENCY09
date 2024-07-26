@@ -113,9 +113,9 @@ const Blog = () => {
                                             <li><a href="#">{post.view} VIEWS</a></li>
                                             <li><a href="#"><b>Author:</b> {post.user_name}</a></li>
                                         </ul>
-                                        <div className='blogDecription'>
+                                        {/* <div className='blogDecription'>
                                             <p>{post.description}</p>
-                                        </div>
+                                        </div> */}
                                         <div className="list-btn"><span>View Post</span></div>
                                     </div>
                                 </Link>
