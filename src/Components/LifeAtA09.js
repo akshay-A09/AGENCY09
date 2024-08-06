@@ -1,25 +1,29 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css'; // Optional: for default theme
 import { LightgalleryItem, LightgalleryProvider } from 'react-lightgallery';
 import "lightgallery.js/dist/css/lightgallery.css";
 
 const LifeAtA09 = () => {
   const [images, setImages] = useState([]);
-  const sliderRef = useRef(null);
-  
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
   useEffect(() => {
     // Fetch data from API
     axios.get('https://agency09.in/cms/api/getGallery')
       .then(response => {
-        console.log(response.data);
         setImages(response.data); // Adjust based on API response structure
+        setLoading(false);
       })
       .catch(error => {
-        console.error('Error fetching gallery data:', error);
+        setError('Error fetching gallery data');
+        setLoading(false);
       });
   }, []);
+
   const LogosSliders = {
     dots: false,
     arrows: true,
@@ -50,10 +54,18 @@ const LifeAtA09 = () => {
     ],
   };
 
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>{error}</div>;
+  }
+
   return (
     <div className="LifeAtA09Row">
       <LightgalleryProvider>
-        <Slider {...LogosSliders} className="LogosSlider-slick slick-slider arrowLRC" ref={sliderRef}>
+        <Slider {...LogosSliders} className="LogosSlider-slick slick-slider">
           {images.map((image, index) => (
             <div key={index} className="item">
               <div className="LifeAtA09Col">
@@ -63,7 +75,7 @@ const LifeAtA09 = () => {
                     <h3>{image.title}</h3>
                   </div>
                 </LightgalleryItem>
-                {image.additionalImages.map((additionalImage, addIndex) => (
+                {image.additionalImages && image.additionalImages.map((additionalImage, addIndex) => (
                   <LightgalleryItem key={addIndex} group={image.group} src={additionalImage}></LightgalleryItem>
                 ))}
               </div>
