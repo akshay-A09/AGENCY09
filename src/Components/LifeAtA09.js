@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css'; // Optional: for default theme
+import 'slick-carousel/slick/slick-theme.css';
 import { LightgalleryItem, LightgalleryProvider } from 'react-lightgallery';
 import "lightgallery.js/dist/css/lightgallery.css";
 
@@ -10,12 +10,12 @@ const LifeAtA09 = () => {
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const sliderRef = useRef(null);
 
   useEffect(() => {
-    // Fetch data from API
     axios.get('https://agency09.in/cms/api/getGallery')
       .then(response => {
-        setImages(response.data); // Adjust based on API response structure
+        setImages(response.data);
         setLoading(false);
       })
       .catch(error => {
@@ -23,6 +23,17 @@ const LifeAtA09 = () => {
         setLoading(false);
       });
   }, []);
+
+  useEffect(() => {
+    // Reset slider position after images are set
+    if (sliderRef.current) {
+      try {
+        sliderRef.current.slickGoTo(0);
+      } catch (e) {
+        console.error('Error resetting slider position:', e);
+      }
+    }
+  }, [images]);
 
   const LogosSliders = {
     dots: false,
@@ -54,6 +65,12 @@ const LifeAtA09 = () => {
     ],
   };
 
+  const getYouTubeEmbedUrl = (url) => {
+    if (!url) return '';
+    const videoId = url.split('v=')[1]?.split('&')[0];
+    return `https://www.youtube.com/embed/${videoId}`;
+  };
+
   if (loading) {
     return <div>Loading...</div>;
   }
@@ -64,25 +81,48 @@ const LifeAtA09 = () => {
 
   return (
     <div className="LifeAtA09Row">
-      <LightgalleryProvider>
-        <Slider {...LogosSliders} className="LogosSlider-slick slick-slider">
-          {images.map((image, index) => (
-            <div key={index} className="item">
-              <div className="LifeAtA09Col">
-                <LightgalleryItem group={image.group} src={image.src}>
-                  <img src={image.src} alt={`lifeata09_${index + 1}`} />
-                  <div className="LifeAt09Text">
-                    <h3>{image.title}</h3>
-                  </div>
-                </LightgalleryItem>
-                {image.additionalImages && image.additionalImages.map((additionalImage, addIndex) => (
-                  <LightgalleryItem key={addIndex} group={image.group} src={additionalImage}></LightgalleryItem>
-                ))}
+      {images.length > 0 && (
+        <LightgalleryProvider>
+          <Slider {...LogosSliders} className="LogosSlider-slick slick-slider" ref={sliderRef}>
+            {images.map((image, index) => (
+              <div key={index} className="item">
+                <div className="LifeAtA09Col">
+                  {/* Main Image */}
+                  {image.src && (
+                    <LightgalleryItem group={image.group} src={image.src}>
+                      <img src={image.src} alt={`lifeata09_${index + 1}`} />
+                      <div className="LifeAt09Text">
+                        <h3>{image.title}</h3>
+                      </div>
+                    </LightgalleryItem>
+                  )}
+                  
+                  {/* Additional Images */}
+                  {image.additionalImages && image.additionalImages.map((additionalImage, addIndex) => (
+                    <LightgalleryItem key={addIndex} group={image.group} src={additionalImage}>
+                      <img src={additionalImage} alt={`additional_${addIndex + 1}`} style={{ display: 'none' }} />
+                    </LightgalleryItem>
+                  ))}
+                  
+                  {/* YouTube URLs */}
+                  {image.urls && JSON.parse(image.urls).map((url, urlIndex) => (
+                    url ? (
+                      <LightgalleryItem 
+                        key={urlIndex} 
+                        group={image.group} 
+                        src={getYouTubeEmbedUrl(url)}
+                        iframe={true}
+                      >
+                        {/* Optional: Add iframe here if needed */}
+                      </LightgalleryItem>
+                    ) : null
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
-        </Slider>
-      </LightgalleryProvider>
+            ))}
+          </Slider>
+        </LightgalleryProvider>
+      )}
     </div>
   );
 };
