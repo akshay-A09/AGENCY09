@@ -32,7 +32,20 @@ import BlogDetail from './Pages/Blog/BlogDetail'
 import Blog from './Pages/Blog/Blog'
 import Error from './Pages/Error'
 import Sitemap09 from './Pages/Sitemap09'
+import MassiveOrganicGrowthforNaharGroupsSearchPresence from './Pages/Work/CaseStudy/MassiveOrganicGrowthforNaharGroupsSearchPresence'
+import IndustryLeadingOrganicSearchResultsfromScratchforMahindraSolarize from './Pages/Work/CaseStudy/IndustryLeadingOrganicSearchResultsfromScratchforMahindraSolarize'
+import Consolidationof91PlusWebsitesandTremendousSEOGrowthforRyanGroup from './Pages/Work/CaseStudy/Consolidationof91PlusWebsitesandTremendousSEOGrowthforRyanGroup'
+import EnhancingOrganicUserEngagementforSiyarams from './Pages/Work/CaseStudy/EnhancingOrganicUserEngagementforSiyarams'
+import SuccessfulMobileAppDownloadCampaignforDhanvarsha from './Pages/Work/CaseStudy/SuccessfulMobileAppDownloadCampaignforDhanvarsha'
+import MultichannelLeadGenCampaignforJPInfra from './Pages/Work/CaseStudy/MultichannelLeadGenCampaignforJPInfra'
+import PromotingIndiasBiggestAwardFunctionforRealEstateCREDAIMCHIGoldenPillarAwards from './Pages/Work/CaseStudy/PromotingIndiasBiggestAwardFunctionforRealEstateCREDAIMCHIGoldenPillarAwards'
+import LeveragingDigitaltoGenerateOnlineRegistrationsforanEventMCHIMahaPropertyExpo from './Pages/Work/CaseStudy/LeveragingDigitaltoGenerateOnlineRegistrationsforanEventMCHIMahaPropertyExpo'
+import PromotingALDOsSS19andWeddingCollections from './Pages/Work/CaseStudy/PromotingALDOsSS19andWeddingCollections'
+import NewYearsCampaignHitstheMarkwithSiyaramsLeveragingCelebrityPowerforMaximumImpact from './Pages/Work/CaseStudy/NewYearsCampaignHitstheMarkwithSiyaramsLeveragingCelebrityPowerforMaximumImpact'
+import ChineseWoksPostLockdownRevivalInfluencerCampaignBoostsStarterSpread from './Pages/Work/CaseStudy/ChineseWoksPostLockdownRevivalInfluencerCampaignBoostsStarterSpread'
+import OctarineOrganicsEnchantingMushroomMagicBoxwithInnovativePackagingDesign from '.Pages/Work/CaseStudy/OctarineOrganicsEnchantingMushroomMagicBoxwithInnovativePackagingDesign'
 
+import CodashopGetsGamersGroovingEngagingBGMIPlayerswithaUniqueRapSongandDanceContest from './Pages/Work/CaseStudy/CodashopGetsGamersGroovingEngagingBGMIPlayerswithaUniqueRapSongandDanceContest'
 
 import { AnimatePresence } from 'framer-motion'
 
@@ -77,9 +90,22 @@ function App() {
           <Route exact path='/blog/:cat_slug' element={<Blog />} />
           <Route exact path='/blog/blog-detail' element={<BlogDetail />} />
           <Route exact path="/blog/:cat_slug/:post_id" element={<BlogDetail />} /> {/* Dynamic blog detail route */}
+          <Route exact path='/work/case-studies/massive-organic-growth-for-nahar-groups-search-presence' element={<MassiveOrganicGrowthforNaharGroupsSearchPresence />} />
+          <Route exact path='/work/case-studies/industry-leading-organic-search-results-from-scratch-for-mahindra-solarize' element={<IndustryLeadingOrganicSearchResultsfromScratchforMahindraSolarize />} />
+          <Route exact path='/work/case-studies/enhancing-organic-users-engagement-for-siyarams' element={<EnhancingOrganicUserEngagementforSiyarams />} />
+          <Route exact path='/work/case-studies/successful-mobile-app-download-campaign-for-dhanvarsha' element={<SuccessfulMobileAppDownloadCampaignforDhanvarsha/>} />
+          <Route exact path='/work/case-studies/multi-channel-lead-gen-campaign-for-jpinfa' element={<MultichannelLeadGenCampaignforJPInfra/>} />
+          <Route exact path='/work/case-studies/promoting-indias-biggest-award-function-for-real-estate-credai-mchi-golden-pillar-awards' element={<PromotingIndiasBiggestAwardFunctionforRealEstateCREDAIMCHIGoldenPillarAwards/>} />
+        <Route exact path='/work/case-studies/leveraging-digital-to-generate-online-registrations-for-an-event-mchi-maha-property-expo' element={<LeveragingDigitaltoGenerateOnlineRegistrationsforanEventMCHIMahaPropertyExpo/>} />
+        <Route exact path='/work/case-studies/promoting-aldos-ss19-and-wedding-collections' element={<PromotingALDOsSS19andWeddingCollections/>} />
+        <Route exact path='/work/case-studies/new-years-campaign-hits-the-mark-with-siyarams-leveraging-celebrity-power-for-maximum-impact' element={<NewYearsCampaignHitstheMarkwithSiyaramsLeveragingCelebrityPowerforMaximumImpact/>} />
+        <Route exact path='/work/case-studies/chinese-woks-post-lockdown-revival-influencer-campaign-boosts-starter-spread' element={<ChineseWoksPostLockdownRevivalInfluencerCampaignBoostsStarterSpread/>} />
+        <Route exact path='/work/case-studies/octarine-organics-enchanting-mushroom-magic-box-with-innovative-packaging-design' element={<OctarineOrganicsEnchantingMushroomMagicBoxwithInnovativePackagingDesign/>}/>
+        <Route exact path='/work/case-studies/codashop-gets-gamers-grooving-engaging-bgmi-players-with-a-unique-rap-song-and-dance-contest' element={<CodashopGetsGamersGroovingEngagingBGMIPlayerswithaUniqueRapSongandDanceContest/>}/>
         </Routes>
       </AnimatePresence>
     </div>
   );
 }
+
 export default App;

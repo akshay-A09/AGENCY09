@@ -635,20 +635,25 @@ p {
     width: fit-content;
     position: absolute;
     gap: 5px;
+    width: fit-content;
+    margin: auto;
 
     li {
-        width: 10px;
-        height: 10px;
-        display: block;
+        width: 10px!important;
+        height: 10px!important;
+        display: block!important;
 
         button {
-            width: 100%;
-            height: 100%;
-            font-size: 0;
-            border: none;
-            background: #fff;
-            border-radius: 100%;
-            cursor: pointer;
+            width: 100%!important;
+            height: 100%!important;
+            font-size: 0!important;
+            border: none!important;
+            background: #fff!important;
+            border-radius: 100%!important;
+            cursor: pointer!important;
+            &::before {
+                font-size: 0px!important;
+            }
         }
 
         &.slick-active button {
@@ -1725,15 +1730,17 @@ footer{
             height: 100%;
         }
         .slick-dots{
-            left: 0;
-            right: 0;
-            bottom: 10%;
-            gap: 10px;
+            left: 0!important;
+            right: 0!important;
+            bottom: 10%!important;
+            gap: 10px!important;
+            width: fit-content;
+            margin: auto;
             li{
-                width: 50px;
-                height: 6px;
+                width: 50px!important;
+                height: 5px!important;
                 button{
-                    border-radius: 10px;
+                    border-radius: 10px!important;
                     background: #7ce1d5;
                     transition: all 0.5s;
                     position: relative;
@@ -2868,7 +2875,13 @@ footer{
     }
 }
 // Milestones End
-
+.slick-arrow.slick-prev {
+    transform: rotate(180deg)!important;
+}
+.slick-arrow{
+    &::before{display: none;}
+}
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus{  background: image-set!important;}
 
 // Awards
 .awards09{
@@ -2880,7 +2893,7 @@ footer{
     position: inherit!important;
     .slick-arrow{
         position: absolute;
-        background: url('../Images/icons/arrow-right2.webp') no-repeat;
+        background: url('../Images/icons/arrow-right2.webp') no-repeat!important;
         background-position: center;
           background-size: 26%;
         width: 40px;
@@ -2891,6 +2904,8 @@ footer{
         border-radius: 100%;
         left: 0;
         right: 0;
+        top: inherit;
+        transform: translate(0px, 0px);
         &.slick-next{
             left: 60px;
         }
@@ -3351,15 +3366,21 @@ footer{
 }
 .LifeAtA09Row{
     width: 90%;
+    position: relative;
     .slick-list{
         overflow: inherit;
     }
 .slick-arrow{
     background-color: $green;
+    background-image: url('../Images/icons/arrow-right2.webp') ;
+    background-position: center;
+    background-size: 30%!important;
+    background-repeat: no-repeat;
     width: 40px;
     height: 40px;
     border-radius: 100%;
     background-size: 60%;
+
     &.slick-disabled{
         opacity: 0;
     }
@@ -4266,36 +4287,51 @@ footer{
         display: flex;
         gap:50px;
         flex-wrap: wrap;
+        *{
+            font-size: 15px;
+        }
         .cSsecMinBCol{
             width: 30%;
             margin: 0;
+
+            &:nth-of-type(4n+1){
+                width: 30%;
+            }
+
+            &:nth-of-type(4n+2){
+                width: 20%;
+            }
+
+            &:nth-of-type(4n+3){
+                width: 20%;
+            }
+
+            &:nth-of-type(4n+4){
+                width: 15%;
+            }
+
             ul{
                 padding: 0 10px;
             }
-            // &:first-child{
-            //     width: 25%;
-            // }
-
-            // &:nth-child(5){
-            //     width: 25%;
-            // }
-            // // &:last-child{
-            //     width: 30%;
-            // }
-            h4{
-                color: $black;
-                text-transform: uppercase;
-                font-family: $bold;
+            &.cSsecMinBColS2{
+                width: 30%;  
             }
-            p{
-                color: #242323;
-                margin-bottom: 12px;
-            }
-            ul{
-                
-                li{
-                    padding-bottom:12px;
-                }
+        }
+        
+        h4{
+            color: $black;
+            text-transform: uppercase;
+            font-family: $bold;
+        }
+        p{
+            color: #242323;
+            margin-bottom: 12px;
+        }
+        ul{
+            padding-left: 25px;
+            
+            li{
+                padding-bottom:10px;
             }
         }
     }
@@ -4570,14 +4606,14 @@ footer{
        
     }
     p{
-        font-size: 16px !important;
-        line-height: 28px !important;
-        margin-bottom: 25px !important;
-        color:#000 !important;
-        font-family: inherit !important;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 25px;
+        color:#000;
+        font-family: inherit;
         @media(max-width:768px){
-            margin-bottom: 15px !important;
-            font-size: 15px !important;
+            margin-bottom: 15px;
+            font-size: 15px;
         }
     }
     img{
@@ -4600,15 +4636,14 @@ footer{
         &::after{
             position: absolute;
             content:'';
-            width:6px;
-            height: 6px;
-            top:8px;
-            left:-12px;
+            width:8px;
+            height: 8px;
+            top:12px;
+            left:0;
             transform: translateY(-50%);
             background-color: #006dea;
             border-radius: 20px;
         }   
-
     }
 }
 }
