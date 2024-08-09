@@ -25,7 +25,6 @@ const LifeAtA09 = () => {
   }, []);
 
   useEffect(() => {
-    // Reset slider position after images are set
     if (sliderRef.current) {
       try {
         sliderRef.current.slickGoTo(0);
@@ -34,6 +33,26 @@ const LifeAtA09 = () => {
       }
     }
   }, [images]);
+
+  // Updated zoom function with additional safeguards
+  const zoom = (targetElement) => {
+    if (!targetElement) {
+      console.warn("Element is null or undefined, cannot access clientWidth");
+      return;
+    }
+
+    // Add a delay to ensure DOM stability
+    setTimeout(() => {
+      const width = targetElement?.clientWidth;
+      if (!width) {
+        console.warn("Failed to access clientWidth, element may not be fully rendered.");
+        return;
+      }
+
+      console.log(`Zoom logic using width: ${width}`);
+      // Proceed with additional zoom logic here
+    }, 100); // 100ms delay
+  };
 
   const LogosSliders = {
     dots: false,
@@ -90,30 +109,38 @@ const LifeAtA09 = () => {
                   {/* Main Image */}
                   {image.src && (
                     <LightgalleryItem group={image.group} src={image.src}>
-                      <img src={image.src} alt={`lifeata09_${index + 1}`} />
+                      <img 
+                        src={image.src} 
+                        alt={`lifeata09_${index + 1}`} 
+                        onLoad={(e) => zoom(e.target)} // Apply zoom logic when image loads
+                      />
                       <div className="LifeAt09Text">
                         <h3>{image.title}</h3>
                       </div>
                     </LightgalleryItem>
                   )}
-                  
+
                   {/* Additional Images */}
                   {image.additionalImages && image.additionalImages.map((additionalImage, addIndex) => (
                     <LightgalleryItem key={addIndex} group={image.group} src={additionalImage}>
-                      <img src={additionalImage} alt={`additional_${addIndex + 1}`} style={{ display: 'none' }} />
+                      <img 
+                        src={additionalImage} 
+                        alt={`additional_${addIndex + 1}`} 
+                        style={{ display: 'none' }} 
+                        onLoad={(e) => zoom(e.target)} // Apply zoom logic when additional image loads
+                      />
                     </LightgalleryItem>
                   ))}
-                  
+
                   {/* YouTube URLs */}
                   {image.urls && JSON.parse(image.urls).map((url, urlIndex) => (
                     url ? (
-                      <LightgalleryItem 
-                        key={urlIndex} 
-                        group={image.group} 
+                      <LightgalleryItem
+                        key={urlIndex}
+                        group={image.group}
                         src={getYouTubeEmbedUrl(url)}
                         iframe={true}
                       >
-                        {/* Optional: Add iframe here if needed */}
                       </LightgalleryItem>
                     ) : null
                   ))}
