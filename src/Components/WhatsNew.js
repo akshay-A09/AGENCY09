@@ -12,7 +12,7 @@ import ideasPerform from '../Assets/Images/growth/mediaA09.webp';
 import ideasPerform1 from '../Assets/Images/growth/ideas-perform1.webp';
 import sportday from '../Assets/Images/growth/sportday.webp';
 import ideasPerform2 from '../Assets/Images/growth/ideas-perform2.webp';
-import kinjal from '../Assets/Images/growth/kinjal.webp';
+import rgiimage from '../Assets/Images/growth/rgi.webp';
 import starY from '../Assets/Images/icons/star.webp';
 
 
@@ -93,10 +93,10 @@ useEffect(() => {
       description: "Sports Day at AGENCY09",
     },
     {
-      link: '/',
-      image: kinjal,
-      title: 'AGENCY09 Signs up as Social Media Partner for Kinjal Group',
-      description: "Strengthens real estate portfolio",
+      link: 'https://www.agency09.in/simplifyingtheweb/design/the-journey-of-rhealthbeat-magazine-a-testament-to-innovative-design/',
+      image: rgiimage,
+      title: 'The Journey of RHealthBeat Magazine, a Testament to Innovative Design',
+      description: "Designing Stories, Crafting Impact",
     },
   ];
   // Update end
@@ -116,7 +116,7 @@ useEffect(() => {
     <Slider {...UpdateSlider} className="UpdateSlider-slick slick-slider">
     {UpdateData.map((item, index) => (
       <div className='item' key={index}>
-        <Link>
+        <Link to={item.link} target='_blank'>
           <img src={item.image} alt={item.title} loading="lazy" />
           <h2>{item.title}</h2>
           {/* <p>{item.description}</p> */}
