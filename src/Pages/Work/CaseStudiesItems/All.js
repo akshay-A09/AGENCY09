@@ -69,16 +69,16 @@ export const allData = [
     },
   
    
-    // {
-    //     id: 1,
-    //     title: "Product Shoot",
-    //     tags: [
-    //     ],
-    //     image: ProductShoot,
-    //     link: '/work/case-studies/product-shoot',
-    //     brand: "",
-    //     department: "Production"
-    // },
+    {
+        id: 1,
+        title: "Product Shoot",
+        tags: [
+        ],
+        image: ProductShoot,
+        link: '/work/case-studies/product-shoot',
+        brand: "",
+        department: "Production"
+    },
     {
         id: 1,
         title: "RealEstate Videos",

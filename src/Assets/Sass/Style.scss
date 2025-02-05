@@ -4446,7 +4446,9 @@ footer{
         border: 1px solid #f2f2f2;
         border-radius: 20px;
         background-color: $lightgrey;
-
+        h4{
+            margin-bottom: 5px;
+        }
 
         .playlist-items{
             overflow: auto;
@@ -4459,19 +4461,20 @@ footer{
                 align-items: center;
                 padding: 5px;
                 border-radius: 10px;
+               
                 &.active{
                     background-color: $blue;
                     color: #fff;
                 }
                 img{
                     display: block;
-                    width: 100px;
+                    width: 80px;
                     border-radius: 7px;
                 }
                 p{
                     margin: auto;
                     font-size: 10px;
-                    overflow: hidden;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;
+                    overflow: hidden;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;
                 }
             }
         }

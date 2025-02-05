@@ -54,7 +54,10 @@ const YouTubePlaylistItems = ({ playlistId, apiKey }) => {
           {items.map((item) => {
             const videoId = item.snippet.resourceId.videoId;
             const title = item.snippet.title;
-            const thumbnail = item.snippet.thumbnails.medium.url;
+            const thumbnail =
+              item.snippet.thumbnails?.medium?.url ||
+              item.snippet.thumbnails?.default?.url ||
+              'https://via.placeholder.com/120x90?text=No+Image';
 
             return (
               <div

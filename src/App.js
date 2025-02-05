@@ -112,7 +112,7 @@ function App() {
         <Route exact path='/work/case-studies/podcast' element={<Podcast/>}/>
         <Route exact path='/work/case-studies/digital-ads' element={<DigitalAds/>}/>
         <Route exact path='/work/case-studies/corporate-videos' element={<CorporateVideos/>}/>
-        {/* <Route exact path='/work/case-studies/product-shoot' element={<ProductShoot/>}/> */}
+        <Route exact path='/work/case-studies/product-shoot' element={<ProductShoot/>}/>
         <Route exact path='/work/case-studies/real-estate-videos' element={<RealEstateVideos/>}/>
       
       

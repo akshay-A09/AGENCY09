@@ -35,6 +35,13 @@ import lokmat from '../../Assets/Images/logos/work/media_entertainment_gaming/lo
 import trust from '../../Assets/Images/logos/work/BFSI/trust.png';
 
 
+import Podcast from '../../Assets/Images/work/Podcast.jpg';
+import DigitalAds from '../../Assets/Images/work/DigitalAds.jpg';
+import ProductShoot from '../../Assets/Images/work/ProductShoot.jpg';
+import RealEstateVideos from '../../Assets/Images/work/RealEstateVideos.jpg';
+import CorporateVideos from '../../Assets/Images/work/CorporateVideos.jpg';
+
+
 // Images end
 
 // toolsSlider 
@@ -145,18 +152,47 @@ const Production = () => {
 
 //CaseStudy Data
 const CaseStudyData = [
-  {
-    id: 11,
-    title: 'Showcasing Excellence: Captivating Product Films for American Tourister',
-    tags: [
-        { name: 'Product Film Production', link: '' },
-        { name: 'Content Creation', link: '' }
-    ],
-    image: americanTourister,
-    link: '/work/case-studies/american-tourister',
-    brand: "American Tourister",
-    department: 'Production'
-},
+
+ 
+    {
+        id: 1,
+        title: "Corporate Videos",
+        tags: [
+        ],
+        image: CorporateVideos,
+        link: '/work/case-studies/corporate-videos',
+        brand: "",
+        department: "Production"
+    },
+ 
+    {
+        id: 1,
+        title: "Podcast",
+        tags: [
+        ],
+        image: Podcast,
+        link: '/work/case-studies/podcast',
+        brand: "",
+        department: "Production"
+    },
+   
+    {
+        id: 1,
+        title: "RealEstate Videos",
+        tags: [
+        ],
+        image: RealEstateVideos,
+        link: '/work/case-studies/real-estate-videos',
+        brand: "",
+        department: "Production"
+    },
+
+
+
+
+
+
+
   ];
 //CaseStudy Data End
 
