@@ -10,7 +10,7 @@ import { PiSlideshow, PiStarFourFill } from "react-icons/pi";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { GoPlus } from "react-icons/go";
 import starY from '../../../Assets/Images/icons/star.webp';
-import logo from '../../../Assets/Images/logos/work/retail_fmcg/american-tourister.png';
+import logo from '../../../Assets/Images/agency09.webp';
 import ourwork1 from '../../../Assets/Images/work/tata-trucks/tata-main.webp';
 import ourwork2 from '../../../Assets/Images/work/tata-trucks/tata-slide1.webp';
 import ourwork3 from '../../../Assets/Images/work/tata-trucks/tata-slide2.webp';
@@ -18,6 +18,7 @@ import ourwork4 from '../../../Assets/Images/work/tata-trucks/tata-slide3.webp';
 import ourwork5 from '../../../Assets/Images/work/tata-trucks/tata-slide4.webp';
 import ourwork6 from '../../../Assets/Images/work/tata-trucks/tata-slide5.webp';
 import ourwork7 from '../../../Assets/Images/work/tata-trucks/tata-slide6.webp';
+import YouTubePlaylistItems from '../../../Hooks/YouTubePlaylistItems';
 
 
 // CaseStudySlider 
@@ -114,7 +115,9 @@ const CaseStudyData = [
 //CaseStudy Data End
 
 const Podcast = () => {
- 
+const playlistId = 'PLjyBa6CjzBYNh6pb8q6ISg9JnjDK7aZOz';
+const apiKey = 'AIzaSyBkRuDWRBnBbl_qW3syuk_BEa7anG2uU2M';
+  
 
   return (
     <>
@@ -124,22 +127,43 @@ const Podcast = () => {
 
     <section className='cSsecMin'>
         <div className='container'>
+
+        <div className='cSsecMinA flexBio'>
+    
+            <div className='cSsecMinBtn m0'>
+            <Link to='/work/case-studies' className='backBtn'><span><IoArrowBackCircleOutline /> Case Study</span></Link>
+            </div>
+
+            <div className='cSsecMinHead m0'>
+                <h1 className='sizeH4'>Podcast</h1>
+            </div>
+
+            <div className='cSsecMinInfo m0'>
+                <img src={logo} />
+            </div>
+    
+        </div>
             
-            <div className='cSsecMinP flexBio'>
-                
-                <div className='cSsecMinBCol m0'>
-                <h2>Podcast</h2>
-                    <p>At AGENCY09, we create dynamic podcast videos that combine insightful conversations with compelling visuals. Whether it’s for brand storytelling, thought leadership, or engaging your community, our team ensures every podcast resonates with your audience. Let’s bring your voice to life with content that informs, entertains, and builds a loyal following.</p>
-                </div>  
-           
+            
+        <div className='strokeB'>
+                <SVGCurveLine/>
+        </div>  
+
+        <div className='cSsecMinP flexBio showYtPlaylist'>
+            
+            <div className='cSsecMinBCol m0'>
+            <h2>Overview</h2>
+                <p>At AGENCY09, we create dynamic podcast videos that combine insightful conversations with compelling visuals. Whether it’s for brand storytelling, thought leadership, or engaging your community, our team ensures every podcast resonates with your audience. Let’s bring your voice to life with content that informs, entertains, and builds a loyal following.</p>
+            </div>  
+        
 
 
             <div className="ytgrdP">
-            <iframe id="ytplayer" type="text/html" width="100%" height="405"
-src="https://www.youtube.com/embed/?listType=playlist&list=PLjyBa6CjzBYNh6pb8q6ISg9JnjDK7aZOz"
-frameborder="0" allowfullscreen></iframe>
-        
-      </div>
+            <div className="App">
+                <h1>YouTube Playlist</h1>
+                <YouTubePlaylistItems playlistId={playlistId} apiKey={apiKey} />
+            </div>
+            </div>
 
 
       </div>.
