@@ -45,9 +45,8 @@ import PromotingALDOsSS19andWeddingCollections from './Pages/Work/CaseStudy/Prom
 import NewYearsCampaignHitstheMarkwithSiyaramsLeveragingCelebrityPowerforMaximumImpact from './Pages/Work/CaseStudy/NewYearsCampaignHitstheMarkwithSiyaramsLeveragingCelebrityPowerforMaximumImpact'
 import ChineseWoksPostLockdownRevivalInfluencerCampaignBoostsStarterSpread from './Pages/Work/CaseStudy/ChineseWoksPostLockdownRevivalInfluencerCampaignBoostsStarterSpread'
 import OctarineOrganicsEnchantingMushroomMagicBoxwithInnovativePackagingDesign from './Pages/Work/CaseStudy/OctarineOrganicsEnchantingMushroomMagicBoxwithInnovativePackagingDesign'
-
 import CodashopGetsGamersGroovingEngagingBGMIPlayerswithaUniqueRapSongandDanceContest from './Pages/Work/CaseStudy/CodashopGetsGamersGroovingEngagingBGMIPlayerswithaUniqueRapSongandDanceContest'
-
+import Podcast from './Pages/Work/CaseStudy/Podcast'
  
 function App() {
   const location = useLocation();
@@ -105,6 +104,7 @@ function App() {
         <Route exact path='/work/case-studies/chinese-woks-post-lockdown-revival-influencer-campaign-boosts-starter-spread' element={<ChineseWoksPostLockdownRevivalInfluencerCampaignBoostsStarterSpread/>} />
         <Route exact path='/work/case-studies/octarine-organics-enchanting-mushroom-magic-box-with-innovative-packaging-design' element={<OctarineOrganicsEnchantingMushroomMagicBoxwithInnovativePackagingDesign/>}/>
         <Route exact path='/work/case-studies/codashop-gets-gamers-grooving-engaging-bgmi-players-with-a-unique-rap-song-and-dance-contest' element={<CodashopGetsGamersGroovingEngagingBGMIPlayerswithaUniqueRapSongandDanceContest/>}/>
+        <Route exact path='/work/case-studies/podcast' element={<Podcast/>}/>
         </Routes>
     </div>
   );

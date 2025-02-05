@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import TataMotors from '../../../Assets/Images/work/TatamotorsNew.webp';
+import TataMotors from '../../../Assets/Images/work/Tatamotors-new.jpg';
 import Ryan from '../../../Assets/Images/work/Ryan.webp';
 import GroupSoft from '../../../Assets/Images/work/GroupSoft.webp';
 import Siyarams from '../../../Assets/Images/work/siyarams.webp';
 import Bitspilani from '../../../Assets/Images/work/Bitspilani.webp';
 import Tribevibe from '../../../Assets/Images/work/TribeVibe.webp';
 import americanTourister from '../../../Assets/Images/work/AmericanTourister.webp';
-import godrejlaffaire from '../../../Assets/Images/work/Laffaire.webp';
+import godrejlaffaire from '../../../Assets/Images/work/LaffaireSelect.jpg';
 import RGI from '../../../Assets/Images/work/rgi.webp';
 import lakme from '../../../Assets/Images/work/lakme.webp';
 import barc from '../../../Assets/Images/work/BARC.webp';

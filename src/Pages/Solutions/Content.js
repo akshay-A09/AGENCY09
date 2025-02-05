@@ -26,7 +26,7 @@ import ryan from '../../Assets/Images/logos/work/ryan.png';
 import tataMotors2 from '../../Assets/Images/logos/work/tataMotors2.png';
 import bitsPilani from '../../Assets/Images/logos/work/bitsPilani.png';
 import starY from '../../Assets/Images/icons/star.webp';
-import godrejlaffaire from '../../Assets/Images/work/Laffaire.webp';
+import godrejlaffaire from '../../Assets/Images/work/LaffaireSelect.jpg';
 import RGI from '../../Assets/Images/work/rgi.webp';
 import lakme from '../../Assets/Images/work/lakme.webp';
 
