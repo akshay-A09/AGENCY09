@@ -5435,6 +5435,17 @@ li.whoweare_active a{ color:#000; border-bottom:1px solid}
         height: 30px;
         a{font-size: 20px;line-height: 17px;}
     }
+
+.showYtPlaylist{display: block;}
+.youtube-playlist{gap:10px}
+.showYtPlaylist .cSsecMinBCol{width: 100%;}
+.showYtPlaylist .ytgrdP{width:100%;margin-top: 25px;}
+.youtube-playlist .video-player-list{width: 120px;padding: 5px;  border-radius: 5px;}
+.youtube-playlist .video-player{border-radius:10px}
+.youtube-playlist {font-size: 11px;}
+.youtube-playlist{height: 200px;}
+.youtube-playlist .video-player-list .playlist-items .playlist-item p{display:none}
+    
 }
 
 

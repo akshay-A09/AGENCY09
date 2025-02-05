@@ -27,10 +27,70 @@ import workcodashop from '../../../Assets/Images/work/codashop/codaShoptm.jpg';
 import workchineswok from '../../../Assets/Images/work/chineseWok/chineseWok-tm.jpg';
 import worksiyaramedia from '../../../Assets/Images/work/siyaram-tmb.jpg';
 
-
+import Podcast from '../../../Assets/Images/work/Podcast.jpg';
+import DigitalAds from '../../../Assets/Images/work/DigitalAds.jpg';
+import ProductShoot from '../../../Assets/Images/work/ProductShoot.jpg';
+import RealEstateVideos from '../../../Assets/Images/work/RealEstateVideos.jpg';
+import CorporateVideos from '../../../Assets/Images/work/CorporateVideos.jpg';
 
 // Tech
 export const allData = [
+    {
+        id: 1,
+        title: "Digital Ads",
+        tags: [
+        ],
+        image: DigitalAds,
+        link: '/work/case-studies/digital-ads',
+        brand: "",
+        department: "Production"
+    },
+ 
+    {
+        id: 1,
+        title: "Corporate Videos",
+        tags: [
+        ],
+        image: CorporateVideos,
+        link: '/work/case-studies/corporate-videos',
+        brand: "",
+        department: "Production"
+    },
+ 
+    {
+        id: 1,
+        title: "Podcast",
+        tags: [
+        ],
+        image: Podcast,
+        link: '/work/case-studies/podcast',
+        brand: "",
+        department: "Production"
+    },
+  
+   
+    // {
+    //     id: 1,
+    //     title: "Product Shoot",
+    //     tags: [
+    //     ],
+    //     image: ProductShoot,
+    //     link: '/work/case-studies/product-shoot',
+    //     brand: "",
+    //     department: "Production"
+    // },
+    {
+        id: 1,
+        title: "RealEstate Videos",
+        tags: [
+        ],
+        image: RealEstateVideos,
+        link: '/work/case-studies/real-estate-videos',
+        brand: "",
+        department: "Production"
+    },
+
+
     {
         id: 5,
         title: 'Transforming Digital Presence: Modern Website for India’s #1 Non-Govt. Technical Institute, BITS Pilani',
@@ -334,7 +394,7 @@ export const allData = [
         department: "Content"
     },
 
-
+   
 ];
 
 // State for each tab

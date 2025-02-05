@@ -2,9 +2,68 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import americanTourister from '../../../Assets/Images/work/AmericanTourister.webp';
 
+import Podcast from '../../../Assets/Images/work/Podcast.jpg';
+import DigitalAds from '../../../Assets/Images/work/DigitalAds.jpg';
+import ProductShoot from '../../../Assets/Images/work/ProductShoot.jpg';
+import RealEstateVideos from '../../../Assets/Images/work/RealEstateVideos.jpg';
+import CorporateVideos from '../../../Assets/Images/work/CorporateVideos.jpg';
+
 // Production
 export const ProductionData = [
-
+ {
+        id: 1,
+        title: "Digital Ads",
+        tags: [
+        ],
+        image: DigitalAds,
+        link: '/work/case-studies/digital-ads',
+        brand: "",
+        department: "Production"
+    },
+ 
+    {
+        id: 1,
+        title: "Corporate Videos",
+        tags: [
+        ],
+        image: CorporateVideos,
+        link: '/work/case-studies/corporate-videos',
+        brand: "",
+        department: "Production"
+    },
+ 
+    {
+        id: 1,
+        title: "Podcast",
+        tags: [
+        ],
+        image: Podcast,
+        link: '/work/case-studies/podcast',
+        brand: "",
+        department: "Production"
+    },
+  
+   
+    // {
+    //     id: 1,
+    //     title: "Product Shoot",
+    //     tags: [
+    //     ],
+    //     image: ProductShoot,
+    //     link: '/work/case-studies/product-shoot',
+    //     brand: "",
+    //     department: "Production"
+    // },
+    {
+        id: 1,
+        title: "RealEstate Videos",
+        tags: [
+        ],
+        image: RealEstateVideos,
+        link: '/work/case-studies/real-estate-videos',
+        brand: "",
+        department: "Production"
+    },
     {
         id: 11,
         title: 'Showcasing Excellence: Captivating Product Films for American Tourister',
