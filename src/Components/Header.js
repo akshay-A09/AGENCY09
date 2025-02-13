@@ -14,7 +14,7 @@ import ideasPerform from '../Assets/Images/growth/mediaA09.webp';
 import ideasPerform1 from '../Assets/Images/blog1.webp';
 import sportday from '../Assets/Images/blog2.webp';
 import blog1 from '../Assets/Images/must-have-tools.jpg';
-import blog2 from '../Assets/Images/elevate-print-marketing.jpg';
+import blog2 from '../Assets/Images/tvarana-blog-tn.jpg';
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -156,12 +156,26 @@ const Header = () => {
             </div>
 
             <div className='menu09Item menu09Item03'>
-                <ul>
-                  <li>
-                      <div className='NBItemTitle'>
-                        <span>Blog </span>  
-                        <Link className={location.pathname === '/blog' ? 'active' : ''} to='/blog' ></Link>
+            <div className='minFont pb-10'>
+                        <span>Blog</span> 
                       </div>
+                <ul>
+                <li>
+                     
+
+                      <div className='NBItemContent'>
+                      <a href='https://www.agency09.in/simplifyingtheweb/tech/how-webflow-transformed-tvaranas-website/' target='_blank'>
+                          <div className='NBItemImg'>
+                            <img src={blog2} loading='lazy' alt='{blog}' />
+                          </div>
+                          <div className='NBItemText'>
+                            <p>How We Transformed Tvarana’s Website with Webflow for Faster Performance ....</p>
+                          </div>
+                        </a>
+                      </div>
+                  </li>
+
+                  <li>
 
                       <div className='NBItemContent'>
                         <a href='https://www.agency09.in/simplifyingtheweb/design/the-journey-of-rhealthbeat-magazine-a-testament-to-innovative-design/' target='_blank'>
@@ -176,23 +190,7 @@ const Header = () => {
                       </div>
                   </li>
 
-                  <li>
-                      <div className='NBItemTitle'>
-                        <span className='o0'>Blog</span> 
-                        <Link to='/work'></Link>
-                      </div>
-
-                      <div className='NBItemContent'>
-                      <a href='https://www.agency09.in/simplifyingtheweb/strategy/elevate-your-print-marketing-unleash-creativity-with-agency09/' target='_blank'>
-                          <div className='NBItemImg'>
-                            <img src={blog2} loading='lazy' alt='{blog}' />
-                          </div>
-                          <div className='NBItemText'>
-                            <p>Elevate Your Print Marketing: Unleash Creativity with AGENCY09</p>
-                          </div>
-                        </a>
-                      </div>
-                  </li>
+                
                 </ul>
             </div>
 

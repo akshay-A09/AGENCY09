@@ -75,25 +75,26 @@ useEffect(() => {
   // Data 
   const UpdateData = [
     {
-      link: '/',
+      link: '/careers#LifeAtA09',
       image: ideasPerform,
       title: 'AGENCY09 Celebrates a decade of Simplifying the Web',
       description: "Unlocking Digital Potential Since 20XX",
     },
     {
-      link: '/',
+      link: '/careers#LifeAtA09',
       image: ideasPerform1,
       title: 'Tata Motors enlists A09 for their Smart City Project website',
       description: "AGENCY09 Powers Tata Motors' Smart City Initiative Online",
     },
     {
-      link: '/',
+      link: '/careers#LifeAtA09',
       image: sportday,
       title: 'Bat, Ball & Balle Balle',
       description: "Sports Day at AGENCY09",
     },
     {
       link: 'https://www.agency09.in/simplifyingtheweb/design/the-journey-of-rhealthbeat-magazine-a-testament-to-innovative-design/',
+      blank: '_blank',
       image: rgiimage,
       title: 'The Journey of RHealthBeat Magazine, a Testament to Innovative Design',
       description: "Designing Stories, Crafting Impact",
@@ -116,7 +117,7 @@ useEffect(() => {
     <Slider {...UpdateSlider} className="UpdateSlider-slick slick-slider">
     {UpdateData.map((item, index) => (
       <div className='item' key={index}>
-        <Link to={item.link} target='_blank'>
+        <Link to={item.link} target={item.blank}>
           <img src={item.image} alt={item.title} loading="lazy" />
           <h2>{item.title}</h2>
           {/* <p>{item.description}</p> */}
