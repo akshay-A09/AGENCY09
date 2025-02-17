@@ -228,21 +228,21 @@ const faqsData = [
   return (
     <>
     <Helmet>
-      <title>SEO Agency in Mumbai | Boost Organic Traffic & Keyword Rankings - AGENCY09</title>
+      <title>Social Media Marketing Agency in Mumbai |  Performance Marketing & Ad Campaigns – AGENCY09</title>
       <meta name="robots" content="index, follow"/> 
 
-      <meta name="description" content="AGENCY09 helps grow website traffic with search engine optimization strategies including keyword research, google my business listing, Google Analytics 4, Increase DA, ORM and more."/>
+      <meta name="description" content="AGENCY09 offers media services, including paid ad campaigns, performance marketing, lead generation campaign. and influencer marketing."/>
       <link rel="canonical" href="https://www.agency09.in/services/keyword.php"/>
 
-      <meta property="og:title" content="SEO Agency in Mumbai | Boost Organic Traffic & Keyword Rankings - AGENCY09"/> 
-      <meta property="og:description" content="AGENCY09 helps grow website traffic with search engine optimization strategies including keyword research, google my business listing, Google Analytics 4, Increase DA, ORM and more."/> 
+      <meta property="og:title" content="Social Media Marketing Agency in Mumbai |  Performance Marketing & Ad Campaigns – AGENCY09"/> 
+      <meta property="og:description" content="AGENCY09 offers media services, including paid ad campaigns, performance marketing, lead generation campaign. and influencer marketing."/> 
       <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
       <meta property="og:type" content="website"/> 
       <meta name="twitter:card" content="summary"/> 
       <meta name="twitter:site" content="@AGENCY09"/> 
       <meta name="twitter:creator" content="@AGENCY09"/> 
       <meta name="twitter:url" content="https://www.agency09.in/services/keyword.php"/> 
-      <meta name="twitter:description" content="AGENCY09 helps grow website traffic with search engine optimization strategies including keyword research, google my business listing, Google Analytics 4, Increase DA, ORM and more."/> 
+      <meta name="twitter:description" content="AGENCY09 offers media services, including paid ad campaigns, performance marketing, lead generation campaign. and influencer marketing."/> 
       <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/>
     </Helmet>
 
