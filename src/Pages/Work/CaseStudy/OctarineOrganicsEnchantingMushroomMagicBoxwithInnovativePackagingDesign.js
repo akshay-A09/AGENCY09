@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet';
 import Header from '../../../Components/Header';
 import Footer from '../../../Components/Footer';
 import Slider from 'react-slick';
@@ -107,6 +108,26 @@ const OctarineOrganicsEnchantingMushroomMagicBoxwithInnovativePackagingDesign = 
 
   return (
     <>
+    <Helmet>
+<title>Octarine Organics: Enchanting Mushroom Magic Box with Innovative Packaging Design - AGENCY09 Case Study</title>
+<link rel="canonical" href="https://www.agency09.in/about"/>
+<meta name="robots" content="index, follow"/> 
+
+<meta name="description" content="The Octarine Organics Mushroom Magic Box – a fusion of enchanting fungi and innovative packaging, crafted by AGENCY09 for a unique organic experience."/>
+<meta property="og:title" content="Octarine Organics: Enchanting Mushroom Magic Box with Innovative Packaging Design - AGENCY09 Case Study"/> 
+<meta property="og:description" content="The Octarine Organics Mushroom Magic Box – a fusion of enchanting fungi and innovative packaging, crafted by AGENCY09 for a unique organic experience."/> 
+<meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
+<meta property="og:type" content="website"/> 
+
+
+<meta name="twitter:card" content="summary"/> 
+<meta name="twitter:site" content="@AGENCY09"/> 
+<meta name="twitter:creator" content="@AGENCY09"/> 
+<meta name="twitter:url" content="https://www.agency09.in/about"/> 
+<meta name="twitter:description" content=" The Octarine Organics Mushroom Magic Box – a fusion of enchanting fungi and innovative packaging, crafted by AGENCY09 for a unique organic experience."/> 
+<meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
+
+</Helmet>
     <Header/>
     <div className="spacer"></div>
 

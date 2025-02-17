@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet';
 import Header from '../../../Components/Header';
 import Footer from '../../../Components/Footer';
 import Slider from 'react-slick';
@@ -103,6 +104,26 @@ const Consolidationof91PlusWebsitesandTremendousSEOGrowthforRyanGroup = () => {
 
   return (
     <>
+    <Helmet>
+<title>Consolidation of 91+ Websites and Tremendous SEO Growth for Ryan Group - AGENCY09 Case Study</title>
+<link rel="canonical" href="https://www.agency09.in/about"/>
+<meta name="robots" content="index, follow"/> 
+
+<meta name="description" content="Explore how AGENCY09 successfully consolidated 91+ websites for Ryan Group, driving massive SEO growth and enhanced digital performance in this case study."/>
+<meta property="og:title" content="Consolidation of 91+ Websites and Tremendous SEO Growth for Ryan Group - AGENCY09 Case Study"/> 
+<meta property="og:description" content="Explore how AGENCY09 successfully consolidated 91+ websites for Ryan Group, driving massive SEO growth and enhanced digital performance in this case study."/> 
+<meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
+<meta property="og:type" content="website"/> 
+
+
+<meta name="twitter:card" content="summary"/> 
+<meta name="twitter:site" content="@AGENCY09"/> 
+<meta name="twitter:creator" content="@AGENCY09"/> 
+<meta name="twitter:url" content="https://www.agency09.in/about"/> 
+<meta name="twitter:description" content="Explore how AGENCY09 successfully consolidated 91+ websites for Ryan Group, driving massive SEO growth and enhanced digital performance in this case study."/> 
+<meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
+
+</Helmet>
     <Header/>
     <div className="spacer"></div>
 
