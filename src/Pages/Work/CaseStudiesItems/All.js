@@ -27,11 +27,11 @@ import workcodashop from '../../../Assets/Images/work/codashop/codaShoptm.jpg';
 import workchineswok from '../../../Assets/Images/work/chineseWok/chineseWok-tm.jpg';
 import worksiyaramedia from '../../../Assets/Images/work/siyaram-tmb.jpg';
 
-import Podcast from '../../../Assets/Images/work/Podcast.jpg';
-import DigitalAds from '../../../Assets/Images/work/DigitalAds.jpg';
-import ProductShoot from '../../../Assets/Images/work/ProductShoot.jpg';
+import Podcast from '../../../Assets/Images/work/podcast-new.jpg';
+import DigitalAds from '../../../Assets/Images/work/digital-ads.jpg';
+import ProductShoot from '../../../Assets/Images/work/product.jpg';
 import RealEstateVideos from '../../../Assets/Images/work/RealEstateVideos.jpg';
-import CorporateVideos from '../../../Assets/Images/work/CorporateVideos.jpg';
+import CorporateVideos from '../../../Assets/Images/work/corporate.jpg';
 
 // Tech
 export const allData = [

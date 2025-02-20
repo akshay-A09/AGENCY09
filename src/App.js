@@ -51,6 +51,13 @@ import DigitalAds from './Pages/Work/CaseStudy/DigitalAds'
 import CorporateVideos from './Pages/Work/CaseStudy/CorporateVideos'
 import ProductShoot from './Pages/Work/CaseStudy/ProductShoot'
 import RealEstateVideos from './Pages/Work/CaseStudy/RealEstateVideos'
+import ReelsVideos from './Pages/Work/CaseStudy/ReelsVideos'
+import WebSeries from './Pages/Work/CaseStudy/WebSeries'
+import TeaserVideos from './Pages/Work/CaseStudy/TeaserVideos'
+import CampaignVideos from './Pages/Work/CaseStudy/CampaignVideos'
+
+
+
 
  
 function App() {
@@ -114,8 +121,10 @@ function App() {
         <Route exact path='/work/case-studies/corporate-videos' element={<CorporateVideos/>}/>
         <Route exact path='/work/case-studies/product-shoot' element={<ProductShoot/>}/>
         <Route exact path='/work/case-studies/real-estate-videos' element={<RealEstateVideos/>}/>
-      
-      
+        <Route exact path='/work/case-studies/reel-videos' element={<ReelsVideos/>}/>
+        <Route exact path='/work/case-studies/web-series' element={<WebSeries/>}/>
+        <Route exact path='/work/case-studies/teaser-videos' element={<TeaserVideos/>}/>
+        <Route exact path='/work/case-studies/campaign-videos' element={<CampaignVideos/>}/>
       
         </Routes>
     </div>

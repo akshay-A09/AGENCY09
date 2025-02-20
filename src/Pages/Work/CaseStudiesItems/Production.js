@@ -1,16 +1,32 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import americanTourister from '../../../Assets/Images/work/AmericanTourister.webp';
-
-import Podcast from '../../../Assets/Images/work/Podcast.jpg';
-import DigitalAds from '../../../Assets/Images/work/DigitalAds.jpg';
-import ProductShoot from '../../../Assets/Images/work/ProductShoot.jpg';
-import RealEstateVideos from '../../../Assets/Images/work/RealEstateVideos.jpg';
+import CampaignVideos from '../../../Assets/Images/work/campaign.jpg';
+import TeaserVideo from '../../../Assets/Images/work/teaser.jpg';
+import Podcast from '../../../Assets/Images/work/podcast-new.jpg';
+import ProductVideos from '../../../Assets/Images/work/corporate.jpg';
+import DigitalAds from '../../../Assets/Images/work/digital-ads.jpg';
+import Webseries from '../../../Assets/Images/work/web-series.jpg';
+import Reels from '../../../Assets/Images/work/reels.jpg';
 import CorporateVideos from '../../../Assets/Images/work/CorporateVideos.jpg';
 
 // Production
 export const ProductionData = [
  {
+        id: 1,
+        title: "Campaign Videos",
+        tags: [
+        ],
+        image: CampaignVideos,
+        link: '/work/case-studies/campaign-videos',
+        brand: "",
+        department: "Production"
+    },
+
+
+
+
+{
         id: 1,
         title: "Digital Ads",
         tags: [
@@ -20,21 +36,10 @@ export const ProductionData = [
         brand: "",
         department: "Production"
     },
- 
+
     {
         id: 1,
-        title: "Corporate Videos",
-        tags: [
-        ],
-        image: CorporateVideos,
-        link: '/work/case-studies/corporate-videos',
-        brand: "",
-        department: "Production"
-    },
- 
-    {
-        id: 1,
-        title: "Podcast",
+        title: "Podcasts",
         tags: [
         ],
         image: Podcast,
@@ -42,23 +47,48 @@ export const ProductionData = [
         brand: "",
         department: "Production"
     },
+ 
+
+
+ 
     {
         id: 1,
-        title: "Product Shoot",
+        title: "Product Videos",
         tags: [
         ],
-        image: ProductShoot,
-        link: '/work/case-studies/product-shoot',
+        image: ProductVideos,
+        link: '/work/case-studies/corporate-videos',
+        brand: "",
+        department: "Production"
+    },
+ 
+    {
+        id: 1,
+        title: "Teaser Videos",
+        tags: [
+        ],
+        image: TeaserVideo,
+        link: '/work/case-studies/teaser-videos',
         brand: "",
         department: "Production"
     },
     {
         id: 1,
-        title: "RealEstate Videos",
+        title: "Web Series",
         tags: [
         ],
-        image: RealEstateVideos,
-        link: '/work/case-studies/real-estate-videos',
+        image: Webseries,
+        link: '/work/case-studies/web-series',
+        brand: "",
+        department: "Production"
+    },
+    {
+        id: 1,
+        title: "Reels Videos",
+        tags: [
+        ],
+        image: Reels,
+        link: '/work/case-studies/reel-videos',
         brand: "",
         department: "Production"
     },

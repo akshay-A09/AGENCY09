@@ -106,21 +106,21 @@ const CaseStudyData = [
   ];
 //CaseStudy Data End
 
-const DigitalAds = () => {
-const playlistId = 'PLjyBa6CjzBYMNFiGYjo1VJk5FaAXILbvS&index=2';
+const CorporateVideos = () => {
+const playlistId = 'PLjyBa6CjzBYM7z01Dj3R0phDtiiUe8jQl';
 const apiKey = 'AIzaSyBkRuDWRBnBbl_qW3syuk_BEa7anG2uU2M';
   
 
   return (
     <>
     <Helmet>
-<title>Digital Ads - AGENCY09 Case Study</title>
+<title>Corporate Videos - AGENCY09 Case Study</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="Discover how AGENCY09 leveraged digital ads to drive impactful results. This case study highlights strategies, execution, and success metrics for effective online advertising."/>
-<meta property="og:title" content="Digital Ads - AGENCY09 Case Study"/> 
-<meta property="og:description" content="Discover how AGENCY09 leveraged digital ads to drive impactful results. This case study highlights strategies, execution, and success metrics for effective online advertising."/> 
+<meta name="description" content="Explore how AGENCY09 creates impactful corporate videos, delivering compelling storytelling and high-quality production to elevate brand communication."/>
+<meta property="og:title" content="Corporate Videos - AGENCY09 Case Study"/> 
+<meta property="og:description" content="Explore how AGENCY09 creates impactful corporate videos, delivering compelling storytelling and high-quality production to elevate brand communication."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -129,7 +129,7 @@ const apiKey = 'AIzaSyBkRuDWRBnBbl_qW3syuk_BEa7anG2uU2M';
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/about"/> 
-<meta name="twitter:description" content="Discover how AGENCY09 leveraged digital ads to drive impactful results. This case study highlights strategies, execution, and success metrics for effective online advertising."/> 
+<meta name="twitter:description" content="Explore how AGENCY09 creates impactful corporate videos, delivering compelling storytelling and high-quality production to elevate brand communication."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>
@@ -147,7 +147,7 @@ const apiKey = 'AIzaSyBkRuDWRBnBbl_qW3syuk_BEa7anG2uU2M';
             </div>
 
             <div className='cSsecMinHead m0'>
-                <h1 className='sizeH4'>Digital Ads</h1>
+                <h1 className='sizeH4'>Teaser Videos</h1>
             </div>
 
             <div className='cSsecMinInfo m0'>
@@ -165,7 +165,7 @@ const apiKey = 'AIzaSyBkRuDWRBnBbl_qW3syuk_BEa7anG2uU2M';
             
             <div className='cSsecMinBCol m0'>
             <h2>Overview</h2>
-                <p>At AGENCY09, we design powerful digital ads that connect with your target audience and drive results. From social media campaigns to display ads, our creative strategies ensure our brands stand out across all platforms. Let us help you reach the right people at the right time and turn clicks into conversions.</p>
+                <p>We specialize in crafting short, captivating teaser videos that generate excitement and curiosity around your upcoming product, event, or campaign. Whether you’re launching a new collection, hosting a special event, or unveiling a major announcement, our teaser videos leave your audience eagerly waiting for more. With compelling visuals and suspenseful storytelling, we ensure your teaser video grabs attention and gets people talking.</p>
             </div>  
         
 
@@ -193,4 +193,4 @@ const apiKey = 'AIzaSyBkRuDWRBnBbl_qW3syuk_BEa7anG2uU2M';
 
 
 
-export default DigitalAds
+export default CorporateVideos
