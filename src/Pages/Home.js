@@ -20,6 +20,9 @@ import barc from '../Assets/Images/work/BARC.webp';
 import godrejlaffaire from '../Assets/Images/work/Laffaire.webp';
 import TataMotors from '../Assets/Images/work/Tatamotors-new.jpg';
 import Tribevibe from '../Assets/Images/work/LaffaireSelect.jpg';
+import workdhanvarsha from '../Assets/Images/work/dhanvarsha.jpg';
+import CampaignVideos from '../Assets/Images/work/campaign.jpg';
+import worknahar from '../Assets/Images/work/nahar.jpg';
 
 // Images end
 
@@ -38,48 +41,65 @@ export const workItems = [
     brand: 'TATA Trucks',
     department: 'Tech'
 },
-
+ {
+    id: 2,
+    title: 'Visualizing Insights: Award-Winning Yearbook for BARC India',
+    tags: [
+        { name: 'Annual Report', },
+        { name: 'Book Design', },
+        { name: 'Infographics', }
+    ],
+    image: barc,
+    link: '/work/case-studies/barc-india-yearbook',
+    brand: "BARC India Yearbook",
+    department: 'Design'
+  },
 {
-  id: 2,
-  title: 'Unearthing India’s Next Big Content Creator with Godrej L’Affaire Select',
-  tags: [
-      { name: 'Brand Strategy', },
-      { name: 'Community Management', },
-      { name: 'IP Creation', }
-  ],
-  image: godrejlaffaire,
-  link: '/work/case-studies/godrej-laffaire',
-  brand: "Godrej Laffaire",
-  department: 'Content'
+    id: 6,
+    title: 'Unearthing India’s Next Big Content Creator with Godrej L’Affaire Select',
+    tags: [
+        { name: 'Brand Strategy', },
+        { name: 'Community Management', },
+        { name: 'IP Creation', }
+    ],
+    image: godrejlaffaire,
+    link: '/work/case-studies/godrej-laffaire',
+    brand: "Godrej Laffaire",
+    department: 'Content'
 },
+    {
+        id: 5,
+        title: 'Successful Mobile App Download Campaign for Dhanvarsha',
+        tags: [
+        ],
+        image: workdhanvarsha,
+        link: '/work/case-studies/successful-mobile-app-download-campaign-for-dhanvarsha',
+        brand: "Dhanvarsha",
+        department: 'Performance Marketing'
+    },
 {
-  id: 3,
-  title: 'Visualizing Insights: Award-Winning Yearbook for BARC India',
-  tags: [
-      { name: 'Annual Report', },
-      { name: 'Book Design', },
-      { name: 'Infographics', }
-  ],
-  image: barc,
-  link: '/work/case-studies/barc-india-yearbook',
-  brand: "BARC India Yearbook",
-  department: 'Design'
-},
+        id: 1,
+        title: "Campaign Videos",
+        tags: [
+        ],
+        image: CampaignVideos,
+        link: '/work/case-studies/campaign-videos',
+        brand: "",
+        department: "Production"
+    },
 
-{
-  id: 5,
-  title: 'Empowering Campus Influencers: Tech-Driven Ambassador Program for TribeVibe',
-  tags: [
-      { name: 'Digital Strategy', },
-      { name: 'UI/UX', },
-      { name: 'Web Development', }
-  ],
-  image: Tribevibe,
-  link: '/work/case-studies/tribevibe',
-  brand: "Tribevibe",
-  department: 'Tech'
-},
-
+ {
+        id: 1,
+        title: 'Massive Organic Growth for Nahar Group’s Search Presence',
+        tags: [
+            { name: 'Digital Marketing', link: '' },
+            { name: 'SEO', link: '' }
+        ],
+        image: worknahar,
+        link: '/work/case-studies/massive-organic-growth-for-nahar-groups-search-presence',
+        brand: "Nahar Group’s",
+        department: 'Keyword'
+    },
 ];
 
 const Home = () => {
@@ -147,8 +167,8 @@ const Home = () => {
                       <img src={item.image} alt={item.title} loading="lazy"/>
                       <div className='workGridItemHover'>
                           <div className='workGridItemHoverIn'>
-                              <h3>{item.title}</h3>
-                              <h4>{item.brand}</h4>
+                              {/* <h3>{item.title}</h3>
+                              <h4>{item.brand}</h4> */}
                               <p>{item.department}</p>
                           </div>
                       </div>
