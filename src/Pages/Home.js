@@ -20,9 +20,9 @@ import barc from '../Assets/Images/work/BARC.webp';
 import godrejlaffaire from '../Assets/Images/work/Laffaire.webp';
 import TataMotors from '../Assets/Images/work/Tatamotors-new.jpg';
 import Tribevibe from '../Assets/Images/work/LaffaireSelect.jpg';
-import workdhanvarsha from '../Assets/Images/work/dhanvarsha.jpg';
-import CampaignVideos from '../Assets/Images/work/campaign.jpg';
-import worknahar from '../Assets/Images/work/nahar.jpg';
+import GroupSoft from '../Assets/Images/work/GroupSoft.webp';
+import podcast from '../Assets/Images/work/podcast-new.jpg';
+import rgi from '../Assets/Images/work/rgi.webp';
 
 // Images end
 
@@ -69,36 +69,34 @@ export const workItems = [
 },
     {
         id: 5,
-        title: 'Successful Mobile App Download Campaign for Dhanvarsha',
+        title: 'Modernizing Digital Identity: Revamped Website for Global SaaS Company Groupsoft',
         tags: [
         ],
-        image: workdhanvarsha,
-        link: '/work/case-studies/successful-mobile-app-download-campaign-for-dhanvarsha',
-        brand: "Dhanvarsha",
-        department: 'Performance Marketing'
+        image: GroupSoft,
+        link: '/work/case-studies/groupsoft',
+        brand: "Groupsoft",
+        department: 'Tech'
     },
 {
         id: 1,
-        title: "Campaign Videos",
+        title: "Podcast - Tata Steel",
         tags: [
         ],
-        image: CampaignVideos,
-        link: '/work/case-studies/campaign-videos',
+        image: podcast,
+        link: '/work/case-studies/podcast',
         brand: "",
         department: "Production"
     },
 
  {
         id: 1,
-        title: 'Massive Organic Growth for Nahar Group’s Search Presence',
+        title: 'Innovative Product Communication for Enhanced Brand Visibility',
         tags: [
-            { name: 'Digital Marketing', link: '' },
-            { name: 'SEO', link: '' }
         ],
-        image: worknahar,
-        link: '/work/case-studies/massive-organic-growth-for-nahar-groups-search-presence',
-        brand: "Nahar Group’s",
-        department: 'Keyword'
+        image: rgi,
+        link: '/work/case-studies/product-communication-for-reliance-general-insurance',
+        brand: "",
+        department: 'Content'
     },
 ];
 
