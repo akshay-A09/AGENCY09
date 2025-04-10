@@ -35,6 +35,11 @@ import URLBuilder from './Pages/URLBuilder'
 import Sitemap09 from './Pages/Sitemap09'
 import MassiveOrganicGrowthforNaharGroupsSearchPresence from './Pages/Work/CaseStudy/MassiveOrganicGrowthforNaharGroupsSearchPresence'
 import IndustryLeadingOrganicSearchResultsfromScratchforMahindraSolarize from './Pages/Work/CaseStudy/IndustryLeadingOrganicSearchResultsfromScratchforMahindraSolarize'
+import DrivingWebsiteTrafficandGeneratingHighQualityLeadsforMahindraSolarize from './Pages/Work/CaseStudy/DrivingWebsiteTrafficandGeneratingHighQualityLeadsforMahindraSolarize'
+import DrivingRecordBreakingLeadGenerationfortheBiggestPropertyExpooftheYearbyCredaiMchi from './Pages/Work/CaseStudy/DrivingRecordBreakingLeadGenerationfortheBiggestPropertyExpooftheYearbyCredaiMchi'
+import BoostingAgentRecruitmentwithaTargetedMetaLeadGenerationCampaignforRelianceGeneralInsurance from './Pages/Work/CaseStudy/BoostingAgentRecruitmentwithaTargetedMetaLeadGenerationCampaignforRelianceGeneralInsurance'
+import LuxuryMeetsPerformanceDrivingSalesAndAwarenessforZumaAcrossDigitalPlatforms from './Pages/Work/CaseStudy/LuxuryMeetsPerformanceDrivingSalesAndAwarenessforZumaAcrossDigitalPlatforms'
+
 import Consolidationof91PlusWebsitesandTremendousSEOGrowthforRyanGroup from './Pages/Work/CaseStudy/Consolidationof91PlusWebsitesandTremendousSEOGrowthforRyanGroup'
 import EnhancingOrganicUserEngagementforSiyarams from './Pages/Work/CaseStudy/EnhancingOrganicUserEngagementforSiyarams'
 import SuccessfulMobileAppDownloadCampaignforDhanvarsha from './Pages/Work/CaseStudy/SuccessfulMobileAppDownloadCampaignforDhanvarsha'
@@ -106,6 +111,13 @@ function App() {
           <Route exact path='/work/case-studies/consolidation-of-91-plus-websites-and-tremendous-seo-growth-for-ryan-group' element={<Consolidationof91PlusWebsitesandTremendousSEOGrowthforRyanGroup />} />
 
           <Route exact path='/work/case-studies/industry-leading-organic-search-results-from-scratch-for-mahindra-solarize' element={<IndustryLeadingOrganicSearchResultsfromScratchforMahindraSolarize />} />
+          <Route exact path='/work/case-studies/driving-website-traffic-and-generating-high-quality-leads-for-mahindra-solarize' element={<DrivingWebsiteTrafficandGeneratingHighQualityLeadsforMahindraSolarize />} />
+          <Route exact path='/work/case-studies/driving-record-breaking-lead-generation-for-the-biggest-property-expo-of-the-year-by-credai-mchi' element={<DrivingRecordBreakingLeadGenerationfortheBiggestPropertyExpooftheYearbyCredaiMchi />} />
+
+          <Route exact path='/work/case-studies/boosting-agent-recruitment-with-a-targeted-meta-lead-generation-campaign-for-reliance-general-insurance' element={<BoostingAgentRecruitmentwithaTargetedMetaLeadGenerationCampaignforRelianceGeneralInsurance />} />
+
+          <Route exact path='/work/case-studies/luxury-meets-performance-driving-sales-and-awareness-for-zuma-across-digital-platforms' element={<LuxuryMeetsPerformanceDrivingSalesAndAwarenessforZumaAcrossDigitalPlatforms />} />
+
           <Route exact path='/work/case-studies/enhancing-organic-users-engagement-for-siyarams' element={<EnhancingOrganicUserEngagementforSiyarams />} />
           <Route exact path='/work/case-studies/successful-mobile-app-download-campaign-for-dhanvarsha' element={<SuccessfulMobileAppDownloadCampaignforDhanvarsha/>} />
           <Route exact path='/work/case-studies/multi-channel-lead-gen-campaign-for-jpinfa' element={<MultichannelLeadGenCampaignforJPInfra/>} />
