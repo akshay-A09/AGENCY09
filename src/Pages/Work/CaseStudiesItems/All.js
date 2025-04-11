@@ -26,6 +26,10 @@ import workoo from '../../../Assets/Images/work/oo.jpg';
 import workcodashop from '../../../Assets/Images/work/codashop/codaShoptm.jpg';
 import workchineswok from '../../../Assets/Images/work/chineseWok/chineseWok-tm.jpg';
 import worksiyaramedia from '../../../Assets/Images/work/siyaram-tmb.jpg';
+import workReliance from '../../../Assets/Images/work/rgi.jpg';
+import workZuma from '../../../Assets/Images/work/zuma.jpg';
+import workAbfl from '../../../Assets/Images/work/abfl.jpg';
+
 
 import Podcast from '../../../Assets/Images/work/podcast-new.jpg';
 import DigitalAds from '../../../Assets/Images/work/digital-ads.jpg';
@@ -392,6 +396,61 @@ export const allData = [
         link: '/work/case-studies/codashop-gets-gamers-grooving-engaging-bgmi-players-with-a-unique-rap-song-and-dance-contest',
         brand: "Codashop Gets Gamers Grooving",
         department: "Content"
+    },
+
+    {
+        id: 13,
+        title: "Driving Website Traffic and Generating High-Quality Leads for Mahindra Solarize",
+        tags: [
+        ],
+        image: workmahindrasolariz,
+        link: '/work/case-studies/driving-website-traffic-and-generating-high-quality-leads-for-mahindra-solarize',
+        brand: "Mahindra Solarize",
+        department: "Performance Marketing"
+    },
+
+    {
+        id: 14,
+        title: "Driving Record-Breaking Lead Generation for the Biggest Property Expo of the Year by CREDAI MCHI",
+        tags: [
+        ],
+        image: workmchi,
+        link: '/work/case-studies/driving-record-breaking-lead-generation-for-the-biggest-property-expo-of-the-year-by-credai-mchi',
+        brand: "MCHI Maha Property Expo",
+        department: "Performance Marketing"
+    },
+
+    {
+        id: 15,
+        title: "Boosting Agent Recruitment with a Targeted Meta Lead Generation Campaign for Reliance General Insurance",
+        tags: [
+        ],
+        image: workReliance,
+        link: '/work/case-studies/boosting-agent-recruitment-with-a-targeted-meta-lead-generation-campaign-for-reliance-general-insurance',
+        brand: "Reliance General Insurance",
+        department: "Performance Marketing"
+    },
+
+    {
+        id: 16,
+        title: "Luxury Meets Performance: Driving Sales & Awareness for Zuma Across Digital Platforms",
+        tags: [
+        ],
+        image: workZuma,
+        link: '/work/case-studies/luxury-meets-performance-driving-sales-and-awareness-for-zuma-across-digital-platforms',
+        brand: "Zuma",
+        department: "Performance Marketing"
+    },
+
+    {
+        id: 17,
+        title: "Strengthening ABFL’s Social Media Presence with a High-Impact Follower Growth Campaign",
+        tags: [
+        ],
+        image: workAbfl,
+        link: '/work/case-studies/strengthening-abfls-social-media-presence-with-a-high-impact-follower-growth-campaign',
+        brand: "Aditya Birla Finance",
+        department: "Performance Marketing"
     },
 
    

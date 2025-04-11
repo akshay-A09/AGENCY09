@@ -7,9 +7,70 @@ import workjpinfra from '../../../Assets/Images/work/jpinfra.jpg';
 import workmchi from '../../../Assets/Images/work/mchi.jpg';
 import workaldo from '../../../Assets/Images/work/aldo.jpg';
 import workchineswok from '../../../Assets/Images/work/chineswok.jpg';
+import workmahindrasolariz from '../../../Assets/Images/work/mahindrasolariz.jpg';
+import workReliance from '../../../Assets/Images/work/rgi.jpg';
+import workZuma from '../../../Assets/Images/work/zuma.jpg';
+import workAbfl from '../../../Assets/Images/work/abfl.jpg';
 
 // Media
 export const MediaData = [
+    {
+        id: 13,
+        title: "Driving Website Traffic and Generating High-Quality Leads for Mahindra Solarize",
+        tags: [
+        ],
+        image: workmahindrasolariz,
+        link: '/work/case-studies/driving-website-traffic-and-generating-high-quality-leads-for-mahindra-solarize',
+        brand: "Mahindra Solarize",
+        department: "Performance Marketing"
+    },
+
+    {
+        id: 14,
+        title: "Driving Record-Breaking Lead Generation for the Biggest Property Expo of the Year by CREDAI MCHI",
+        tags: [
+        ],
+        image: workmchi,
+        link: '/work/case-studies/driving-record-breaking-lead-generation-for-the-biggest-property-expo-of-the-year-by-credai-mchi',
+        brand: "MCHI Maha Property Expo",
+        department: "Performance Marketing"
+    },
+
+     {
+        id: 15,
+        title: "Boosting Agent Recruitment with a Targeted Meta Lead Generation Campaign for Reliance General Insurance",
+        tags: [
+        ],
+        image: workReliance,
+        link: '/work/case-studies/boosting-agent-recruitment-with-a-targeted-meta-lead-generation-campaign-for-reliance-general-insurance',
+        brand: "Reliance General Insurance",
+        department: "Performance Marketing"
+    },
+
+
+    {
+        id: 16,
+        title: "Luxury Meets Performance: Driving Sales & Awareness for Zuma Across Digital Platforms",
+        tags: [
+        ],
+        image: workZuma,
+        link: '/work/case-studies/luxury-meets-performance-driving-sales-and-awareness-for-zuma-across-digital-platforms',
+        brand: "Zuma",
+        department: "Performance Marketing"
+    },
+
+    {
+        id: 17,
+        title: "Strengthening ABFL’s Social Media Presence with a High-Impact Follower Growth Campaign",
+        tags: [
+        ],
+        image: workAbfl,
+        link: '/work/case-studies/strengthening-abfls-social-media-presence-with-a-high-impact-follower-growth-campaign',
+        brand: "Aditya Birla Finance",
+        department: "Performance Marketing"
+    },
+
+
     {
         id: 5,
         title: 'Successful Mobile App Download Campaign for Dhanvarsha',
@@ -81,6 +142,7 @@ export const MediaData = [
         brand: "Chinese Wok's",
         department: "Performance Marketing"
     },
+
 ];
 
 // State for each tab
