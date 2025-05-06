@@ -14,22 +14,24 @@ import barc from '../../../Assets/Images/work/BARC.webp';
 import box from '../../../Assets/Images/work/box.jpg';
 
 
-import worknahar from '../../../Assets/Images/work/nahar.jpg';
-import workryan from '../../../Assets/Images/work/ryan.jpg';
-import workmahindrasolariz from '../../../Assets/Images/work/mahindrasolariz.jpg';
-import worksiyarmas from '../../../Assets/Images/work/siyarmas.jpg';
-import workdhanvarsha from '../../../Assets/Images/work/dhanvarsha.jpg';
-import workjpinfra from '../../../Assets/Images/work/jpinfra.jpg';
-import workmchi from '../../../Assets/Images/work/mchi.jpg';
+import worknahar from '../../../Assets/Images/work/nahar-group.jpg';
+import workryan from '../../../Assets/Images/work/ryan-group.jpg';
+import workmahindrasolariz from '../../../Assets/Images/work/mahindra-solarize.jpg';
+import worksiyarmas from '../../../Assets/Images/work/siyaram_new.jpg';
+import workdhanvarsha from '../../../Assets/Images/work/dhanvarsha_new.jpg';
+import workjpinfra from '../../../Assets/Images/work/jp-Infra.jpg';
+import workmchi from '../../../Assets/Images/work/MCHI-1.jpg';
+import workmchinew from '../../../Assets/Images/work/MCHI-2.jpg';
 import workaldo from '../../../Assets/Images/work/aldo-tmb.jpg';
 import workoo from '../../../Assets/Images/work/oo.jpg';
 import workcodashop from '../../../Assets/Images/work/codashop/codaShoptm.jpg';
 import workchineswok from '../../../Assets/Images/work/chineseWok/chineseWok-tm.jpg';
 import worksiyaramedia from '../../../Assets/Images/work/siyaram-tmb.jpg';
-import workReliance from '../../../Assets/Images/work/rgi.jpg';
-import workZuma from '../../../Assets/Images/work/zuma.jpg';
-import workAbfl from '../../../Assets/Images/work/abfl.jpg';
-
+import workReliance from '../../../Assets/Images/work/RGI_new.jpg';
+import workZuma from '../../../Assets/Images/work/zuma_new.jpg';
+import workAbfl from '../../../Assets/Images/work/aditya-birla-capital.jpg';
+import workmahindrasolariznew from '../../../Assets/Images/work/mahindra-solarize-2.jpg';
+import workmcredmchi from '../../../Assets/Images/work/MCHI-3.jpg';
 
 import Podcast from '../../../Assets/Images/work/podcast-new.jpg';
 import DigitalAds from '../../../Assets/Images/work/digital-ads.jpg';
@@ -339,7 +341,7 @@ export const allData = [
         title: 'Leveraging Digital to Generate Online Registrations for an Event: MCHI Maha Property Expo',
         tags: [
         ],
-        image: workmchi,
+        image: workmchinew,
         link: '/work/case-studies/leveraging-digital-to-generate-online-registrations-for-an-event-mchi-maha-property-expo',
         brand: "MCHI Maha Property Expo",
         department: 'Performance Marketing'
@@ -403,7 +405,7 @@ export const allData = [
         title: "Driving Website Traffic and Generating High-Quality Leads for Mahindra Solarize",
         tags: [
         ],
-        image: workmahindrasolariz,
+        image: workmahindrasolariznew,
         link: '/work/case-studies/driving-website-traffic-and-generating-high-quality-leads-for-mahindra-solarize',
         brand: "Mahindra Solarize",
         department: "Performance Marketing"
@@ -414,7 +416,7 @@ export const allData = [
         title: "Driving Record-Breaking Lead Generation for the Biggest Property Expo of the Year by CREDAI MCHI",
         tags: [
         ],
-        image: workmchi,
+        image: workmcredmchi,
         link: '/work/case-studies/driving-record-breaking-lead-generation-for-the-biggest-property-expo-of-the-year-by-credai-mchi',
         brand: "MCHI Maha Property Expo",
         department: "Performance Marketing"
