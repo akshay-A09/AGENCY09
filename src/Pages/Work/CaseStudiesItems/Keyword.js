@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-import worknahar from '../../../Assets/Images/work/nahar.jpg';
-import workryan from '../../../Assets/Images/work/ryan.jpg';
-import workmahindrasolariz from '../../../Assets/Images/work/mahindrasolariz.jpg';
-import worksiyarmas from '../../../Assets/Images/work/siyarmas.jpg';
+import worknahar from '../../../Assets/Images/work/nahar-group.jpg';
+import workryan from '../../../Assets/Images/work/ryan-group.jpg';
+import workmahindrasolariz from '../../../Assets/Images/work/mahindra-solarize.jpg';
+import worksiyarmas from '../../../Assets/Images/work/siyaram_new.jpg';
 
 // Keyword
 export const KeywordData = [

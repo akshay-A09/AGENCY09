@@ -3,14 +3,16 @@ import { Link, useLocation } from 'react-router-dom';
 
 import worksiyarmas from '../../../Assets/Images/work/siyarmas.jpg';
 import workdhanvarsha from '../../../Assets/Images/work/dhanvarsha.jpg';
-import workjpinfra from '../../../Assets/Images/work/jpinfra.jpg';
-import workmchi from '../../../Assets/Images/work/mchi.jpg';
-import workaldo from '../../../Assets/Images/work/aldo.jpg';
-import workchineswok from '../../../Assets/Images/work/chineswok.jpg';
-import workmahindrasolariz from '../../../Assets/Images/work/mahindrasolariz.jpg';
-import workReliance from '../../../Assets/Images/work/rgi.jpg';
-import workZuma from '../../../Assets/Images/work/zuma.jpg';
-import workAbfl from '../../../Assets/Images/work/abfl.jpg';
+import workjpinfra from '../../../Assets/Images/work/jp-Infra.jpg';
+import workmchi from '../../../Assets/Images/work/MCHI-1.jpg';
+import workaldo from '../../../Assets/Images/work/aldo-tmb.jpg';
+import workchineswok from '../../../Assets/Images/work/chineseWok/chineseWok-tm.jpg';
+import workmahindrasolariznew from '../../../Assets/Images/work/mahindra-solarize-2.jpg';
+import workReliance from '../../../Assets/Images/work/RGI_new.jpg';
+import workZuma from '../../../Assets/Images/work/zuma_new.jpg';
+import workAbfl from '../../../Assets/Images/work/aditya-birla-capital.jpg';
+import workmchinew from '../../../Assets/Images/work/MCHI-2.jpg';
+import worksiyaramedia from '../../../Assets/Images/work/siyaram-tmb.jpg';
 
 // Media
 export const MediaData = [
@@ -19,7 +21,7 @@ export const MediaData = [
         title: "Driving Website Traffic and Generating High-Quality Leads for Mahindra Solarize",
         tags: [
         ],
-        image: workmahindrasolariz,
+        image: workmahindrasolariznew,
         link: '/work/case-studies/driving-website-traffic-and-generating-high-quality-leads-for-mahindra-solarize',
         brand: "Mahindra Solarize",
         department: "Performance Marketing"
@@ -106,7 +108,7 @@ export const MediaData = [
         title: 'Leveraging Digital to Generate Online Registrations for an Event: MCHI Maha Property Expo',
         tags: [
         ],
-        image: workmchi,
+        image: workmchinew,
         link: '/work/case-studies/leveraging-digital-to-generate-online-registrations-for-an-event-mchi-maha-property-expo',
         brand: "MCHI Maha Property Expo",
         department: 'Performance Marketing'
@@ -127,7 +129,7 @@ export const MediaData = [
         title: "New Year's Campaign Hits the Mark with Siyaram's: Leveraging Celebrity Power for Maximum Impact",
         tags: [
         ],
-        image: worksiyarmas,
+        image: worksiyaramedia,
         link: '/work/case-studies/new-years-campaign-hits-the-mark-with-siyarams-leveraging-celebrity-power-for-maximum-impact',
         brand: "Siyaram's",
         department: "Performance Marketing"
