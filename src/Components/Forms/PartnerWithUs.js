@@ -90,6 +90,9 @@ function PartnerWithUs() {
             service: '',
             message: ''
           });
+          // ✅ Redirect to Thank You page
+          window.location.href = 'https://www.agency09.in/partner-with-us-thank-you';
+        }else {
           setErrorMessage(responseData.message);
         }
       } catch (error) {

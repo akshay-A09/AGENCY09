@@ -100,6 +100,8 @@ function StartAProjectForm() {
             budget: '',
             message: ''
           });
+          // ✅ Redirect to Thank You page
+          window.location.href = 'https://www.agency09.in/start-project-thank-you';
         } else {
           setErrorMessage(responseData.message);
         }

@@ -83,7 +83,8 @@ function GetInTouch() {
             service: '',
             message: ''
           });
-          setErrorMessage(responseData.message);
+          // ✅ Redirect to Thank You page
+          window.location.href = 'https://www.agency09.in/get-in-touch-thank-you';
         } else {
           setErrorMessage(responseData.message);
         }
