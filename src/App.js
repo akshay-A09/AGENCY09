@@ -31,6 +31,9 @@ import PrivacyPolicy from './Pages/PrivacyPolicy'
 import BlogDetail from './Pages/Blog/BlogDetail'
 import Blog from './Pages/Blog/Blog'
 import Error from './Pages/Error'
+import StartProjectThankYou from './Pages/StartProjectThankYou'
+import PartnerWithUsThankYou from './Pages/PartnerWithUsThankYou'
+import GetInTouchThankYou from './Pages/PartnerWithUsThankYou'
 import URLBuilder from './Pages/URLBuilder'
 import Sitemap09 from './Pages/Sitemap09'
 import MassiveOrganicGrowthforNaharGroupsSearchPresence from './Pages/Work/CaseStudy/MassiveOrganicGrowthforNaharGroupsSearchPresence'
@@ -140,6 +143,9 @@ function App() {
         <Route exact path='/work/case-studies/web-series' element={<WebSeries/>}/>
         <Route exact path='/work/case-studies/teaser-videos' element={<TeaserVideos/>}/>
         <Route exact path='/work/case-studies/campaign-videos' element={<CampaignVideos/>}/>
+       <Route exact path='/start-project-thank-you' element={<StartProjectThankYou/>}/>
+       <Route exact path='/partner-with-us-thank-you' element={<PartnerWithUsThankYou/>}/>
+       <Route exact path='/get-in-touch-thank-you' element={<GetInTouchThankYou/>}/>
       
         </Routes>
     </div>
