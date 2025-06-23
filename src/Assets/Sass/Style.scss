@@ -1725,9 +1725,12 @@ footer{
     .errorCol{
         h3{
             font-size: 3vw;
-            line-height: 1vw;
+            line-height: 4vw;
             font-family: $bold;
         }
+
+        p{
+    margin-bottom: -38px}
 
     }
 

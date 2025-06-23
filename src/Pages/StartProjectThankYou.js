@@ -1,15 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react';
-import RippleButton from '../Hooks/RippleButton';
+import { Link } from 'react-router-dom';
 
 const StartProjectThankYou = () => { 
   return (
     <div className='errorThankyou'>
       <div className='errorCol'>
-          <h3>Start Project Thank You</h3>
+          <h3>Thank you!</h3>
+<p>We’ve received your message and will be in touch soon.</p>
   
           <div className='btnSpaceEx center'>     
-            <RippleButton to="/connect" className="btnDark fontL"><span>Back to Connect Page</span></RippleButton>
-          </div>
+                      <Link className="btnDark ripple-button" to="/connect"><span>Back to Connect Page</span></Link>
+                    </div>
       </div>
     </div>
   );
