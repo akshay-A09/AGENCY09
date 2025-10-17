@@ -537,10 +537,8 @@ const schemaData = {
       <meta name="twitter:url" content="https://www.agency09.in/solutions/performance-marketing"/> 
       <meta name="twitter:description" content="AGENCY09 is a top performance marketing & Google Ads agency in India with expertise in PPC marketing. Drive results with digital pros!"/> 
       <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
-      <script type="application/ld+json">
-      {JSON.stringify(schemaData)}
-      {JSON.stringify(faqSchema)}
-    </script>
+       <script type="application/ld+json" innerHTML={JSON.stringify(schemaData)} />
+      <script type="application/ld+json" innerHTML={JSON.stringify(faqSchema)} />
     </Helmet>
 
 

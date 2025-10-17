@@ -432,10 +432,8 @@ const schemaData = {
       <meta name="twitter:url" content="https://www.agency09.in/services/keyword.php"/> 
       <meta name="twitter:description" content="Grow your digital presence with AGENCY09, your trusted SEO agency in Mumbai, India. We offer YouTube SEO, eCommerce SEO, B2B SEO, App Store optimization services, ORM, and more."/> 
       <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/>
-       <script type="application/ld+json">
-        {JSON.stringify(schemaData)}
-        {JSON.stringify(faqSchema)}
-      </script>
+      <script type="application/ld+json" innerHTML={JSON.stringify(schemaData)} />
+      <script type="application/ld+json" innerHTML={JSON.stringify(faqSchema)} />
     
     </Helmet>
 

@@ -466,10 +466,8 @@ const schemaData = {
     <meta name="twitter:url" content="https://www.agency09.in/solutions/production"/> 
     <meta name="twitter:description" content="AGENCY09 offers expert corporate video production services, from ad films and branding videos to after-movies and product shoots, bringing your vision to life."/> 
     <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
-     <script type="application/ld+json">
-        {JSON.stringify(schemaData)}
-        {JSON.stringify(faqSchema)}
-      </script>
+      <script type="application/ld+json" innerHTML={JSON.stringify(schemaData)} />
+      <script type="application/ld+json" innerHTML={JSON.stringify(faqSchema)} />
     
     </Helmet>
 

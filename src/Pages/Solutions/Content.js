@@ -434,10 +434,8 @@ const faqsData = [
       <meta name="twitter:url" content="https://www.agency09.in/solutions/content"/> 
       <meta name="twitter:description" content="Grow your brand with AGENCY09, the best advertising agency in social media, offering content marketing services, social media, content writing, HR communications and all types of content for brands."/> 
       <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
-      <script type="application/ld+json">
-          {JSON.stringify(schemaData)}
-           {JSON.stringify(faqSchema)}
-        </script>
+       <script type="application/ld+json" innerHTML={JSON.stringify(schemaData)} />
+      <script type="application/ld+json" innerHTML={JSON.stringify(faqSchema)} />
 
       
       </Helmet>

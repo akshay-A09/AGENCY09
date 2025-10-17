@@ -426,10 +426,8 @@ const schemaData = {
       <meta name="twitter:url" content="https://www.agency09.in/solutions/tech"/> 
       <meta name="twitter:description" content="AGENCY09, a top creative brand design agency in Mumbai, India, delivers creative solutions to bring your brand to new heights, including brand identity, logo design, packaging and communication design."/> 
       <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
-     <script type="application/ld+json">
-          {JSON.stringify(schemaData)}
-          {JSON.stringify(faqSchema)}
-        </script>
+     <script type="application/ld+json" innerHTML={JSON.stringify(schemaData)} />
+      <script type="application/ld+json" innerHTML={JSON.stringify(faqSchema)} />
     </Helmet>
       <Header />
       <div className="spacer"></div>
