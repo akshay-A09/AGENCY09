@@ -180,13 +180,13 @@ const OurClients = () => {
     <>
 
     <Helmet>
-      <title>AGENCY09 Clients: From Startups to Global Brands</title>
+      <title>Our Clients: From Startups to Global Brands - AGENCY09</title>
       <meta name="robots" content="index, follow"/> 
-      <meta name="description" content="Explore AGENCY09's clients, including BFSI, e-commerce, education, FMCG, automobile, real estate, solar energy, and more."/>
+      <meta name="description" content="Explore AGENCY09’s clients as one of the top digital ad agencies, serving BFSI, e-commerce, education, FMCG, automobile, real estate, solar energy and more."/>
       <link rel="canonical" href="https://www.agency09.in/work/clients.php"/>
 
-      <meta property="og:title" content="AGENCY09 Clients: From Startups to Global Brands"/> 
-      <meta property="og:description" content="Explore AGENCY09's clients, including BFSI, e-commerce, education, FMCG, automobile, real estate, solar energy, and more."/> 
+      <meta property="og:title" content="Our Clients: From Startups to Global Brands - AGENCY09"/> 
+      <meta property="og:description" content="Explore AGENCY09’s clients as one of the top digital ad agencies, serving BFSI, e-commerce, education, FMCG, automobile, real estate, solar energy and more."/> 
       <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
       <meta property="og:type" content="website"/> 
 
@@ -194,7 +194,7 @@ const OurClients = () => {
       <meta name="twitter:site" content="@AGENCY09"/> 
       <meta name="twitter:creator" content="@AGENCY09"/> 
       <meta name="twitter:url" content="https://www.agency09.in/work/clients.php"/> 
-      <meta name="twitter:description" content="Explore AGENCY09's clients, including BFSI, e-commerce, education, FMCG, automobile, real estate, solar energy, and more."/> 
+      <meta name="twitter:description" content="Explore AGENCY09’s clients as one of the top digital ad agencies, serving BFSI, e-commerce, education, FMCG, automobile, real estate, solar energy and more."/> 
       <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
     </Helmet>
 

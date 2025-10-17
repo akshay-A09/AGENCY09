@@ -30,14 +30,14 @@ const Connect = () => {
   return (
     <>
       <Helmet>
-        <title>Contact AGENCY09 for the Best Advertising Services in India</title>
+        <title>Contact AGENCY09 for the Best Advertising Agency in India</title>
         <meta name="robots" content="index, follow"/> 
 
-        <meta name="description" content="Connect with AGENCY09, a leading creative advertising agency. Reach out for innovative ways to  digital marketing, branding, and advertising solutions."/>
+        <meta name="description" content="Connect with AGENCY09, a leading creative advertising agency. Reach out for innovative digital marketing, branding and advertising solutions."/>
         <link rel="canonical" href="https://www.agency09.in/connect"/> 
               
-        <meta property="og:title" content="Contact AGENCY09 for the Best Advertising Services in India"/> 
-        <meta property="og:description" content="Connect with AGENCY09, a leading creative advertising agency. Reach out for innovative ways to  digital marketing, branding, and advertising solutions."/> 
+        <meta property="og:title" content="Contact AGENCY09 for the Best Advertising Agency in India"/> 
+        <meta property="og:description" content="Connect with AGENCY09, a leading creative advertising agency. Reach out for innovative digital marketing, branding and advertising solutions."/> 
         <meta property="og:image" content="https://www.agency09.in/images/agency09-dark.png"/> 
         <meta property="og:type" content="website"/> 
 
@@ -46,7 +46,7 @@ const Connect = () => {
         <meta name="twitter:site" content="@AGENCY09"/> 
         <meta name="twitter:creator" content="@AGENCY09"/> 
         <meta name="twitter:url" content="https://www.agency09.in/connect"/> 
-        <meta name="twitter:description" content="Connect with AGENCY09, a leading creative advertising agency. Reach out for innovative ways to  digital marketing, branding, and advertising solutions."/> 
+        <meta name="twitter:description" content="Connect with AGENCY09, a leading creative advertising agency. Reach out for innovative digital marketing, branding and advertising solutions."/> 
         <meta name="twitter:image" content="https://www.agency09.in/images/agency09-dark.png"/> 
      </Helmet>
 

@@ -223,27 +223,220 @@ const faqsData = [
 ];
 // FAQS End
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Keyword | Best SEO Agency in Mumbai, India - AGENCY09",
+  "alternateName": "SEO agency in Mumbai,",
+  "url": "https://www.agency09.in/solutions/keyword",
+  "image": "https://www.agency09.in/static/media/agency-light.cb89964a3a95c2a6e647.webp",
+  "description": "Grow your digital presence with AGENCY09, your trusted SEO agency in Mumbai, India. We offer YouTube SEO, eCommerce SEO, B2B SEO, App Store optimization services, ORM, and more.",
+  "serviceType": [
+    "SEO",
+    "ORM (Online Reputation Management)",
+    "GMB (Google My Business)",
+    "GA4 Integrations",
+    "Local Listings",
+    "Digital PR"
+  ],
+  "provider": {
+    "@type": "Organization",
+    "name": "AGENCY09",
+    "url": "https://www.agency09.in",
+    "logo": "https://www.agency09.in/static/media/agency09.923830080930008a8a99.webp",
+    "sameAs": [
+      "https://www.linkedin.com/company/agency09/",
+      "https://www.instagram.com/agency09/",
+      "https://www.youtube.com/channel/UCT7wE543Vl0LSrpCmpMzZrg",
+      "https://twitter.com/AGENCY09",
+      "https://www.facebook.com/agency09/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "101, Meghdoot, Junction of Linking & Turner Rd., Above Bank of Baroda Bank, Opp HP Petrol Pump, Bandra West",
+      "addressLocality": "Mumbai",
+      "addressRegion": "Maharashtra",
+      "postalCode": "400050",
+      "addressCountry": "IN"
+    }
+  },
+  "areaServed": [
+    { "@type": "Place", "name": "India" },
+    { "@type": "Place", "name": "Dubai" },
+    { "@type": "Place", "name": "Australia" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "AGENCY09 SEO Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "SEO",
+          "description": "Optimize your website for search engines. We conduct thorough keyword research, on-page and off-page optimization, and technical SEO to ensure your site ranks higher and attracts relevant traffic."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "ORM (Online Reputation Management)",
+          "description": "Protect and enhance your brand's online reputation with our ORM services. We monitor, manage, and respond to online reviews and mentions, ensuring a positive and trustworthy image for your business."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "GMB (Google My Business)",
+          "description": "Enhance your local search presence with our Google My Business optimization services. We manage your GMB profile to ensure accurate information, engaging content, and positive reviews, helping you attract local customers."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "GA4 Integrations",
+          "description": "Leverage the power of Google Analytics 4 with our seamless integration services. We set up and configure GA4 to provide you with actionable insights into your website's performance and user behavior, enabling data-driven decision-making."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Local Listings",
+          "description": "Ensure your business appears in local search results with our local listings management services. We optimize your business information across various online directories to improve your visibility and attract local customers."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Digital PR",
+          "description": "Build authority and drive traffic with our digital PR services. We create and distribute high-quality content to relevant online publications and influencers, enhancing your brand's visibility and reputation."
+        }
+      }
+    ]
+  },
+  "brand": {
+    "@type": "Brand",
+    "name": "AGENCY09"
+  }
+};
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is SEO, and why is it important for my business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SEO, or search engine optimization, is the process of improving your website's visibility on search engines like Google. It's essential for driving organic traffic, increasing online visibility, and attracting potential customers who are actively searching for your products or services."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does AGENCY09's SEO service include?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our SEO services include keyword research, on-page and off-page optimization, technical SEO, content creation, link building, and performance tracking. We tailor our approach to meet your specific business needs and goals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to see results from SEO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SEO is a long-term strategy, and results can vary based on factors like industry competitiveness and current website performance. Typically, you can expect to see significant improvements within 3 to 6 months of implementing our SEO strategies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is ORM, and how can it benefit my business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ORM, or Online Reputation Management, involves monitoring and managing your brand's online presence to ensure a positive image. It helps build trust with customers, mitigate negative feedback, and enhance your overall reputation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Google My Business optimization help my local business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Optimizing your Google My Business profile improves your visibility in local search results, making it easier for potential customers to find and engage with your business. It includes managing your business information, responding to reviews, and posting updates."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are GA4 Integrations, and why should I use them?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GA4 (Google Analytics 4) is the latest version of Google's analytics platform, providing advanced insights into user behavior and website performance. Integrating GA4 helps you make data-driven decisions to improve your digital marketing strategies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why are local listings important for my business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Local listings ensure your business information is accurate and consistent across various online directories. This improves your local search visibility, helps customers find you easily, and enhances your credibility."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can digital PR improve my SEO efforts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Digital PR involves creating and distributing content to high-authority websites and influencers, generating backlinks and increasing your website's authority. This not only enhances your SEO but also drives referral traffic and builds brand recognition."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide customized SEO strategies for different industries?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we tailor our SEO strategies to meet the unique needs and challenges of various industries. Our approach is customized based on your business goals, target audience, and competitive landscape."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I get started with AGENCY09's SEO services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To get started, simply contact us to schedule a consultation. We'll discuss your business goals, assess your current SEO performance, and develop a customized strategy to help you achieve your objectives."
+        }
+      }
+    ]
+  };
 
 
   return (
     <>
     <Helmet>
-      <title>Social Media Marketing Agency in Mumbai |  Performance Marketing & Ad Campaigns – AGENCY09</title>
+      <title>Keyword | Best SEO Agency in Mumbai, India - AGENCY09</title>
       <meta name="robots" content="index, follow"/> 
 
-      <meta name="description" content="AGENCY09 offers media services, including paid ad campaigns, performance marketing, lead generation campaign. and influencer marketing."/>
+      <meta name="description" content="Grow your digital presence with AGENCY09, your trusted SEO agency in Mumbai, India. We offer YouTube SEO, eCommerce SEO, B2B SEO, App Store optimization services, ORM, and more."/>
       <link rel="canonical" href="https://www.agency09.in/services/keyword.php"/>
 
-      <meta property="og:title" content="Social Media Marketing Agency in Mumbai |  Performance Marketing & Ad Campaigns – AGENCY09"/> 
-      <meta property="og:description" content="AGENCY09 offers media services, including paid ad campaigns, performance marketing, lead generation campaign. and influencer marketing."/> 
+      <meta property="og:title" content="Keyword | Best SEO Agency in Mumbai, India - AGENCY09"/> 
+      <meta property="og:description" content="Grow your digital presence with AGENCY09, your trusted SEO agency in Mumbai, India. We offer YouTube SEO, eCommerce SEO, B2B SEO, App Store optimization services, ORM, and more."/> 
       <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
       <meta property="og:type" content="website"/> 
       <meta name="twitter:card" content="summary"/> 
       <meta name="twitter:site" content="@AGENCY09"/> 
       <meta name="twitter:creator" content="@AGENCY09"/> 
       <meta name="twitter:url" content="https://www.agency09.in/services/keyword.php"/> 
-      <meta name="twitter:description" content="AGENCY09 offers media services, including paid ad campaigns, performance marketing, lead generation campaign. and influencer marketing."/> 
+      <meta name="twitter:description" content="Grow your digital presence with AGENCY09, your trusted SEO agency in Mumbai, India. We offer YouTube SEO, eCommerce SEO, B2B SEO, App Store optimization services, ORM, and more."/> 
       <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/>
+       <script type="application/ld+json">
+        {JSON.stringify(schemaData)}
+        {JSON.stringify(faqSchema)}
+      </script>
+    
     </Helmet>
 
 

@@ -56,14 +56,14 @@ const calculatData = [
     <>
 
     <Helmet>
-      <title>Build Your Career at Top Advertising Agency in Mumbai | AGENCY09</title>
+      <title>Careers | AGENCY09 | Branding & Top Web Design Company in India</title>
       <meta name="robots" content="index, follow"/> 
 
-      <meta name="description" content="Looking for a career in advertising? Explore exciting roles at AGENCY09, a leading advertising agency offering opportunities in digital marketing, branding, design and more."/>
+      <meta name="description" content="Kickstart your career in advertising with AGENCY09, a leading branding agency offering dynamic opportunities in digital marketing, branding, design, and more."/>
       <link rel="canonical" href="https://www.agency09.in/careers"/>
 
-      <meta property="og:title" content="Build Your Career at Top Advertising Agency in Mumbai | AGENCY09"/> 
-      <meta property="og:description" content="Looking for a career in advertising? Explore exciting roles at AGENCY09, a leading advertising agency offering opportunities in digital marketing, branding, design and more."/> 
+      <meta property="og:title" content="Careers | AGENCY09 | Branding & Top Web Design Company in India"/> 
+      <meta property="og:description" content="Kickstart your career in advertising with AGENCY09, a leading branding agency offering dynamic opportunities in digital marketing, branding, design, and more."/> 
       <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
       <meta property="og:type" content="website"/> 
 
@@ -71,7 +71,7 @@ const calculatData = [
       <meta name="twitter:site" content="@AGENCY09"/> 
       <meta name="twitter:creator" content="@AGENCY09"/> 
       <meta name="twitter:url" content="https://www.agency09.in/careers"/> 
-      <meta name="twitter:description" content="Looking for a career in advertising? Explore exciting roles at AGENCY09, a leading advertising agency offering opportunities in digital marketing, branding, design and more."/> 
+      <meta name="twitter:description" content="Kickstart your career in advertising with AGENCY09, a leading branding agency offering dynamic opportunities in digital marketing, branding, design, and more."/> 
       <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
     </Helmet>
 

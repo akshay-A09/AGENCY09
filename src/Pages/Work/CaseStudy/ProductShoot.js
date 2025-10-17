@@ -114,13 +114,13 @@ const apiKey = 'AIzaSyBkRuDWRBnBbl_qW3syuk_BEa7anG2uU2M';
   return (
     <>
     <Helmet>
-<title>Product Shoot - AGENCY09 Case Study</title>
+<title>Product Photography & Video Services in Mumbai, India | AGENCY09</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="AGENCY09 crafts stunning product shots that highlight your brand’s uniqueness, engage audiences, and leave a lasting impact across e-commerce and social media."/>
-<meta property="og:title" content="Product Shoot - AGENCY09 Case Study"/> 
-<meta property="og:description" content="AGENCY09 crafts stunning product shots that highlight your brand’s uniqueness, engage audiences, and leave a lasting impact across e-commerce and social media."/> 
+<meta name="description" content="Showcase your brand with stunning product photography & video by AGENCY09. We create visuals that tell your story & boost engagement across all platforms."/>
+<meta property="og:title" content="Product Photography & Video Services in Mumbai, India | AGENCY09"/> 
+<meta property="og:description" content="Showcase your brand with stunning product photography & video by AGENCY09. We create visuals that tell your story & boost engagement across all platforms."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -129,7 +129,7 @@ const apiKey = 'AIzaSyBkRuDWRBnBbl_qW3syuk_BEa7anG2uU2M';
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/about"/> 
-<meta name="twitter:description" content="AGENCY09 crafts stunning product shots that highlight your brand’s uniqueness, engage audiences, and leave a lasting impact across e-commerce and social media."/> 
+<meta name="twitter:description" content="Showcase your brand with stunning product photography & video by AGENCY09. We create visuals that tell your story & boost engagement across all platforms."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>

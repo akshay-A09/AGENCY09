@@ -233,20 +233,197 @@ const faqsData = [
 ];
 // FAQS End
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Content | Best Advertising Agency in Social Media - AGENCY09",
+    "alternateName": "best advertising agency in social media",
+    "url": "https://www.agency09.in/solutions/content",
+    "image": "https://www.agency09.in/static/media/agency-light.cb89964a3a95c2a6e647.webp",
+    "description":
+      "Grow your brand with AGENCY09, the best advertising agency in social media, offering content marketing services, social media, content writing, HR communications, and all types of content for brands.",
+    "serviceType": [
+      "Mainline Advertising",
+      "Social Communication",
+      "HR Communication & Employer Branding",
+      "Channel and Distribution Communication",
+      "Building IPs",
+      "Amplifying Events"
+    ],
+    "provider": {
+      "@type": "Organization",
+      "name": "AGENCY09",
+      "url": "https://www.agency09.in",
+      "logo": "https://www.agency09.in/static/media/agency09.923830080930008a8a99.webp",
+      "sameAs": [
+        "https://www.linkedin.com/company/agency09/",
+        "https://www.instagram.com/agency09/",
+        "https://www.youtube.com/channel/UCT7wE543Vl0LSrpCmpMzZrg",
+        "https://twitter.com/AGENCY09",
+        "https://www.facebook.com/agency09/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress":
+          "101, Meghdoot, Junction of Linking & Turner Rd., Above Bank of Baroda Bank, Opp HP Petrol Pump, Bandra West",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400050",
+        "addressCountry": "IN"
+      }
+    },
+    "areaServed": [
+      { "@type": "Place", "name": "India" },
+      { "@type": "Place", "name": "Dubai" },
+      { "@type": "Place", "name": "Australia" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "AGENCY09 Content Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Mainline Advertising",
+            "description":
+              "Reach your target audience through traditional mediums like television, radio, print, and outdoor advertising. AGENCY09 creates compelling campaigns that capture attention and drive measurable results."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Social Communication",
+            "description":
+              "Harness the power of social media to develop engaging content and strategic campaigns on Facebook, Instagram, Twitter, LinkedIn, and YouTube. Maximize brand visibility and audience engagement."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "HR Communication & Employer Branding",
+            "description":
+              "Strengthen your employer brand with HR communication services designed to enhance internal engagement and attract top talent. We craft employer branding campaigns that inspire and motivate employees."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Channel and Distribution Communication",
+            "description":
+              "Enhance your partner relationships and boost sales with strategic channel and distribution communication. AGENCY09 develops impactful content and materials to support your distribution network."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Building IPs",
+            "description":
+              "Create unique and engaging digital intellectual properties (IPs) that strengthen your brand presence. We develop original content concepts tailored to resonate with your audience."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Amplifying Events",
+            "description":
+              "Elevate your brand's event presence through expert content creation. From live social coverage to photography and videography, we capture the energy of your events to boost visibility."
+          }
+        }
+      ]
+    },
+    "brand": { "@type": "Brand", "name": "AGENCY09" }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What sets AGENCY09 apart in the realm of brand communication?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AGENCY09 distinguishes itself through a unique blend of creativity and strategic thinking. We leverage our expertise to craft communication solutions that not only captivate audiences but also drive tangible results for our clients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What types of services does AGENCY09 offer in brand communication?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AGENCY09 offers a comprehensive range of services, including mainline advertising, social communication, HR communication & employer branding, channel and distribution communication, event coverage and content creation, and the creation of various content and digital-based intellectual properties (IP's)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does AGENCY09 approach event coverage and content creation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When it comes to event coverage and content creation, we prioritize capturing the essence of each event through compelling photography, videography, and live social media coverage. Our goal is to create engaging event highlights and post-event content that resonates with your audience long after the event has ended."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What industries does AGENCY09 serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AGENCY09 serves clients across a diverse range of industries, including but not limited to technology, healthcare, consumer goods, finance, and entertainment. Our adaptable approach allows us to tailor our services to meet the unique needs of each industry."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can AGENCY09 help my brand stand out in a crowded marketplace?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AGENCY09 specializes in developing impactful brand communication strategies that cut through the noise and resonate with your target audience. Whether it's through creative advertising campaigns, engaging social media content, or immersive event experiences, we're committed to helping your brand stand out and make a lasting impression."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the process for requesting a quote from AGENCY09?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Requesting a quote from AGENCY09 is simple. Just reach out to us through our contact page or email address, and one of our team members will be in touch to discuss your specific needs and provide you with a personalized quote tailored to your project requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I see examples of AGENCY09's past work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! You can explore our case studies section to see real-world examples of how we've helped our clients achieve their goals through our brand communication solutions. From successful advertising campaigns to impactful employer branding initiatives, our case studies showcase the diverse range of industries and challenges we've tackled."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does AGENCY09 ensure consistency across different communication channels?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "At AGENCY09, we understand the importance of consistency in brand communication. That's why we develop comprehensive brand guidelines for our clients, which outline specifications for logos, color palettes, typography, and messaging. These guidelines ensure that your brand maintains a cohesive and recognizable identity across all touchpoints."
+        }
+      }
+    ]
+  };
  
 
   return (
     <>
 
     <Helmet>
-      <title>Content Writing Services in Mumbai | Social Media Content & HR Communications – AGENCY09</title>
+      <title>Content | Best Advertising Agency in Social Media - AGENCY09</title>
       <meta name="robots" content="index, follow"/> 
 
-      <meta name="description" content="AGENCY09 offers content marketing services, including Social Media Content, Content Writing, HR Communications & all types of content for brand"/>
+      <meta name="description" content="Grow your brand with AGENCY09, the best advertising agency in social media, offering content marketing services, social media, content writing, HR communications and all types of content for brands."/>
       <link rel="canonical" href="https://www.agency09.in/solutions/content"/>
 
-      <meta property="og:title" content="Content Writing Services in Mumbai | Social Media Content & HR Communications – AGENCY09"/> 
-      <meta property="og:description" content="AGENCY09 offers content marketing services, including Social Media Content, Content Writing, HR Communications & all types of content for brand"/> 
+      <meta property="og:title" content="Content | Best Advertising Agency in Social Media - AGENCY09"/> 
+      <meta property="og:description" content="Grow your brand with AGENCY09, the best advertising agency in social media, offering content marketing services, social media, content writing, HR communications and all types of content for brands."/> 
       <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
       <meta property="og:type" content="website"/> 
 
@@ -255,9 +432,15 @@ const faqsData = [
       <meta name="twitter:site" content="@AGENCY09"/> 
       <meta name="twitter:creator" content="@AGENCY09"/> 
       <meta name="twitter:url" content="https://www.agency09.in/solutions/content"/> 
-      <meta name="twitter:description" content="AGENCY09 offers content marketing services, including Social Media Content, Content Writing, HR Communications & all types of content for brand"/> 
+      <meta name="twitter:description" content="Grow your brand with AGENCY09, the best advertising agency in social media, offering content marketing services, social media, content writing, HR communications and all types of content for brands."/> 
       <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
-          </Helmet>
+      <script type="application/ld+json">
+          {JSON.stringify(schemaData)}
+           {JSON.stringify(faqSchema)}
+        </script>
+
+      
+      </Helmet>
 
 
 

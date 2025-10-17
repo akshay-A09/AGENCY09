@@ -253,19 +253,210 @@ const faqsData = [
 ];
 // FAQS End
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Top Video Production Company in Mumbai, India - AGENCY09",
+  "alternateName": "corporate video production services",
+  "url": "https://www.agency09.in/solutions/production",
+  "image": "https://www.agency09.in/static/media/agency-light.cb89964a3a95c2a6e647.webp",
+  "description":
+    "AGENCY09 offers expert corporate video production services, from ad films and branding videos to after-movies and product shoots, bringing your vision to life.",
+  "serviceType": [
+    "Corporate Videos",
+    "Reels",
+    "After Movie",
+    "Product Video",
+    "Employer Branding"
+  ],
+  "provider": {
+    "@type": "Organization",
+    "name": "AGENCY09",
+    "url": "https://www.agency09.in",
+    "logo":
+      "https://www.agency09.in/static/media/agency09.923830080930008a8a99.webp",
+    "sameAs": [
+      "https://www.linkedin.com/company/agency09/",
+      "https://www.instagram.com/agency09/",
+      "https://www.youtube.com/channel/UCT7wE543Vl0LSrpCmpMzZrg",
+      "https://twitter.com/AGENCY09",
+      "https://www.facebook.com/agency09/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress":
+        "101, Meghdoot, Junction of Linking & Turner Rd., Above Bank of Baroda Bank, Opp HP Petrol Pump, Bandra West",
+      "addressLocality": "Mumbai",
+      "addressRegion": "Maharashtra",
+      "postalCode": "400050",
+      "addressCountry": "IN"
+    }
+  },
+  "areaServed": [
+    { "@type": "Place", "name": "India" },
+    { "@type": "Place", "name": "Dubai" },
+    { "@type": "Place", "name": "Australia" }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "AGENCY09 Production Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Corporate Videos",
+          "description":
+            "Capture the essence of your brand and communicate your message effectively with our corporate video production services. From company profiles to internal communications, we help you tell your story with clarity and impact."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Reels",
+          "description":
+            "Make a lasting impression on social media with engaging and visually stunning reels. Whether it's showcasing products, highlighting events, or sharing behind-the-scenes glimpses, we create reels that captivate and inspire."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "After Movie",
+          "description":
+            "Relive the excitement and energy of your events with our after movie production services. From conferences to festivals, we capture the highlights and emotions of your event, creating compelling videos that resonate with your audience."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Product Video",
+          "description":
+            "Showcase your products in the best light with our product video production services. From explainer videos to demonstrations, we create visually appealing and informative videos that drive engagement and conversions."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Employer Branding",
+          "description":
+            "Attract top talent and showcase your company culture with compelling employer branding videos. We highlight what makes your workplace unique and desirable, helping you stand out as an employer of choice."
+        }
+      }
+    ]
+  },
+  "brand": {
+    "@type": "Brand",
+    "name": "AGENCY09"
+  }
+};
+
+
+ const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What types of video production services does AGENCY09 offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AGENCY09 offers a wide range of video production services including corporate videos, reels, after movies, product videos, and employer branding videos. Each service is tailored to meet your specific needs and objectives."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you ensure the quality of your video productions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We ensure the highest quality by using state-of-the-art equipment, employing experienced professionals, and adhering to industry best practices. Our team is dedicated to delivering visually stunning and engaging videos that align with your brand's vision and goals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you help with scriptwriting and storyboarding?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we offer comprehensive pre-production services including scriptwriting, storyboarding, and concept development. Our creative team works closely with you to craft a compelling narrative that effectively communicates your message."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it typically take to produce a video?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The production timeline varies depending on the complexity and scope of the project. A simple corporate video might take a few weeks, while a more complex production like an after movie or product video could take longer. We work diligently to meet your deadlines while maintaining high-quality standards."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is an after movie, and why should I consider producing one?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An after movie is a highlight video that captures the essence and energy of an event. It’s a great way to relive the experience, share it with attendees, and promote future events. After movies are especially effective for conferences, festivals, and corporate events."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do reels differ from other types of video content?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Reels are short, engaging videos designed specifically for social media platforms. They are typically 15-60 seconds long and are meant to capture attention quickly. Reels are ideal for showcasing products, events, or behind-the-scenes moments in a visually appealing way."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you create videos in different styles and formats?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! We can produce videos in a variety of styles and formats, including animated videos, live-action videos, and mixed media. Whether you need a professional corporate video or a dynamic social media reel, we have the expertise to bring your vision to life."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is employer branding video production, and how can it benefit my company?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Employer branding videos showcase your company culture, values, and work environment. These videos help attract top talent by providing a glimpse into what makes your company a great place to work. They can be used in recruitment campaigns, on your careers page, and in onboarding materials."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does video production cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The cost of video production varies depending on the project's scope, length, complexity, and other factors. Contact us for a personalized quote based on your specific needs and budget. We aim to deliver high-quality video content that fits within your financial parameters."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I get started with AGENCY09's video production services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Getting started is easy! Reach out to us through our contact page or request a quote. We'll schedule a consultation to discuss your vision, goals, and requirements, and then develop a tailored plan to bring your project to life."
+        }
+      }
+    ]
+  };
+
+
+
 
   return (
     <>
 
     <Helmet>
-    <title>Production House in Mumbai | Ad Films, Video Shoot & Photography - AGENCY09</title>
+    <title>Top Video Production Company in Mumbai, India - AGENCY09</title>
     <meta name="robots" content="index, follow"/> 
 
-    <meta name="description" content="AGENCY09 specializes in bringing your vision into high-quality video production services which are ad films, product shoot, corporate video, after movie, branding videos and more."/>
+    <meta name="description" content="AGENCY09 offers expert corporate video production services, from ad films and branding videos to after-movies and product shoots, bringing your vision to life."/>
     <link rel="canonical" href="https://www.agency09.in/solutions/production"/>
 
-    <meta property="og:title" content="Production House in Mumbai | Ad Films, Video Shoot & Photography - AGENCY09"/> 
-    <meta property="og:description" content="AGENCY09 specializes in bringing your vision into high-quality video production services which are ad films, product shoot, corporate video, after movie, branding videos and more."/> 
+    <meta property="og:title" content="Top Video Production Company in Mumbai, India - AGENCY09"/> 
+    <meta property="og:description" content="AGENCY09 offers expert corporate video production services, from ad films and branding videos to after-movies and product shoots, bringing your vision to life."/> 
     <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
     <meta property="og:type" content="website"/> 
 
@@ -273,8 +464,13 @@ const faqsData = [
     <meta name="twitter:site" content="@AGENCY09"/> 
     <meta name="twitter:creator" content="@AGENCY09"/> 
     <meta name="twitter:url" content="https://www.agency09.in/solutions/production"/> 
-    <meta name="twitter:description" content="AGENCY09 specializes in bringing your vision into high-quality video production services which are ad films, product shoot, corporate video, after movie, branding videos and more."/> 
+    <meta name="twitter:description" content="AGENCY09 offers expert corporate video production services, from ad films and branding videos to after-movies and product shoots, bringing your vision to life."/> 
     <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
+     <script type="application/ld+json">
+        {JSON.stringify(schemaData)}
+        {JSON.stringify(faqSchema)}
+      </script>
+    
     </Helmet>
 
 

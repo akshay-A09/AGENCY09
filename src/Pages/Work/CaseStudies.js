@@ -126,12 +126,12 @@ const CaseStudies = () => {
         <>
 
         <Helmet>
-            <title> AGENCY09 Case Studies: Proven Success in Advertising & Branding</title>
-            <meta name="description" content="Explore AGENCY09 case studies showcasing successful advertising campaigns,  growing audience online and digital marketing for leading brands."/>
+            <title>AGENCY09 Case Studies: Proven Success in Advertising & Branding</title>
+            <meta name="description" content="Explore advertising and marketing agency case studies showcasing successful advertising campaigns, growing audience online and digital marketing for leading brands."/>
             <link rel="canonical" href="https://www.agency09.in/work/case-studies"/>
 
-            <meta property="og:title" content=" AGENCY09 Case Studies: Proven Success in Advertising & Branding"/> 
-            <meta property="og:description" content=" Explore AGENCY09 case studies showcasing successful advertising campaigns,  growing audience online and digital marketing for leading brands."/> 
+            <meta property="og:title" content="AGENCY09 Case Studies: Proven Success in Advertising & Branding"/> 
+            <meta property="og:description" content="Explore advertising and marketing agency case studies showcasing successful advertising campaigns, growing audience online and digital marketing for leading brands."/> 
             <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
             <meta property="og:type" content="website"/> 
 
@@ -139,7 +139,7 @@ const CaseStudies = () => {
             <meta name="twitter:site" content="@AGENCY09"/> 
             <meta name="twitter:creator" content="@AGENCY09"/> 
             <meta name="twitter:url" content="https://www.agency09.in/work/case-studies"/> 
-            <meta name="twitter:description" content=" Explore AGENCY09 case studies showcasing successful advertising campaigns,  growing audience online and digital marketing for leading brands."/> 
+            <meta name="twitter:description" content="Explore advertising and marketing agency case studies showcasing successful advertising campaigns, growing audience online and digital marketing for leading brands."/> 
             <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
         </Helmet>
 

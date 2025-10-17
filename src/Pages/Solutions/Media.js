@@ -314,6 +314,205 @@ const faqsData = [
 ];
 // FAQS End
 
+const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Top Performance Marketing Agency in Mumbai, India - AGENCY09",
+    "alternateName": "top performance marketing & Google Ads agency in India",
+    "url": "https://www.agency09.in/solutions/performance-marketing",
+    "image": "https://www.agency09.in/static/media/agency-light.cb89964a3a95c2a6e647.webp",
+    "description": "AGENCY09 is a top performance marketing & Google Ads agency in India with expertise in PPC marketing. Drive results with digital pros!",
+    "serviceType": [
+      "Performance Marketing",
+      "Lead Generation",
+      "Conversion Campaigns",
+      "App Downloads",
+      "Influencer Marketing",
+      "Humane Reviews",
+      "Store Walk-ins",
+      "Video Views"
+    ],
+    "provider": {
+      "@type": "Organization",
+      "name": "AGENCY09",
+      "url": "https://www.agency09.in",
+      "logo": "https://www.agency09.in/static/media/agency09.923830080930008a8a99.webp",
+      "sameAs": [
+        "https://www.linkedin.com/company/agency09/",
+        "https://www.instagram.com/agency09/",
+        "https://www.youtube.com/channel/UCT7wE543Vl0LSrpCmpMzZrg",
+        "https://twitter.com/AGENCY09",
+        "https://www.facebook.com/agency09/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "101, Meghdoot, Junction of Linking & Turner Rd., Above Bank of Baroda Bank, Opp HP Petrol Pump, Bandra West",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400050",
+        "addressCountry": "IN"
+      }
+    },
+    "areaServed": [
+      { "@type": "Place", "name": "India" },
+      { "@type": "Place", "name": "Dubai" },
+      { "@type": "Place", "name": "Australia" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "AGENCY09 Performance Marketing Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Performance Marketing",
+            "description": "Our data-driven approach ensures that every campaign is optimized for maximum ROI, driving measurable results and tangible business growth. From precise audience targeting to continuous optimization, we empower you to achieve your marketing objectives efficiently and effectively."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Lead Generation",
+            "description": "Generate high-quality leads that are primed for conversion. Leveraging advanced targeting techniques and compelling messaging, we capture the interest of your target audience and guide them seamlessly through the conversion funnel. With our performance-driven approach, you can expect a steady flow of leads that fuel your sales pipeline and drive business growth."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Conversion Campaign",
+            "description": "Turn prospects into customers and drive meaningful actions. Whether it's making a purchase, signing up for a newsletter, or downloading an app, we craft campaigns that inspire action and deliver tangible results."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "App Downloads",
+            "description": "Boost visibility and drive installations for your mobile app. Using targeted advertising and app promotion strategies, we reach your ideal audience and encourage them to download and engage with your app."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Influencer Marketing",
+            "description": "Amplify your brand message and reach a wider audience authentically. By partnering with relevant influencers in your industry, we create genuine connections with your target audience and drive engagement and conversions."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Humane Reviews",
+            "description": "Build trust and credibility with your audience. We facilitate genuine customer feedback and reviews that highlight the positive aspects of your products or services."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Store Walk-ins",
+            "description": "Increase foot traffic to your physical locations. Through targeted digital campaigns and location-based targeting, we drive local customers to your stores and encourage them to make purchases."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Video Views",
+            "description": "Capture audience attention and drive engagement. Whether it's on social media platforms or video advertising networks, we create compelling video content that resonates with your audience."
+          }
+        }
+      ]
+    },
+    "brand": {
+      "@type": "Brand",
+      "name": "AGENCY09"
+    }
+  };
+
+
+    const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What types of results can I expect from performance marketing campaigns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The results of performance marketing campaigns vary depending on your goals and objectives. Common outcomes include increased website traffic, lead generation, conversions, app downloads, and sales. Our team works closely with you to define clear KPIs and optimize campaigns for maximum performance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you measure the success of performance marketing campaigns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We measure the success of performance marketing campaigns using a variety of key performance indicators (KPIs) tailored to your objectives. These may include metrics such as click-through rate (CTR), conversion rate, cost per acquisition (CPA), return on ad spend (ROAS), and more. Our robust analytics and reporting tools provide transparent insights into campaign performance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What targeting options do you offer for performance marketing campaigns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We offer a range of targeting options to ensure your performance marketing campaigns reach the right audience. This includes demographic targeting, geographic targeting, interest targeting, behavior targeting, retargeting (remarketing), and lookalike audience targeting. By segmenting your audience effectively, we maximize campaign effectiveness and ROI."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you optimize performance marketing campaigns for maximum results?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We employ a continuous optimization approach to performance marketing campaigns, leveraging data-driven insights and A/B testing to refine targeting, messaging, and creative elements. Our team monitors campaign performance in real-time, making adjustments to maximize performance and achieve your goals efficiently."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you work with my existing marketing technology stack?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we can integrate with your existing marketing technology stack to streamline campaign management, tracking, and reporting. Whether you use CRM systems, marketing automation platforms, or analytics tools, we ensure seamless integration to optimize campaign performance and ROI."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What sets your performance marketing services apart from competitors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our performance marketing services are distinguished by our strategic approach, data-driven methodologies, and relentless focus on delivering measurable results. We prioritize transparency, collaboration, and innovation to drive success for our clients, ensuring maximum ROI and business impact."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you stay updated with the latest trends and best practices in performance marketing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our team is dedicated to staying at the forefront of industry trends and best practices in performance marketing. We regularly attend industry conferences, participate in training programs, and engage with industry experts to ensure we're leveraging the latest strategies and technologies to drive success for our clients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What industries have you worked with in your performance marketing campaigns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We have experience working with clients across a wide range of industries, including e-commerce, technology, healthcare, finance, travel, and more. Our adaptable approach allows us to tailor performance marketing strategies to meet the unique needs and objectives of each industry vertical."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I get started with performance marketing services for my business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Getting started with performance marketing services is simple. Contact us today to schedule a consultation with one of our experts. We'll discuss your goals, objectives, and budget, and develop a customized strategy to drive success for your business through performance marketing."
+        }
+      }
+    ]
+  };
 
 
 
@@ -321,23 +520,27 @@ const faqsData = [
     <>
 
     <Helmet>
-      <title>Social Media Marketing Agency in Mumbai |  Performance Marketing & Ad Campaigns – AGENCY09</title>
+      <title>Top Performance Marketing Agency in Mumbai, India - AGENCY09</title>
       <meta name="robots" content="index, follow"/> 
 
-      <meta name="description" content="AGENCY09 offers media services, including paid ad campaigns, performance marketing, lead generation campaign. and influencer marketing."/>
-      <link rel="canonical" href="https://www.agency09.in/solutions/media"/>
+      <meta name="description" content="AGENCY09 is a top performance marketing & Google Ads agency in India with expertise in PPC marketing. Drive results with digital pros!"/>
+      <link rel="canonical" href="https://www.agency09.in/solutions/performance-marketing"/>
 
-      <meta property="og:title" content="Social Media Marketing Agency in Mumbai |  Performance Marketing & Ad Campaigns – AGENCY09"/> 
-      <meta property="og:description" content="AGENCY09 offers media services, including paid ad campaigns, performance marketing, lead generation campaign. and influencer marketing."/> 
+      <meta property="og:title" content="Top Performance Marketing Agency in Mumbai, India - AGENCY09"/> 
+      <meta property="og:description" content="AGENCY09 is a top performance marketing & Google Ads agency in India with expertise in PPC marketing. Drive results with digital pros!"/> 
       <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
       <meta property="og:type" content="website"/> 
 
       <meta name="twitter:card" content="summary"/> 
       <meta name="twitter:site" content="@AGENCY09"/> 
       <meta name="twitter:creator" content="@AGENCY09"/> 
-      <meta name="twitter:url" content="https://www.agency09.in/solutions/media"/> 
-      <meta name="twitter:description" content="AGENCY09 offers media services, including paid ad campaigns, performance marketing, lead generation campaign. and influencer marketing."/> 
+      <meta name="twitter:url" content="https://www.agency09.in/solutions/performance-marketing"/> 
+      <meta name="twitter:description" content="AGENCY09 is a top performance marketing & Google Ads agency in India with expertise in PPC marketing. Drive results with digital pros!"/> 
       <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
+      <script type="application/ld+json">
+      {JSON.stringify(schemaData)}
+      {JSON.stringify(faqSchema)}
+    </script>
     </Helmet>
 
 

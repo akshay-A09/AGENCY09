@@ -40,13 +40,13 @@ const About = () => {
 
 
     <Helmet>
-      <title> About Us | Creative Advertising Agency in Mumbai - AGENC09</title>
+      <title> About Us | Top Creative & Digital Marketing Agency in Mumbai, India</title>
       <link rel="canonical" href="https://www.agency09.in/about"/>
       <meta name="robots" content="index, follow"/> 
 
-      <meta name="description" content="AGENCY09 is a top advertising agency in India for branding, tech, content, performance marketing, digital marketing, website solution, and more."/>
-      <meta property="og:title" content=" About Us | Creative Advertising Agency in Mumbai - AGENC09"/> 
-      <meta property="og:description" content="AGENCY09 is a top advertising agency in India for branding, tech, content, performance marketing, digital marketing, website solution, and more."/> 
+      <meta name="description" content="AGENCY09 is a creative & digital marketing agency in Mumbai, India, for branding, tech, content, performance marketing, digital marketing, website solutions, and more."/>
+      <meta property="og:title" content="About Us | Top Creative & Digital Marketing Agency in Mumbai, India"/> 
+      <meta property="og:description" content="AGENCY09 is a creative & digital marketing agency in Mumbai, India, for branding, tech, content, performance marketing, digital marketing, website solutions, and more."/> 
       <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
       <meta property="og:type" content="website"/> 
 
@@ -55,7 +55,7 @@ const About = () => {
       <meta name="twitter:site" content="@AGENCY09"/> 
       <meta name="twitter:creator" content="@AGENCY09"/> 
       <meta name="twitter:url" content="https://www.agency09.in/about"/> 
-      <meta name="twitter:description" content=" AGENCY09 is a top advertising agency in India for branding, tech, content, performance marketing, digital marketing, website solution, and more."/> 
+      <meta name="twitter:description" content="AGENCY09 is a creative & digital marketing agency in Mumbai, India, for branding, tech, content, performance marketing, digital marketing, website solutions, and more."/> 
       <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
     </Helmet>

@@ -456,19 +456,241 @@ const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
   }, []);
   // Approach Section End
 
+   const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Solutions | Top Tech Company in Mumbai, India - AGENCY09",
+    "alternateName": "top tech companies in Mumbai",
+    "url": "https://www.agency09.in/solutions/tech",
+    "image": "https://www.agency09.in/static/media/agency-light.cb89964a3a95c2a6e647.webp",
+    "description":
+      "Discover AGENCY09, one of the top tech companies in Mumbai, India, providing services like website development, UI/UX, software development services, e-commerce website developers, corporate websites and AI-driven marketing.",
+    "serviceType": [
+      "Corporate Website",
+      "Web Application",
+      "Mobile Applications",
+      "ERP Systems",
+      "Software Development",
+      "HR Portal",
+      "ECOMMERCE",
+      "Marketing Automations"
+    ],
+    "provider": {
+      "@type": "Organization",
+      "name": "AGENCY09",
+      "url": "https://www.agency09.in",
+      "logo":
+        "https://www.agency09.in/static/media/agency09.923830080930008a8a99.webp",
+      "sameAs": [
+        "https://www.linkedin.com/company/agency09/",
+        "https://www.instagram.com/agency09/",
+        "https://www.youtube.com/channel/UCT7wE543Vl0LSrpCmpMzZrg",
+        "https://twitter.com/AGENCY09",
+        "https://www.facebook.com/agency09/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress":
+          "101, Meghdoot, Junction of Linking & Turner Rd., Above Bank of Baroda Bank, Opp HP Petrol Pump, Bandra West",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400050",
+        "addressCountry": "IN"
+      }
+    },
+    "areaServed": [
+      { "@type": "Place", "name": "India" },
+      { "@type": "Place", "name": "Dubai" },
+      { "@type": "Place", "name": "Australia" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "AGENCY09 Tech Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Corporate Website",
+            "description":
+              "Professional, responsive websites that reflect your brand's identity and engage your audience effectively. Our websites are designed for optimal performance and user experience."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "ERP Systems",
+            "description":
+              "Streamline your business operations with our custom ERP systems. We design and implement integrated solutions that improve efficiency and provide real-time insights."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Software Development",
+            "description":
+              "Bespoke software solutions that address your specific business challenges. Our software development services ensure functionality, scalability, and reliability."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "HR Portal Development",
+            "description":
+              "Enhance your human resources management with our advanced HR portals. We create user-friendly platforms that simplify HR processes and improve employee engagement."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "ECOMMERCE",
+            "description":
+              "eCommerce solutions tailored to create seamless shopping experiences. We develop secure, scalable online stores that boost sales and enhance customer satisfaction."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Web & Mobile Applications",
+            "description":
+              "Cross-platform web and mobile applications designed for performance and user engagement."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Marketing Automation",
+            "description":
+              "Automate your marketing efforts with our innovative solutions. We help you streamline campaigns, track performance, and increase ROI with minimal effort."
+          }
+        }
+      ]
+    },
+    "brand": { "@type": "Brand", "name": "AGENCY09" }
+  };
+
+
+   const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What technologies do you use for developing corporate websites?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We specialize in PHP, WordPress, Drupal, AngularJs, NodeJs, Laravel, and ReactJs to build professional, responsive, and high-performance corporate websites."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What eCommerce platforms do you work with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We work with a variety of eCommerce platforms including Magento, Shopify, WooCommerce, OpenCart, PrestaShop, BigCommerce, and osCommerce to create secure and scalable online stores."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What programming languages and frameworks do you use for software development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We develop custom software solutions using Java, Python, C#, Ruby on Rails, .NET, Golang, and Swift, ensuring functionality, scalability, and reliability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What technologies do you use for web applications?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our web applications are built using modern technologies such as ReactJs, AngularJs, VueJs, NodeJs, Django, Ruby on Rails, ASP.NET, and Flask to deliver dynamic and interactive user experiences."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which frameworks and languages do you use for mobile app development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For mobile applications, we use Swift for iOS, Kotlin for Android, and cross-platform frameworks like React Native, Flutter, Xamarin, Ionic, and Java to create intuitive and powerful mobile apps."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you ensure the security of eCommerce platforms?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We prioritize security by implementing best practices in data encryption, secure payment gateways, SSL certificates, and regular security audits to protect your eCommerce platform from threats."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you integrate existing systems with new ERP solutions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we specialize in integrating existing systems with new ERP solutions to ensure seamless operation and data flow across your business processes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide maintenance and support for the software and applications you develop?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. We offer comprehensive maintenance and support services to ensure your software and applications run smoothly and remain up-to-date with the latest technologies and security measures."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you customize HR portals to fit our specific needs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide fully customizable HR portals tailored to meet the unique requirements of your organization, enhancing efficiency and employee satisfaction."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you approach a new tech project?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We start with a thorough analysis of your business needs and goals, followed by detailed planning, design, development, testing, and deployment. We maintain close communication with you throughout the process to ensure the final product meets your expectations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer free audits for our existing tech infrastructure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we offer free audits to evaluate your current tech infrastructure and provide recommendations for enhancements to optimize your digital capabilities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you handle project timelines and delivery?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We follow an agile development methodology to ensure timely delivery and flexibility. Regular updates and feedback loops are maintained to keep the project on track and aligned with your business objectives."
+        }
+      }
+    ]
+  };
 
   return (
     <>
 
     <Helmet>
-      <title>Tech Solutions | Website Development & E-commerce Website - AGENCY09</title>
+      <title>Solutions | Top Tech Company in Mumbai, India - AGENCY09</title>
       <meta name="robots" content="index, follow"/> 
 
-      <meta name="description" content="We are a MarTech firm and provide services like website development, UI UX, software development services, eCommerce website developers, corporate websites and AI-driven marketing."/>
+      <meta name="description" content="Discover AGENCY09, one of the top tech companies in Mumbai, India, providing services like website development, UI/UX, software development services, e-commerce website developers, corporate websites and AI-driven marketing."/>
       <link rel="canonical" href="https://www.agency09.in/solutions/tech"/>
 
-      <meta property="og:title" content="Tech Solutions | Website Development & E-commerce Website - AGENCY09"/> 
-      <meta property="og:description" content="We are a MarTech firm and provide services like website development, UI UX, software development services, eCommerce website developers, corporate websites and AI-driven marketing."/> 
+      <meta property="og:title" content="Solutions | Top Tech Company in Mumbai, India - AGENCY09"/> 
+      <meta property="og:description" content="Discover AGENCY09, one of the top tech companies in Mumbai, India, providing services like website development, UI/UX, software development services, e-commerce website developers, corporate websites and AI-driven marketing."/> 
       <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
       <meta property="og:type" content="website"/> 
 
@@ -476,8 +698,12 @@ const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
       <meta name="twitter:site" content="@AGENCY09"/> 
       <meta name="twitter:creator" content="@AGENCY09"/> 
       <meta name="twitter:url" content="https://www.agency09.in/solutions/tech"/> 
-      <meta name="twitter:description" content="We are a MarTech firm and provide services like website development, UI UX, software development services, eCommerce website developers, corporate websites and AI-driven marketing."/> 
+      <meta name="twitter:description" content="Discover AGENCY09, one of the top tech companies in Mumbai, India, providing services like website development, UI/UX, software development services, e-commerce website developers, corporate websites and AI-driven marketing."/> 
       <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
+       <script type="application/ld+json">
+          {JSON.stringify(schemaData)}
+          {JSON.stringify(faqSchema)}
+        </script>
     </Helmet>
 
 
