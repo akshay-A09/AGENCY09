@@ -520,7 +520,7 @@ const schemaData = {
 
     
 
-{/*         
+      
         <section className=''>
           <div className='container'>
 
@@ -532,7 +532,12 @@ const schemaData = {
               </h2>
           </div>
 
-      </div></section> */}
+
+          <div>
+            <iframe loading='lazy' width="100%" height="700" src="https://www.youtube.com/embed/QU86yaAh68Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+      </div></section> 
 
 
 
