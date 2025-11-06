@@ -116,33 +116,82 @@ const Production = () => {
   const servicesData = [
     {
       key: "0",
-      header: "Corporate Videos",
-      description: "Capture the essence of your brand and communicate your message effectively with our corporate video production services. From company profiles to internal communications, we help you tell your story with clarity and impact.",
+      header: "Ad Films / Digital Films ",
+      description: "At AGENCY09, we design powerful digital ads that connect with your target audience and drive results. From social media campaigns to display ads, our creative strategies ensure our brands stand out across all platforms. Let us help you reach the right people at the right time and turn clicks into conversions.",
       tags: [],
+      link: 'https://www.youtube.com/playlist?list=PLjyBa6CjzBYMNFiGYjo1VJk5FaAXILbvS'
     },
     {
       key: "1",
-      header: "Reels",
-      description: "Make a lasting impression on social media with engaging and visually stunning reels. Whether it's showcasing products, highlighting events, or sharing behind-the-scenes glimpses, we create reels that captivate and inspire.",
+      header: "Product Videos",
+      description: "Product Videos that Make People Stop and Shop Your product deserves more than just a spotlight — it deserves a story. At AGENCY09, we turn your products into heroes through visually stunning, strategically crafted videos that sell without shouting. From sleek tabletop shoots to lifestyle visuals that showcase real-world appeal, our team captures every angle, texture, and moment that makes your product stand out.",
       tags: [],
+      link: 'https://www.youtube.com/playlist?list=PLjyBa6CjzBYNh6pb8q6ISg9JnjDK7aZOz'
+
     },
     {
       key: "2",
       header: "After Movie",
-      description: "Relive the excitement and energy of your events with our after movie production services. From conferences to festivals, we capture the highlights and emotions of your event, creating compelling videos that resonate with your audience.",
+      description: "At AGENCY09, our after movies capture the energy, emotion, and excitement that make your moments unforgettable. From grand brand launches and music festivals to corporate gatherings and campus fests, we turn raw footage into cinematic narratives that transport viewers right back into the vibe. With dynamic edits, powerful sound design, and storytelling finesse, we don’t just show what happened — we make people feel it all over again.",
       tags: [],
+      link: 'https://www.youtube.com/playlist?list=PLjyBa6CjzBYPNNaFhJzd6ttNhljKnwXMj'
     },
     {
       key: "3",
-      header: "Product Video",
-      description: "Showcase your products in the best light with our product video production services. From explainer videos to demonstrations, we create visually appealing and informative videos that drive engagement and conversions.",
+      header: "AI Videos",
+      description: "Welcome to the future of content creation — where imagination meets intelligence. At AGENCY09, we harness the power of AI to produce videos faster, smarter, and more personalized than ever. From script generation and visual design to dynamic voiceovers and editing automation, we blend technology with storytelling to help your brand stay ahead of the curve.",
       tags: [],
+      link: 'https://www.youtube.com/playlist?list=PLjyBa6CjzBYObUVkdNrk2XRqt2_bCkxpT'
+
     },
     {
       key: "4",
-      header: "Employer Branding:",
-      description: "Attract top talent and showcase your company culture with compelling employer branding videos. We highlight what makes your workplace unique and desirable, helping you stand out as an employer of choice.",
+      header: "Informative / Knowledge Reels",
+      description: "Informative Reels that Educate, Engage, and Empower Knowledge is power — and today, it fits in 30 seconds. At AGENCY09, we turn complex ideas into crisp, binge-worthy reels that simplify, explain, and inspire.From quick how-tos to myth-busting explainers, we build snackable content that delivers real value while keeping viewers hooked. Our team blends strategy, storytelling, and visual flair to make learning feel effortless — and your brand instantly credible.",
       tags: [],
+      link: 'https://www.youtube.com/playlist?list=PLjyBa6CjzBYMmnRnit1XOkbbAITz8JhEn'
+    },
+    {
+      key: "5",
+      header: "Trending Reels",
+      description: "Trending Reels that Make Your Brand Unmissable. In a world where attention spans are short and trends change overnight, your brand needs content that can move as fast as the feed. At AGENCY09, we craft trending reels that blend creativity with cultural timing — content that’s built to entertain, engage, and convert.",
+      tags: [],
+      link: 'https://www.youtube.com/playlist?list=PLjyBa6CjzBYMmnRnit1XOkbbAITz8JhEn'
+    },
+    {
+      key: "6",
+      header: "Web Series",
+      description: "At AGENCY09, we specialize in creating compelling, episodic content that keeps your audience hooked. Whether you're launching a brand campaign, sharing your company’s journey, or entertaining viewers with creative narratives, our team crafts engaging web series that resonate. From concept development to production and promotion, we handle it all to ensure your message is delivered in an immersive, long-form format.",
+      tags: [],
+      link: 'https://www.youtube.com/playlist?list=PLjyBa6CjzBYMJIDtSIh7hoPRxWiI2_gOX'
+    },
+    {
+      key: "7",
+      header: "Animated Videos",
+      description: "When words fall short, visuals take over — and animation makes them unforgettable. At AGENCY09, we transform complex ideas into engaging animated stories that inform, inspire, and entertain. From sleek 2D explainers to bold motion graphics and playful character animation, our team blends art, design, and storytelling to make your brand message move — literally. Whether it’s for social media, brand films, or campaigns, our animations do more than just look good — they make people feel and remember.",
+      tags: [],
+      link: 'https://www.youtube.com/playlist?list=PLjyBa6CjzBYPuYFqYpvF5H1vv5VlBKo4Q'
+    },
+    {
+      key: "8",
+      header: "Podcast",
+      description: "At AGENCY09, we create dynamic podcast videos that combine insightful conversations with compelling visuals. Whether it’s for brand storytelling, thought leadership, or engaging your community, our team ensures every podcast resonates with your audience. Let’s bring your voice to life with content that informs, entertains, and builds a loyal following.",
+      tags: [],
+      link: 'https://www.youtube.com/playlist?list=PLjyBa6CjzBYNh6pb8q6ISg9JnjDK7aZOz'
+    },
+    {
+      key: "9",
+      header: "Real Estate Videos",
+      description: "At AGENCY09, we create captivating real estate videos that highlight the true essence of every property. Our cinematic approach showcases your listings in the best light, giving potential buyers an immersive experience. From virtual tours to drone footage, we craft videos that not only capture attention but drive interest and sales.",
+      tags: [],
+      link: 'https://www.youtube.com/playlist?list=PLjyBa6CjzBYPzSkhBnxFoo1sw-oiBdFST'
+    },
+    {
+      key: "10",
+      header: "Corporate Videos",
+      description: "Discover the heart of AGENCY09 through our corporate videos. We bring our mission, values, and the innovative solutions we offer to life. From our dedicated team to our industry-leading products and services, these videos provide a closer look at what makes us a trusted partner. Dive into our world and see how we’re shaping the future of different industry sectors with passion, integrity, and expertise.",
+      tags: [],
+      link: 'https://www.youtube.com/playlist?list=PLjyBa6CjzBYNDbPdcYN-kkPwRa8FVRkwT'
     },
   ];
 // Services Data
@@ -533,7 +582,7 @@ const schemaData = {
           </div>
 
 
-          <div>
+          <div class="prod-video">
             <iframe loading='lazy' width="100%" height="700" src="https://www.youtube.com/embed/QU86yaAh68Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
 
@@ -564,12 +613,8 @@ const schemaData = {
                           <div className='solutionsWrap'>
                             <div className='solutionsCol'>
                               <p>{service.description}</p>
-                              <div className='solutionsWrapTag'>
-                                <ul>
-                                  {service.tags.map((tag, index) => (
-                                    <li key={index}><Link>{tag}</Link></li>
-                                  ))}
-                                </ul>
+                              <div className='solutionsWrapBtn'>
+                                <Link className='solutionsWrapBtnLink' to={service.link}>View Playlist</Link>
                               </div>
                             </div>
                           

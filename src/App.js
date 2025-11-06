@@ -64,6 +64,7 @@ import ReelsVideos from './Pages/Work/CaseStudy/ReelsVideos'
 import WebSeries from './Pages/Work/CaseStudy/WebSeries'
 import TeaserVideos from './Pages/Work/CaseStudy/TeaserVideos'
 import CampaignVideos from './Pages/Work/CaseStudy/CampaignVideos'
+import AI from './Pages/Ai'
 
 
 
@@ -146,6 +147,7 @@ function App() {
        <Route exact path='/start-project-thank-you' element={<StartProjectThankYou/>}/>
        <Route exact path='/partner-with-us-thank-you' element={<PartnerWithUsThankYou/>}/>
        <Route exact path='/get-in-touch-thank-you' element={<GetInTouchThankYou/>}/>
+       <Route exact path='/ai' element={<AI/>}/>
       
         </Routes>
     </div>
