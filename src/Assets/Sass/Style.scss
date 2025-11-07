@@ -3708,6 +3708,45 @@ footer{
 }
 .solutionsSecServices{
 
+.youtube-playlist{
+    height: 500px;
+}
+
+.solutionsWrapBtn {
+  transition: max-height 0.5s ease-out, opacity 0.3s ease-out, transform 0.3s ease-out;
+  max-height: 100px; /* Adjust as needed */
+  opacity: 1;
+  transform: translateY(0);
+  overflow: hidden; 
+  width: fit-content;
+}
+
+.solutionsWrapBtn.hidden {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
+/* The playlist data wrapper */
+.plalistData {
+  transition: max-height 0.7s ease-in-out, opacity 0.5s ease-in-out 0.2s; /* Delay opacity */
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform-origin: top;
+}
+
+.plalistData.visible {
+  max-height: 2000px; /* Large value to fit content */
+  opacity: 1;
+  margin: 20px 0 20px;
+}
+
+
+
+
+
     .solutionsSecServicesFaq{
         .accordion-button{
             font-size: $sizeH1;
@@ -3723,14 +3762,23 @@ footer{
 
                 .solutionsWrapBtn{
 
-                    margin: 20px 0 0;
+                    margin: 40px 0 20px;
                    
 
                     .solutionsWrapBtnLink{
-                    background: $yellow;
-                    padding: 5px 12px;
-                    border-radius: 20px;
+                    background: transparent;
+                    padding: 15px 30px;
+                    border-radius: 100px;
                     font-size: 15px;
+                    color: $black;
+                    transition: all 0.4s ease-in-out;
+                    border: 1px solid $black; text-transform: uppercase;
+                    &:hover{
+                        background: $blue;
+                        color: $white;
+                        border-color: $blue;
+                    }
+                    
                     }
 
 
@@ -4539,6 +4587,7 @@ footer{
                     margin: auto;
                     font-size: 10px;
                     overflow: hidden;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;
+                    width: 100%;
                 }
             }
         }
@@ -5111,13 +5160,19 @@ footer{
 // Blog End
 
 // VIDEO CSS
-.prod-video iframe {width: 650px;
-    height: 350px;
+.prod-video {
+    width: 900px;
+    text-align: center;
+ iframe {
+    width: 100%;
+    height: 510px;
     border-radius: 16px;
     margin: auto;
     display: flex;}
-
-.vdCol{
+    .prod-video-desc{
+        padding: 20px 0;
+    }
+    .vdCol{
     display: flex;
     @media(max-width:768px){
         flex-direction: column;
@@ -5130,6 +5185,7 @@ footer{
             width:100%;
             height: auto;
         }
+    }
     }
 }
 

@@ -53,13 +53,13 @@ export const ProductionData = [
  
     {
         id: 1,
-        title: "Product Videos",
+        title: "Corporate Videos",
         tags: [
         ],
         image: ProductVideos,
         link: '/work/case-studies/corporate-videos',
         brand: "",
-        department: "Production"
+        department: "Corporate"
     },
  
     {
