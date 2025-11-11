@@ -5235,7 +5235,7 @@ footer{
 
 /* Title */
 .case-title {
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 20px;
   line-height: 1.4;
 }
@@ -5281,7 +5281,7 @@ height: 400px;
   height: 100%;
   object-fit: cover;
 }
-.btn-border, .btn-bg {margin: 40px 0;}
+.btn-border, .btn-bg {margin: 30px 0 0;}
 .btn-border a, .btn-bg a {
 background:  linear-gradient(93.04deg, #006dea 0%, #69e879 100%);
 font-size: 16px;
@@ -5305,12 +5305,47 @@ display: block;
     height: 95%;
     border-radius: 80px;
     margin: auto;
-}
-.btn-border a span{
-    position: relative;
-    z-index: 2;
+     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+    z-index: 0; 
 }
 
+.btn-border , .btn-bg {
+    a{
+        span{
+        position: relative;
+        z-index: 2;
+        }
+    }
+}
+
+
+
+   .btn-bg a::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: #fff;
+    border-radius: 80px;
+    transition: all 0.3s ease-out;
+    transform: scale(0); 
+    opacity: 0;
+  }
+  .btn-bg a:hover::after {
+    transform: scale(1);
+    opacity: 1;}
+
+ .btn-bg a:hover span {
+    color: #000; 
+  }
+  .btn-border a:hover::after {
+transform: scale(0);
+    opacity: 0;
+  }
+
+  .btn-border a:hover span {
+    color: #ffffff; 
+  }
+  
 .stats-section {
   background: #fff;
   display: flex;
@@ -5348,12 +5383,18 @@ display: block;
   margin: 0;
 }
 
-.accordian-ai .accordion .accordion-header button {border:none; background: #F8F8F8;margin-bottom: 20px; font-size: 18px;padding-left: 70px;border-radius: 16px;}
+.accordian-ai .accordion .accordion-header button {border:none; background: #F8F8F8;margin-bottom: 20px; font-size: 20px;padding-left: 70px;border-radius: 16px;}
 .accordian-ai .accordion .accordion-header {position: relative;}
-.accordian-ai .accordion .accordion-header::before {
-content:''; 
-position: absolute; 
-background-image: url(../Images/ai/ai-capabilities.png);background-position: center;background-size: cover;width: 40px;height: 40px;z-index: 99;top:0;bottom: 0;left: 0;margin: auto 20px;}
+.accordian-ai .accordion .accordion-header::before{ content:''; position: absolute; background-position: center;background-size: cover;width: 40px;height: 40px;z-index: 99;top:0;bottom: 0;left: 0;margin: auto 20px;}
+
+.accordian-ai .accordion .accordion-header[data-icon="content"]::before {background-image: url(../Images/ai/content.png);}
+.accordian-ai .accordion .accordion-header[data-icon="tech"]::before {background-image: url(../Images/ai/tech.png);}
+.accordian-ai .accordion .accordion-header[data-icon="production"]::before {background-image: url(../Images/ai/production.png);}
+.accordian-ai .accordion .accordion-header[data-icon="media"]::before {background-image: url(../Images/ai/media.png);}
+.accordian-ai .accordion .accordion-header[data-icon="design"]::before {background-image: url(../Images/ai/desgin.png);}
+.accordian-ai .accordion .accordion-header[data-icon="strategy"]::before {background-image: url(../Images/ai/strategy.png);}
+.accordian-ai .accordion .accordion-header[data-icon="keyword"]::before {background-image: url(../Images/ai/keyword.png);}
+.accordian-ai .accordion .accordion-header[data-icon="logix"]::before {background-image: url(../Images/ai/logix.png);}
 .accordian-ai .accordion .accordion-header button::before, .accordian-ai .accordion .accordion-header button::after {right: 42px; width: 3px;height: 15px;}
 .accordian-ai .accordion .accordion-collapse {text-align: left;}
 .accordian-ai{position: relative;}
@@ -5366,13 +5407,13 @@ background-image: url(../Images/ai/ai-capabilities.png);background-position: cen
 .overlapBgLeftTop{top:0;left: 0;}
 .overlapBgLeftCenter{top:0;left: 0; bottom: 0;}
 .overlapBgLeftBottom{bottom:0;left: 0;}
-.bg-design {background-image:url(../Images/ai/brand-bg.webp);background-repeat: no-repeat;background-size: 70%;background-position: center;}
+.bg-design {background-image:url(../Images/ai/brand-bg.webp);background-repeat: no-repeat;background-size: 70%;background-position: center;padding: 120px 0;}
 .overlapRotateY{transform: rotateY(180deg);}
 .overlapRotate {transform: rotate(40deg);}
-
- 
-
-
+.Ai_row {padding: 120px 0 50px;}
+.Ai_row .sizeH1 {font-size: 40px; line-height: 48px;margin-bottom: 20px;} 
+.Ai_row p {width: 80%;}
+.banner-bg {margin-top: -46px}
 
 .intro-text {
     margin-bottom: 20px;

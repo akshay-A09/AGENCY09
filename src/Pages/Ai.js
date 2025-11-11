@@ -65,11 +65,11 @@ const stats = [
 
     <div className="spacer"></div>
 
-    <section className='center'><div className='container'>
+    <section className='center Ai_row'><div className='container'>
       <h2 className='sizeH1 bold'>Intelligent Creativity,<br/> Accelerated by AI <img src={star} alt="star" /></h2>
       <p>AI at AGENCY09 is about amplifying human creativity. Our AI-powered solutions simplify complexity, enhance performance and unlock efficiency, enabling brands to move from reactive marketing to predictive, insight-driven growth. We merge creativity and AI to build dynamic brand ecosystems that think, respond and evolve. </p>
-      <div className="btn-bg"><a href="#"><span>Get Started</span></a></div>
-      <img src={bg} alt="background" /> 
+      <div className="btn-bg"><a href="#" ><span>Get Started</span></a></div>
+      <img className="banner-bg" src={bg} alt="background" /> 
     </div></section>
 
 
@@ -85,7 +85,7 @@ const stats = [
     <Accordion>
       {/* Item 1 */}
       <Accordion.Item eventKey="8" key="8">
-        <Accordion.Header>Content</Accordion.Header>
+        <Accordion.Header data-icon="content"> Content</Accordion.Header>
         <Accordion.Body>
             <div class="intro-content">
             <p class="intro-text">
@@ -122,7 +122,7 @@ const stats = [
 
       {/* Item 2 */}
       <Accordion.Item eventKey="9" key="9">
-        <Accordion.Header>Tech</Accordion.Header>
+        <Accordion.Header data-icon="tech">Tech</Accordion.Header>
        <Accordion.Body>
             <div class="intro-content">
             <p class="intro-text">
@@ -199,7 +199,7 @@ const stats = [
 
       {/* Item 3 */}
       <Accordion.Item eventKey="10" key="10">
-        <Accordion.Header>Production</Accordion.Header>
+        <Accordion.Header data-icon="production">Production</Accordion.Header>
         <Accordion.Body>
                       <div class="intro-content">
             <p class="intro-text">
@@ -287,7 +287,7 @@ const stats = [
 
       {/* Item 4 */}
       <Accordion.Item eventKey="11" key="11">
-        <Accordion.Header>Media</Accordion.Header>
+        <Accordion.Header data-icon="media">Media</Accordion.Header>
          <Accordion.Body>
                       <div class="intro-content">
             <p class="intro-text">
@@ -334,7 +334,7 @@ const stats = [
 
       {/* Item 5 */}
       <Accordion.Item eventKey="12" key="12">
-        <Accordion.Header>Design</Accordion.Header>
+        <Accordion.Header data-icon="design">Design</Accordion.Header>
        <Accordion.Body>
                       <div class="intro-content">
             <p class="intro-text">
@@ -361,7 +361,7 @@ const stats = [
 
       {/* Item 6 */}
       <Accordion.Item eventKey="13" key="13">
-        <Accordion.Header>Strategy</Accordion.Header>
+        <Accordion.Header data-icon="strategy">Strategy</Accordion.Header>
         <Accordion.Body>
                       <div class="intro-content">
             <p class="intro-text">
@@ -408,7 +408,7 @@ const stats = [
 
       {/* Item 7 */}
       <Accordion.Item eventKey="14" key="14">
-        <Accordion.Header>Keyword</Accordion.Header>
+        <Accordion.Header data-icon="keyword">Keyword</Accordion.Header>
         <Accordion.Body>
     <div class="intro-content">
       <p class="intro-text">
@@ -479,7 +479,7 @@ const stats = [
 
       {/* Item 8 */}
       <Accordion.Item eventKey="15" key="15">
-        <Accordion.Header>Logix</Accordion.Header>
+        <Accordion.Header data-icon="logix">Logix</Accordion.Header>
          <Accordion.Body>
                       <div class="intro-content">
             <p class="intro-text">
