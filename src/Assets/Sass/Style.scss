@@ -5386,7 +5386,7 @@ transform: scale(0);
 .accordian-ai .accordion .accordion-header button {border:none; background: #F8F8F8;margin-bottom: 20px; font-size: 20px;padding-left: 70px;border-radius: 16px;}
 .accordian-ai .accordion .accordion-header {position: relative;}
 .accordian-ai .accordion .accordion-header::before{ content:''; position: absolute; background-position: center;background-size: cover;width: 40px;height: 40px;z-index: 99;top:0;bottom: 0;left: 0;margin: auto 20px;}
-
+.accordian-ai .accordion .accordion-header button:not(.collapsed)::after {}
 .accordian-ai .accordion .accordion-header[data-icon="content"]::before {background-image: url(../Images/ai/content.png);}
 .accordian-ai .accordion .accordion-header[data-icon="tech"]::before {background-image: url(../Images/ai/tech.png);}
 .accordian-ai .accordion .accordion-header[data-icon="production"]::before {background-image: url(../Images/ai/production.png);}
@@ -5412,7 +5412,7 @@ transform: scale(0);
 .overlapRotate {transform: rotate(40deg);}
 .Ai_row {padding: 120px 0 50px;}
 .Ai_row .sizeH1 {font-size: 40px; line-height: 48px;margin-bottom: 20px;} 
-.Ai_row p {width: 80%;}
+.Ai_row p {width: 70%; line-height: 28px;}
 .banner-bg {margin-top: -46px}
 
 .intro-text {
