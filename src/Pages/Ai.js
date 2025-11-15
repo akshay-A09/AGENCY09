@@ -6,6 +6,10 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Accordion from 'react-bootstrap/Accordion';
 
+// Import AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
+
 // Images
 import ourpurpose from '../Assets/Images/our-purpose.webp';
 import star  from '../Assets/Images/ai/star.png';
@@ -13,26 +17,77 @@ import bg  from '../Assets/Images/ai/bg.jpg';
 import casestudies from "../Assets/Images/ai/casestudies.jpg";
 // Images end
 
+// Define stats array outside the component
+const stats = [
+  { number: "500+", label: "Projects Delivered" },
+  { number: "11", label: "Years of Experience" },
+  { number: "20+", label: "Technologies Supported" },
+  { number: "20+", label: "Tech Professionals" },
+];
+
 const AI = () => {
+  // --- Refs for GSAP Animation ---
+  const statsSectionRef = useRef(null);
+  const statNumberRefs = useRef([]);
+  // ------------------------------
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    // Kill all ScrollTriggers
+    // Initialize AOS (for other sections)
+    AOS.init({
+      duration: 800,  // Animation duration
+      once: true,     // Whether animation should happen only once
+      offset: 100,      // Offset (in px) from the original trigger point
+    });
+
+    // --- GSAP Stats Section Animation ---
+    const section = statsSectionRef.current;
+    const numbers = statNumberRefs.current;
+
+    if (section && numbers.length > 0) {
+      const statsTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: section,
+          start: "top 85%", // Start when the top of the section is 85% from the top of the viewport
+          toggleActions: "play none none none", // Play once when it enters
+        }
+      });
+
+     
+
+      // 2. Number count-up animation
+      numbers.forEach((el, index) => {
+        const stat = stats[index]; // Get data from the stats array
+        const targetNumber = parseInt(stat.number.replace("+", ""), 10);
+        const suffix = stat.number.includes("+") ? "+" : "";
+
+        // Create a proxy object to animate its 'val' property
+        let counter = { val: 0 };
+
+        statsTl.to(counter, {
+          val: targetNumber,
+          duration: 1.5, // <-- MODIFICATION: Made faster (was 2)
+          ease: "power2.out", // A nice smooth ease
+          onUpdate: () => {
+            // On each update, set the element's text content
+            el.textContent = Math.floor(counter.val) + suffix;
+          }
+        }, "0"); // <-- MODIFICATION: All start together (was "-=0.6")
+      });
+    }
+    // --- End GSAP Stats Animation ---
+
+    // Kill all ScrollTriggers on component unmount
     return () => {
       ScrollTrigger.getAll().forEach(trigger => {
         trigger.kill();
       });
     };
-    // Kill all ScrollTriggers End
-  }, []);
+  }, []); // Empty dependency array is correct
 
-const stats = [
-    { number: "500+", label: "Projects Delivered" },
-    { number: "11", label: "Years of Experience" },
-    { number: "20+", label: "Technologies Supported" },
-    { number: "20+", label: "Tech Professionals" },
-  ];
-
+  // Reset refs array on each render before the map
+  statNumberRefs.current = [];
   
   return (
   <>
@@ -65,12 +120,16 @@ const stats = [
 
     <div className="spacer"></div>
 
-    <section className='center Ai_row'><div className='container'>
-      <h2 className='sizeH1 bold'>Intelligent Creativity,<br/> Accelerated by AI <img src={star} alt="star" /></h2>
-      <p>AI at AGENCY09 is about amplifying human creativity. Our AI-powered solutions simplify complexity, enhance performance and unlock efficiency, enabling brands to move from reactive marketing to predictive, insight-driven growth. We merge creativity and AI to build dynamic brand ecosystems that think, respond and evolve. </p>
-      <div className="btn-bg"><a href="#" ><span>Get Started</span></a></div>
-      <img className="banner-bg" src={bg} alt="background" /> 
-    </div></section>
+    <section className='center Ai_row' data-aos="fade-in">
+      <div className='container'>
+        <h2 className='sizeH1 bold' data-aos="fade-up">Intelligent Creativity,<br/> Accelerated by AI <img src={star} alt="star" /></h2>
+        <p data-aos="fade-up" data-aos-delay="100">AI at AGENCY09 is about amplifying human creativity. Our AI-powered solutions simplify complexity, enhance performance and unlock efficiency, enabling brands to move from reactive marketing to predictive, insight-driven growth. We merge creativity and AI to build dynamic brand ecosystems that think, respond and evolve. </p>
+        <div className="btn-bg" data-aos="fade-up" data-aos-delay="200"><a href="#" ><span>Get Started</span></a></div>
+        <div className='dtBg'>
+          <img className="banner-bg" src={bg} alt="background" /> 
+        </div>
+      </div>
+    </section>
 
 
 <section className='center accordian-ai'>
@@ -80,9 +139,9 @@ const stats = [
 
 
   <div className='container'>
-    <h2 className='sizeH1 bold'>AI-Enabled Capabilities</h2>
+    <h2 className='sizeH1 bold' data-aos="fade-up">AI-Enabled Capabilities</h2>
 
-    <Accordion>
+    <Accordion data-aos="fade-up" data-aos-delay="100">
       {/* Item 1 */}
       <Accordion.Item eventKey="8" key="8">
         <Accordion.Header data-icon="content"> Content</Accordion.Header>
@@ -531,7 +590,8 @@ const stats = [
 </section>
 
 
-<section className='center'><div className='container'>
+<section className='center' data-aos="fade-up">
+  <div className='container'>
   <h2 className='sizeH1 bold'>Case studies</h2>
 
     <div className="case-card">
@@ -625,18 +685,29 @@ const stats = [
 
 </div></section>
 
-<section className="stats-section">
-      <div className="container stats-min">
-        {stats.map((item, index) => (
-          <div className="stat-card" key={index}>
-            <h2 className="stat-number">{item.number}</h2>
-            <p className="stat-label">{item.label}</p>
-          </div>
-        ))}
+{/* - ref={statsSectionRef} is correctly placed
+*/}
+<section className="stats-section" ref={statsSectionRef}>
+  <div className="container stats-min">
+    {stats.map((item, index) => (
+      <div className="stat-card" key={index}>
+        {/* - ref to the <h2> is correctly placed
+          - Initial text is correctly set
+        */}
+        <h2 
+          className="stat-number"
+          ref={(el) => (statNumberRefs.current[index] = el)}
+        >
+          0{item.number.includes("+") ? "+" : ""}
+        </h2>
+        <p className="stat-label">{item.label}</p>
       </div>
-    </section>
+    ))} 
+  </div>
+</section>
 
-<section className='center bg-design'><div className='container'>
+<section className='center bg-design' data-aos="fade-up">
+  <div className='container'>
   
   <h2 className='sizeH1 bold'>Let’s Build the Future of Brand<br/> Intelligence Together</h2>
 
@@ -645,11 +716,8 @@ const stats = [
 </div></section>
 
 
-
-
     <Footer />
   </>
   )
 }
-
 export default AI

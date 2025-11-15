@@ -5365,7 +5365,12 @@ transform: scale(0);
   border-radius: 16px;
   text-align: center;
   padding: 40px 20px;
- width: 100%;
+  width: 100%;
+transition: all 0.5s ease-in-out;
+  &:hover{
+    background:#f9eafa;
+    scale: 1.1;
+  }
 }
 
 
@@ -5414,6 +5419,33 @@ transform: scale(0);
 .Ai_row .sizeH1 {font-size: 40px; line-height: 48px;margin-bottom: 20px;} 
 .Ai_row p {width: 70%; line-height: 28px;}
 .banner-bg {margin-top: -46px}
+.dtBg{  position: relative;z-index: -1; overflow: hidden; border-radius: 100%;}
+.dtBg img{animation: dtBg 20s ease-in-out infinite;}
+.dtBg::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    
+
+}
+.accordion .accordion-header button:not(.collapsed)::after {scale: 0;}
+
+@keyframes dtBg {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 
 .intro-text {
     margin-bottom: 20px;
