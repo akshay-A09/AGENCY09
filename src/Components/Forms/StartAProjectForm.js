@@ -178,7 +178,7 @@ function StartAProjectForm() {
         </div>
         <div className='FormGridS1'>
           <div className='form-group-btn center'>
-            <button type="submit" className="btnBlack fontS ripple-button" disabled={isButtonDisabled}>
+            <button type="submit" className="btnBlack fontS ripple-button" id="start-project-submit" disabled={isButtonDisabled}>
               <span>{buttonText}</span>
             </button>
           </div>
