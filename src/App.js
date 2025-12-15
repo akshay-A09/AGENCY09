@@ -65,6 +65,16 @@ import WebSeries from './Pages/Work/CaseStudy/WebSeries'
 import TeaserVideos from './Pages/Work/CaseStudy/TeaserVideos'
 import CampaignVideos from './Pages/Work/CaseStudy/CampaignVideos'
 import AI from './Pages/Ai'
+import PretxMI from './Pages/Work/CaseStudy/PretxMI'
+import AdityaBirlaCapital from './Pages/Work/CaseStudy/AdityaBirlaCapital'
+import RgiSharmajiVermaji from './Pages/Work/CaseStudy/RgiSharmajiVermaji'
+import GodrejLaffaireOnGroundEvent from './Pages/Work/CaseStudy/GodrejLaffaireOnGroundEvent'
+import FreyaaWovenWithLove from './Pages/Work/CaseStudy/FreyaaWovenWithLove'
+import RgiBlueyChatbot from './Pages/Work/CaseStudy/RgiBlueyChatbot'
+import RgiRHealthBeatMagazine from './Pages/Work/CaseStudy/RgiRHealthBeatMagazine'
+import PretAManger149Campaign from './Pages/Work/CaseStudy/PretAManger149Campaign'
+import PretFestivePackagingDiwali from './Pages/Work/CaseStudy/PretFestivePackagingDiwali'
+import RangiloRe from './Pages/Work/CaseStudy/RangiloRe'
 
 
 
@@ -144,10 +154,24 @@ function App() {
         <Route exact path='/work/case-studies/web-series' element={<WebSeries/>}/>
         <Route exact path='/work/case-studies/teaser-videos' element={<TeaserVideos/>}/>
         <Route exact path='/work/case-studies/campaign-videos' element={<CampaignVideos/>}/>
+
+        <Route exact path='/work/case-studies/pret-x-mi' element={<PretxMI/>}/>
+        <Route exact path='/work/case-studies/aditya-birla-capital' element={<AdityaBirlaCapital/>}/>
+        <Route exact path='/work/case-studies/rgi-sharmaji-vermaji' element={<RgiSharmajiVermaji/>}/>
+        <Route exact path='/work/case-studies/godrej-laffaire-on-ground-event' element={<GodrejLaffaireOnGroundEvent/>}/>
+        <Route exact path='/work/case-studies/freyaa-woven-with-love' element={<FreyaaWovenWithLove/>}/>
+        <Route exact path='/work/case-studies/rgi-bluey-chatbot' element={<RgiBlueyChatbot/>}/>
+         <Route exact path='/work/case-studies/rgi-r-health-beat-magazine' element={<RgiRHealthBeatMagazine/>}/>
+            <Route exact path='/work/case-studies/pret-a-manger-149-campaign' element={<PretAManger149Campaign/>}/>
+          <Route exact path='/work/case-studies/pret-festive-packaging-diwali' element={<PretFestivePackagingDiwali/>}/> 
+           <Route exact path='/work/case-studies/rangilo-re' element={<RangiloRe/>}/>     
+
        <Route exact path='/start-project-thank-you' element={<StartProjectThankYou/>}/>
        <Route exact path='/partner-with-us-thank-you' element={<PartnerWithUsThankYou/>}/>
        <Route exact path='/get-in-touch-thank-you' element={<GetInTouchThankYou/>}/>
        <Route exact path='/ai' element={<AI/>}/>
+
+       
       
         </Routes>
     </div>
