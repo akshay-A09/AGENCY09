@@ -11,11 +11,16 @@ import { PiSlideshow, PiStarFourFill } from "react-icons/pi";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { GoPlus } from "react-icons/go";
 import starY from '../../../Assets/Images/icons/star.webp';
-import logo from '../../../Assets/Images/logos/work/fashion_lifestyle/lakme.png';
+import logo from '../../../Assets/Images/logos/pret.webp';
 import ourwork1 from '../../../Assets/Images/work/lakme/lk-main.webp'
 import ourwork2 from '../../../Assets/Images/work/lakme/lk-1.webp'
 import ourwork3 from '../../../Assets/Images/work/lakme/lk-2.webp'
 
+
+import pretMi1 from '../../../Assets/Images/work/pret-mi1.jpg'
+import pretMi2 from '../../../Assets/Images/work/pret-mi2.jpg'
+import pretMi3 from '../../../Assets/Images/work/pret-mi3.jpg'
+import pretMi4 from '../../../Assets/Images/work/pret-mi4.jpg'
 
 // CaseStudySlider 
 const CaseStudySlider = {
@@ -228,7 +233,7 @@ return (
 <div className='cSsecMinC'>
 
 <div className='imgCol1 imgCol'>
-<span><img src={ourwork1} loading='lazy' /></span>
+<span><img src={pretMi1} loading='lazy' /></span>
 </div>
 
 </div>
@@ -237,12 +242,19 @@ return (
 <div className='mainslider'>
 <Slider {...mainSlider} className='clientelSlider slick-slider'>
 <div className='imgCol1 imgCol'>
-<span><img src={ourwork2} loading='lazy' /></span>
+<span><img src={pretMi2} loading='lazy' /></span>
 </div>
 
 <div className='imgCol1 imgCol'>
-<span><img src={ourwork3} loading='lazy' /></span>
+<span><img src={pretMi3} loading='lazy' /></span>
 </div>
+
+<div className='imgCol1 imgCol'>
+<span><img src={pretMi4} loading='lazy' /></span>
+</div>
+
+
+
 </Slider>
 </div>
 

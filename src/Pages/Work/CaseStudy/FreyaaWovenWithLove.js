@@ -11,10 +11,13 @@ import { PiSlideshow, PiStarFourFill } from "react-icons/pi";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { GoPlus } from "react-icons/go";
 import starY from '../../../Assets/Images/icons/star.webp';
-import logo from '../../../Assets/Images/logos/work/fashion_lifestyle/lakme.png';
+import logo from '../../../Assets/Images/logos/work/fashion_lifestyle/freyaa.jpg';
 import ourwork1 from '../../../Assets/Images/work/lakme/lk-main.webp'
 import ourwork2 from '../../../Assets/Images/work/lakme/lk-1.webp'
 import ourwork3 from '../../../Assets/Images/work/lakme/lk-2.webp'
+
+import freyaa1 from '../../../Assets/Images/work/freyaa1.webp'
+import freyaa2 from '../../../Assets/Images/work/freyaa2.webp'
 
 
 // CaseStudySlider 
@@ -68,32 +71,6 @@ arrow:false,
 }
 
 // Slider
-
-//CaseStudy Data
-const CaseStudyData = [
-{
-link: '#',
-image: ourwork1,
-titale: 'Brand led site for a Banking Solutions Firm',
-tags: [{ name: 'BFSI' },],
-},  
-{
-link: '#',
-image: ourwork2,
-titale: 'A dynamic website for India’s biggest truck company',
-tags: [
-{ name: 'Automobile' },
-],
-},  
-{
-link: '#',
-image: ourwork3,
-titale: 'Revamped Website for one of the India’s biggest institution',
-tags: [{ name: 'Education' },],
-
-},
-];
-//CaseStudy Data End
 
 const FreyaaWovenWithLove = () => {
 
@@ -228,23 +205,23 @@ For Women’s Day 2025, Freyaa wanted to go beyond cliched “empowerment” mes
 <div className='cSsecMinC'>
 
 <div className='imgCol1 imgCol'>
-<span><img src={ourwork1} loading='lazy' /></span>
+<span><img src={freyaa1} loading='lazy' /></span>
 </div>
 
+
+<div className='imgCol1 imgCol'>
+<span><img src={freyaa2} loading='lazy' /></span>
+</div>
 </div>
 
 
-<div className='mainslider'>
+{/* <div className='mainslider'>
 <Slider {...mainSlider} className='clientelSlider slick-slider'>
 <div className='imgCol1 imgCol'>
-<span><img src={ourwork2} loading='lazy' /></span>
-</div>
-
-<div className='imgCol1 imgCol'>
-<span><img src={ourwork3} loading='lazy' /></span>
+<span><img src={freyaa2} loading='lazy' /></span>
 </div>
 </Slider>
-</div>
+</div> */}
 
 
 </div>

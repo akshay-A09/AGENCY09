@@ -11,10 +11,13 @@ import { PiSlideshow, PiStarFourFill } from "react-icons/pi";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { GoPlus } from "react-icons/go";
 import starY from '../../../Assets/Images/icons/star.webp';
-import logo from '../../../Assets/Images/logos/work/fashion_lifestyle/lakme.png';
+import logo from '../../../Assets/Images/logos/work/BFSI/rgi.png';
 import ourwork1 from '../../../Assets/Images/work/lakme/lk-main.webp'
 import ourwork2 from '../../../Assets/Images/work/lakme/lk-1.webp'
 import ourwork3 from '../../../Assets/Images/work/lakme/lk-2.webp'
+
+import Sharmaji1 from '../../../Assets/Images/work/Sharmaji1.webp'
+import Sharmaji2 from '../../../Assets/Images/work/Sharmaji2.webp'
 
 
 // CaseStudySlider 
@@ -229,12 +232,20 @@ return (
 <div className='cSsecMinC'>
 
 <div className='imgCol1 imgCol'>
-<span><img src={ourwork1} loading='lazy' /></span>
+<span><img src={Sharmaji1} loading='lazy' /></span>
 </div>
 
+
+<div className='imgCol1 imgCol'>
+<span><img src={Sharmaji2} loading='lazy' /></span>
 </div>
 
 
+
+
+</div>
+
+{/* 
 <div className='mainslider'>
 <Slider {...mainSlider} className='clientelSlider slick-slider'>
 <div className='imgCol1 imgCol'>
@@ -245,7 +256,7 @@ return (
 <span><img src={ourwork3} loading='lazy' /></span>
 </div>
 </Slider>
-</div>
+</div> */}
 
 
 </div>
