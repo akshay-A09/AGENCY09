@@ -135,10 +135,16 @@ return (
 
 <div className='cSsecMinB'>
 <div className='cSsecMinBRow'>
+
 <div className='cSsecMinBCol'>
 <h4>Overview</h4>
 <p>Freyaa is an ethnic and contemporary Indian wear brand that celebrates beauty, tradition and femininity through its garments. It resonates with women who value culture, emotional connections, quality and rooted storytelling.
 For Women’s Day 2025, Freyaa wanted to go beyond cliched “empowerment” messages, and stand out with something real.</p>
+</div>
+
+<div className='cSsecMinBCol'>
+<h4>Year</h4>
+<p>2024</p>
 </div>
 
 <div className='cSsecMinBCol'>
@@ -150,16 +156,6 @@ For Women’s Day 2025, Freyaa wanted to go beyond cliched “empowerment” mes
 <h4>Services</h4>
 <ul>
 <li>Production</li>
-</ul>
-
-</div>
-
-<div className='cSsecMinBCol'>
-<h4>Objective</h4>
-<ul>
-<li>To increase brand awareness & engagement</li>
-<li>To create an ownable narrative around Women’s Day</li>
-<li>To drive emotional affinity with the brand</li>
 </ul>
 </div>
 
@@ -177,9 +173,16 @@ For Women’s Day 2025, Freyaa wanted to go beyond cliched “empowerment” mes
 <li>We realised that every woman has at least one piece of fabric that’s gifted by another woman - usually a scarf, saree or dress - that holds emotional value. For some women it’s a symbol of love, for others it’s strength and belief.</li>
 <li>We decided to celebrate this bond between women with a short film called #WovenWithLove. It was an interview-style video featuring real women narrating their stories - stories about special garments gifted to them by a special woman in their life.</li>
 <li>To boost the authenticity of the film, each woman was filmed at home, at work or in another such intimate setting. We avoided flashy backgrounds or background music - the women and their stories shone through. Branding and supers were kept minimal.</li>
-
 </ul>
+</div>
 
+<div className='cSsecMinBCol'>
+<h4>Objective</h4>
+<ul>
+<li>To increase brand awareness & engagement</li>
+<li>To create an ownable narrative around Women’s Day</li>
+<li>To drive emotional affinity with the brand</li>
+</ul>
 </div>
 
 <div className='cSsecMinBCol'>
@@ -193,10 +196,8 @@ For Women’s Day 2025, Freyaa wanted to go beyond cliched “empowerment” mes
 </ul>
 </div>
 
-<div className='cSsecMinBCol'>
-<h4>Year</h4>
-<p>2024</p>
-</div>
+
+
 
 </div>
 

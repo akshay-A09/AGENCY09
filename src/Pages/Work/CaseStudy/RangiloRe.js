@@ -164,6 +164,11 @@ return (
 </div>
 
 <div className='cSsecMinBCol'>
+<h4>Year</h4>
+<p>2025</p>
+</div>
+
+<div className='cSsecMinBCol'>
 <h4>Industry</h4>
 <p>Entertainment</p>
 </div>
@@ -173,7 +178,6 @@ return (
 <ul>
 <li>Event Coverage, Social Media</li>
 </ul>
-
 </div>
 
 <div className='cSsecMinBCol'>
@@ -218,12 +222,6 @@ return (
 <li>400,000 organic views on a single reel (Jaya Kishori)</li>
 <li>30% follower growth</li>
 </ul>
-
-</div>
-
-<div className='cSsecMinBCol'>
-<h4>Year</h4>
-<p>2025</p>
 </div>
 
 </div>

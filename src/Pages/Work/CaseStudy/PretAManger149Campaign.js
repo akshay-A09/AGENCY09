@@ -164,6 +164,11 @@ return (
 </div>
 
 <div className='cSsecMinBCol'>
+<h4>Year</h4>
+<p>2025</p>
+</div>
+
+<div className='cSsecMinBCol'>
 <h4>Industry</h4>
 <p>F&B</p>
 </div>
@@ -173,7 +178,6 @@ return (
 <ul>
 <li>Content Creation, Digital & OOH</li>
 </ul>
-
 </div>
 
 <div className='cSsecMinBCol'>
@@ -198,7 +202,6 @@ return (
 <li>Although we tried a million permutations and combinations for the campaign line, we finally settled on the rather simple ‘Really?’</li>
 <li>Why? Well, because we tested the idea of a 149 Rupee sandwich around the office and many people just went “Really?” and it caught on best.</li>
 </ul>
-
 </div>
 
 <div className='cSsecMinBCol'>
@@ -213,11 +216,6 @@ return (
 <li>9,871,051 views in total</li>
 </ul>
 <p>*Numbers as of 5th December, 2025. The campaign is ongoing.</p>
-</div>
-
-<div className='cSsecMinBCol'>
-<h4>Year</h4>
-<p>2025</p>
 </div>
 
 </div>

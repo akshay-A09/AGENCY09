@@ -164,6 +164,11 @@ return (
 </div>
 
 <div className='cSsecMinBCol'>
+<h4>Year</h4>
+<p>2024</p>
+</div>
+
+<div className='cSsecMinBCol'>
 <h4>Industry</h4>
 <p>Insurance</p>
 </div>
@@ -172,16 +177,6 @@ return (
 <h4>Services</h4>
 <ul>
 <li>WhatsApp Chatbot, Mascot</li>
-</ul>
-
-</div>
-
-<div className='cSsecMinBCol'>
-<h4>Objective</h4>
-<ul>
-<li>To reduce turnaround time between agents receiving a query and providing resolution </li>
-<li>To improve customer satisfaction and increase the renewal rate.
-</li>
 </ul>
 </div>
 
@@ -205,9 +200,16 @@ return (
 <li>Bluey could deliver brochures, policy wordings, FAQs, proposal forms, links to YouTube videos and much more in chat.
 </li>
 <li>Bluey was launched via B2B channels like mailers and standees, B2E channels including internal emails and WhatsApp forwards, and finally via LinkedIn.</li>
-
 </ul>
+</div>
 
+<div className='cSsecMinBCol'>
+<h4>Objective</h4>
+<ul>
+<li>To reduce turnaround time between agents receiving a query and providing resolution </li>
+<li>To improve customer satisfaction and increase the renewal rate.
+</li>
+</ul>
 </div>
 
 <div className='cSsecMinBCol'>
@@ -219,10 +221,6 @@ return (
 </ul>
 </div>
 
-<div className='cSsecMinBCol'>
-<h4>Year</h4>
-<p>2024</p>
-</div>
 
 </div>
 

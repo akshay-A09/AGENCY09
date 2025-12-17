@@ -165,6 +165,11 @@ The company issues a quarterly magazine called R Health Beat, which is physicall
 </div>
 
 <div className='cSsecMinBCol'>
+<h4>Year</h4>
+<p>2019-ongoing</p>
+</div>
+
+<div className='cSsecMinBCol'>
 <h4>Industry</h4>
 <p>Insurance</p>
 </div>
@@ -173,15 +178,6 @@ The company issues a quarterly magazine called R Health Beat, which is physicall
 <h4>Services</h4>
 <ul>
 <li>Thematic Magazine Design</li>
-</ul>
-
-</div>
-
-<div className='cSsecMinBCol'>
-<h4>Objective</h4>
-<ul>
-<li>To curate high level wellness content that educates, inspires and tells stories </li>
-<li>To hook key decision makers like CXOs, high ranking executives who decide on the insurer for their organisation.</li>
 </ul>
 </div>
 
@@ -202,10 +198,15 @@ The company issues a quarterly magazine called R Health Beat, which is physicall
 <li>The content is a mix of deep & light reads that keep the reader engaged, like a more serious version of a lifestyle magazine.</li>
 <li>We’re visibly showcasing RGI in informal, high touch settings and amplifying brand presence.
 </li>
-
-
 </ul>
+</div>
 
+<div className='cSsecMinBCol'>
+<h4>Objective</h4>
+<ul>
+<li>To curate high level wellness content that educates, inspires and tells stories </li>
+<li>To hook key decision makers like CXOs, high ranking executives who decide on the insurer for their organisation.</li>
+</ul>
 </div>
 
 <div className='cSsecMinBCol'>
@@ -217,11 +218,6 @@ The company issues a quarterly magazine called R Health Beat, which is physicall
 <li>AGENCY09 has designed 14 volumes and counting.</li>
 
 </ul>
-</div>
-
-<div className='cSsecMinBCol'>
-<h4>Year</h4>
-<p>2019-ongoing</p>
 </div>
 
 </div>

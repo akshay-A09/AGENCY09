@@ -67,11 +67,11 @@ import CampaignVideos from './Pages/Work/CaseStudy/CampaignVideos'
 import AI from './Pages/Ai'
 
 // New Dec 2025
+import RgiSharmajiVermaji from './Pages/Work/CaseStudy/RgiSharmajiVermaji'
+import FreyaaWovenWithLove from './Pages/Work/CaseStudy/FreyaaWovenWithLove'
 import PretxMI from './Pages/Work/CaseStudy/PretxMI'
 import AdityaBirlaCapital from './Pages/Work/CaseStudy/AdityaBirlaCapital'
-import RgiSharmajiVermaji from './Pages/Work/CaseStudy/RgiSharmajiVermaji'
 import GodrejLaffaireOnGroundEvent from './Pages/Work/CaseStudy/GodrejLaffaireOnGroundEvent'
-import FreyaaWovenWithLove from './Pages/Work/CaseStudy/FreyaaWovenWithLove'
 import RgiBlueyChatbot from './Pages/Work/CaseStudy/RgiBlueyChatbot'
 import RgiRHealthBeatMagazine from './Pages/Work/CaseStudy/RgiRHealthBeatMagazine'
 import PretAManger149Campaign from './Pages/Work/CaseStudy/PretAManger149Campaign'

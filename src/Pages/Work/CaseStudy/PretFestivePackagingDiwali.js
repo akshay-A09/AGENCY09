@@ -163,6 +163,11 @@ return (
 </div>
 
 <div className='cSsecMinBCol'>
+<h4>Year</h4>
+<p>2025</p>
+</div>
+
+<div className='cSsecMinBCol'>
 <h4>Industry</h4>
 <p>F&B</p>
 </div>
@@ -171,15 +176,6 @@ return (
 <h4>Services</h4>
 <ul>
 <li>Packaging, Social Media</li>
-</ul>
-
-</div>
-
-<div className='cSsecMinBCol'>
-<h4>Objective</h4>
-<ul>
-<li>To add positive value to India’s year end festive atmosphere </li>
-<li>Point 2</li>
 </ul>
 </div>
 
@@ -197,7 +193,14 @@ return (
 <li>We curated a set of elements that work for multiple festivals, based on common themes like lights and fireworks.</li>
 <li>Using similar logic; we named the campaign ‘Light Up’ - a short, sweet name that works perfectly from October to December.</li>
 </ul>
+</div>
 
+<div className='cSsecMinBCol'>
+<h4>Objective</h4>
+<ul>
+<li>To add positive value to India’s year end festive atmosphere </li>
+<li>Point 2</li>
+</ul>
 </div>
 
 <div className='cSsecMinBCol'>
@@ -206,12 +209,6 @@ return (
 <li>Point 2</li>
 <li>Point 2</li>
 </ul>
-
-</div>
-
-<div className='cSsecMinBCol'>
-<h4>Year</h4>
-<p>2025</p>
 </div>
 
 </div>

@@ -169,6 +169,11 @@ return (
 </div>
 
 <div className='cSsecMinBCol'>
+<h4>Year</h4>
+<p>2025</p>
+</div>
+
+<div className='cSsecMinBCol'>
 <h4>Industry</h4>
 <p>F&B</p>
 </div>
@@ -178,14 +183,6 @@ return (
 <ul>
 <li>Branding, Packaging, Content Creation</li>
 </ul>
-
-
-</div>
-
-<div className='cSsecMinBCol'>
-<h4>Objective</h4>
-<p>To announce Pret’s partnership with Mumbai Indians 
-</p>
 </div>
 
 <div className='cSsecMinBCol'>
@@ -200,14 +197,21 @@ return (
 <ul>
 <li>Make Pret’s packaging the new MVP of match-day moments</li>
 </ul>
+</div>
 
+<div className='cSsecMinBCol'>
 <h4>Design Execution</h4>
 <ul>
 <li>Doodles elements came from both the food and coffee spaces</li>
 <li>Created doodle illustrations for Pret’s cups, sleeves and takeaway bags</li>
 <li>Playfully differentiated between hot and cold beverages with white and blue stars</li>
-
 </ul>
+</div>
+
+<div className='cSsecMinBCol'>
+<h4>Objective</h4>
+<p>To announce Pret’s partnership with Mumbai Indians 
+</p>
 </div>
 
 <div className='cSsecMinBCol'>
@@ -219,11 +223,6 @@ return (
 <li>Customer sentiment and organic content amplified - customers posted the cup on IG stories tagging Pret</li>
 <li>Brand visibility elevated during IPL season</li>
 </ul>
-</div>
-
-<div className='cSsecMinBCol'>
-<h4>Year</h4>
-<p>2025</p>
 </div>
 
 </div>

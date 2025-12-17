@@ -162,6 +162,11 @@ const AdityaBirlaCapital = () => {
                         <h4>Overview</h4>
                         <p>Aditya Birla Capital Ltd (ABCL) ) is an NBFC and functions as the holding company for the $66 billion Aditya Birla Group’s financial services businesses. The client approached us to grow their LinkedIn following, engage their own employees better and standardise their content according to their ‘Five Pillars’ strategy.</p>
                     </div>
+                    
+                    <div className='cSsecMinBCol'>
+                        <h4>Year</h4>
+                        <p>2024-25</p>
+                    </div>
 
                     <div className='cSsecMinBCol'>
                         <h4>Industry</h4>
@@ -173,14 +178,6 @@ const AdityaBirlaCapital = () => {
                         <ul>
                             <li>Multi Channel Communication, Production, SEO</li>
                         </ul>
-
-                        
-                    </div>
-
-                    <div className='cSsecMinBCol'>
-                        <h4>Objective</h4>
-                        <p>Position ABC as Employer of Choice in the BFSI space in India for both current & prospective talent 
-</p>
                     </div>
 
                     <div className='cSsecMinBCol'>
@@ -189,7 +186,7 @@ const AdityaBirlaCapital = () => {
                             <li>Increasing Glassdoor and AmbitionBox ratings, and the CEO’s approval rating </li>
                             <li>Getting more employees to visit the ABC Store and purchase merch</li>
                         </ul>
-                    </div>
+                    </div>                    
 
                     <div className='cSsecMinBCol'>
                         <h4>Approach</h4>
@@ -198,7 +195,17 @@ const AdityaBirlaCapital = () => {
                             <li>Standardise the employer brand’s content following their Five Pillars strategy and delegate subsidiaries-related content to their respective handles</li>
                         </ul>
 
-                         <h4>Results: LinkedIn</h4>
+                     
+                    </div>
+
+
+                    <div className='cSsecMinBCol'>
+                        <h4>Objective</h4>
+                        <p>Position ABC as Employer of Choice in the BFSI space in India for both current & prospective talent</p>
+                    </div>
+
+                    <div className='cSsecMinBCol'>
+                        <h4>Results: LinkedIn</h4>
                         <ul>
                             <li>7.6x Linkedin follower growth; from 48k to 363k</li>
                             <li>6 million impressions, 1 million page visits (FY’24 and FY’25)</li>
@@ -206,11 +213,8 @@ const AdityaBirlaCapital = () => {
                             <li>18% engagement rate (FY’25) (5.6x the industry average)</li>
                             <li>16% of new hires engaged</li>
                              <li>Ran 20 properties, designed 9</li>
-
                         </ul>
-                    </div>
 
-                    <div className='cSsecMinBCol'>
                         <h4>Results: Website</h4>
                         <ul>
                             <li>320k+ organic website sessions </li>
@@ -220,10 +224,7 @@ const AdityaBirlaCapital = () => {
                         </ul>
                     </div>
 
-                    <div className='cSsecMinBCol'>
-                        <h4>Year</h4>
-                        <p>2024-25</p>
-                    </div>
+                
 
                 </div>
 

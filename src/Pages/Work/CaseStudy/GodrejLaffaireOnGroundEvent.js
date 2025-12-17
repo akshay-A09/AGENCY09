@@ -158,9 +158,15 @@ return (
 
 <div className='cSsecMinB'>
 <div className='cSsecMinBRow'>
+
 <div className='cSsecMinBCol'>
 <h4>Overview</h4>
 <p>Godrej L'Affaire is the Godrej Group's brand-agnostic lifestyle platform, celebrating the goodness of lifestyle with over 85k followers across social media. Their annual event, All Things Goodness, returned in 2024 after a four year hiatus, and saw 1500+ attendees including Malaika Arora, Ranveer Allahbadia, Chef Harpal Singh Sokhi and others.</p>
+</div>
+
+<div className='cSsecMinBCol'>
+<h4>Year</h4>
+<p>2024</p>
 </div>
 
 <div className='cSsecMinBCol'>
@@ -173,14 +179,6 @@ return (
 <ul>
 <li>Event Coverage, Community Engagement, IP Development</li>
 </ul>
-
-
-</div>
-
-<div className='cSsecMinBCol'>
-<h4>Objective</h4>
-<p>To build a community of lifestyle aficionados 
-</p>
 </div>
 
 <div className='cSsecMinBCol'>
@@ -202,7 +200,12 @@ return (
 <li>We partnered with the iconic band The Bartender to elevate the event with lively music.</li>
 <li>We certified the event as 100% sustainable via an external audit, reflecting Godrej’s "Good and Green" philosophy.</li>
 </ul>
+</div>
 
+
+<div className='cSsecMinBCol'>
+<h4>Objective</h4>
+<p>To build a community of lifestyle aficionados </p>
 </div>
 
 <div className='cSsecMinBCol'>
@@ -217,10 +220,6 @@ return (
 </ul>
 </div>
 
-<div className='cSsecMinBCol'>
-<h4>Year</h4>
-<p>2024</p>
-</div>
 
 </div>
 
