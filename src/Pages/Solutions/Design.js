@@ -33,6 +33,7 @@ import wurthCarHaus from '../../Assets/Images/logos/work/automative/wurth-car-ha
 import barci from '../../Assets/Images/logos/work/others/barci.png';
 import hudobosshugo from '../../Assets/Images/logos/work/fashion_lifestyle/hudo-boss-hugo.png';
 import movado from '../../Assets/Images/logos/work/fashion_lifestyle/movado.png';
+import pretMi1 from '../../Assets/Images/work/pretMi1Cover.webp'
 
 
 // Images end
@@ -146,6 +147,16 @@ const Design = () => {
 
 //CaseStudy Data
 const CaseStudyData = [
+   {
+        id: 0,
+        title: "Making Pret’s packaging the new MVP of match-day moments",
+        tags: [
+        ],
+        image: pretMi1,
+        link: '/work/case-studies/pret-x-mi',
+        brand: "Pret",
+        department: "Design"
+    },
   {
     id: 7,
     title: 'Visualizing Insights: Award-Winning Yearbook for BARC India',
@@ -546,7 +557,7 @@ const schemaData = {
                                         <p>{CaseStudy.department}</p>
                                     </div>
                                 </div></div>
-                                <div className='CaseStudyTitale'>{CaseStudy.titale}</div>
+                                <div className='CaseStudyTitale'>{CaseStudy.title}</div>
                                 <div className='textTag'><p>{CaseStudy.tag}
                                   {CaseStudy.tags.map((tag, index) => (
                                     <span key={index}>{tag.name}</span>

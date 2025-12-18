@@ -561,7 +561,7 @@ const faqsData = [
                                         <p>{CaseStudy.department}</p>
                                     </div>
                                 </div></div>
-                                <div className='CaseStudyTitale'>{CaseStudy.titale}</div>
+                                <div className='CaseStudyTitale'>{CaseStudy.title}</div>
                                 <div className='textTag'><p>{CaseStudy.tag}
                                   {CaseStudy.tags.map((tag, index) => (
                                     <span key={index}>{tag.name}</span>

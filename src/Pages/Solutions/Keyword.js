@@ -136,7 +136,7 @@ const CaseStudyData = [
       image:nahar,
       link:'/work/case-studies/massive-organic-growth-for-nahar-groups-search-presence',
       brand:'Nahar Group',
-      department:'Keywords'
+      department:'keyword'
     },
     {
       id:15,
@@ -149,7 +149,7 @@ const CaseStudyData = [
       image:ryanGroup,
       link:'/work/case-studies/consolidation-of-91-plus-websites-and-tremendous-seo-growth-for-ryan-group',
       brand:'Ryan Group',
-      department:'Keywords'
+      department:'keyword'
     },
     {
       id:16,
@@ -162,7 +162,7 @@ const CaseStudyData = [
       image:solarize,
       link:'/work/case-studies/industry-leading-organic-search-results-from-scratch-for-mahindra-solarize',
       brand:'Mahindra Solarize',
-      department:'Keywords'
+      department:'keyword'
     }
   ];
 //CaseStudy Data End
@@ -551,7 +551,7 @@ const schemaData = {
                                         <p>{CaseStudy.department}</p>
                                     </div>
                                 </div></div>
-                                <div className='CaseStudyTitale'>{CaseStudy.titale}</div>
+                                <div className='CaseStudyTitale'>{CaseStudy.title}</div>
                                 <div className='textTag'><p>{CaseStudy.tag}
                                   {CaseStudy.tags.map((tag, index) => (
                                     <span key={index}>{tag.name}</span>

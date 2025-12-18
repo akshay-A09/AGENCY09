@@ -9,9 +9,23 @@ import DigitalAds from '../../../Assets/Images/work/digital-ads.jpg';
 import Webseries from '../../../Assets/Images/work/web-series.jpg';
 import Reels from '../../../Assets/Images/work/reels.jpg';
 import CorporateVideos from '../../../Assets/Images/work/CorporateVideos.jpg';
+import Sharmaji1 from '../../../Assets/Images/work/Sharmaji1Cover.webp'
+import freyaa1 from '../../../Assets/Images/work/freyaa1Cover.webp'
 
 // Production
 export const ProductionData = [
+    
+     {
+        id: 0,
+        title: "RGI: Making insurance agents understand products better",
+        tags: [
+        ],
+        image: Sharmaji1,
+        link: '/work/case-studies/rgi-sharmaji-vermaji',
+        brand: "RGI",
+        department: "Production"
+    },
+
  {
         id: 1,
         title: "Campaign Videos",
@@ -48,7 +62,16 @@ export const ProductionData = [
         department: "Production"
     },
  
-
+  {
+        id: 0,
+        title: "Creating an ownable Women's Day narrative for Freyaa",
+        tags: [
+        ],
+        image: freyaa1,
+        link: '/work/case-studies/freyaa-woven-with-love',
+        brand: "Freyaa",
+        department: "Production"
+    },
 
  
     {
@@ -112,7 +135,7 @@ export const ProductionData = [
 const Production = () => {
     const [visibleProductionItems, setVisibleProductionItems] = useState(5);
     const loadMoreProductionItems = () => {
-        setVisibleProductionItems((prev) => prev + 5);
+        setVisibleProductionItems((prev) => prev + 9);
     };
 
   return (

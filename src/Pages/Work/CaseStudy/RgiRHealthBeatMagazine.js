@@ -11,7 +11,7 @@ import { PiSlideshow, PiStarFourFill } from "react-icons/pi";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { GoPlus } from "react-icons/go";
 import starY from '../../../Assets/Images/icons/star.webp';
-import logo from '../../../Assets/Images/logos/work/fashion_lifestyle/lakme.png';
+import logo from '../../../Assets/Images/logos/work/BFSI/rgi.png';
 import ourwork1 from '../../../Assets/Images/work/lakme/lk-main.webp'
 import ourwork2 from '../../../Assets/Images/work/lakme/lk-1.webp'
 import ourwork3 from '../../../Assets/Images/work/lakme/lk-2.webp'
@@ -101,13 +101,13 @@ const RgiRHealthBeatMagazine = () => {
 return (
 <>
 <Helmet>
-<title>RGI - R Health Beat Magazine
+<title>Creating inspirational & educational health content for RGI's magazine
 </title>
 <link rel="canonical" href="https://www.agency09.in/work/case-studies/rgi-r-health-beat-magazine"/>
 <meta name="robots" content="index, follow"/> 
 
 <meta name="description" content="Reliance General Insurance (RGI) (now IndusInd General Insurance) is one of India’s largest private general insurance companies, with 127+ offices and a network of 100,000+ agents."/>
-<meta property="og:title" content="RGI - R Health Beat Magazine
+<meta property="og:title" content="Creating inspirational & educational health content for RGI's magazine
 "/> 
 <meta property="og:description" content="Reliance General Insurance (RGI) (now IndusInd General Insurance) is one of India’s largest private general insurance companies, with 127+ offices and a network of 100,000+ agents."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
@@ -141,7 +141,7 @@ return (
 </div>
 
 <div className='cSsecMinHead m0'>
-<h1 className='sizeH4'>RGI - R Health Beat Magazine</h1>
+<h1 className='sizeH4'>Creating inspirational & educational health content for RGI's magazine</h1>
 </div>
 
 <div className='cSsecMinInfo m0'>
@@ -164,10 +164,6 @@ return (
 The company issues a quarterly magazine called R Health Beat, which is physically handed out to top executives, vendors and large corporate clients. It’s also emailed to their entire customer base (1M+). Since 2019, AGENCY09 has designed every issue of R Health Beat.</p>
 </div>
 
-<div className='cSsecMinBCol'>
-<h4>Year</h4>
-<p>2019-ongoing</p>
-</div>
 
 <div className='cSsecMinBCol'>
 <h4>Industry</h4>
@@ -178,6 +174,21 @@ The company issues a quarterly magazine called R Health Beat, which is physicall
 <h4>Services</h4>
 <ul>
 <li>Thematic Magazine Design</li>
+</ul>
+</div>
+
+<div className='cSsecMinBCol'>
+<h4>Year</h4>
+<p>2019-ongoing</p>
+</div>
+
+
+
+<div className='cSsecMinBCol'>
+<h4>Objective</h4>
+<ul>
+<li>To curate high level wellness content that educates, inspires and tells stories </li>
+<li>To hook key decision makers like CXOs, high ranking executives who decide on the insurer for their organisation.</li>
 </ul>
 </div>
 
@@ -201,13 +212,6 @@ The company issues a quarterly magazine called R Health Beat, which is physicall
 </ul>
 </div>
 
-<div className='cSsecMinBCol'>
-<h4>Objective</h4>
-<ul>
-<li>To curate high level wellness content that educates, inspires and tells stories </li>
-<li>To hook key decision makers like CXOs, high ranking executives who decide on the insurer for their organisation.</li>
-</ul>
-</div>
 
 <div className='cSsecMinBCol'>
 <h4>Results</h4>
@@ -223,7 +227,7 @@ The company issues a quarterly magazine called R Health Beat, which is physicall
 </div>
 
 </div>
-
+{/* 
 <div className='cSsecMinC'>
 
 <div className='imgCol1 imgCol'>
@@ -243,7 +247,7 @@ The company issues a quarterly magazine called R Health Beat, which is physicall
 <span><img src={ourwork3} loading='lazy' /></span>
 </div>
 </Slider>
-</div>
+</div> */}
 
 
 </div>

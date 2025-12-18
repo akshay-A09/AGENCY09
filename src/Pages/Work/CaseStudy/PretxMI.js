@@ -168,10 +168,6 @@ return (
 <p>Pret-A-Manger, the British cafe chain that prides itself on serving freshly prepared bites and organic coffee in 500+ stores worldwide, partnered up with Mumbai Indians for IPL 2025.</p>
 </div>
 
-<div className='cSsecMinBCol'>
-<h4>Year</h4>
-<p>2025</p>
-</div>
 
 <div className='cSsecMinBCol'>
 <h4>Industry</h4>
@@ -186,6 +182,21 @@ return (
 </div>
 
 <div className='cSsecMinBCol'>
+<h4>Year</h4>
+<p>2025</p>
+</div>
+
+
+
+
+
+<div className='cSsecMinBCol'>
+<h4>Objective</h4>
+<p>To announce Pret’s partnership with Mumbai Indians 
+</p>
+</div>
+
+<div className='cSsecMinBCol'>
 <h4>Challenges</h4>
 <ul>
 <li>Blend Pret seamlessly into IPL </li>
@@ -195,24 +206,14 @@ return (
 <div className='cSsecMinBCol'>
 <h4>Approach</h4>
 <ul>
-<li>Make Pret’s packaging the new MVP of match-day moments</li>
-</ul>
-</div>
-
-<div className='cSsecMinBCol'>
-<h4>Design Execution</h4>
-<ul>
+<li>We decided to make Pret's packaging the MVP of match-day moments</li>
 <li>Doodles elements came from both the food and coffee spaces</li>
 <li>Created doodle illustrations for Pret’s cups, sleeves and takeaway bags</li>
 <li>Playfully differentiated between hot and cold beverages with white and blue stars</li>
+
 </ul>
 </div>
 
-<div className='cSsecMinBCol'>
-<h4>Objective</h4>
-<p>To announce Pret’s partnership with Mumbai Indians 
-</p>
-</div>
 
 <div className='cSsecMinBCol'>
 <h4>Results</h4>

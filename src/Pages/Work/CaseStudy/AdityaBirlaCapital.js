@@ -11,7 +11,7 @@ import { PiSlideshow, PiStarFourFill } from "react-icons/pi";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { GoPlus } from "react-icons/go";
 import starY from '../../../Assets/Images/icons/star.webp';
-import logo from '../../../Assets/Images/logos/work/fashion_lifestyle/lakme.png';
+import logo from '../../../Assets/Images/logos/work/BFSI/aditya-birla.png';
 import ourwork1 from '../../../Assets/Images/work/lakme/lk-main.webp'
 import ourwork2 from '../../../Assets/Images/work/lakme/lk-1.webp'
 import ourwork3 from '../../../Assets/Images/work/lakme/lk-2.webp'
@@ -101,12 +101,12 @@ const AdityaBirlaCapital = () => {
   return (
     <>
     <Helmet>
-<title>Make it Employer of Choice in the BFSI space</title>
+<title>Making ABCL the Employer of Choice in the BFSI space</title>
 <link rel="canonical" href="https://www.agency09.in/work/case-studies/aditya-birla-capital"/>
 <meta name="robots" content="index, follow"/> 
 
 <meta name="description" content="Aditya Birla Capital Ltd (ABCL) ) is an NBFC and functions as the holding company for the $66 billion Aditya Birla Group’s financial services businesses. The client approached us to grow their LinkedIn following, engage their own employees better and standardise their content according to their ‘Five Pillars’ strategy."/>
-<meta property="og:title" content="Make it Employer of Choice in the BFSI space"/> 
+<meta property="og:title" content="Making ABCL the Employer of Choice in the BFSI space"/> 
 <meta property="og:description" content="Aditya Birla Capital Ltd (ABCL) ) is an NBFC and functions as the holding company for the $66 billion Aditya Birla Group’s financial services businesses. The client approached us to grow their LinkedIn following, engage their own employees better and standardise their content according to their ‘Five Pillars’ strategy."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
@@ -141,7 +141,7 @@ const AdityaBirlaCapital = () => {
                 </div>
 
                 <div className='cSsecMinHead m0'>
-                    <h1 className='sizeH4'>Make it Employer of Choice in the BFSI space</h1>
+                    <h1 className='sizeH4'>Making ABCL the Employer of Choice in the BFSI space</h1>
                 </div>
 
                 <div className='cSsecMinInfo m0'>
@@ -163,10 +163,6 @@ const AdityaBirlaCapital = () => {
                         <p>Aditya Birla Capital Ltd (ABCL) ) is an NBFC and functions as the holding company for the $66 billion Aditya Birla Group’s financial services businesses. The client approached us to grow their LinkedIn following, engage their own employees better and standardise their content according to their ‘Five Pillars’ strategy.</p>
                     </div>
                     
-                    <div className='cSsecMinBCol'>
-                        <h4>Year</h4>
-                        <p>2024-25</p>
-                    </div>
 
                     <div className='cSsecMinBCol'>
                         <h4>Industry</h4>
@@ -178,6 +174,17 @@ const AdityaBirlaCapital = () => {
                         <ul>
                             <li>Multi Channel Communication, Production, SEO</li>
                         </ul>
+                    </div>
+
+                    <div className='cSsecMinBCol'>
+                        <h4>Year</h4>
+                        <p>2024-25</p>
+                    </div>
+
+
+                    <div className='cSsecMinBCol'>
+                        <h4>Objective</h4>
+                        <p>Position ABC as Employer of Choice in the BFSI space in India for both current & prospective talent</p>
                     </div>
 
                     <div className='cSsecMinBCol'>
@@ -199,10 +206,7 @@ const AdityaBirlaCapital = () => {
                     </div>
 
 
-                    <div className='cSsecMinBCol'>
-                        <h4>Objective</h4>
-                        <p>Position ABC as Employer of Choice in the BFSI space in India for both current & prospective talent</p>
-                    </div>
+                  
 
                     <div className='cSsecMinBCol'>
                         <h4>Results: LinkedIn</h4>
@@ -215,7 +219,7 @@ const AdityaBirlaCapital = () => {
                              <li>Ran 20 properties, designed 9</li>
                         </ul>
 
-                        <h4>Results: Website</h4>
+                        <h4>Other Results:</h4>
                         <ul>
                             <li>320k+ organic website sessions </li>
                             <li>Achieved Glassdoor rating of 3.9/5 and 84% CEO’s Approval </li>
@@ -229,15 +233,12 @@ const AdityaBirlaCapital = () => {
                 </div>
 
             </div>
-
-            <div className='cSsecMinC'>
-
+{/* 
+<div className='cSsecMinC'>
 <div className='imgCol1 imgCol'>
     <span><img src={ourwork1} loading='lazy' /></span>
 </div>
-
 </div>
-
 
 <div className='mainslider'>
 <Slider {...mainSlider} className='clientelSlider slick-slider'>
@@ -249,7 +250,7 @@ const AdityaBirlaCapital = () => {
                 <span><img src={ourwork3} loading='lazy' /></span>
             </div>
 </Slider>
-</div>
+</div> */}
 
           
         </div>

@@ -101,13 +101,13 @@ const RangiloRe = () => {
 return (
 <>
 <Helmet>
-<title>Rangilo Re
+<title>Event coverage and audience curation for Rangilo Re 
 </title>
 <link rel="canonical" href="https://www.agency09.in/work/case-studies/rangilo-re"/>
 <meta name="robots" content="index, follow"/> 
 
 <meta name="description" content="Rangilo Re is the flagship Navratri IP of NESCO events, hosted at NESCO Centre in Goregaon East, Mumbai."/>
-<meta property="og:title" content="Rangilo Re"/> 
+<meta property="og:title" content="Event coverage and audience curation for Rangilo Re"/> 
 <meta property="og:description" content="Rangilo Re is the flagship Navratri IP of NESCO events, hosted at NESCO Centre in Goregaon East, Mumbai."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
@@ -140,19 +140,19 @@ return (
 </div>
 
 <div className='cSsecMinHead m0'>
-<h1 className='sizeH4'>Rangilo Re</h1>
+<h1 className='sizeH4'>Event coverage and audience curation for Rangilo Re</h1>
 </div>
 
 <div className='cSsecMinInfo m0'>
-<img src={logo} loading='lazy' />
-{/* <Link>Info <GoPlus /></Link> */}
-</div>
+{/* <img src={logo} loading='lazy' />*/}
+</div> 
 
 </div>
 
 <div className='strokeB'>
 <SVGCurveLine/>
 </div>  
+  
 
 
 <div className='cSsecMinB'>
@@ -163,10 +163,6 @@ return (
 <p>Rangilo Re is headlined each year by the charismatic singer Parthiv Gohil. The 2024 edition pulled in 175,000 attendees over 9 nights. The 2025 edition, running from 22nd September to 1st October, broke records with 180,000 attendees across 10 nights - making it Mumbai’s biggest indoor garba.</p>
 </div>
 
-<div className='cSsecMinBCol'>
-<h4>Year</h4>
-<p>2025</p>
-</div>
 
 <div className='cSsecMinBCol'>
 <h4>Industry</h4>
@@ -178,6 +174,11 @@ return (
 <ul>
 <li>Event Coverage, Social Media</li>
 </ul>
+</div>
+
+<div className='cSsecMinBCol'>
+<h4>Year</h4>
+<p>2025</p>
 </div>
 
 <div className='cSsecMinBCol'>
@@ -227,7 +228,7 @@ return (
 </div>
 
 </div>
-
+{/* 
 <div className='cSsecMinC'>
 
 <div className='imgCol1 imgCol'>
@@ -247,7 +248,7 @@ return (
 <span><img src={ourwork3} loading='lazy' /></span>
 </div>
 </Slider>
-</div>
+</div> */}
 
 
 </div>

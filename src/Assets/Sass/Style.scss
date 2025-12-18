@@ -1778,7 +1778,7 @@ footer{
         .slick-dots{
             left: 0!important;
             right: 0!important;
-            bottom: 10%!important;
+            bottom: 3%!important;
             gap: 10px!important;
             width: fit-content;
             margin: auto;
@@ -1841,6 +1841,57 @@ footer{
                 background-size: cover;
                 background-position: top center;
             }
+             &.freyaaSlider .HeroImage{
+                background: url(../Images/work/freyaaBanner.webp);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top center;
+
+                .HerobgLogo img{
+                    mix-blend-mode: multiply;
+                    filter: contrast(1);
+                }
+                .HeroText h1{
+                    color: $black;
+                }
+                .ripple-button{
+                    color: $black;
+                    border-color: $black;
+                    &:hover{
+                        color: $white;
+                        border-color: $blue;
+                    }
+                }
+            }  
+             &.pretSlider .HeroImage{
+                background: url(../Images/work/pretBanner.webp);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top center;
+                .HerobgLogo{
+                    margin-bottom: 2vw;
+                }
+                .videoBg{
+                  background: linear-gradient(280deg,rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.26) 38%, rgba(0, 0, 0, 0.6) 100%);
+                  opacity: 0.8;
+                }
+                // .HeroText h1{
+                //     color: $black;
+                // }
+                // .ripple-button{
+                //     color: $black;
+                //     border-color: $black;
+                // }
+            }  
+             &.rgiSlider2 .HeroImage{
+                background: url(../Images/work/sharmajiBanner.webp);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top center;
+                .HerobgLogo{
+                    margin-bottom: 2vw;
+                }
+            }  
             img{
                 width: 100%;
                 object-fit: contain;

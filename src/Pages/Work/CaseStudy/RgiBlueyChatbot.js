@@ -11,7 +11,7 @@ import { PiSlideshow, PiStarFourFill } from "react-icons/pi";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { GoPlus } from "react-icons/go";
 import starY from '../../../Assets/Images/icons/star.webp';
-import logo from '../../../Assets/Images/logos/work/fashion_lifestyle/lakme.png';
+import logo from '../../../Assets/Images/logos/work/BFSI/rgi.png';
 import ourwork1 from '../../../Assets/Images/work/lakme/lk-main.webp'
 import ourwork2 from '../../../Assets/Images/work/lakme/lk-1.webp'
 import ourwork3 from '../../../Assets/Images/work/lakme/lk-2.webp'
@@ -101,13 +101,13 @@ const RgiBlueyChatbot = () => {
 return (
 <>
 <Helmet>
-<title>RGI - Bluey Chatbot
+<title>Providing instant access to insurance material to 100,000+ RGI agents
 </title>
 <link rel="canonical" href="https://www.agency09.in/work/case-studies/rgi-bluey-chatbot"/>
 <meta name="robots" content="index, follow"/> 
 
 <meta name="description" content="Reliance General Insurance (RGI) (now IndusInd General Insurance) is one of India’s largest private general insurance companies, with 127+ offices and a network of 100,000+ agents."/>
-<meta property="og:title" content="RGI - Bluey Chatbot
+<meta property="og:title" content="Providing instant access to insurance material to 100,000+ RGI agents
 "/> 
 <meta property="og:description" content="Reliance General Insurance (RGI) (now IndusInd General Insurance) is one of India’s largest private general insurance companies, with 127+ offices and a network of 100,000+ agents."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
@@ -141,7 +141,7 @@ return (
 </div>
 
 <div className='cSsecMinHead m0'>
-<h1 className='sizeH4'>RGI - Bluey Chatbot</h1>
+<h1 className='sizeH4'>Providing instant access to insurance material to 100,000+ RGI agents</h1>
 </div>
 
 <div className='cSsecMinInfo m0'>
@@ -163,10 +163,6 @@ return (
 <p>Reliance General Insurance (RGI) (now IndusInd General Insurance) is one of India’s largest private general insurance companies, with 127+ offices and a network of 100,000+ agents. The company realised that its agents were facing a tough challenge: they lacked fast access to sales collateral, client-ready material, and policy-related information. When you’re an insurance agent, you’re juggling multiple tasks - and it can be challenging to dig out documents from hundreds of folders and subfolders. This makes agents inefficient and in turn affects how customers are served.</p>
 </div>
 
-<div className='cSsecMinBCol'>
-<h4>Year</h4>
-<p>2024</p>
-</div>
 
 <div className='cSsecMinBCol'>
 <h4>Industry</h4>
@@ -177,6 +173,21 @@ return (
 <h4>Services</h4>
 <ul>
 <li>WhatsApp Chatbot, Mascot</li>
+</ul>
+</div>
+
+<div className='cSsecMinBCol'>
+<h4>Year</h4>
+<p>2024</p>
+</div>
+
+
+<div className='cSsecMinBCol'>
+<h4>Objective</h4>
+<ul>
+<li>To reduce turnaround time between agents receiving a query and providing resolution </li>
+<li>To improve customer satisfaction and increase the renewal rate.
+</li>
 </ul>
 </div>
 
@@ -203,14 +214,6 @@ return (
 </ul>
 </div>
 
-<div className='cSsecMinBCol'>
-<h4>Objective</h4>
-<ul>
-<li>To reduce turnaround time between agents receiving a query and providing resolution </li>
-<li>To improve customer satisfaction and increase the renewal rate.
-</li>
-</ul>
-</div>
 
 <div className='cSsecMinBCol'>
 <h4>Results</h4>
@@ -225,7 +228,7 @@ return (
 </div>
 
 </div>
-
+{/* 
 <div className='cSsecMinC'>
 
 <div className='imgCol1 imgCol'>
@@ -245,7 +248,7 @@ return (
 <span><img src={ourwork3} loading='lazy' /></span>
 </div>
 </Slider>
-</div>
+</div> */}
 
 
 </div>

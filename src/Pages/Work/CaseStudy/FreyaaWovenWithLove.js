@@ -78,13 +78,13 @@ const FreyaaWovenWithLove = () => {
 return (
 <>
 <Helmet>
-<title>Freyaa - Woven With Love
+<title>Creating an ownable Women's Day narrative for Freyaa
 </title>
 <link rel="canonical" href="https://www.agency09.in/work/case-studies/freyaa-woven-with-love"/>
 <meta name="robots" content="index, follow"/> 
 
 <meta name="description" content="Freyaa is an ethnic and contemporary Indian wear brand that celebrates beauty, tradition and femininity through its garments. It resonates with women who value culture, emotional connections, quality and rooted storytelling."/>
-<meta property="og:title" content="Freyaa - Woven With Love
+<meta property="og:title" content="Creating an ownable Women's Day narrative for Freyaa
 "/> 
 <meta property="og:description" content="Freyaa is an ethnic and contemporary Indian wear brand that celebrates beauty, tradition and femininity through its garments. It resonates with women who value culture, emotional connections, quality and rooted storytelling."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
@@ -118,7 +118,7 @@ return (
 </div>
 
 <div className='cSsecMinHead m0'>
-<h1 className='sizeH4'>Freyaa - Woven With Love</h1>
+<h1 className='sizeH4'>Creating an ownable Women's Day narrative for Freyaa</h1>
 </div>
 
 <div className='cSsecMinInfo m0'>
@@ -143,11 +143,6 @@ For Women’s Day 2025, Freyaa wanted to go beyond cliched “empowerment” mes
 </div>
 
 <div className='cSsecMinBCol'>
-<h4>Year</h4>
-<p>2024</p>
-</div>
-
-<div className='cSsecMinBCol'>
 <h4>Industry</h4>
 <p>Garments</p>
 </div>
@@ -158,6 +153,24 @@ For Women’s Day 2025, Freyaa wanted to go beyond cliched “empowerment” mes
 <li>Production</li>
 </ul>
 </div>
+
+
+<div className='cSsecMinBCol'>
+<h4>Year</h4>
+<p>2024</p>
+</div>
+
+
+
+<div className='cSsecMinBCol'>
+<h4>Objective</h4>
+<ul>
+<li>To increase brand awareness & engagement</li>
+<li>To create an ownable narrative around Women’s Day</li>
+<li>To drive emotional affinity with the brand</li>
+</ul>
+</div>
+
 
 <div className='cSsecMinBCol'>
 <h4>Challenges</h4>
@@ -173,15 +186,6 @@ For Women’s Day 2025, Freyaa wanted to go beyond cliched “empowerment” mes
 <li>We realised that every woman has at least one piece of fabric that’s gifted by another woman - usually a scarf, saree or dress - that holds emotional value. For some women it’s a symbol of love, for others it’s strength and belief.</li>
 <li>We decided to celebrate this bond between women with a short film called #WovenWithLove. It was an interview-style video featuring real women narrating their stories - stories about special garments gifted to them by a special woman in their life.</li>
 <li>To boost the authenticity of the film, each woman was filmed at home, at work or in another such intimate setting. We avoided flashy backgrounds or background music - the women and their stories shone through. Branding and supers were kept minimal.</li>
-</ul>
-</div>
-
-<div className='cSsecMinBCol'>
-<h4>Objective</h4>
-<ul>
-<li>To increase brand awareness & engagement</li>
-<li>To create an ownable narrative around Women’s Day</li>
-<li>To drive emotional affinity with the brand</li>
 </ul>
 </div>
 

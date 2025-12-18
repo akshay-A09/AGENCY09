@@ -11,7 +11,7 @@ import { PiSlideshow, PiStarFourFill } from "react-icons/pi";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { GoPlus } from "react-icons/go";
 import starY from '../../../Assets/Images/icons/star.webp';
-import logo from '../../../Assets/Images/logos/work/fashion_lifestyle/lakme.png';
+import logo from '../../../Assets/Images/logos/pret.webp';
 import ourwork1 from '../../../Assets/Images/work/lakme/lk-main.webp'
 import ourwork2 from '../../../Assets/Images/work/lakme/lk-1.webp'
 import ourwork3 from '../../../Assets/Images/work/lakme/lk-2.webp'
@@ -101,13 +101,13 @@ const PretAManger149Campaign = () => {
 return (
 <>
 <Helmet>
-<title>Pret-A-Manger - 149 Campaign
+<title>Raising store walk-ins for Pret-A-Manger
 </title>
 <link rel="canonical" href="https://www.agency09.in/work/case-studies/pret-a-manger-149-campaign"/>
 <meta name="robots" content="index, follow"/> 
 
 <meta name="description" content="Pret wanted people to try their food - the Chicken Super Club and Cheddar & Pret Pickle sandwiches, which are famous around the world."/>
-<meta property="og:title" content="Pret-A-Manger - 149 Campaign
+<meta property="og:title" content="Raising store walk-ins for Pret-A-Manger
 "/> 
 <meta property="og:description" content="Pret wanted people to try their food - the Chicken Super Club and Cheddar & Pret Pickle sandwiches, which are famous around the world."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
@@ -141,7 +141,7 @@ return (
 </div>
 
 <div className='cSsecMinHead m0'>
-<h1 className='sizeH4'>Pret-A-Manger - 149 Campaign</h1>
+<h1 className='sizeH4'>Raising store walk-ins for Pret-A-Manger</h1>
 </div>
 
 <div className='cSsecMinInfo m0'>
@@ -164,11 +164,6 @@ return (
 </div>
 
 <div className='cSsecMinBCol'>
-<h4>Year</h4>
-<p>2025</p>
-</div>
-
-<div className='cSsecMinBCol'>
 <h4>Industry</h4>
 <p>F&B</p>
 </div>
@@ -179,6 +174,13 @@ return (
 <li>Content Creation, Digital & OOH</li>
 </ul>
 </div>
+
+<div className='cSsecMinBCol'>
+<h4>Year</h4>
+<p>2025</p>
+</div>
+
+
 
 <div className='cSsecMinBCol'>
 <h4>Objective</h4>
@@ -221,7 +223,7 @@ return (
 </div>
 
 </div>
-
+{/* 
 <div className='cSsecMinC'>
 
 <div className='imgCol1 imgCol'>
@@ -241,7 +243,7 @@ return (
 <span><img src={ourwork3} loading='lazy' /></span>
 </div>
 </Slider>
-</div>
+</div> */}
 
 
 </div>

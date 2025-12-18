@@ -9,6 +9,14 @@ import rgiBG from '../Assets/Images/hero/rgi-bg.webp';
 import americanTourister from '../Assets/Video/AmericanTouristerOrbiterProduct.mp4';
 import lakmeLogo from '../Assets/Images/logos/work/fashion_lifestyle/lakme.png';
 import americantouristerLogo from '../Assets/Images/logos/work/retail_fmcg/american-tourister.png';
+
+import freyaalogo from '../Assets/Images/logos/work/fashion_lifestyle/freyaa.jpg';
+import freyaa1 from '../Assets/Images/work/freyaa1.webp'
+import Sharmaji1 from '../Assets/Images/work/Sharmaji1.webp'
+import pretLogo from '../Assets/Images/logos/pret.webp';
+import pretMi1 from '../Assets/Images/work/pret-mi1.jpg'
+
+
 // Images end
 
 const HeroBanner = () => {
@@ -31,6 +39,23 @@ const HeroBanner = () => {
   };
 
   const slideData = [
+    // { 
+    //   image: '',
+    //   imageLogo: pretLogo,
+    //   title: "Making Pret’s packaging the new <br/>MVP of match-day moments",
+    //   description: '',
+    //   btnLink: '/work/case-studies/pret-x-mi',
+    //   className: 'pretSlider',
+    // },
+
+  // { 
+  //     image: '',
+  //     imageLogo: rgiLogo,
+  //     title: "RGI: Making insurance agents<br/> understand products better",
+  //     description: '',
+  //     btnLink: '/work/case-studies/rgi-sharmaji-vermaji',
+  //     className: 'rgiSlider2',
+  //   },
     { 
       image: rgiBG,
       imageLogo: rgiLogo,

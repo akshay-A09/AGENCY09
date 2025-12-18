@@ -11,11 +11,11 @@ import { PiSlideshow, PiStarFourFill } from "react-icons/pi";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { GoPlus } from "react-icons/go";
 import starY from '../../../Assets/Images/icons/star.webp';
-import logo from '../../../Assets/Images/logos/work/fashion_lifestyle/lakme.png';
-import ourwork1 from '../../../Assets/Images/work/lakme/lk-main.webp'
-import ourwork2 from '../../../Assets/Images/work/lakme/lk-1.webp'
-import ourwork3 from '../../../Assets/Images/work/lakme/lk-2.webp'
-
+import logo from '../../../Assets/Images/logos/pret.webp';
+import ourwork1 from '../../../Assets/Images/work/pret_festive1.jpg'
+import ourwork2 from '../../../Assets/Images/work/pret_festive2.webp'
+import ourwork3 from '../../../Assets/Images/work/pret_festive3.webp'
+import ourwork4 from '../../../Assets/Images/work/pret_festive4.webp'
 
 // CaseStudySlider 
 const CaseStudySlider = {
@@ -163,11 +163,6 @@ return (
 </div>
 
 <div className='cSsecMinBCol'>
-<h4>Year</h4>
-<p>2025</p>
-</div>
-
-<div className='cSsecMinBCol'>
 <h4>Industry</h4>
 <p>F&B</p>
 </div>
@@ -179,11 +174,24 @@ return (
 </ul>
 </div>
 
+
+<div className='cSsecMinBCol'>
+<h4>Year</h4>
+<p>2025</p>
+</div>
+
+
+<div className='cSsecMinBCol'>
+<h4>Objective</h4>
+<ul>
+<li>To add positive value to India’s year end festive atmosphere </li>
+</ul>
+</div>
+
 <div className='cSsecMinBCol'>
 <h4>Challenges</h4>
 <ul>
 <li>To keep packaging relevant & relatable to all of the year-end festivals.</li>
-<li>Point 2</li>
 </ul>
 </div>
 
@@ -195,21 +203,13 @@ return (
 </ul>
 </div>
 
-<div className='cSsecMinBCol'>
-<h4>Objective</h4>
-<ul>
-<li>To add positive value to India’s year end festive atmosphere </li>
-<li>Point 2</li>
-</ul>
-</div>
-
+{/* 
 <div className='cSsecMinBCol'>
 <h4>Results</h4>
 <ul>
-<li>Point 2</li>
-<li>Point 2</li>
+<li>-</li>
 </ul>
-</div>
+</div> */}
 
 </div>
 
@@ -233,6 +233,12 @@ return (
 <div className='imgCol1 imgCol'>
 <span><img src={ourwork3} loading='lazy' /></span>
 </div>
+
+<div className='imgCol1 imgCol'>
+<span><img src={ourwork4} loading='lazy' /></span>
+</div>
+
+
 </Slider>
 </div>
 

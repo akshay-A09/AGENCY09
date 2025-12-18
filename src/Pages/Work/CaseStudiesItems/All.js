@@ -12,6 +12,8 @@ import RGI from '../../../Assets/Images/work/rgi.webp';
 import lakme from '../../../Assets/Images/work/lakme.webp';
 import barc from '../../../Assets/Images/work/BARC.webp';
 import box from '../../../Assets/Images/work/box.jpg';
+import freyaa from '../../../Assets/Images/logos/work/fashion_lifestyle/freyaa.jpg';
+import pret from '../../../Assets/Images/logos/pret.webp';
 
 
 import worknahar from '../../../Assets/Images/work/nahar-group.jpg';
@@ -39,8 +41,125 @@ import ProductShoot from '../../../Assets/Images/work/product.jpg';
 import RealEstateVideos from '../../../Assets/Images/work/RealEstateVideos.jpg';
 import CorporateVideos from '../../../Assets/Images/work/corporate.jpg';
 
+import Sharmaji1 from '../../../Assets/Images/work/Sharmaji1Cover.webp'
+import pretMi1 from '../../../Assets/Images/work/pretMi1Cover.webp'
+import freyaa1 from '../../../Assets/Images/work/freyaa1Cover.webp'
+import lkMain from '../../../Assets/Images/logos/work/fashion_lifestyle/godrej-laffaire.png';
+
+import adityabirlaBg from '../../../Assets/Images/logos/work/BFSI/aditya-birla.png';
+import rgiblueychatbot from '../../../Assets/Images/logos/work/BFSI/rgi.png';
+import RaisingStoreWalkInsforPretA from '../../../Assets/Images/logos/pret.webp';
+
+import pretFestive1 from '../../../Assets/Images/work/pret_festive1Cover.webp'
+
 // Tech
 export const allData = [
+  
+    
+    {
+        id: 0,
+        title: "Making Pret’s packaging the new MVP of match-day moments",
+        tags: [
+        ],
+        image: pretMi1,
+        link: '/work/case-studies/pret-x-mi',
+        brand: "",
+        department: "Design"
+    },
+    
+    {
+        id: 0,
+        title: "RGI: Making insurance agents understand products better",
+        tags: [
+        ],
+        image: Sharmaji1,
+        link: '/work/case-studies/rgi-sharmaji-vermaji',
+        brand: "",
+        department: "Production"
+    },
+    
+
+    // {
+    //     id: 0,
+    //     title: "Pret - Festive Packaging ",
+    //     tags: [
+    //     ],
+    //     image: pretFestive1,
+    //     link: '/work/case-studies/pret-festive-packaging-diwali',
+    //     brand: "",
+    //     department: "Design"
+    // },
+
+    // {
+    //     id: 0,
+    //     title: "Making ABCL the Employer of Choice in the BFSI space",
+    //     tags: [
+    //     ],
+    //     image: adityabirlaBg,
+    //     link: '/work/case-studies/aditya-birla-capital',
+    //     brand: "",
+    //     department: "Content"
+    // },
+    
+    // {
+    //     id: 0,
+    //     title: "Building a community of lifestyle aficionados for Godrej L'Affaire",
+    //     tags: [
+    //     ],
+    //     image: lkMain,
+    //     link: '/work/case-studies/godrej-laffaire-on-ground-event',
+    //     brand: "",
+    //     department: "Content"
+    //     // department: "Content, Production"
+    // },
+    
+    // {
+    //     id: 0,
+    //     title: "Providing instant access to insurance material to 100,000+ RGI agents",
+    //     tags: [
+    //     ],
+    //     image: rgiblueychatbot,
+    //     link: '/work/case-studies/rgi-bluey-chatbot',
+    //     brand: "",
+    //     department: "Tech"
+    // },
+    
+    // {
+    //     id: 0,
+    //     title: "Creating inspirational & educational health content for RGI's magazine ",
+    //     tags: [
+    //     ],
+    //     image: rgiblueychatbot,
+    //     link: '/work/case-studies/rgi-r-health-beat-magazine',
+    //     brand: "",
+    //     department: "Design"
+    // },
+    
+    // {
+    //     id: 0,
+    //     title: "Raising store walk-ins for Pret-A-Manger ",
+    //     tags: [
+    //     ],
+    //     image: RaisingStoreWalkInsforPretA,
+    //     link: '/work/case-studies/pret-a-manger-149-campaign',
+    //     brand: "",
+    //     department: "Content"
+    // },
+    
+   
+  
+    // {
+    //     id: 0,
+    //     title: "Event coverage and audience curation for Rangilo Re ",
+    //     tags: [
+    //     ],
+    //     link: '/work/case-studies/rangilo-re',
+    //     brand: "",
+    //     department: "Production"
+    // },
+
+ 
+ 
     {
         id: 1,
         title: "Digital Ads",
@@ -250,7 +369,16 @@ export const allData = [
         brand: "American Tourister",
         department: 'Production'
     },
-
+  {
+        id: 10,
+        title: "Creating an ownable Women's Day narrative for Freyaa",
+        tags: [
+        ],
+        image: freyaa1,
+        link: '/work/case-studies/freyaa-woven-with-love',
+        brand: "",
+        department: "Production"
+    },
 
 
     // New

@@ -104,12 +104,12 @@ const RgiSharmajiVermaji = () => {
 return (
 <>
 <Helmet>
-<title>How do you make insurance agents understand your products?</title>
+<title>RGI: Making insurance agents understand products better</title>
 <link rel="canonical" href="https://www.agency09.in/work/case-studies/rgi-sharmaji-vermaji"/>
 <meta name="robots" content="index, follow"/> 
 
 <meta name="description" content="Reliance General Insurance (RGI) (now a part of the IndusInd group, as IndusInd General Insurance) is one of India’s leading general insurance companies, with 127+ offices and 100,000+ intermediaries. We created a series of light-hearted, character driven videos called ‘Sharmaji, Vermaji’ to train RGI’s channel partners on their vast range of insurance products."/>
-<meta property="og:title" content="How do you make insurance agents understand your products?"/> 
+<meta property="og:title" content="RGI: Making insurance agents understand products better"/> 
 <meta property="og:description" content="Reliance General Insurance (RGI) (now a part of the IndusInd group, as IndusInd General Insurance) is one of India’s leading general insurance companies, with 127+ offices and 100,000+ intermediaries. We created a series of light-hearted, character driven videos called ‘Sharmaji, Vermaji’ to train RGI’s channel partners on their vast range of insurance products."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
@@ -144,7 +144,7 @@ return (
 </div>
 
 <div className='cSsecMinHead m0'>
-<h1 className='sizeH4'>How do you make insurance agents understand your products?</h1>
+<h1 className='sizeH4'>RGI: Making insurance agents understand products better</h1>
 </div>
 
 <div className='cSsecMinInfo m0'>
@@ -166,10 +166,6 @@ return (
 <p>Reliance General Insurance (RGI) (now a part of the IndusInd group, as IndusInd General Insurance) is one of India’s leading general insurance companies, with 127+ offices and 100,000+ intermediaries. We created a series of light-hearted, character driven videos called ‘Sharmaji, Vermaji’ to train RGI’s channel partners on their vast range of insurance products.</p>
 </div>
 
-<div className='cSsecMinBCol'>
-<h4>Year</h4>
-<p>2025</p>
-</div>
 
 <div className='cSsecMinBCol'>
 <h4>Industry</h4>
@@ -182,6 +178,25 @@ return (
 <li>Animated Videos</li>
 </ul>
 </div>
+
+<div className='cSsecMinBCol'>
+<h4>Year</h4>
+<p>2025</p>
+</div>
+
+
+
+<div className='cSsecMinBCol'>
+<h4>Objective</h4>
+<ul>
+<li>To create insurance training content that is digestible and desirable</li>
+<li>To simplify policy communication</li>
+<li>To support digital adoption</li>
+<li>To improve agent retention through ongoing value</li>
+<li>To increase awareness about their services - Selfi App & Bluey WhatsApp chatbot</li>
+</ul>
+</div>
+
 
 <div className='cSsecMinBCol'>
 <h4>Challenges</h4>
@@ -202,18 +217,6 @@ return (
 </ul>
 </div>
 
-
-<div className='cSsecMinBCol'>
-<h4>Objective</h4>
-<ul>
-<li>To create insurance training content that is digestible and desirable</li>
-<li>To simplify policy communication</li>
-<li>To support digital adoption</li>
-<li>To improve agent retention through ongoing value</li>
-<li>To increase awareness about their services - Selfi App & Bluey WhatsApp chatbot</li>
-</ul>
-
-</div>
 
 <div className='cSsecMinBCol'>
 <h4>Results</h4>

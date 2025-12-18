@@ -11,7 +11,7 @@ import { PiSlideshow, PiStarFourFill } from "react-icons/pi";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { GoPlus } from "react-icons/go";
 import starY from '../../../Assets/Images/icons/star.webp';
-import logo from '../../../Assets/Images/logos/work/fashion_lifestyle/lakme.png';
+import logo from '../../../Assets/Images/logos/work/fashion_lifestyle/godrej-laffaire.png';
 import ourwork1 from '../../../Assets/Images/work/lakme/lk-main.webp'
 import ourwork2 from '../../../Assets/Images/work/lakme/lk-1.webp'
 import ourwork3 from '../../../Assets/Images/work/lakme/lk-2.webp'
@@ -101,12 +101,12 @@ const GodrejLaffaireOnGroundEvent = () => {
 return (
 <>
 <Helmet>
-<title>Godrej L’affaire On-Ground Event: All Things Goodness</title>
+<title>Building a community of lifestyle aficionados for Godrej L'Affaire</title>
 <link rel="canonical" href="https://www.agency09.in/work/case-studies/godrej-laffaire-on-ground-event"/>
 <meta name="robots" content="index, follow"/> 
 
 <meta name="description" content="Godrej L'Affaire is the Godrej Group's brand-agnostic lifestyle platform, celebrating the goodness of lifestyle with over 85k followers across social media. Their annual event, All Things Goodness, returned in 2024 after a four year hiatus, and saw 1500+ attendees including Malaika Arora, Ranveer Allahbadia, Chef Harpal Singh Sokhi and others."/>
-<meta property="og:title" content="Godrej L’affaire On-Ground Event: All Things Goodness"/> 
+<meta property="og:title" content="Building a community of lifestyle aficionados for Godrej L'Affaire"/> 
 <meta property="og:description" content="Godrej L'Affaire is the Godrej Group's brand-agnostic lifestyle platform, celebrating the goodness of lifestyle with over 85k followers across social media. Their annual event, All Things Goodness, returned in 2024 after a four year hiatus, and saw 1500+ attendees including Malaika Arora, Ranveer Allahbadia, Chef Harpal Singh Sokhi and others."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
@@ -141,7 +141,7 @@ return (
 </div>
 
 <div className='cSsecMinHead m0'>
-<h1 className='sizeH4'>Godrej L’affaire On-Ground Event: All Things Goodness</h1>
+<h1 className='sizeH4'>Building a community of lifestyle aficionados for Godrej L'Affaire</h1>
 </div>
 
 <div className='cSsecMinInfo m0'>
@@ -165,11 +165,6 @@ return (
 </div>
 
 <div className='cSsecMinBCol'>
-<h4>Year</h4>
-<p>2024</p>
-</div>
-
-<div className='cSsecMinBCol'>
 <h4>Industry</h4>
 <p>Lifestyle</p>
 </div>
@@ -179,6 +174,17 @@ return (
 <ul>
 <li>Event Coverage, Community Engagement, IP Development</li>
 </ul>
+</div>
+
+<div className='cSsecMinBCol'>
+<h4>Year</h4>
+<p>2024</p>
+</div>
+
+
+<div className='cSsecMinBCol'>
+<h4>Objective</h4>
+<p>To build a community of lifestyle aficionados </p>
 </div>
 
 <div className='cSsecMinBCol'>
@@ -204,11 +210,6 @@ return (
 
 
 <div className='cSsecMinBCol'>
-<h4>Objective</h4>
-<p>To build a community of lifestyle aficionados </p>
-</div>
-
-<div className='cSsecMinBCol'>
 <h4>Results</h4>
 <ul>
 <li>We attracted 1500+ attendees including 70+ Indian TV celebrities, renowned chefs, and top content creators, with a combined following of 87 million+</li>
@@ -224,7 +225,7 @@ return (
 </div>
 
 </div>
-
+{/* 
 <div className='cSsecMinC'>
 
 <div className='imgCol1 imgCol'>
@@ -244,7 +245,7 @@ return (
 <span><img src={ourwork3} loading='lazy' /></span>
 </div>
 </Slider>
-</div>
+</div> */}
 
 
 </div>

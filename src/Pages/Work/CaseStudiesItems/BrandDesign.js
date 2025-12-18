@@ -2,9 +2,21 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import barc from '../../../Assets/Images/work/BARC.webp';
 import workoo from '../../../Assets/Images/work/oo.jpg';
+import pretMi1 from '../../../Assets/Images/work/pretMi1Cover.webp'
 
 // Tech
 export const BrandDesignData = [
+      {
+        id: 0,
+        title: "Making Pret’s packaging the new MVP of match-day moments",
+        tags: [
+        ],
+        image: pretMi1,
+        link: '/work/case-studies/pret-x-mi',
+        brand: "Pret",
+        department: "Design"
+    },
+    
     {
         id: 7,
         title: 'Visualizing Insights: Award-Winning Yearbook for BARC India',
