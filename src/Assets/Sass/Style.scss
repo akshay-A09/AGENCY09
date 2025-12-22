@@ -2413,7 +2413,10 @@ footer{
                 font-size: 17px;
                 padding: 10px 0 0;
                 margin: auto;
-                min-height: 70px;
+                 display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
             }
             p{
                 padding: 10px 0;

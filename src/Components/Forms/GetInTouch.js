@@ -140,15 +140,23 @@ function GetInTouch() {
           <div className='form-group'>
             <select className='form-control' id='service' name='service' value={formData.service} onChange={handleChange}>
             <option value="">Select Service*</option>
-            <option value="Strategy">Strategy</option>
-            <option value="Content">Content</option>
-            <option value="Tech">Tech</option>
-            <option value="Media">Media</option>
-            <option value="Paperless">Paperless</option>
-            <option value="Films">Films</option>
-            <option value="Mobile">Mobile</option>
-            <option value="Keyword">Keyword</option>
-            <option value="Analytics">Analytics</option>
+          <option value="Launch of a brand from scratch">Launch of a brand from scratch</option>
+<option value="Website & Mobile App">Everything about Website - Mobile App</option>
+<option value="AI Based Marketing Tools">AI Based Marketing Tools</option>
+<option value="SEO & Reputation">Organic Search Presence (SEO) & Reputation</option>
+<option value="Social Media Marketing">Increase social engagements and community (SMM)</option>
+<option value="Ads & Lead Campaigns">Running Ads & Lead-Based Campaigns</option>
+<option value="Brand Identity & Packaging">Brand Identity and Packaging</option>
+<option value="Video Content">Continuous Video Content</option>
+<option value="Influencer Tie-Ups">Influencer Tie-Ups</option>
+<option value="Quick Turnaround">Quick turn around tasks</option>
+<option value="HR Communication">HR based communication</option>
+<option value="Distribution & Channel Marcom">Distribution / Channel Marcom</option>
+<option value="IP & Tactical Campaigns">Deliver IP’s and Tactical Campaigns</option>
+<option value="Google Integrations">Google based integration like GA4 and Google My Business</option>
+<option value="Customised Software">Customised Softwares</option>
+<option value="Emailers & Print">Consistent - Emailer - Brochure - Leaflets</option>
+<option value="Others">Others</option>
             </select>
             {errors.service && <span className='errorText'>{errors.service}</span>}
           </div>

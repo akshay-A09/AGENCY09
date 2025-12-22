@@ -8,9 +8,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 
 // Images
-import ideasPerform from '../Assets/Images/growth/mediaA09.webp';
-import ideasPerform1 from '../Assets/Images/growth/ideas-perform1.webp';
-import sportday from '../Assets/Images/growth/sportday.webp';
+import ideasPerform from '../Assets/Images/standard-quality-control-concept.webp';
+import ideasPerform1 from '../Assets/Images/luxebanner.jpg';
+import sportday from '../Assets/Images/tvarana.jpg';
 import ideasPerform2 from '../Assets/Images/growth/ideas-perform2.webp';
 import rgiimage from '../Assets/Images/growth/rgi.webp';
 import starY from '../Assets/Images/icons/star.webp';
@@ -75,28 +75,28 @@ useEffect(() => {
   // Data 
   const UpdateData = [
     {
-      link: '/careers#LifeAtA09',
+      link: 'https://www.agency09.in/simplifyingtheweb/tech/how-ai-is-changing-search-and-why-your-website-needs-to-be-ai-compliant/',
       image: ideasPerform,
-      title: 'AGENCY09 Celebrates a decade of Simplifying the Web',
+      title: 'How AI is Changing Search and Why Your Website Needs to be AI-Compliant',
       description: "Unlocking Digital Potential Since 20XX",
     },
     {
-      link: '/careers#LifeAtA09',
+      link: 'https://www.agency09.in/simplifyingtheweb/tech/revamping-luxe-gift-cards-website-for-speed-style-and-engagement/',
       image: ideasPerform1,
-      title: 'Tata Motors enlists A09 for their Smart City Project website',
+      title: 'Revamping Luxe Gift Card’s Website for Speed, Style and Engagement',
       description: "AGENCY09 Powers Tata Motors' Smart City Initiative Online",
     },
     {
-      link: '/careers#LifeAtA09',
+      link: 'https://www.agency09.in/simplifyingtheweb/tech/how-webflow-transformed-tvaranas-website/',
       image: sportday,
-      title: 'Bat, Ball & Balle Balle',
+      title: 'How We Transformed Tvarana’s Website with Webflow for Faster Performance, Higher Engagement, and Better SEO',
       description: "Sports Day at AGENCY09",
     },
     {
       link: 'https://www.agency09.in/simplifyingtheweb/design/the-journey-of-rhealthbeat-magazine-a-testament-to-innovative-design/',
       blank: '_blank',
       image: rgiimage,
-      title: 'The Journey of RHealthBeat Magazine, a Testament to Innovative Design',
+      title: 'The Journey of RHealthBeat Magazine, a Testament to Innovative DesignThe Journey of RHealthBeat Magazine, a Testament to Innovative Design',
       description: "Designing Stories, Crafting Impact",
     },
   ];
