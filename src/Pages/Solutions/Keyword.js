@@ -27,7 +27,7 @@ import starY from '../../Assets/Images/icons/star.webp';
 import nahar from '../../Assets/Images/work/nahar.jpg';
 import ryan from '../../Assets/Images/work/Ryan.webp';
 import solarize from '../../Assets/Images/work/mahindrasolariz.jpg';
-
+import ryanlogo from '../../Assets/Images/logos/work/education/ryan.png';
 import ourwork1 from '../../Assets/Images/work/ourwork-4.webp';
 import ourwork2 from '../../Assets/Images/work/ourwork-1.webp';
 import ourwork3 from '../../Assets/Images/work/ourwork-3.webp';
@@ -453,7 +453,7 @@ const schemaData = {
                         <h3 className='sizeH5'>Trusted By</h3>
                         <ul className='trustedByLogos'>
                             <li><img src={igcb} loading='lazy' alt=""/></li>
-                            <li><img src={ryan} loading='lazy' alt=""/></li>
+                            <li><img src={ryanlogo} loading='lazy' alt=""/></li>
                             <li><img src={athenarenewable} loading='lazy' alt=""/></li>
                             <li><img src={siyarams} loading='lazy' alt=""/></li>
                         </ul>

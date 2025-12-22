@@ -125,7 +125,7 @@ const Social = () => {
               <Link className="btnDark ripple-button" to='/careers#LifeAtA09'>
                 <span>Our Culture</span>
               </Link>
-              <Link className="btnDark ripple-button" to='https://www.youtube.com/@agency09official/playlists' target="_blank">
+              <Link className="btnDark ripple-button" to='https://www.youtube.com/watch?v=14dE_HMrhyo&list=PLjyBa6CjzBYO_iDdDaTPgvAXUR2mQYEqA' target="_blank">
                 <span>View Playlist</span>
               </Link>
             </div>
