@@ -164,12 +164,12 @@ const Header = () => {
                      
 
                       <div className='NBItemContent'>
-                      <a href='https://www.agency09.in/simplifyingtheweb/tech/how-webflow-transformed-tvaranas-website/' target='_blank'>
+                      <a href='https://www.agency09.in/simplifyingtheweb/tech/how-ai-is-changing-search-and-why-your-website-needs-to-be-ai-compliant/' target='_blank'>
                           <div className='NBItemImg'>
                             <img src={blog2} loading='lazy' alt='{blog}' />
                           </div>
                           <div className='NBItemText'>
-                            <p>How We Transformed Tvarana’s Website with Webflow for Faster Performance ....</p>
+                            <p>How AI is Changing Search and Why Your Website Needs to be AI-Compliant</p>
                           </div>
                         </a>
                       </div>
@@ -178,12 +178,12 @@ const Header = () => {
                   <li>
 
                       <div className='NBItemContent'>
-                        <a href='https://www.agency09.in/simplifyingtheweb/design/the-journey-of-rhealthbeat-magazine-a-testament-to-innovative-design/' target='_blank'>
+                        <a href='https://www.agency09.in/simplifyingtheweb/tech/revamping-luxe-gift-cards-website-for-speed-style-and-engagement/' target='_blank'>
                           <div className='NBItemImg'>
                             <img src={'https://www.agency09.in/simplifyingtheweb/wp-content/uploads/2025/01/rgi-magazine.jpeg'} loading='lazy' alt='{caseStudies}' />
                           </div>
                           <div className='NBItemText'>
-                            <p>The Journey of RHealthBeat Magazine, a Testament to Innovative Design
+                            <p>Revamping Luxe Gift Card’s Website for Speed, Style and Engagement
                             </p>
                           </div>
                         </a>

@@ -2047,7 +2047,7 @@ footer{
                 overflow: hidden;
                 position: relative;
                 img{
-                    transition: all 0.5s ease-in-out;
+                    transition:transform 0.6s ease;
                     rotate: 0deg;
                     display: block;
                     
@@ -2058,6 +2058,9 @@ footer{
 
     }
 
+}
+.workGridItemLink:hover .workGridItemImg img{
+  transform:scale(1.05);
 }
 .workGridItemHover{
     // background: #69e87ae7;
@@ -2415,7 +2418,7 @@ footer{
                 margin: auto;
                  display: -webkit-box;
                 -webkit-box-orient: vertical;
-                -webkit-line-clamp: 2;
+                -webkit-line-clamp: 3;
                 overflow: hidden;
             }
             p{
