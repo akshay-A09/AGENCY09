@@ -9,6 +9,130 @@ import worksiyarmas from '../../../Assets/Images/work/siyaram_new.jpg';
 // Keyword
 export const KeywordData = [
 
+
+    // {
+    //     id: 1,
+    //     title: 'Fixing Speed, Authority & Visibility: A Dual-Country SEO Success for iGCB',
+    //     tags: [
+    //         { name: 'Banking Software', link: '' },
+    //         { name: 'Website & SEO', link: '' }
+    //     ],
+    //     image: worknahar,
+    //     link: '/work/',
+    //     brand: "iGCB",
+    //     department: 'Keyword'
+    // },
+
+    // {
+    //     id: 1,
+    //     title: 'From Technical Errors to Organic Wins: How Groupsoft US Reclaimed Its Digital Presence',
+    //     tags: [
+    //         { name: 'SAP Software Solutions', link: '' },
+    //         { name: 'Website & SEO', link: '' }
+    //     ],
+    //     image: worknahar,
+    //     link: '/work/',
+    //     brand: "Groupsoft US",
+    //     department: 'Keyword'
+    // },
+
+    // {
+    //     id: 1,
+    //     title: 'Fixing Speed, Authority & Visibility: A Dual-Country SEO Success for iGCB',
+    //     tags: [
+    //         { name: 'Banking Software', link: '' },
+    //         { name: 'Website & SEO', link: '' }
+    //     ],
+    //     image: worknahar,
+    //     link: '/work/',
+    //     brand: "iGCB",
+    //     department: 'Keyword'
+    // },
+
+    // {
+    //     id: 1,
+    //     title: 'Boosting Organic Growth for the Organic Brand: Amazonas 4U’s Digital Climb',
+    //     tags: [
+    //         { name: 'Food products supplier', link: '' },
+    //         { name: 'Website & SEO', link: '' }
+    //     ],
+    //     image: worknahar,
+    //     link: '/work/',
+    //     brand: "Amazonas 4U",
+    //     department: 'Keyword'
+    // },
+
+    // {
+    //     id: 1,
+    //     title: 'Accelerating Organic Success: Siyaram’s Improved Speed and Search Growth',
+    //     tags: [
+    //         { name: 'Fabric and Clothing Manufacturer in India', link: '' },
+    //         { name: 'Website & SEO', link: '' }
+    //     ],
+    //     image: worknahar,
+    //     link: '/work/',
+    //     brand: "Siyaram’s ",
+    //     department: 'Keyword'
+    // },
+
+    // {
+    //     id: 1,
+    //     title: 'From Low Visibility to Industry Authority: Apollo Energy Analytics',
+    //     tags: [
+    //         { name: 'Services for Renewable Energy', link: '' },
+    //         { name: 'Website & SEO', link: '' }
+    //     ],
+    //     image: worknahar,
+    //     link: '/work/',
+    //     brand: "Apollo Energy",
+    //     department: 'Keyword'
+    // },
+
+    // {
+    //     id: 1,
+    //     title: 'Making Siyaram’s Stores Easy to Find on Google: Managing 350+ GMB Listings - AGENCY09 Case Study',
+    //     tags: [
+    //         { name: 'Banking Software', link: '' },
+    //         { name: 'Website & SEO', link: '' }
+    //     ],
+    //     image: worknahar,
+    //     link: '/work/case-studies/siyaram-gmb-local-seo-management',
+    //     brand: "Siyaram’s",
+    //     department: 'Keyword'
+    // },
+
+
+    // {
+    //     id: 1,
+    //     title: 'Making Siyaram’s Stores Easy to Find on Google: Managing 350+ GMB Listings - AGENCY09 Case Study',
+    //     tags: [
+    //         { name: 'Banking Software', link: '' },
+    //         { name: 'Website & SEO', link: '' }
+    //     ],
+    //     image: worknahar,
+    //     link: '/work/case-studies/siyaram-gmb-local-seo-management',
+    //     brand: "Siyaram’s",
+    //     department: 'Keyword'
+    // },
+
+    // {
+    //     id: 1,
+    //     title: 'Reaviva Holistic Health',
+    //     tags: [
+    //         { name: 'Wellness center in Mumbai', link: '' },
+    //         { name: 'Website & SEO', link: '' }
+    //     ],
+    //     image: worknahar,
+    //     link: 'work/case-studies/reaviva-holistic-health-seo-growth',
+    //     brand: "Reaviva",
+    //     department: 'Keyword'
+    // },
+
+
+
+
+
+
     {
         id: 1,
         title: 'Massive Organic Growth for Nahar Group’s Search Presence',
