@@ -79,7 +79,15 @@ import PretFestivePackagingDiwali from './Pages/Work/CaseStudy/PretFestivePackag
 import RangiloRe from './Pages/Work/CaseStudy/RangiloRe'
 // New Dec 2025
 
-
+// SEO
+import IGCBDualCountrySEO from './Pages/Work/CaseStudy/FixingSpeedAuthorityVisibilityForIGCBDualCountrySEOSuccess'
+import GroupsoftUS from './Pages/Work/CaseStudy/FromTechnicalErrorsToOrganicWinsForGroupsoftUS'
+import Amazonas4U from './Pages/Work/CaseStudy/BoostingOrganicGrowthForAmazonas4UDigitalClimb'
+import SiyaramSEO from './Pages/Work/CaseStudy/AcceleratingOrganicSuccessForSiyaramsSpeedAndSearchGrowth'
+import ApolloEnergy from './Pages/Work/CaseStudy/FromLowVisibilityToIndustryAuthorityForApolloEnergyAnalytics'
+import SiyaramGMB from './Pages/Work/CaseStudy/MakingSiyaramsStoresEasyToFindWith350PlusGMBListings'
+import ReavivaHolisticHealth from './Pages/Work/CaseStudy/OrganicGrowthForReavivaHolisticHealth'
+// SEO 
 
  
 function App() {
@@ -173,7 +181,14 @@ function App() {
        <Route exact path='/get-in-touch-thank-you' element={<GetInTouchThankYou/>}/>
        <Route exact path='/ai' element={<AI/>}/>
 
-       
+       <Route exact path="/work/case-studies/igcb-dual-country-seo-success" element={<IGCBDualCountrySEO />} />
+      <Route exact path="/work/case-studies/groupsoft-us-organic-seo-recovery" element={<GroupsoftUS />} />
+      <Route exact path="/work/case-studies/amazonas-4u-organic-growth" element={<Amazonas4U />} />
+      <Route exact path="/work/case-studies/siyaram-website-speed-seo-growth" element={<SiyaramSEO />} />
+      <Route exact path="/work/case-studies/apollo-energy-analytics-seo-authority" element={<ApolloEnergy />} />
+      <Route exact path="/work/case-studies/siyaram-gmb-local-seo-management" element={<SiyaramGMB />} />
+      <Route exact path="/work/case-studies/reaviva-holistic-health-seo-growth" element={<ReavivaHolisticHealth />} />
+
       
         </Routes>
     </div>

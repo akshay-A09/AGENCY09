@@ -4473,6 +4473,11 @@ footer{
     gap: 30px;
    .cSsecMinBtn,.cSsecMinHead,.cSsecMinInfo{margin: auto!important;}
     .cSsecMinInfo{
+        b{
+            white-space: nowrap;
+            font-family: $bold;
+            text-transform: uppercase;
+        }
       
         img{
             width: 140px;
