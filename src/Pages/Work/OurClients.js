@@ -83,12 +83,66 @@ import hppetrol from '../../Assets/Images/logos/work/others/hp-petrol.png';
 import mahycogrow from '../../Assets/Images/logos/work/others/mahyco-grow.png';
 import tribevibe from '../../Assets/Images/logos/work/others/tribe-vibe.png';
 import cloudTv from '../../Assets/Images/logos/work/cloudtv.jpg';
+
+
+
+import consulting from '../../Assets/Images/logos/work/79-Consulting.png';
+import adleo from '../../Assets/Images/logos/work/Adleo.png';
+import akutee from '../../Assets/Images/logos/work/Akutee.png';
+import athena from '../../Assets/Images/logos/work/Athena-Investments.png';
+import cadini from '../../Assets/Images/logos/work/Cadini-Italy.png';
+import detour from '../../Assets/Images/logos/work/Detour-oz.png';
+import eduedge from '../../Assets/Images/logos/work/Eduedge.png';
+import godrej from '../../Assets/Images/logos/work/Godrej.png';
+
+import luxe from '../../Assets/Images/logos/work/Luxe.png';
+import meetDateFruit from '../../Assets/Images/logos/work/Meet-Date-Fruit.png';
+import monikaAlcobev from '../../Assets/Images/logos/work/Monika-Alcobev.png';
+import natch from '../../Assets/Images/logos/work/Natch.png';
+import nathBioGenes from '../../Assets/Images/logos/work/Nath-Bio-Genes.png';
+
+import pret from '../../Assets/Images/logos/work/PRET.png';
+import rbl from '../../Assets/Images/logos/work/RBL.png';
+import reaviva from '../../Assets/Images/logos/work/Reaviva.png';
+import tataMotorsCV from '../../Assets/Images/logos/work/Tata-Motors-Commercial-Vehicle.png';
+import toko from '../../Assets/Images/logos/work/Toko.png';
+import tvarana from '../../Assets/Images/logos/work/Tvarana.png';
+import vgc from '../../Assets/Images/logos/work/VGC.png';
+
+
+
+
 // Logos Images end
 
 const techLogos = [
+
+{ src: consulting, category: 'Others' },
+{ src: adleo, category: 'MediaEntertainmentGaming' },
+{ src: akutee, category: 'HealthWellness' },
+{ src: athena, category: 'Others' },
+{ src: cadini, category: 'FashionLifestyle' },
+{ src: detour, category: 'Events' },
+{ src: eduedge, category: 'Education' },
+{ src: godrej, category: 'RetailFMCG' },
+
+{ src: luxe, category: 'RetailFMCG' },
+{ src: meetDateFruit, category: 'RetailFMCG' },
+{ src: monikaAlcobev, category: 'Others' },
+{ src: natch, category: 'Others' },
+{ src: nathBioGenes, category: 'HealthWellness' },
+
+{ src: pret, category: 'HealthWellness' },
+{ src: rbl, category: 'BFSI' },
+{ src: reaviva, category: 'HealthWellness' },
+{ src: tataMotorsCV, category: 'Automotive' },
+{ src: toko, category: 'RetailFMCG' },
+{ src: tvarana, category: 'Others' },
+{ src: vgc, category: 'Automotive' },
+
+
 {src: tatamotors, category: 'Automotive'},
 {src: rgi, category: 'BFSI'},
-  {src: bitspilani, category: 'Education'},
+{src: bitspilani, category: 'Education'},
 {src: ryan, category: 'Education'},
 {src: siyarams, category: 'RetailFMCG'},
 {src: godrejlaffaire, category: 'FashionLifestyle'},
@@ -101,7 +155,6 @@ const techLogos = [
 {src: disney, category: 'MediaEntertainmentGaming'},
 {src: starwars, category: 'MediaEntertainmentGaming'},
 {src: tips, category: 'MediaEntertainmentGaming'},
-
 {src: vihang, category: 'RealEstate'},
 {src: freyaa, category: 'FashionLifestyle'},
 {src: cloudTv, category: 'Others'},
