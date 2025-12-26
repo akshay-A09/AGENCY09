@@ -117,6 +117,33 @@ const Keyword = () => {
       description: "Build authority and drive traffic with our digital PR services. We create and distribute high-quality content to relevant online publications and influencers, enhancing your brand's visibility and reputation.",
       tags: [],
     },
+
+    {
+      key: "6",
+      header: "LLM Optimisation (AI Search Visibility)",
+      description: "Optimize your brand’s presence across Large Language Models like ChatGPT, Gemini, Perplexity and Google AI Overviews. We structure and optimise your content to improve discoverability, accuracy and brand mentions within AI-generated responses.",
+      tags: [],
+    },
+    {
+      key: "7",
+      header: "AEO (Answer Engine Optimisation)",
+      description: "Rank where users get direct answers. Our AEO services focus on optimising content for featured snippets, FAQs and AI-driven answer engines ensuring your brand appears in zero-click searches and voice results.",
+      tags: [],
+    },
+    {
+      key: "8",
+      header: "GEO (Generative Engine Optimisation)",
+      description: "Prepare your content for generative search experiences. We optimise your website and content to be easily understood, cited and surfaced by generative AI platforms to improve brand visibility beyond traditional search results.",
+      tags: [],
+    },
+    {
+      key: "9",
+      header: "Voice Search Optimisation",
+      description: "Capture voice-based queries from smart assistants like Google Assistant and Alexa. We optimise conversational keywords, local intent and structured data to help your brand appear in voice search results.",
+      tags: [],
+    },
+    
+
     
   ];
 // Services Data

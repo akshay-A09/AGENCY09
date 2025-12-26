@@ -6,114 +6,95 @@ import workryan from '../../../Assets/Images/work/ryan-group.jpg';
 import workmahindrasolariz from '../../../Assets/Images/work/mahindra-solarize.jpg';
 import worksiyarmas from '../../../Assets/Images/work/siyaram_new.jpg';
 
+import apolloenergyanalytics from '../../../Assets/Images/work/Apollo_Energy_Analytics.jpg';
+import Amazonas_4U from '../../../Assets/Images/work/Amazonas_4U.jpg';
+import groupsoft from '../../../Assets/Images/work/Groupsoft.jpg';
+import igcb from '../../../Assets/Images/work/IGCB.jpg';
+import reaviva from '../../../Assets/Images/work/Reaviva.jpg';
+import shopzuma from '../../../Assets/Images/work/Shop_Zuma-1.jpg';
+import siyarmas from '../../../Assets/Images/work/Siyarams.jpg';
+
 // Keyword
 export const KeywordData = [
 
 
-    // {
-    //     id: 1,
-    //     title: 'Fixing Speed, Authority & Visibility: A Dual-Country SEO Success for iGCB',
-    //     tags: [
-    //         { name: 'Banking Software', link: '' },
-    //         { name: 'Website & SEO', link: '' }
-    //     ],
-    //     image: worknahar,
-    //     link: '/work/',
-    //     brand: "iGCB",
-    //     department: 'Keyword'
-    // },
+    {
+        id: 1,
+        title: 'Fixing Speed, Authority & Visibility: A Dual-Country SEO Success for iGCB',
+        tags: [
+            { name: 'Banking Software', link: '' },
+            { name: 'Website & SEO', link: '' }
+        ],
+        image: igcb,
+        link: '/work/case-studies/igcb-dual-country-seo-success',
+        brand: "iGCB",
+        department: 'Keyword'
+    },
 
-    // {
-    //     id: 1,
-    //     title: 'From Technical Errors to Organic Wins: How Groupsoft US Reclaimed Its Digital Presence',
-    //     tags: [
-    //         { name: 'SAP Software Solutions', link: '' },
-    //         { name: 'Website & SEO', link: '' }
-    //     ],
-    //     image: worknahar,
-    //     link: '/work/',
-    //     brand: "Groupsoft US",
-    //     department: 'Keyword'
-    // },
+    {
+        id: 1,
+        title: 'From Technical Errors to Organic Wins: How Groupsoft US Reclaimed Its Digital Presence',
+        tags: [
+            { name: 'SAP Software Solutions', link: '' },
+            { name: 'Website & SEO', link: '' }
+        ],
+        image: groupsoft,
+        link: '/work/case-studies/groupsoft-us-organic-seo-recovery',
+        brand: "Groupsoft US",
+        department: 'Keyword'
+    },
 
-    // {
-    //     id: 1,
-    //     title: 'Fixing Speed, Authority & Visibility: A Dual-Country SEO Success for iGCB',
-    //     tags: [
-    //         { name: 'Banking Software', link: '' },
-    //         { name: 'Website & SEO', link: '' }
-    //     ],
-    //     image: worknahar,
-    //     link: '/work/',
-    //     brand: "iGCB",
-    //     department: 'Keyword'
-    // },
+    {
+        id: 1,
+        title: 'Boosting Organic Growth for the Organic Brand: Amazonas 4U’s Digital Climb',
+        tags: [
+            { name: 'Food products supplier', link: '' },
+            { name: 'Website & SEO', link: '' }
+        ],
+        image: Amazonas_4U,
+        link: '/work/case-studies/amazonas-4u-organic-growth',
+        brand: "Amazonas 4U",
+        department: 'Keyword'
+    },
 
-    // {
-    //     id: 1,
-    //     title: 'Boosting Organic Growth for the Organic Brand: Amazonas 4U’s Digital Climb',
-    //     tags: [
-    //         { name: 'Food products supplier', link: '' },
-    //         { name: 'Website & SEO', link: '' }
-    //     ],
-    //     image: worknahar,
-    //     link: '/work/',
-    //     brand: "Amazonas 4U",
-    //     department: 'Keyword'
-    // },
+    {
+        id: 1,
+        title: 'Accelerating Organic Success: Siyaram’s Improved Speed and Search Growth',
+        tags: [
+            { name: 'Fabric and Clothing Manufacturer in India', link: '' },
+            { name: 'Website & SEO', link: '' }
+        ],
+        image: siyarmas,
+        link: '/work/case-studies/siyaram-website-speed-seo-growth',
+        brand: "Siyaram’s ",
+        department: 'Keyword'
+    },
 
-    // {
-    //     id: 1,
-    //     title: 'Accelerating Organic Success: Siyaram’s Improved Speed and Search Growth',
-    //     tags: [
-    //         { name: 'Fabric and Clothing Manufacturer in India', link: '' },
-    //         { name: 'Website & SEO', link: '' }
-    //     ],
-    //     image: worknahar,
-    //     link: '/work/',
-    //     brand: "Siyaram’s ",
-    //     department: 'Keyword'
-    // },
+    {
+        id: 1,
+        title: 'From Low Visibility to Industry Authority: Apollo Energy Analytics',
+        tags: [
+            { name: 'Services for Renewable Energy', link: '' },
+            { name: 'Website & SEO', link: '' }
+        ],
+        image: apolloenergyanalytics,
+        link: '/work/case-studies/apollo-energy-analytics-seo-authority',
+        brand: "Apollo Energy",
+        department: 'Keyword'
+    },
 
-    // {
-    //     id: 1,
-    //     title: 'From Low Visibility to Industry Authority: Apollo Energy Analytics',
-    //     tags: [
-    //         { name: 'Services for Renewable Energy', link: '' },
-    //         { name: 'Website & SEO', link: '' }
-    //     ],
-    //     image: worknahar,
-    //     link: '/work/',
-    //     brand: "Apollo Energy",
-    //     department: 'Keyword'
-    // },
-
-    // {
-    //     id: 1,
-    //     title: 'Making Siyaram’s Stores Easy to Find on Google: Managing 350+ GMB Listings - AGENCY09 Case Study',
-    //     tags: [
-    //         { name: 'Banking Software', link: '' },
-    //         { name: 'Website & SEO', link: '' }
-    //     ],
-    //     image: worknahar,
-    //     link: '/work/case-studies/siyaram-gmb-local-seo-management',
-    //     brand: "Siyaram’s",
-    //     department: 'Keyword'
-    // },
-
-
-    // {
-    //     id: 1,
-    //     title: 'Making Siyaram’s Stores Easy to Find on Google: Managing 350+ GMB Listings - AGENCY09 Case Study',
-    //     tags: [
-    //         { name: 'Banking Software', link: '' },
-    //         { name: 'Website & SEO', link: '' }
-    //     ],
-    //     image: worknahar,
-    //     link: '/work/case-studies/siyaram-gmb-local-seo-management',
-    //     brand: "Siyaram’s",
-    //     department: 'Keyword'
-    // },
+    {
+        id: 1,
+        title: 'Making Siyaram’s Stores Easy to Find on Google: Managing 350+ GMB Listings - AGENCY09 Case Study',
+        tags: [
+            { name: 'Banking Software', link: '' },
+            { name: 'Website & SEO', link: '' }
+        ],
+        image: siyarmas,
+        link: '/work/case-studies/siyaram-gmb-local-seo-management',
+        brand: "Siyaram’s",
+        department: 'Keyword'
+    },
 
     // {
     //     id: 1,
@@ -122,14 +103,14 @@ export const KeywordData = [
     //         { name: 'Wellness center in Mumbai', link: '' },
     //         { name: 'Website & SEO', link: '' }
     //     ],
-    //     image: worknahar,
+    //     image: reaviva,
     //     link: 'work/case-studies/reaviva-holistic-health-seo-growth',
     //     brand: "Reaviva",
     //     department: 'Keyword'
     // },
 
 
-
+// New
 
 
 
@@ -189,9 +170,9 @@ export const KeywordData = [
 // State for each tab
 
 const Keyword = () => {
-    const [visibleKeywordItems, setVisibleKeywordItems] = useState(5);
+    const [visibleKeywordItems, setVisibleKeywordItems] = useState(9);
     const loadMoreKeywordItems = () => {
-        setVisibleKeywordItems((prev) => prev + 5);
+        setVisibleKeywordItems((prev) => prev + 9);
     };
 
   return (

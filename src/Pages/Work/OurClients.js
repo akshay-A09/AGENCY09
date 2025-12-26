@@ -108,7 +108,7 @@ import tataMotorsCV from '../../Assets/Images/logos/work/Tata-Motors-Commercial-
 import toko from '../../Assets/Images/logos/work/Toko.png';
 import tvarana from '../../Assets/Images/logos/work/Tvarana.png';
 import vgc from '../../Assets/Images/logos/work/VGC.png';
-
+import oxemberg from '../../Assets/Images/logos/work/oxemberg.png';
 
 
 
@@ -123,34 +123,30 @@ const techLogos = [
 { src: cadini, category: 'FashionLifestyle' },
 { src: detour, category: 'Events' },
 { src: eduedge, category: 'Education' },
-{ src: godrej, category: 'RetailFMCG' },
-
+{ src: godrej, category: 'RetailFMCG', isTop: true},
 { src: luxe, category: 'RetailFMCG' },
 { src: meetDateFruit, category: 'RetailFMCG' },
 { src: monikaAlcobev, category: 'Others' },
-{ src: natch, category: 'Others' },
-{ src: nathBioGenes, category: 'HealthWellness' },
-
-{ src: pret, category: 'HealthWellness' },
-{ src: rbl, category: 'BFSI' },
+{ src: natch, category: 'Others'},
+{ src: nathBioGenes, category: 'HealthWellness', isTop: true },
+{ src: pret, category: 'HealthWellness' , isTop: true},
+{ src: rbl, category: 'BFSI' , isTop: true},
 { src: reaviva, category: 'HealthWellness' },
 { src: tataMotorsCV, category: 'Automotive' },
 { src: toko, category: 'RetailFMCG' },
 { src: tvarana, category: 'Others' },
 { src: vgc, category: 'Automotive' },
-
-
-{src: tatamotors, category: 'Automotive'},
-{src: rgi, category: 'BFSI'},
-{src: bitspilani, category: 'Education'},
-{src: ryan, category: 'Education'},
-{src: siyarams, category: 'RetailFMCG'},
+{src: tatamotors, category: 'Automotive', isTop: true},
+{src: rgi, category: 'BFSI', isTop: true},
+{src: bitspilani, category: 'Education', isTop: true},
+{src: ryan, category: 'Education', isTop: true},
+{src: siyarams, category: 'RetailFMCG', isTop: true},
 {src: godrejlaffaire, category: 'FashionLifestyle'},
-{src: jupiterhospital, category: 'HealthWellness'},
+{src: jupiterhospital, category: 'HealthWellness', isTop: true},
 {src: mahindrasolarize, category: 'GreenEnergy'},
-{src: barci, category: 'Others'},
+{src: barci, category: 'Others', isTop: true},
 {src: tribevibe, category: 'Others'},
-{src: trust, category: 'BFSI'},
+{src: trust, category: 'BFSI', isTop: true},
 {src: bitsom, category: 'Education'},
 {src: disney, category: 'MediaEntertainmentGaming'},
 {src: starwars, category: 'MediaEntertainmentGaming'},
@@ -159,7 +155,8 @@ const techLogos = [
 {src: freyaa, category: 'FashionLifestyle'},
 {src: cloudTv, category: 'Others'},
 {src: wurthCarHaus, category: 'Automotive'},
-{src: adityabirla, category: 'BFSI'},
+{src: adityabirla, category: 'BFSI', isTop: true},
+{src: oxemberg, category: 'FashionLifestyle', isTop: true},
 {src: edelweiss, category: 'BFSI'},
 {src: igcb, category: 'BFSI'},
 {src: iifl, category: 'BFSI'},
@@ -206,8 +203,6 @@ const techLogos = [
 {src: chinesewok, category: 'Others'},
 {src: hppetrol, category: 'Others'},
 {src: mahycogrow, category: 'Others'},
-
-
 ];
 
 const OurClients = () => {
@@ -219,7 +214,12 @@ const OurClients = () => {
     setSelectedCategory(category);
   };
 
-  const filteredLogos = techLogos.filter(logo => selectedCategory === 'All' || logo.category === selectedCategory);
+  // UPDATED FILTER LOGIC
+  const filteredLogos = techLogos.filter(logo => {
+    if (selectedCategory === 'All') return true;
+    if (selectedCategory === 'keyClients') return logo.isTop === true; // Filters for Top Clients
+    return logo.category === selectedCategory;
+  });
 
   return (
     <>
@@ -270,6 +270,7 @@ const OurClients = () => {
             <div className='ourClientsLnav'>
               <ul>
                 <li><span className={selectedCategory === 'All' ? 'active' : ''} onClick={() => handleCategoryClick('All')}>All</span></li>
+                <li><span className={selectedCategory === 'keyClients' ? 'active' : ''} onClick={() => handleCategoryClick('keyClients')}>Key Clientele</span></li>
                 <li><span className={selectedCategory === 'Automotive' ? 'active' : ''} onClick={() => handleCategoryClick('Automotive')}>Automotive</span></li>
                 <li><span className={selectedCategory === 'BFSI' ? 'active' : ''} onClick={() => handleCategoryClick('BFSI')}>BFSI</span></li>
                 <li><span className={selectedCategory === 'Education' ? 'active' : ''} onClick={() => handleCategoryClick('Education')}>Education</span></li>
