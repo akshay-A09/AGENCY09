@@ -38,6 +38,10 @@ import ryanGroup from '../../Assets/Images/logos/work/education/ryan.png';
 import athenarenewable from '../../Assets/Images/logos/work/energy/athena-renewable.png';
 import siyarams from '../../Assets/Images/logos/work/retail_fmcg/siyarams.png';
 
+
+import Amazonas_4U from '../../Assets/Images/work/Amazonas_4U.jpg';
+import groupsoft from '../../Assets/Images/work/Groupsoft.jpg';
+import igcb2 from '../../Assets/Images/work/IGCB.jpg';
 // Images end
 
 
@@ -45,7 +49,7 @@ import siyarams from '../../Assets/Images/logos/work/retail_fmcg/siyarams.png';
 // CaseStudySlider 
 const CaseStudySlider = {
     dots: false,
-    arrows: false,
+    arrows: true,
     infinite: false,
     autoplay: false,
     autoplaySpeed: 7000,
@@ -153,6 +157,49 @@ const Keyword = () => {
 
 //CaseStudy Data
 const CaseStudyData = [
+
+
+  {
+        id: 1,
+        title: 'Fixing Speed, Authority & Visibility: A Dual-Country SEO Success for iGCB',
+        tags: [
+            { name: 'Banking Software', link: '' },
+            { name: 'Website & SEO', link: '' }
+        ],
+        image: igcb2,
+        link: '/work/case-studies/igcb-dual-country-seo-success',
+        brand: "iGCB",
+        department: 'Keyword'
+    },
+
+    {
+        id: 1,
+        title: 'From Technical Errors to Organic Wins: How Groupsoft US Reclaimed Its Digital Presence',
+        tags: [
+            { name: 'SAP Software Solutions', link: '' },
+            { name: 'Website & SEO', link: '' }
+        ],
+        image: groupsoft,
+        link: '/work/case-studies/groupsoft-us-organic-seo-recovery',
+        brand: "Groupsoft US",
+        department: 'Keyword'
+    },
+
+    {
+        id: 1,
+        title: 'Boosting Organic Growth for the Organic Brand: Amazonas 4U’s Digital Climb',
+        tags: [
+            { name: 'Food products supplier', link: '' },
+            { name: 'Website & SEO', link: '' }
+        ],
+        image: Amazonas_4U,
+        link: '/work/case-studies/amazonas-4u-organic-growth',
+        brand: "Amazonas 4U",
+        department: 'Keyword'
+    },
+
+
+
     {
       id:14,
       title:'Massive Organic Growth for Nahar Group’s Search Presence',
@@ -565,7 +612,7 @@ const schemaData = {
 
             <div className='solutionsSecCaseStudyList'>
 
-                <Slider {...CaseStudySlider} className='CaseStudySlider slick-slider'>
+                <Slider {...CaseStudySlider} className='CaseStudySlider slick-slider arrowLRC mainslider'>
                     {CaseStudyData.map((CaseStudy, index) => (
                         <div key={index} className='item'>
                         <div className='CaseStudyCol'>

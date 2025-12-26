@@ -70,7 +70,7 @@ const MakingSiyaramsStoresEasyToFindWith350PlusGMBListings = () => {
 
                     <div className='cSsecMinBCol'>
                         <h4>Industry</h4>
-                        <p> Apparel & Textile Retail</p>
+                        <p>Fabric and Clothing Manufacturer in India</p>
                     </div>
                     
                     <div className='cSsecMinBCol'>

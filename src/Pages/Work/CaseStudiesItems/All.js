@@ -431,18 +431,18 @@ export const allData = [
         brand: "Mahindra Solarize",
         department: 'Keyword'
     },
-    {
-        id: 4,
-        title: "Enhancing Organic User Engagement for Siyaram's",
-        tags: [
-            { name: 'Digital Marketing', link: '' },
-            { name: 'SEO', link: '' },
-        ],
-        image: worksiyarmas,
-        link: '/work/case-studies/enhancing-organic-users-engagement-for-siyarams',
-        brand: "Siyaram's",
-        department: 'Keyword'
-    },
+    // {
+    //     id: 4,
+    //     title: "Enhancing Organic User Engagement for Siyaram's",
+    //     tags: [
+    //         { name: 'Digital Marketing', link: '' },
+    //         { name: 'SEO', link: '' },
+    //     ],
+    //     image: worksiyarmas,
+    //     link: '/work/case-studies/enhancing-organic-users-engagement-for-siyarams',
+    //     brand: "Siyaram's",
+    //     department: 'Keyword'
+    // },
 
     {
         id: 5,
@@ -661,9 +661,9 @@ export const allData = [
     
         {
             id: 12,
-            title: 'Making Siyaram’s Stores Easy to Find on Google: Managing 350+ GMB Listings - AGENCY09 Case Study',
+            title: 'Making Siyaram’s Stores Easy to Find on Google: Managing 350+ GMB Listings',
             tags: [
-                { name: 'Banking Software', link: '' },
+                { name: 'Fabric and Clothing Manufacturer in India', link: '' },
                 { name: 'Website & SEO', link: '' }
             ],
             image: siyarmas,
