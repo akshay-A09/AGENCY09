@@ -114,13 +114,13 @@ const apiKey = 'AIzaSyBkRuDWRBnBbl_qW3syuk_BEa7anG2uU2M';
   return (
     <>
     <Helmet>
-<title>Product Photography & Video Services in Mumbai, India | AGENCY09</title>
+<title>Product Shoot Case Study</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="Showcase your brand with stunning product photography & video by AGENCY09. We create visuals that tell your story & boost engagement across all platforms."/>
-<meta property="og:title" content="Product Photography & Video Services in Mumbai, India | AGENCY09"/> 
-<meta property="og:description" content="Showcase your brand with stunning product photography & video by AGENCY09. We create visuals that tell your story & boost engagement across all platforms."/> 
+<meta name="description" content="Chinese Wok revived its brand post-lockdown in 2021, reintroducing its popular Chinese starters with a fresh strategy that renewed customer interest and engagement."/>
+<meta property="og:title" content="Product Shoot Case Study"/> 
+<meta property="og:description" content="Chinese Wok revived its brand post-lockdown in 2021, reintroducing its popular Chinese starters with a fresh strategy that renewed customer interest and engagement."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -129,7 +129,7 @@ const apiKey = 'AIzaSyBkRuDWRBnBbl_qW3syuk_BEa7anG2uU2M';
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/about"/> 
-<meta name="twitter:description" content="Showcase your brand with stunning product photography & video by AGENCY09. We create visuals that tell your story & boost engagement across all platforms."/> 
+<meta name="twitter:description" content="Chinese Wok revived its brand post-lockdown in 2021, reintroducing its popular Chinese starters with a fresh strategy that renewed customer interest and engagement."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>

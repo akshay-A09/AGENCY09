@@ -114,13 +114,13 @@ const apiKey = 'AIzaSyBkRuDWRBnBbl_qW3syuk_BEa7anG2uU2M';
   return (
     <>
     <Helmet>
-<title>Best Podcast Video Production Company in Mumbai, India | AGENCY09</title>
+<title>Podcast Case Study</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="The best podcast video production company in Mumbai, India, AGENCY09 crafts powerful, visual podcasts that engage, inform & elevate your brand voice."/>
-<meta property="og:title" content="Best Podcast Video Production Company in Mumbai, India | AGENCY09"/> 
-<meta property="og:description" content="The best podcast video production company in Mumbai, India, AGENCY09 crafts powerful, visual podcasts that engage, inform & elevate your brand voice."/> 
+<meta name="description" content="Explore the AGENCY09  podcast, where we dive into insights, strategies, and success stories from the agency’s journey."/>
+<meta property="og:title" content="Podcast Case Study"/> 
+<meta property="og:description" content="Explore the AGENCY09  podcast, where we dive into insights, strategies, and success stories from the agency’s journey."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -129,7 +129,7 @@ const apiKey = 'AIzaSyBkRuDWRBnBbl_qW3syuk_BEa7anG2uU2M';
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/about"/> 
-<meta name="twitter:description" content="The best podcast video production company in Mumbai, India, AGENCY09 crafts powerful, visual podcasts that engage, inform & elevate your brand voice."/> 
+<meta name="twitter:description" content="Explore the AGENCY09  podcast, where we dive into insights, strategies, and success stories from the agency’s journey."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>

@@ -11,13 +11,13 @@ const FromTechnicalErrorsToOrganicWinsForGroupsoftUS = () => {
   return (
     <>
     <Helmet>
-<title>From Technical Errors to Organic Wins: How Groupsoft US Reclaimed Its Digital Presence - AGENCY09 Case Study</title>
+<title>From Technical Errors to Organic Wins: Groupsoft US SEO</title>
 <link rel="canonical" href="https://www.agency09.in/work/case-studies/groupsoft-us-organic-seo-recovery"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="Nahar Group, a prominent real estate brand based in Mumbai, faced challenges in attracting the right kind of organic users to engage with their website."/>
-<meta property="og:title" content="From Technical Errors to Organic Wins: How Groupsoft US Reclaimed Its Digital Presence - AGENCY09 Case Study"/> 
-<meta property="og:description" content="Nahar Group, a prominent real estate brand based in Mumbai, faced challenges in attracting the right kind of organic users to engage with their website."/> 
+<meta name="description" content="Learn how Groupsoft US fixed technical SEO issues, improved site performance, and boosted organic traffic, visibility, and keyword growth in the US market."/>
+<meta property="og:title" content="From Technical Errors to Organic Wins: Groupsoft US SEO"/> 
+<meta property="og:description" content="Learn how Groupsoft US fixed technical SEO issues, improved site performance, and boosted organic traffic, visibility, and keyword growth in the US market."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -26,7 +26,7 @@ const FromTechnicalErrorsToOrganicWinsForGroupsoftUS = () => {
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/work/case-studies/groupsoft-us-organic-seo-recovery"/> 
-<meta name="twitter:description" content="Nahar Group, a prominent real estate brand based in Mumbai, faced challenges in attracting the right kind of organic users to engage with their website."/> 
+<meta name="twitter:description" content="Learn how Groupsoft US fixed technical SEO issues, improved site performance, and boosted organic traffic, visibility, and keyword growth in the US market."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>

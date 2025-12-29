@@ -105,12 +105,12 @@ const LeveragingDigitaltoGenerateOnlineRegistrationsforanEventMCHIMahaPropertyEx
   return (
     <>
     <Helmet>
-<title>Leveraging Digital to Generate Online Registrations for an Event: MCHI Maha Property Expo - AGENCY09 Case Study</title>
+<title>Digital Campaign for Event Registrations | MCHI Maha Expo</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
 <meta name="description" content="Learn how AGENCY09 utilized digital strategies to drive online registrations for the MCHI Maha Property Expo, ensuring maximum reach and engagement."/>
-<meta property="og:title" content="Leveraging Digital to Generate Online Registrations for an Event: MCHI Maha Property Expo - AGENCY09 Case Study"/> 
+<meta property="og:title" content="Digital Campaign for Event Registrations | MCHI Maha Expo"/> 
 <meta property="og:description" content="Learn how AGENCY09 utilized digital strategies to drive online registrations for the MCHI Maha Property Expo, ensuring maximum reach and engagement."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 

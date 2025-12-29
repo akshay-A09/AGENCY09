@@ -105,13 +105,13 @@ const TataTrucks = () => {
   return (
     <>
     <Helmet>
-<title>Transforming Digital Presence: Modern Website for India’s #1 Non-Govt. Technical Institute, BITS Pilani - AGENCY09 Case Study</title>
+<title>Modern Website Design for BITS Pilani | Case Study</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="Transforming digital presence with a modern website for India’s #1 non-govt. technical institute, BITS Pilani. Designed by AGENCY09 for innovation and excellence."/>
-<meta property="og:title" content="Transforming Digital Presence: Modern Website for India’s #1 Non-Govt. Technical Institute, BITS Pilani - AGENCY09 Case Study"/> 
-<meta property="og:description" content="Transforming digital presence with a modern website for India’s #1 non-govt. technical institute, BITS Pilani. Designed by AGENCY09 for innovation and excellence."/> 
+<meta name="description" content="Explore AGENCY09’s case study on redesigning BITS Pilani’s website with modern UI/UX, responsive design, dynamic content, and enhanced user experience."/>
+<meta property="og:title" content="Modern Website Design for BITS Pilani | Case Study"/> 
+<meta property="og:description" content="Explore AGENCY09’s case study on redesigning BITS Pilani’s website with modern UI/UX, responsive design, dynamic content, and enhanced user experience."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -120,7 +120,7 @@ const TataTrucks = () => {
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/about"/> 
-<meta name="twitter:description" content=" Transforming digital presence with a modern website for India’s #1 non-govt. technical institute, BITS Pilani. Designed by AGENCY09 for innovation and excellence."/> 
+<meta name="twitter:description" content=" Explore AGENCY09’s case study on redesigning BITS Pilani’s website with modern UI/UX, responsive design, dynamic content, and enhanced user experience."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>

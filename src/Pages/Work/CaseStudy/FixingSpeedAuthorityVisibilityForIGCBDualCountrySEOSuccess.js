@@ -11,13 +11,13 @@ const FixingSpeedAuthorityVisibilityForIGCBDualCountrySEOSuccess = () => {
   return (
     <>
     <Helmet>
-<title>Fixing Speed, Authority & Visibility: A Dual-Country SEO Success for iGCB - AGENCY09 Case Study</title>
+<title>FDual-Country SEO Win: Speed, Authority & Visibility for iGCB</title>
 <link rel="canonical" href="https://www.agency09.in/work/case-studies/igcb-dual-country-seo-success"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="Nahar Group, a prominent real estate brand based in Mumbai, faced challenges in attracting the right kind of organic users to engage with their website."/>
-<meta property="og:title" content="Fixing Speed, Authority & Visibility: A Dual-Country SEO Success for iGCB - AGENCY09 Case Study"/> 
-<meta property="og:description" content="Nahar Group, a prominent real estate brand based in Mumbai, faced challenges in attracting the right kind of organic users to engage with their website."/> 
+<meta name="description" content="Discover how iGCB improved site speed, domain authority, and organic traffic across India and the UK with a dual-country SEO strategy."/>
+<meta property="og:title" content="FDual-Country SEO Win: Speed, Authority & Visibility for iGCB"/> 
+<meta property="og:description" content="Discover how iGCB improved site speed, domain authority, and organic traffic across India and the UK with a dual-country SEO strategy."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -26,7 +26,7 @@ const FixingSpeedAuthorityVisibilityForIGCBDualCountrySEOSuccess = () => {
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/work/case-studies/igcb-dual-country-seo-success"/> 
-<meta name="twitter:description" content="Nahar Group, a prominent real estate brand based in Mumbai, faced challenges in attracting the right kind of organic users to engage with their website."/> 
+<meta name="twitter:description" content="Discover how iGCB improved site speed, domain authority, and organic traffic across India and the UK with a dual-country SEO strategy."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>

@@ -11,13 +11,13 @@ const MakingSiyaramsStoresEasyToFindWith350PlusGMBListings = () => {
   return (
     <>
     <Helmet>
-<title>Making Siyaram’s Stores Easy to Find on Google: Managing 350+ GMB Listings - AGENCY09 Case Study</title>
+<title>Siyaram’s Local SEO Win: Managing 350+ GMB Listings</title>
 <link rel="canonical" href="https://www.agency09.in/work/case-studies/siyaram-gmb-local-seo-management"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="Nahar Group, a prominent real estate brand based in Mumbai, faced challenges in attracting the right kind of organic users to engage with their website."/>
-<meta property="og:title" content="Making Siyaram’s Stores Easy to Find on Google: Managing 350+ GMB Listings - AGENCY09 Case Study"/> 
-<meta property="og:description" content="Nahar Group, a prominent real estate brand based in Mumbai, faced challenges in attracting the right kind of organic users to engage with their website."/> 
+<meta name="description" content="Learn how Siyaram’s managed and optimized 350+ GMB listings to boost local visibility, ensure accuracy, and drive store-level discovery across India."/>
+<meta property="og:title" content="Siyaram’s Local SEO Win: Managing 350+ GMB Listings"/> 
+<meta property="og:description" content="Learn how Siyaram’s managed and optimized 350+ GMB listings to boost local visibility, ensure accuracy, and drive store-level discovery across India."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -26,7 +26,7 @@ const MakingSiyaramsStoresEasyToFindWith350PlusGMBListings = () => {
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/work/case-studies/siyaram-gmb-local-seo-management"/> 
-<meta name="twitter:description" content="Nahar Group, a prominent real estate brand based in Mumbai, faced challenges in attracting the right kind of organic users to engage with their website."/> 
+<meta name="twitter:description" content="Learn how Siyaram’s managed and optimized 350+ GMB listings to boost local visibility, ensure accuracy, and drive store-level discovery across India."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>

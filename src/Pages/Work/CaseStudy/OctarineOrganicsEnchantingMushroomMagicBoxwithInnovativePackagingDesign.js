@@ -109,12 +109,12 @@ const OctarineOrganicsEnchantingMushroomMagicBoxwithInnovativePackagingDesign = 
   return (
     <>
     <Helmet>
-<title>Octarine Organics: Enchanting Mushroom Magic Box with Innovative Packaging Design - AGENCY09 Case Study</title>
+<title>Mushroom Magic Box Packaging Design | Octarine Organics</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
 <meta name="description" content="The Octarine Organics Mushroom Magic Box – a fusion of enchanting fungi and innovative packaging, crafted by AGENCY09 for a unique organic experience."/>
-<meta property="og:title" content="Octarine Organics: Enchanting Mushroom Magic Box with Innovative Packaging Design - AGENCY09 Case Study"/> 
+<meta property="og:title" content="Mushroom Magic Box Packaging Design | Octarine Organics"/> 
 <meta property="og:description" content="The Octarine Organics Mushroom Magic Box – a fusion of enchanting fungi and innovative packaging, crafted by AGENCY09 for a unique organic experience."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 

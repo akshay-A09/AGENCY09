@@ -107,13 +107,13 @@ const CodashopGetsGamersGroovingEngagingBGMIPlayerswithaUniqueRapSongandDanceCon
   return (
     <>
     <Helmet>
-<title>Codashop Gets Gamers Grooving: Engaging BGMI Players with a Unique Rap Song and Dance Contest - AGENCY09 Case Study</title>
+<title>Codashop Engages BGMI Gamers with Rap Contest | Case Study</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="Codashop celebrated BGMI's Anniversary with a dynamic campaign, engaging gamers through music and dance to enhance in-game purchase experiences."/>
-<meta property="og:title" content="Codashop Gets Gamers Grooving: Engaging BGMI Players with a Unique Rap Song and Dance Contest - AGENCY09 Case Study"/> 
-<meta property="og:description" content="Codashop celebrated BGMI's Anniversary with a dynamic campaign, engaging gamers through music and dance to enhance in-game purchase experiences."/> 
+<meta name="description" content="How Codashop engaged BGMI gamers with a unique rap song and dance contest, driving community participation and brand excitement in this AGENCY09 case study."/>
+<meta property="og:title" content="Codashop Engages BGMI Gamers with Rap Contest | Case Study"/> 
+<meta property="og:description" content="How Codashop engaged BGMI gamers with a unique rap song and dance contest, driving community participation and brand excitement in this AGENCY09 case study."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -122,7 +122,7 @@ const CodashopGetsGamersGroovingEngagingBGMIPlayerswithaUniqueRapSongandDanceCon
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/about"/> 
-<meta name="twitter:description" content="Codashop celebrated BGMI's Anniversary with a dynamic campaign, engaging gamers through music and dance to enhance in-game purchase experiences."/> 
+<meta name="twitter:description" content="How Codashop engaged BGMI gamers with a unique rap song and dance contest, driving community participation and brand excitement in this AGENCY09 case study."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>

@@ -105,12 +105,12 @@ const TataTrucks = () => {
   return (
     <>
                 <Helmet>
-                  <title>Elevating Men's Fashion: A Visually Captivating Website for Siyaram's - AGENCY09 Case Study</title>
+                  <title>Siyaram’s Website Revamp | Men’s Fashion Case Study</title>
                   <link rel="canonical" href="https://www.agency09.in/about"/>
                   <meta name="robots" content="index, follow"/> 
             
                   <meta name="description" content="Discover how AGENCY09 crafted a visually captivating website for Siyaram's, elevating men's fashion with seamless design and innovation. Explore now!"/>
-                  <meta property="og:title" content="Elevating Men's Fashion: A Visually Captivating Website for Siyaram's - AGENCY09 Case Study"/> 
+                  <meta property="og:title" content="Siyaram’s Website Revamp | Men’s Fashion Case Study"/> 
                   <meta property="og:description" content="Discover how AGENCY09 crafted a visually captivating website for Siyaram's, elevating men's fashion with seamless design and innovation. Explore now!"/> 
                   <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
                   <meta property="og:type" content="website"/> 

@@ -108,13 +108,13 @@ const TataTrucks = () => {
     
     
         <Helmet>
-          <title>Driving Visibility and Engagement for Tata Motors' Commercial Vehicle Lineup - AGENCY09 Case Study</title>
+          <title>Tata Motors Commercial Vehicles: Visibility Case Study</title>
           <link rel="canonical" href="https://www.agency09.in/about"/>
           <meta name="robots" content="index, follow"/> 
     
-          <meta name="description" content="Boosting visibility & engagement for Tata Motors' commercial vehicle lineup with strategic digital solutions – AGENCY09."/>
-          <meta property="og:title" content="Driving Visibility and Engagement for Tata Motors' Commercial Vehicle Lineup - AGENCY09 Case Study"/> 
-          <meta property="og:description" content="Boosting visibility & engagement for Tata Motors' commercial vehicle lineup with strategic digital solutions – AGENCY09."/> 
+          <meta name="description" content="Boosted visibility and engagement for Tata Motors commercial vehicles through data-driven digital marketing strategies by – AGENCY09"/>
+          <meta property="og:title" content="Tata Motors Commercial Vehicles: Visibility Case Study"/> 
+          <meta property="og:description" content="Boosted visibility and engagement for Tata Motors commercial vehicles through data-driven digital marketing strategies by – AGENCY09"/> 
           <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
           <meta property="og:type" content="website"/> 
     
@@ -123,7 +123,7 @@ const TataTrucks = () => {
           <meta name="twitter:site" content="@AGENCY09"/> 
           <meta name="twitter:creator" content="@AGENCY09"/> 
           <meta name="twitter:url" content="https://www.agency09.in/about"/> 
-          <meta name="twitter:description" content=" Boosting visibility & engagement for Tata Motors' commercial vehicle lineup with strategic digital solutions – AGENCY09."/> 
+          <meta name="twitter:description" content=" Boosted visibility and engagement for Tata Motors commercial vehicles through data-driven digital marketing strategies by – AGENCY09"/> 
           <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
     
         </Helmet>

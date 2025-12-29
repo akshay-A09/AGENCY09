@@ -105,13 +105,13 @@ const IndustryLeadingOrganicSearchResultsfromScratchforMahindraSolarize = () => 
   return (
     <>
     <Helmet>
-<title>Industry Leading Organic Search Results from Scratch for Mahindra Solarize - AGENCY09 Case Study</title>
+<title>Industry-Leading Organic Search Growth | Mahindra Solarize</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="Achieving industry-leading organic search results from scratch for Mahindra Solarize, this AGENCY09 case study highlights strategic SEO efforts that drove exceptional growth and visibility."/>
-<meta property="og:title" content="Industry Leading Organic Search Results from Scratch for Mahindra Solarize - AGENCY09 Case Study"/> 
-<meta property="og:description" content="Achieving industry-leading organic search results from scratch for Mahindra Solarize, this AGENCY09 case study highlights strategic SEO efforts that drove exceptional growth and visibility."/> 
+<meta name="description" content="Learn how AGENCY09 built industry-leading organic search results for Mahindra Solarize from scratch through strategic SEO that drove growth and visibility."/>
+<meta property="og:title" content="Industry-Leading Organic Search Growth | Mahindra Solarize"/> 
+<meta property="og:description" content="Learn how AGENCY09 built industry-leading organic search results for Mahindra Solarize from scratch through strategic SEO that drove growth and visibility."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -120,7 +120,7 @@ const IndustryLeadingOrganicSearchResultsfromScratchforMahindraSolarize = () => 
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/about"/> 
-<meta name="twitter:description" content="Achieving industry-leading organic search results from scratch for Mahindra Solarize, this AGENCY09 case study highlights strategic SEO efforts that drove exceptional growth and visibility."/> 
+<meta name="twitter:description" content="Learn how AGENCY09 built industry-leading organic search results for Mahindra Solarize from scratch through strategic SEO that drove growth and visibility."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>

@@ -11,13 +11,13 @@ const FromLowVisibilityToIndustryAuthorityForApolloEnergyAnalytics = () => {
   return (
     <>
     <Helmet>
-<title>From Low Visibility to Industry Authority: Apollo Energy Analytics - AGENCY09 Case Study</title>
+<title>From Low Visibility to Industry Authority: Apollo Energy</title>
 <link rel="canonical" href="https://www.agency09.in/work/case-studies/apollo-energy-analytics-seo-authority"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="Nahar Group, a prominent real estate brand based in Mumbai, faced challenges in attracting the right kind of organic users to engage with their website."/>
-<meta property="og:title" content="From Low Visibility to Industry Authority: Apollo Energy Analytics - AGENCY09 Case Study"/> 
-<meta property="og:description" content="Nahar Group, a prominent real estate brand based in Mumbai, faced challenges in attracting the right kind of organic users to engage with their website."/> 
+<meta name="description" content="Apollo Energy Analytics saw massive gains in domain authority, rankings, and organic traffic through focused SEO for the U.S. renewable energy SaaS market."/>
+<meta property="og:title" content="From Low Visibility to Industry Authority: Apollo Energy"/> 
+<meta property="og:description" content="Apollo Energy Analytics saw massive gains in domain authority, rankings, and organic traffic through focused SEO for the U.S. renewable energy SaaS market."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -26,7 +26,7 @@ const FromLowVisibilityToIndustryAuthorityForApolloEnergyAnalytics = () => {
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/work/case-studies/apollo-energy-analytics-seo-authority"/> 
-<meta name="twitter:description" content="Nahar Group, a prominent real estate brand based in Mumbai, faced challenges in attracting the right kind of organic users to engage with their website."/> 
+<meta name="twitter:description" content="Apollo Energy Analytics saw massive gains in domain authority, rankings, and organic traffic through focused SEO for the U.S. renewable energy SaaS market."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>

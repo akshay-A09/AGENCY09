@@ -106,13 +106,13 @@ const BARCIndiaYearbook = () => {
   return (
     <>
     <Helmet>
-<title>Visualizing Insights: Award-Winning Yearbook for BARC India - AGENCY09 Case Study</title>
+<title>Award-Winning BARC India Yearbook | AGENCY09 Case Study</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="Discover 'Visualizing Insights,' the award-winning yearbook by AGENCY09 for BARC India, packed with data-driven stories, impactful visuals, and industry insights."/>
-<meta property="og:title" content="Visualizing Insights: Award-Winning Yearbook for BARC India - AGENCY09 Case Study"/> 
-<meta property="og:description" content="Discover 'Visualizing Insights,' the award-winning yearbook by AGENCY09 for BARC India, packed with data-driven stories, impactful visuals, and industry insights."/> 
+<meta name="description" content="Visualizing Insights, the award-winning yearbook by AGENCY09 for BARC India, showcases data-led storytelling, powerful visuals, and key industry insights."/>
+<meta property="og:title" content="Award-Winning BARC India Yearbook | AGENCY09 Case Study"/> 
+<meta property="og:description" content="Visualizing Insights, the award-winning yearbook by AGENCY09 for BARC India, showcases data-led storytelling, powerful visuals, and key industry insights."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -121,7 +121,7 @@ const BARCIndiaYearbook = () => {
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/about"/> 
-<meta name="twitter:description" content=" Discover 'Visualizing Insights,' the award-winning yearbook by AGENCY09 for BARC India, packed with data-driven stories, impactful visuals, and industry insights."/> 
+<meta name="twitter:description" content=" Visualizing Insights, the award-winning yearbook by AGENCY09 for BARC India, showcases data-led storytelling, powerful visuals, and key industry insights."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>

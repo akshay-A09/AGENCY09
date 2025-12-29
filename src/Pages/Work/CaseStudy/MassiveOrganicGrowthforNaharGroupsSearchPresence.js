@@ -11,12 +11,12 @@ const MassiveOrganicGrowthforNaharGroupsSearchPresence = () => {
   return (
     <>
     <Helmet>
-<title>Massive Organic Growth for Nahar Group’s Search Presence - AGENCY09 Case Study</title>
+<title>Massive Organic Search Growth for Nahar Group | Case Study</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
 <meta name="description" content="Nahar Group, a prominent real estate brand based in Mumbai, faced challenges in attracting the right kind of organic users to engage with their website."/>
-<meta property="og:title" content="Massive Organic Growth for Nahar Group’s Search Presence - AGENCY09 Case Study"/> 
+<meta property="og:title" content="Massive Organic Search Growth for Nahar Group | Case Study"/> 
 <meta property="og:description" content="Nahar Group, a prominent real estate brand based in Mumbai, faced challenges in attracting the right kind of organic users to engage with their website."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 

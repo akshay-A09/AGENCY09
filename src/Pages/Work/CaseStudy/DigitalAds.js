@@ -114,13 +114,13 @@ const apiKey = 'AIzaSyBkRuDWRBnBbl_qW3syuk_BEa7anG2uU2M';
   return (
     <>
     <Helmet>
-<title>Digital Ads Agency in Mumbai, India | AGENCY09 Case Study</title>
+<title>Digital Ads Campaign Case Study</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="We craft high-impact digital ads that boost engagement and conversions. From social to display ads, we help brands stand out across platforms. Let us grow your reach."/>
-<meta property="og:title" content="Digital Ads Agency in Mumbai, India | AGENCY09 Case Study"/> 
-<meta property="og:description" content="We craft high-impact digital ads that boost engagement and conversions. From social to display ads, we help brands stand out across platforms. Let us grow your reach."/> 
+<meta name="description" content="Explore AGENCY09’s digital ads case study highlighting proven strategies, execution methods, and measurable online advertising results."/>
+<meta property="og:title" content="Digital Ads Campaign Case Study"/> 
+<meta property="og:description" content="Explore AGENCY09’s digital ads case study highlighting proven strategies, execution methods, and measurable online advertising results."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -129,7 +129,7 @@ const apiKey = 'AIzaSyBkRuDWRBnBbl_qW3syuk_BEa7anG2uU2M';
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/about"/> 
-<meta name="twitter:description" content="We craft high-impact digital ads that boost engagement and conversions. From social to display ads, we help brands stand out across platforms. Let us grow your reach."/> 
+<meta name="twitter:description" content="Explore AGENCY09’s digital ads case study highlighting proven strategies, execution methods, and measurable online advertising results."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>

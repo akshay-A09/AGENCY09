@@ -105,12 +105,12 @@ const AmericanTourister = () => {
   return (
     <>
     <Helmet>
-<title>Showcasing Excellence: Captivating Product Films for American Tourister - AGENCY09 Case Study</title>
+<title>Captivating Product Films for American Tourister | Case Study</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
 <meta name="description" content="Experience how AGENCY09 created captivating product films for American Tourister, showcasing excellence in visual storytelling and brand impact."/>
-<meta property="og:title" content="Showcasing Excellence: Captivating Product Films for American Tourister - AGENCY09 Case Study"/> 
+<meta property="og:title" content="Captivating Product Films for American Tourister | Case Study"/> 
 <meta property="og:description" content="Experience how AGENCY09 created captivating product films for American Tourister, showcasing excellence in visual storytelling and brand impact."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 

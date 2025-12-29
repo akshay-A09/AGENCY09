@@ -11,13 +11,13 @@ const AcceleratingOrganicSuccessForSiyaramsSpeedAndSearchGrowth = () => {
   return (
     <>
     <Helmet>
-<title>Accelerating Organic Success: Siyaram’s Improved Speed and Search Growth - AGENCY09 Case Study</title>
+<title>Siyaram’s SEO Win: Faster Speed, Stronger Organic Growth</title>
 <link rel="canonical" href="https://www.agency09.in/work/case-studies/siyaram-website-speed-seo-growth"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="Nahar Group, a prominent real estate brand based in Mumbai, faced challenges in attracting the right kind of organic users to engage with their website."/>
-<meta property="og:title" content="Accelerating Organic Success: Siyaram’s Improved Speed and Search Growth - AGENCY09 Case Study"/> 
-<meta property="og:description" content="Nahar Group, a prominent real estate brand based in Mumbai, faced challenges in attracting the right kind of organic users to engage with their website."/> 
+<meta name="description" content="See how Siyaram improved site speed, expanded keyword coverage, and drove strong organic growth through focused SEO and performance optimization."/>
+<meta property="og:title" content="Siyaram’s SEO Win: Faster Speed, Stronger Organic Growth"/> 
+<meta property="og:description" content="See how Siyaram improved site speed, expanded keyword coverage, and drove strong organic growth through focused SEO and performance optimization."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -26,7 +26,7 @@ const AcceleratingOrganicSuccessForSiyaramsSpeedAndSearchGrowth = () => {
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/work/case-studies/siyaram-website-speed-seo-growth"/> 
-<meta name="twitter:description" content="Nahar Group, a prominent real estate brand based in Mumbai, faced challenges in attracting the right kind of organic users to engage with their website."/> 
+<meta name="twitter:description" content="See how Siyaram improved site speed, expanded keyword coverage, and drove strong organic growth through focused SEO and performance optimization."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>

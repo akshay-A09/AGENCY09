@@ -105,13 +105,13 @@ const NewYearsCampaignHitstheMarkwithSiyaramsLeveragingCelebrityPowerforMaximumI
   return (
     <>
     <Helmet>
-<title>New Year's Campaign Hits the Mark with Siyaram's: Leveraging Celebrity Power for Maximum Impact - AGENCY09 Case Study</title>
+<title>Siyaram’s New Year Campaign with Celebrity Power | Case Study</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="Discover how AGENCY09's New Year's campaign for Siyaram's leveraged celebrity power to create maximum impact. A strategic blend of influence and creativity that hit the mark!"/>
-<meta property="og:title" content="New Year's Campaign Hits the Mark with Siyaram's: Leveraging Celebrity Power for Maximum Impact - AGENCY09 Case Study"/> 
-<meta property="og:description" content="Discover how AGENCY09's New Year's campaign for Siyaram's leveraged celebrity power to create maximum impact. A strategic blend of influence and creativity that hit the mark!"/> 
+<meta name="description" content="AGENCY09’s New Year campaign for Siyaram’s used celebrity influence and creative strategy to deliver high-impact brand engagement."/>
+<meta property="og:title" content="Siyaram’s New Year Campaign with Celebrity Power | Case Study"/> 
+<meta property="og:description" content="AGENCY09’s New Year campaign for Siyaram’s used celebrity influence and creative strategy to deliver high-impact brand engagement."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -120,7 +120,7 @@ const NewYearsCampaignHitstheMarkwithSiyaramsLeveragingCelebrityPowerforMaximumI
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/about"/> 
-<meta name="twitter:description" content="Discover how AGENCY09's New Year's campaign for Siyaram's leveraged celebrity power to create maximum impact. A strategic blend of influence and creativity that hit the mark!"/> 
+<meta name="twitter:description" content="AGENCY09’s New Year campaign for Siyaram’s used celebrity influence and creative strategy to deliver high-impact brand engagement."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>

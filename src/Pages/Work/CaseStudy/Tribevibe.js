@@ -103,12 +103,12 @@ const Tribevibe = () => {
   return (
     <>
     <Helmet>
-<title>Empowering Campus Influencers: Tech-Driven Ambassador Program for TribeVibe - AGENCY09 Case Study</title>
+<title>Tech-Driven Campus Ambassador Program – TribeVibe Case Study</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
 <meta name="description" content="Empowering campus influencers with TribeVibe’s tech-driven ambassador program – crafted by AGENCY09 to boost engagement and brand impact."/>
-<meta property="og:title" content="Empowering Campus Influencers: Tech-Driven Ambassador Program for TribeVibe - AGENCY09 Case Study"/> 
+<meta property="og:title" content="Tech-Driven Campus Ambassador Program – TribeVibe Case Study"/> 
 <meta property="og:description" content="Empowering campus influencers with TribeVibe’s tech-driven ambassador program – crafted by AGENCY09 to boost engagement and brand impact."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 

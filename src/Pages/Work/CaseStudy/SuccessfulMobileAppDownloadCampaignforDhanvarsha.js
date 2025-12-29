@@ -103,13 +103,13 @@ const SuccessfulMobileAppDownloadCampaignforDhanvarsha = () => {
   return (
     <>
     <Helmet>
-<title>Successful Mobile App Download Campaign for Dhanvarsha - AGENCY09 Case Study</title>
+<title>Successful Mobile App Download Campaign | Dhanvarsha</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="Discover how AGENCY09 successfully executed a mobile app download campaign for Dhanvarsha, driving engagement and growth with strategic marketing."/>
-<meta property="og:title" content="Successful Mobile App Download Campaign for Dhanvarsha - AGENCY09 Case Study"/> 
-<meta property="og:description" content="Discover how AGENCY09 successfully executed a mobile app download campaign for Dhanvarsha, driving engagement and growth with strategic marketing."/> 
+<meta name="description" content="Discover how AGENCY09 drove Dhanvarsha app downloads through a strategic mobile marketing campaign that boosted user engagement and business growth."/>
+<meta property="og:title" content="Successful Mobile App Download Campaign | Dhanvarsha"/> 
+<meta property="og:description" content="Discover how AGENCY09 drove Dhanvarsha app downloads through a strategic mobile marketing campaign that boosted user engagement and business growth."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -118,7 +118,7 @@ const SuccessfulMobileAppDownloadCampaignforDhanvarsha = () => {
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/about"/> 
-<meta name="twitter:description" content="Discover how AGENCY09 successfully executed a mobile app download campaign for Dhanvarsha, driving engagement and growth with strategic marketing."/> 
+<meta name="twitter:description" content="Discover how AGENCY09 drove Dhanvarsha app downloads through a strategic mobile marketing campaign that boosted user engagement and business growth."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>

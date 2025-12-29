@@ -106,13 +106,13 @@ const ProductCommunicationforRelianceGeneralInsurance = () => {
   return (
     <>
     <Helmet>
-<title>Innovative Product Communication for Enhanced Brand Visibility - AGENCY09 Case Study</title>
+<title>Innovative Product Communication for Enhanced Brand Visibility</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="Boosting brand visibility with Reliance General Insurance through innovative product offerings and a strategic communication plan to engage customers effectively."/>
-<meta property="og:title" content="Innovative Product Communication for Enhanced Brand Visibility - AGENCY09 Case Study"/> 
-<meta property="og:description" content="Boosting brand visibility with Reliance General Insurance through innovative product offerings and a strategic communication plan to engage customers effectively."/> 
+<meta name="description" content="Boosting Reliance General Insurance’s brand visibility with innovative products and strategic communication that drives engagement and builds customer trust."/>
+<meta property="og:title" content="Innovative Product Communication for Enhanced Brand Visibility"/> 
+<meta property="og:description" content="Boosting Reliance General Insurance’s brand visibility with innovative products and strategic communication that drives engagement and builds customer trust."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -121,7 +121,7 @@ const ProductCommunicationforRelianceGeneralInsurance = () => {
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/about"/> 
-<meta name="twitter:description" content="Boosting brand visibility with Reliance General Insurance through innovative product offerings and a strategic communication plan to engage customers effectively."/> 
+<meta name="twitter:description" content="Boosting Reliance General Insurance’s brand visibility with innovative products and strategic communication that drives engagement and builds customer trust."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>

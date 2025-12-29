@@ -110,13 +110,13 @@ const PromotingALDOsSS19andWeddingCollections = () => {
   return (
     <>
     <Helmet>
-<title>Promoting ALDO's SS'19 and Wedding Collections - AGENCY09 Case Study</title>
+<title>ALDO SS’19 & Wedding Collection Promotion | Case Study</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="Discover how AGENCY09 successfully promoted ALDO's SS'19 and Wedding Collections with innovative digital strategies. Explore the campaign highlights and creative executions that captivated audiences. Read more!"/>
-<meta property="og:title" content="Promoting ALDO's SS'19 and Wedding Collections - AGENCY09 Case Study"/> 
-<meta property="og:description" content="Discover how AGENCY09 successfully promoted ALDO's SS'19 and Wedding Collections with innovative digital strategies. Explore the campaign highlights and creative executions that captivated audiences. Read more!"/> 
+<meta name="description" content="See how AGENCY09 promoted ALDO’s SS’19 and Wedding Collections using innovative digital strategies and creative executions that engaged fashion audiences."/>
+<meta property="og:title" content="ALDO SS’19 & Wedding Collection Promotion | Case Study"/> 
+<meta property="og:description" content="See how AGENCY09 promoted ALDO’s SS’19 and Wedding Collections using innovative digital strategies and creative executions that engaged fashion audiences."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -125,7 +125,7 @@ const PromotingALDOsSS19andWeddingCollections = () => {
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/about"/> 
-<meta name="twitter:description" content="Discover how AGENCY09 successfully promoted ALDO's SS'19 and Wedding Collections with innovative digital strategies. Explore the campaign highlights and creative executions that captivated audiences. Read more!"/> 
+<meta name="twitter:description" content="See how AGENCY09 promoted ALDO’s SS’19 and Wedding Collections using innovative digital strategies and creative executions that engaged fashion audiences."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>

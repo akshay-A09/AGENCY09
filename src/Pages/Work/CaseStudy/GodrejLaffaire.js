@@ -105,12 +105,12 @@ const GodrejLaffaire = () => {
   return (
     <>
     <Helmet>
-<title>Unearthing India’s Next Big Content Creator with Godrej L’Affaire Select - AGENCY09 Case Study</title>
+<title>Content Creator Campaign Case Study | Godrej L’Affaire Select</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
 <meta name="description" content="India's next big content creator with Godrej L’Affaire Select, a nationwide talent hunt offering growth, exposure, and industry connections."/>
-<meta property="og:title" content="Unearthing India’s Next Big Content Creator with Godrej L’Affaire Select - AGENCY09 Case Study"/> 
+<meta property="og:title" content="Content Creator Campaign Case Study | Godrej L’Affaire Select"/> 
 <meta property="og:description" content="India's next big content creator with Godrej L’Affaire Select, a nationwide talent hunt offering growth, exposure, and industry connections."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 

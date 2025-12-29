@@ -105,13 +105,13 @@ const Consolidationof91PlusWebsitesandTremendousSEOGrowthforRyanGroup = () => {
   return (
     <>
     <Helmet>
-<title>Consolidation of 91+ Websites and Tremendous SEO Growth for Ryan Group - AGENCY09 Case Study</title>
+<title>91+ Website Consolidation Drives SEO Growth | Ryan Group</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="Explore how AGENCY09 successfully consolidated 91+ websites for Ryan Group, driving massive SEO growth and enhanced digital performance in this case study."/>
-<meta property="og:title" content="Consolidation of 91+ Websites and Tremendous SEO Growth for Ryan Group - AGENCY09 Case Study"/> 
-<meta property="og:description" content="Explore how AGENCY09 successfully consolidated 91+ websites for Ryan Group, driving massive SEO growth and enhanced digital performance in this case study."/> 
+<meta name="description" content="Explore how AGENCY09 successfully consolidated 91+ websites for Ryan Group, driving massive SEO growth and enhanced digital performance in this case study.Explore how AGENCY09 successfully consolidated 91+ websites for Ryan Group, driving massive SEO growth and enhanced digital performance in this case study."/>
+<meta property="og:title" content="91+ Website Consolidation Drives SEO Growth | Ryan Group"/> 
+<meta property="og:description" content="Explore how AGENCY09 successfully consolidated 91+ websites for Ryan Group, driving massive SEO growth and enhanced digital performance in this case study.Explore how AGENCY09 successfully consolidated 91+ websites for Ryan Group, driving massive SEO growth and enhanced digital performance in this case study."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -120,7 +120,7 @@ const Consolidationof91PlusWebsitesandTremendousSEOGrowthforRyanGroup = () => {
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/about"/> 
-<meta name="twitter:description" content="Explore how AGENCY09 successfully consolidated 91+ websites for Ryan Group, driving massive SEO growth and enhanced digital performance in this case study."/> 
+<meta name="twitter:description" content="Explore how AGENCY09 successfully consolidated 91+ websites for Ryan Group, driving massive SEO growth and enhanced digital performance in this case study.Explore how AGENCY09 successfully consolidated 91+ websites for Ryan Group, driving massive SEO growth and enhanced digital performance in this case study."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>

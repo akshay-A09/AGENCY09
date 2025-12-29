@@ -105,12 +105,12 @@ const MultichannelLeadGenCampaignforJPInfra = () => {
   return (
     <>
 <Helmet>
-<title>Multichannel Lead Gen Campaign for JP Infra - AGENCY09 Case Study</title>
+<title>Multichannel Lead Generation Campaign | JP Infra</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
 <meta name="description" content="Boosting lead generation for JP Infra with a strategic multichannel campaign by AGENCY09, driving engagement and conversions."/>
-<meta property="og:title" content="Multichannel Lead Gen Campaign for JP Infra - AGENCY09 Case Study"/> 
+<meta property="og:title" content="Multichannel Lead Generation Campaign | JP Infra"/> 
 <meta property="og:description" content="Boosting lead generation for JP Infra with a strategic multichannel campaign by AGENCY09, driving engagement and conversions."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 

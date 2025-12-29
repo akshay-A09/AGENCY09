@@ -101,13 +101,13 @@ const LakmeFashionWeek = () => {
   return (
     <>
     <Helmet>
-<title>Capturing the Glamour: Content Creation and Event Coverage for Lakme Fashion Week - AGENCY09 Case Study</title>
+<title>Lakme Fashion Week Content & Event Coverage Case Study</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="Enhanced Lakme Fashion Week’s digital presence over six seasons with engaging content, extensive event coverage, and seamless sponsor deliverables to capture the event's essence and excitement."/>
-<meta property="og:title" content="Capturing the Glamour: Content Creation and Event Coverage for Lakme Fashion Week - AGENCY09 Case Study"/> 
-<meta property="og:description" content="Enhanced Lakme Fashion Week’s digital presence over six seasons with engaging content, extensive event coverage, and seamless sponsor deliverables to capture the event's essence and excitement."/> 
+<meta name="description" content="Strengthened Lakme Fashion Week’s digital presence across six seasons with compelling content, comprehensive event coverage, and seamless sponsor integrations."/>
+<meta property="og:title" content="Lakme Fashion Week Content & Event Coverage Case Study"/> 
+<meta property="og:description" content="Strengthened Lakme Fashion Week’s digital presence across six seasons with compelling content, comprehensive event coverage, and seamless sponsor integrations."/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -116,7 +116,7 @@ const LakmeFashionWeek = () => {
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/about"/> 
-<meta name="twitter:description" content="Enhanced Lakme Fashion Week’s digital presence over six seasons with engaging content, extensive event coverage, and seamless sponsor deliverables to capture the event's essence and excitement."/> 
+<meta name="twitter:description" content="Strengthened Lakme Fashion Week’s digital presence across six seasons with compelling content, comprehensive event coverage, and seamless sponsor integrations."/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>
