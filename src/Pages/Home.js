@@ -23,7 +23,7 @@ import Tribevibe from '../Assets/Images/work/LaffaireSelect.jpg';
 import GroupSoft from '../Assets/Images/work/GroupSoft.webp';
 import podcast from '../Assets/Images/work/podcast-new.jpg';
 import rgi from '../Assets/Images/work/rgi.webp';
-
+import HomeBlogs from "../Components/HomeBlogs";
 // Images end
 
 // Array of work items
@@ -238,7 +238,12 @@ const Home = () => {
     {/* Social */}
       <Social />                  
     {/* Social End */}
-      
+    
+    {/* Blogs */}
+    <section className="homeBlogsSection">
+      <HomeBlogs />
+    </section>
+    {/* Blogs End */}
       
       <Footer />
     </>
