@@ -18,6 +18,7 @@ import ourwork3 from '../../../Assets/Images/work/lakme/lk-2.webp'
 
 import freyaa1 from '../../../Assets/Images/work/freyaa1.webp'
 import freyaa2 from '../../../Assets/Images/work/freyaa2.webp'
+import CustomVideoPlaylist from '../../../Hooks/CaseStudyVideos';
 
 
 // CaseStudySlider 
@@ -73,7 +74,10 @@ arrow:false,
 // Slider
 
 const FreyaaWovenWithLove = () => {
-
+// DEFINE DATA FOR THIS PAGE
+  const freyaaVideos = [
+    { id: 'YSXHeaG_lts', title: '#WovenWithLove | Women\'s Day Special' }
+  ];
 
 return (
 <>
@@ -209,14 +213,27 @@ For Women’s Day 2025, Freyaa wanted to go beyond cliched “empowerment” mes
 
 <div className='cSsecMinC'>
 
-<div className='imgCol1 imgCol'>
+
+{/* VIDEO SECTION - CALLING THE REUSABLE COMPONENT */}
+<div className="ytgrdP">
+    <div className="App">
+    <CustomVideoPlaylist 
+        videoData={freyaaVideos} 
+        playlistTitle="Campaign Videos" 
+    />
+    </div>
+</div>
+
+
+{/* <div className='imgCol1 imgCol'>
 <span><img src={freyaa1} loading='lazy' /></span>
 </div>
 
 
 <div className='imgCol1 imgCol'>
 <span><img src={freyaa2} loading='lazy' /></span>
-</div>
+</div> */}
+
 </div>
 
 

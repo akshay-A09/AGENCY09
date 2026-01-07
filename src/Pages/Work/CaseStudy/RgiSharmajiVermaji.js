@@ -18,6 +18,7 @@ import ourwork3 from '../../../Assets/Images/work/lakme/lk-2.webp'
 
 import Sharmaji1 from '../../../Assets/Images/work/Sharmaji1.webp'
 import Sharmaji2 from '../../../Assets/Images/work/Sharmaji2.webp'
+import CustomVideoPlaylist from '../../../Hooks/CaseStudyVideos';
 
 
 // CaseStudySlider 
@@ -99,6 +100,12 @@ tags: [{ name: 'Education' },],
 //CaseStudy Data End
 
 const RgiSharmajiVermaji = () => {
+ const rgiVideos = [
+    { id: '_exdU3MPssw', title: 'Sharmaji & Vermaji - Episode 1' },
+    { id: 'D1FgNWZ-bqM', title: 'Sharmaji & Vermaji - Episode 2' },
+    { id: '6TA8cSDmUFM', title: 'Sharmaji & Vermaji - Episode 3' },
+    { id: 'dHYEKmPfqG4', title: 'Sharmaji & Vermaji - Episode 4' },
+  ];
 
 
 return (
@@ -234,6 +241,19 @@ return (
 
 <div className='cSsecMinC'>
 
+<div className="ytgrdP">
+<div className="App">
+    <h1>YouTube Series</h1>
+    {/* Using the component with the exact same layout classes */}
+    <CustomVideoPlaylist 
+    videoData={rgiVideos} 
+    playlistTitle="Sharmaji Vermaji Episodes" 
+    />
+</div>
+</div>
+
+
+{/* 
 <div className='imgCol1 imgCol'>
 <span><img src={Sharmaji1} loading='lazy' /></span>
 </div>
@@ -242,7 +262,7 @@ return (
 <div className='imgCol1 imgCol'>
 <span><img src={Sharmaji2} loading='lazy' /></span>
 </div>
-
+ */}
 
 
 
