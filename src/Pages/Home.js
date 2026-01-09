@@ -9,7 +9,6 @@ import ServicesList from '../Components/ServicesList';
 import LogosSlider from '../Components/LogosSlider';
 import Social from '../Components/Social';
 import Calculat from '../Components/Calculat';
-import Items from '../Components/WhatsNew';
 import WeMakeIdeasPerform from '../Components/WeMakeIdeasPerform';
 import animateGsap from '../Components/Animation/HomeGsap'; 
 import { IoStarSharp } from "react-icons/io5";
@@ -198,9 +197,12 @@ const Home = () => {
     {/* content & tech */}
 
 
-    {/* Updates */}
-        <Items />                   
-    {/* Updates */}
+    {/* Star IconWhat's NewStar Icon */}
+    <section className="homeBlogsSection">
+      <HomeBlogs />
+    </section>
+    {/* Star IconWhat's NewStar Icon End */}
+
 
     {/* Services */}
     <Services />         
@@ -239,11 +241,6 @@ const Home = () => {
       <Social />                  
     {/* Social End */}
     
-    {/* Blogs */}
-    <section className="homeBlogsSection">
-      <HomeBlogs />
-    </section>
-    {/* Blogs End */}
       
       <Footer />
     </>
