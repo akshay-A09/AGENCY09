@@ -87,6 +87,12 @@ import SiyaramSEO from './Pages/Work/CaseStudy/AcceleratingOrganicSuccessForSiya
 import ApolloEnergy from './Pages/Work/CaseStudy/FromLowVisibilityToIndustryAuthorityForApolloEnergyAnalytics'
 import SiyaramGMB from './Pages/Work/CaseStudy/MakingSiyaramsStoresEasyToFindWith350PlusGMBListings'
 import ReavivaHolisticHealth from './Pages/Work/CaseStudy/OrganicGrowthForReavivaHolisticHealth'
+import DesigningFluidDigitalExperiencesForConnectedTVCloudTVOS from './Pages/Work/CaseStudy/DesigningFluidDigitalExperiencesForConnectedTVCloudTVOS'
+import RevampingLuxeGiftCardForSpeedStyleAndEngagement from './Pages/Work/CaseStudy/RevampingLuxeGiftCardForSpeedStyleAndEngagement'
+import WhereBrandMeetsPerformanceInWebflowArchitectureTvarana from './Pages/Work/CaseStudy/WhereBrandMeetsPerformanceInWebflowArchitectureTvarana'
+import HighPerformanceMarketingWebsiteForAdleo from './Pages/Work/CaseStudy/HighPerformanceMarketingWebsiteForAdleo'
+import DesigningAScalableContentDrivenEducationWebsiteForEduEdgeGlobal from './Pages/Work/CaseStudy/DesigningAScalableContentDrivenEducationWebsiteForEduEdgeGlobal'
+import Interactive3DGameExperienceForTataMotorsAceProLaunch from './Pages/Work/CaseStudy/Interactive3DGameExperienceForTataMotorsAceProLaunch'
 // SEO 
 
  
@@ -188,7 +194,12 @@ function App() {
       <Route exact path="/work/case-studies/apollo-energy-analytics-seo-authority" element={<ApolloEnergy />} />
       <Route exact path="/work/case-studies/siyaram-gmb-local-seo-management" element={<SiyaramGMB />} />
       <Route exact path="/work/case-studies/reaviva-holistic-health-seo-growth" element={<ReavivaHolisticHealth />} />
-
+      <Route exact path="/work/case-studies/designing-fluid-digital-experiences-for-connected-tv-cloudtvos" element={<DesigningFluidDigitalExperiencesForConnectedTVCloudTVOS />} />
+      <Route exact path="/work/case-studies/revamping-luxe-gift-card-for-speed-style-and-engagement" element={<RevampingLuxeGiftCardForSpeedStyleAndEngagement />} />
+      <Route exact path="/work/case-studies/where-brand-meets-performance-in-webflow-architecture-tvarana" element={<WhereBrandMeetsPerformanceInWebflowArchitectureTvarana />} />
+      <Route exact path="/work/case-studies/high-performance-marketing-website-for-adleo" element={<HighPerformanceMarketingWebsiteForAdleo />} />
+      <Route exact path="/work/case-studies/designing-a-scalable-content-driven-education-website-for-eduedge-global" element={<DesigningAScalableContentDrivenEducationWebsiteForEduEdgeGlobal />} />
+      <Route exact path="/work/case-studies/interactive-3d-game-experience-for-tata-motors-ace-pro-launch" element={<Interactive3DGameExperienceForTataMotorsAceProLaunch />} />
       
         </Routes>
     </div>
