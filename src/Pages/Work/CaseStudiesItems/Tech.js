@@ -7,8 +7,112 @@ import Siyarams from '../../../Assets/Images/work/siyarams.webp';
 import Bitspilani from '../../../Assets/Images/work/Bitspilani.webp';
 import Tribevibe from '../../../Assets/Images/work/TribeVibe.webp';
 
+
+import cloudtv from '../../../Assets/Images/case-study/CloudTV/CloudTV.jpg'
+import Luxe from '../../../Assets/Images/case-study/Luxe/Luxe.jpg'
+import Tvarana from '../../../Assets/Images/case-study/Tvarana/Tvarana.jpg'
+import AdLeo from '../../../Assets/Images/case-study/AdLeo/AdLeo.jpg'
+import EduEdge from '../../../Assets/Images/case-study/EduEdge/EduEdge.jpg'
+import tataMain from '../../../Assets/Images/work/tata-trucks/tata-main.webp';
+
+
+
+
 // Tech
 export const techData = [
+    // New
+     {
+        id: 1,
+        title: "Designing Fluid Digital Experiences for Connected TV: CloudTVOS",
+        tags: [
+            { name: 'Digital Strategy', },
+            { name: 'UI/UX', },
+            { name: 'Web Design and Development', }
+        ],
+        image: cloudtv,
+        link: '/work/case-studies/designing-fluid-digital-experiences-for-connected-tv-cloudtvos',
+        brand: 'CloudTVOS',
+        department: 'Tech'
+    },
+
+     {
+        id: 1,
+        title: "High-Performance Marketing Website for Adleo",
+        tags: [
+            { name: 'Digital Strategy', },
+            { name: 'Web Development', }
+        ],
+        image: AdLeo,
+        link: '/work/case-studies/high-performance-marketing-website-for-adleo',
+        brand: 'AdLeo',
+        department: 'Tech'
+    },
+
+     {
+        id: 1,
+        title: "Revamping Luxe Gift Card for Speed, Style, and Engagement",
+        tags: [
+            { name: 'UX/UI Strategy & Redesign', },
+            { name: 'Performance & Speed Optimisation', },
+            { name: 'Content Structuring & Storytelling', },
+            { name: 'Mobile-First Design', },
+            { name: 'Website Design and Development', },
+            { name: 'Webflow Development', }
+        ],
+        image: Luxe,
+        link: '/work/case-studies/revamping-luxe-gift-card-for-speed-style-and-engagement',
+        brand: 'Luxe Gift Card',
+        department: 'Tech'
+    },
+
+    {
+        id: 1,
+        title: "Designing a Scalable, Content-Driven Education Website for EduEdge Global",
+        tags: [
+            { name: 'Digital Strategy', },
+            { name: 'Web Development', }
+        ],
+        image: EduEdge,
+        link: '/work/case-studies/designing-a-scalable-content-driven-education-website-for-eduedge-global',
+        brand: 'EduEdge Global',
+        department: 'Tech'
+    },
+
+    // {
+    //     id: 1,
+    //     title: "Interactive 3D Game Experience for Tata Motors’ Ace Pro Launch",
+    //     tags: [
+    //         { name: 'Digital Strategy', },
+    //         { name: 'UI/UX', },
+    //         { name: 'Web Development', }
+    //     ],
+    //     image: tataMain,
+    //     link: '/work/case-studies/tata-trucks',
+    //     brand: 'TATA Trucks',
+    //     department: 'Tech'
+    // },
+
+    
+    //  {
+    //     id: 1,
+    //     title: "Where Brand Meets Performance in Webflow Architecture: Tvarana",
+    //     tags: [
+    //         { name: 'UX/UI Strategy & Redesign', },
+    //         { name: 'Performance & Speed Optimisation', },
+    //         { name: 'Content Structuring & Storytelling', },
+    //         { name: 'Mobile-First Design', },
+    //         { name: 'Website Design and Development', },
+    //         { name: 'Webflow Development', }
+    //     ],
+    //     image: Tvarana,
+    //     link: '/work/case-studies/where-brand-meets-performance-in-webflow-architecture-tvarana',
+    //     brand: 'TATA Trucks',
+    //     department: 'Tech'
+    // },
+
+
+    // New
+    
     {
         id: 1,
         title: "Driving Visibility and Engagement for Tata Motors' Commercial Vehicle Lineup",
