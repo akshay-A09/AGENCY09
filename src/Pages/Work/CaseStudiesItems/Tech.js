@@ -6,7 +6,8 @@ import GroupSoft from '../../../Assets/Images/work/GroupSoft.webp';
 import Siyarams from '../../../Assets/Images/work/siyarams.webp';
 import Bitspilani from '../../../Assets/Images/work/Bitspilani.webp';
 import Tribevibe from '../../../Assets/Images/work/TribeVibe.webp';
-
+import Detour from '../../../Assets/Images/case-study/Detour/Detours.jpg';
+import Toko from '../../../Assets/Images/case-study/Toko/Toko.jpg';
 
 import cloudtv from '../../../Assets/Images/case-study/CloudTV/CloudTV.jpg'
 import Luxe from '../../../Assets/Images/case-study/Luxe/Luxe.jpg'
@@ -21,7 +22,37 @@ import tataMain from '../../../Assets/Images/work/tata-trucks/tata-main.webp';
 // Tech
 export const techData = [
     // New
-     {
+     
+    {
+        id: 1,
+        title: "Building Toko’s First Digital Fundraising Platform for Schools Across New Zealand",
+        tags: [
+            { name: 'Digital Strategy', },
+            { name: 'UI/UX', },
+            { name: 'Web Design and Development', }
+        ],
+        image: Toko,
+        link: '/work/case-study/Toko',
+        brand: 'Toko',
+        department: 'Tech'
+    },
+
+    {
+        id: 1,
+        title: "Transforming Detouroz into a Conversion-Driven Campervan Booking Platform",
+        tags: [
+            { name: 'Digital Strategy', },
+            { name: 'UI/UX', },
+            { name: 'Web Design and Development', }
+        ],
+        image: Detour,
+        link: '/work/case-study/Detour',
+        brand: 'Detour',
+        department: 'Tech'
+    },
+    
+    
+    {
         id: 1,
         title: "Designing Fluid Digital Experiences for Connected TV: CloudTVOS",
         tags: [

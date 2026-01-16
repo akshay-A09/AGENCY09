@@ -21,6 +21,8 @@ import TataTrucks from './Pages/Work/CaseStudy/TataTrucks'
 import Siyaram from './Pages/Work/CaseStudy/Siyaram'
 import Groupsoft from './Pages/Work/CaseStudy/Groupsoft'
 import Bitspilani from './Pages/Work/CaseStudy/Bitspilani'
+import Toko from './Pages/Work/CaseStudy/Toko'
+import Detour from './Pages/Work/CaseStudy/Detour'
 import GodrejLaffaire from './Pages/Work/CaseStudy/GodrejLaffaire'
 import BARCIndiaYearbook from './Pages/Work/CaseStudy/BARCIndiaYearbook'
 import Tribevibe from './Pages/Work/CaseStudy/Tribevibe'
@@ -149,8 +151,8 @@ function App() {
 
           <Route exact path='/work/case-studies/strengthening-abfls-social-media-presence-with-a-high-impact-follower-growth-campaign' element={<StrengtheningAbflsSocialMediaPresencewithaHighImpactFollowerGrowthCampaign />} />
 
-
-
+          <Route exact path='/work/case-studies/Toko' element={<Toko />} />
+          <Route exact path='/work/case-studies/Detour' element={<Detour />} />
           <Route exact path='/work/case-studies/enhancing-organic-users-engagement-for-siyarams' element={<EnhancingOrganicUserEngagementforSiyarams />} />
           <Route exact path='/work/case-studies/successful-mobile-app-download-campaign-for-dhanvarsha' element={<SuccessfulMobileAppDownloadCampaignforDhanvarsha/>} />
           <Route exact path='/work/case-studies/multi-channel-lead-gen-campaign-for-jpinfa' element={<MultichannelLeadGenCampaignforJPInfra/>} />
