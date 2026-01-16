@@ -41,14 +41,14 @@ const HeroBanner = () => {
   };
 
   const slideData = [
-    { 
-      image: '',
-      imageLogo: pretLogo,
-      title: "Making Pret’s packaging the new <br/>MVP of match-day moments",
-      description: '',
-      btnLink: '/work/case-studies/pret-x-mi',
-      className: 'pretSlider',
-    },
+    // { 
+    //   image: '',
+    //   imageLogo: pretLogo,
+    //   title: "Making Pret’s packaging the new <br/>MVP of match-day moments",
+    //   description: '',
+    //   btnLink: '/work/case-studies/pret-x-mi',
+    //   className: 'pretSlider',
+    // },
 
   { 
       image: '',
