@@ -21,8 +21,6 @@ import TataTrucks from './Pages/Work/CaseStudy/TataTrucks'
 import Siyaram from './Pages/Work/CaseStudy/Siyaram'
 import Groupsoft from './Pages/Work/CaseStudy/Groupsoft'
 import Bitspilani from './Pages/Work/CaseStudy/Bitspilani'
-import Toko from './Pages/Work/CaseStudy/Toko'
-import Detour from './Pages/Work/CaseStudy/Detour'
 import GodrejLaffaire from './Pages/Work/CaseStudy/GodrejLaffaire'
 import BARCIndiaYearbook from './Pages/Work/CaseStudy/BARCIndiaYearbook'
 import Tribevibe from './Pages/Work/CaseStudy/Tribevibe'
@@ -95,6 +93,9 @@ import WhereBrandMeetsPerformanceInWebflowArchitectureTvarana from './Pages/Work
 import HighPerformanceMarketingWebsiteForAdleo from './Pages/Work/CaseStudy/HighPerformanceMarketingWebsiteForAdleo'
 import DesigningAScalableContentDrivenEducationWebsiteForEduEdgeGlobal from './Pages/Work/CaseStudy/DesigningAScalableContentDrivenEducationWebsiteForEduEdgeGlobal'
 import Interactive3DGameExperienceForTataMotorsAceProLaunch from './Pages/Work/CaseStudy/Interactive3DGameExperienceForTataMotorsAceProLaunch'
+import BuildingTokosFirstDigitalFundraisingPlatformforSchooqlsAcrossNewZealand from './Pages/Work/CaseStudy/BuildingTokosFirstDigitalFundraisingPlatformforSchoolsAcrossNewZealand'
+import TransformingDetourozintoaConversionDrivenCampervanBookingPlatform from './Pages/Work/CaseStudy/TransformingDetourozintoaConversionDrivenCampervanBookingPlatform'
+
 // SEO 
 
  
@@ -151,8 +152,6 @@ function App() {
 
           <Route exact path='/work/case-studies/strengthening-abfls-social-media-presence-with-a-high-impact-follower-growth-campaign' element={<StrengtheningAbflsSocialMediaPresencewithaHighImpactFollowerGrowthCampaign />} />
 
-          <Route exact path='/work/case-studies/Toko' element={<Toko />} />
-          <Route exact path='/work/case-studies/Detour' element={<Detour />} />
           <Route exact path='/work/case-studies/enhancing-organic-users-engagement-for-siyarams' element={<EnhancingOrganicUserEngagementforSiyarams />} />
           <Route exact path='/work/case-studies/successful-mobile-app-download-campaign-for-dhanvarsha' element={<SuccessfulMobileAppDownloadCampaignforDhanvarsha/>} />
           <Route exact path='/work/case-studies/multi-channel-lead-gen-campaign-for-jpinfa' element={<MultichannelLeadGenCampaignforJPInfra/>} />
@@ -202,6 +201,10 @@ function App() {
       <Route exact path="/work/case-studies/high-performance-marketing-website-for-adleo" element={<HighPerformanceMarketingWebsiteForAdleo />} />
       <Route exact path="/work/case-studies/designing-a-scalable-content-driven-education-website-for-eduedge-global" element={<DesigningAScalableContentDrivenEducationWebsiteForEduEdgeGlobal />} />
       <Route exact path="/work/case-studies/interactive-3d-game-experience-for-tata-motors-ace-pro-launch" element={<Interactive3DGameExperienceForTataMotorsAceProLaunch />} />
+
+      
+          <Route exact path='/work/case-studies/building-tokos-first-digital-fundraising-platform-for-schools-across-new-zealand' element={<BuildingTokosFirstDigitalFundraisingPlatformforSchooqlsAcrossNewZealand />} />
+          <Route exact path='/work/case-studies/transforming-detouroz-into-a-conversion-driven-campervan-booking-platform' element={<TransformingDetourozintoaConversionDrivenCampervanBookingPlatform />} />
       
         </Routes>
     </div>

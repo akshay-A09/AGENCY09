@@ -1868,18 +1868,26 @@ footer{
                 background: url(../Images/hero/mi.webp);
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-position: top center;
-                .HerobgLogo{
-                    margin-bottom: 2vw;
-                    width: 100%;
-                    margin-top: 0;
-                }
+                background-position: bottom right;
+                // .HerobgLogo{
+                //     margin-bottom: 2vw;
+                //     width: 100%;
+                //     margin-top: 0;
+                // }
                 h1{
-                    display: none;
+                    color:#000;
                 }
-                .HeroBtn{
-                    margin-left: 2vw;
-                    padding: 0;
+                // .HeroBtn{
+                //     margin-left: 2vw;
+                //     padding: 0;
+                // }
+                .ripple-button.btnWhite{
+                    color: $black;
+                    border-color: $black;
+                    &:hover{
+                        color: $white;
+                        border-color: $blue;
+                    }
                 }
 
                 // .videoBg{
@@ -5785,12 +5793,12 @@ li.whoweare_active a{ color:#000; border-bottom:1px solid}
 
 @media screen and (max-width: 768px) {
 
-.hero .homescreen-slick .item.pretSlider .HeroImage{background: url(../Images/hero/mi_m.webp); background-size: cover; background-position: center 50px; background-repeat: no-repeat;opacity: 1!important; background-color: #0F4D98;}
+.hero .homescreen-slick .item.pretSlider .HeroImage{background: url(../Images/hero/mi_m.webp); background-size: cover; background-position: center bottom; background-repeat: no-repeat;opacity: 1!important;}
 .hero .homescreen-slick .item.pretSlider .HeroImage::after{display: none;}
-.hero .homescreen-slick .item.pretSlider .HeroText {bottom: inherit;width: 57%;}
+.hero .homescreen-slick .item.pretSlider .HeroText {bottom: inherit;width: 90%;}
 
 .hero .homescreen-slick .item.rgiSlider_new .HeroImage{background: url(../Images/hero/sharmajivermaji_m.webp); background-size: cover; background-position: center ; background-repeat: no-repeat;opacity: 1!important; background-color: #0EA197;}
-.hero .homescreen-slick .item.rgiSlider_new .HeroText {bottom: inherit;width: 57%;}
+.hero .homescreen-slick .item.rgiSlider_new .HeroText {bottom: inherit;width: 90%;}
 .hero .homescreen-slick .item.rgiSlider_new .HeroImage::after{display: none!important;}
 
 
@@ -5820,7 +5828,7 @@ li.whoweare_active a{ color:#000; border-bottom:1px solid}
     header .container .rightMenu .menuBtn{width: 37px;height: 37px;}
     .heroRow{  padding: 0}
     .hero .homescreen-slick .item .HeroText p{font-size: 18px;}
-    .hero .homescreen-slick .item .HeroText h1{font-size: 25px;line-height: 27px;padding-bottom: 10px;}
+    .hero .homescreen-slick .item .HeroText h1{font-size: 21px;line-height: 27px;padding-bottom: 0px;}
     .hero .homescreen-slick .item .HeroBtn{padding-top: 15px;}
     .ripple-button{padding: 10px 20px;font-size: 15px;}
     .hero .homescreen-slick .item .HeroText{left: 5%;width:90%; margin-bottom: 18%;}

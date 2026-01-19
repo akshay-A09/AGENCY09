@@ -12,12 +12,12 @@ import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { GoPlus } from "react-icons/go";
 import starY from '../../../Assets/Images/icons/star.webp';
 
-import logo from "../../../Assets/Images/logos/work/Toko.png"
-import ourwork1 from '../../../Assets/Images/case-study/Toko/Toko.jpg';
-import ourwork2 from '../../../Assets/Images/case-study/Toko/group1.jpg';
-import ourwork3 from '../../../Assets/Images/case-study/Toko/group2.jpg';
-import ourwork4 from '../../../Assets/Images/case-study/Toko/group3.jpg';
-import ourwork5 from '../../../Assets/Images/case-study/Toko/group4.jpg';
+import logo from "../../../Assets/Images/logos/work/Detour-oz.png"
+import ourwork1 from '../../../Assets/Images/case-study/Detour/Detours.jpg';
+import ourwork2 from '../../../Assets/Images/case-study/Detour/group1.jpg';
+import ourwork3 from '../../../Assets/Images/case-study/Detour/group2.jpg';
+import ourwork4 from '../../../Assets/Images/case-study/Detour/group3.jpg';
+import ourwork5 from '../../../Assets/Images/case-study/Detour/group4.jpg';
 
 
 
@@ -99,19 +99,19 @@ const CaseStudyData = [
   ];
 //CaseStudy Data End
 
-const TataTrucks = () => {
+const TransformingDetourozintoaConversionDrivenCampervanBookingPlatform = () => {
 
 
   return (
     <>
     <Helmet>
-<title>Modern Website Design for BITS Pilani | Case Study</title>
+<title>Transforming Detouroz into a Conversion-Driven Campervan Booking Platform | Case Study</title>
 <link rel="canonical" href="https://www.agency09.in/about"/>
 <meta name="robots" content="index, follow"/> 
 
-<meta name="description" content="Explore AGENCY09’s case study on redesigning BITS Pilani’s website with modern UI/UX, responsive design, dynamic content, and enhanced user experience."/>
-<meta property="og:title" content="Modern Website Design for BITS Pilani | Case Study"/> 
-<meta property="og:description" content="Explore AGENCY09’s case study on redesigning BITS Pilani’s website with modern UI/UX, responsive design, dynamic content, and enhanced user experience."/> 
+<meta name="description" content=""/>
+<meta property="og:title" content="Transforming Detouroz into a Conversion-Driven Campervan Booking Platform | Case Study"/> 
+<meta property="og:description" content=""/> 
 <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
 <meta property="og:type" content="website"/> 
 
@@ -120,7 +120,7 @@ const TataTrucks = () => {
 <meta name="twitter:site" content="@AGENCY09"/> 
 <meta name="twitter:creator" content="@AGENCY09"/> 
 <meta name="twitter:url" content="https://www.agency09.in/about"/> 
-<meta name="twitter:description" content=" Explore AGENCY09’s case study on redesigning BITS Pilani’s website with modern UI/UX, responsive design, dynamic content, and enhanced user experience."/> 
+<meta name="twitter:description" content=" "/> 
 <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
 
 </Helmet>
@@ -139,7 +139,7 @@ const TataTrucks = () => {
                 </div>
 
                 <div className='cSsecMinHead m0'>
-                    <h1 className='sizeH4'>Building Toko’s First Digital Fundraising Platform for Schools Across New Zealand</h1>
+                    <h1 className='sizeH4'>Transforming Detouroz into a Conversion-Driven Campervan Booking Platform</h1>
                 </div>
 
                 <div className='cSsecMinInfo m0'>
@@ -158,8 +158,8 @@ const TataTrucks = () => {
                 <div className='cSsecMinBRow'>
                     <div className='cSsecMinBCol'>
                         <h4>Overview</h4>
-                        <p>Toko is a New Zealand–based digital platform built to help schools run online fundraising campaigns through auctions, raffles, and direct donations. Prior to this engagement, Toko did not have a website, making it challenging to communicate its value proposition, onboard schools, and establish trust with parents and communities.</p>
-                        <p>The objective was to create Toko’s first-ever digital presence—a clear, scalable, and user-friendly platform that supports schools nationwide.</p>
+                        <p>Detouroz is a travel specialist offering campervan and motorhome travel solutions across New Zealand and Australia. The previous website was a basic static setup with limited pages and minimal engagement, which did not reflect the brand’s expertise or the complexity of its services.</p>
+                        <p>The goal was to transform a static website into an informative, conversion-focused booking system that supports travellers through discovery, comparison, planning, and booking.</p>
                     </div>
 
                     <div className='cSsecMinBCol'>
@@ -170,43 +170,51 @@ const TataTrucks = () => {
                     <div className='cSsecMinBCol'>
                        <h4>Services</h4>
                        <ul>
-                        <li>Website Strategy & Information Architecture</li>
-                        <li>UX/UI Design (Mobile-First)</li>
-                        <li>Web Application</li>
+                        <li>Web Application Development</li>
+                        <li>Booking System & Workflow Design</li>
+                        <li>UX/UI Strategy & Design</li>
+                        <li>Payment Gateway Integration</li>
+                        <li>Mobile-First & Responsive Design</li>
                        </ul>
                     </div>
 
                     <div className='cSsecMinBCol'>
                        <h4>Challenges</h4>
                        <ul>
-                        <li>No existing website or digital footprint</li>
-                        <li>Needed to clearly explain a new fundraising concept to schools</li>
-                        <li>Required a platform that builds trust, transparency, and ease of use</li>
-                        <li>Multiple user types (schools, parents, donors) with different information needs</li>
-                        <li>Strong emphasis on accessibility and mobile usage</li>
+                        <li>Transforming a static travel website into a scalable, conversion-driven booking platform</li>
+                        <li>Designing a seamless end-to-end booking experience for a high-consideration travel product</li>
+                        <li>Aggregating inventories from multiple campervan brands into a single platform</li>
+                        <li>Integrating multiple third-party APIs (vehicle inventory, availability, pricing, payment gateway)</li>
+                        <li>Normalising and standardising vehicle data and SKUs across varied external data sources</li>
+                        <li>Enabling real-time availability and pricing while maintaining performance and reliability</li>
+                        <li>Presenting vehicles from multiple providers within a unified, intuitive comparison and booking interface</li>
+                        <li>Balancing rich travel content with mobile-first performance and usability</li>
                        </ul>
                     </div>
 
                     <div className='cSsecMinBCol'>
                        <h4>Approach</h4>
                        <ul>
-                        <li>Designed a mobile-first, intuitive website from the ground up</li>
-                        <li>Defined a clear information hierarchy to explain how Toko works in simple steps</li>
-                        <li>Created audience-specific content for schools, families, and supporters</li>
-                        <li>Focused on clarity, trust signals, and ease of navigation</li>
-                        <li>Built a scalable structure to support future growth and feature additions</li>
-                        <li>Optimised for performance, SEO, and accessibility best practices</li>
+                        <li>Redesigned the website with a user-centric and mobile-first mindset</li>
+                        <li>Integrated and orchestrated multiple external APIs to aggregate campervan inventories from different brands</li>
+                        <li>Normalised vehicle data to create a consistent SKU structure across the platform</li>
+                        <li>Built a scalable system to display availability, pricing, and specifications in real time</li>
+                        <li>Restructured content to clearly communicate services, travel options, and value</li>
+                        <li>Introduced logical navigation to guide users through planning and inquiry stages</li>
+                        <li>Improved visual hierarchy and readability for long-form travel content</li>
+                        <li>Implemented vehicle comparison features to aid informed decision-making</li>
+                        <li>Integrated end-to-end email notifications across booking stages</li>
                        </ul>
                     </div>
 
                     <div className='cSsecMinBCol'>
                        <h4>Results</h4>
                        <ul>
-                        <li>Strong engagement from first-time users, validating clarity of messaging and UX</li>
-                        <li>Average session duration exceeding 3 minutes, indicating users are exploring and understanding the platform</li>
-                        <li>More than 4 pages viewed per visit, reflecting intuitive navigation and well-structured content</li>
-                        <li>Low bounce rate, showing relevance of content and effective audience targeting</li>
-                        <li>Together, these outcomes confirm that the newly launched website successfully established Toko’s digital presence, improved trust, and enabled schools to confidently adopt online fundraising.</li>
+                        <li>Average session duration increased beyond 3 minutes, showing improved engagement with travel content</li>
+                        <li>More than 4 pages viewed per session, indicating effective content flow and navigation</li>
+                        <li>Bounce rate reduced to ~36%, reflecting stronger relevance and user intent alignment</li>
+                        <li>Enhanced mobile engagement due to a responsive and simplified design</li>
+                        <li>These metrics demonstrate that the redesigned experience successfully moved Detouroz from a basic online presence to a content-rich, high-engagement platform, helping users explore services confidently and spend more time planning their journeys.</li>
                        </ul>
                     </div>
 
@@ -310,4 +318,4 @@ const TataTrucks = () => {
   )
 }
 
-export default TataTrucks
+export default TransformingDetourozintoaConversionDrivenCampervanBookingPlatform

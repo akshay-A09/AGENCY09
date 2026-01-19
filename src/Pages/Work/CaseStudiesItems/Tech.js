@@ -7,7 +7,7 @@ import Siyarams from '../../../Assets/Images/work/siyarams.webp';
 import Bitspilani from '../../../Assets/Images/work/Bitspilani.webp';
 import Tribevibe from '../../../Assets/Images/work/TribeVibe.webp';
 import Detour from '../../../Assets/Images/case-study/Detour/Detours.jpg';
-import Toko from '../../../Assets/Images/case-study/Toko/Toko.jpg';
+import Toko from '../../../Assets/Images/case-study/Toko/toko.jpg';
 
 import cloudtv from '../../../Assets/Images/case-study/CloudTV/CloudTV.jpg'
 import Luxe from '../../../Assets/Images/case-study/Luxe/Luxe.jpg'
@@ -27,12 +27,12 @@ export const techData = [
         id: 1,
         title: "Building Toko’s First Digital Fundraising Platform for Schools Across New Zealand",
         tags: [
-            { name: 'Digital Strategy', },
+            { name: 'Website Strategy', },
             { name: 'UI/UX', },
-            { name: 'Web Design and Development', }
+            { name: 'Web Application', }
         ],
         image: Toko,
-        link: '/work/case-study/Toko',
+        link: '/work/case-studies/building-tokos-first-digital-fundraising-platform-for-schools-across-new-zealand',
         brand: 'Toko',
         department: 'Tech'
     },
@@ -41,12 +41,12 @@ export const techData = [
         id: 1,
         title: "Transforming Detouroz into a Conversion-Driven Campervan Booking Platform",
         tags: [
-            { name: 'Digital Strategy', },
+            { name: 'Web Application', },
             { name: 'UI/UX', },
-            { name: 'Web Design and Development', }
+            { name: 'Booking System', }
         ],
         image: Detour,
-        link: '/work/case-study/Detour',
+        link: '/work/case-studies/transforming-detouroz-into-a-conversion-driven-campervan-booking-platform',
         brand: 'Detour',
         department: 'Tech'
     },
