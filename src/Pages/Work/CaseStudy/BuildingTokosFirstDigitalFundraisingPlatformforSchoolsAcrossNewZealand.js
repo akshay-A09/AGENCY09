@@ -248,6 +248,10 @@ const BuildingTokosFirstDigitalFundraisingPlatformforSchoolsAcrossNewZealand = (
     </Slider>
 </div>
 
+<div className='btnSpaceEx center'>
+ <Link to="https://toko.co.nz/" target="_blank" className="btnDark fontM ripple-button"><span>Visit Site</span></Link>
+ </div>
+
         </div>
     </section>
 
