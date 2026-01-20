@@ -20,6 +20,8 @@ import ourwork4 from '../../../../Assets/Images/work/siyaram/3.webp';
 import ourwork5 from '../../../../Assets/Images/work/siyaram/4.webp';
 import ourwork6 from '../../../../Assets/Images/work/siyaram/5.webp';
 
+import CaseStudyNav from '../../../../Components/TechCaseStudyNav';
+const externalLink = "https://www.siyaram.com/";
 
 // CaseStudySlider 
 const CaseStudySlider = {
@@ -298,6 +300,8 @@ const TataTrucks = () => {
         </section>   */}
 
 
+<div className='btnSpaceEx center'><a href={externalLink} target="_blank" rel="noreferrer" className="btnDark fontM ripple-button"><span>Visit Site</span></a></div>
+<CaseStudyNav visitLink={externalLink} />
 
 
     <Footer/>

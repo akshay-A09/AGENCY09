@@ -14,6 +14,9 @@ import ourwork2 from '../../../../Assets/Images/case-study/EduEdge/group1.jpg'
 import ourwork3 from '../../../../Assets/Images/case-study/EduEdge/group2.jpg'
 import ourwork4 from '../../../../Assets/Images/case-study/EduEdge/group3.jpg'
 import ourwork5 from '../../../../Assets/Images/case-study/EduEdge/group4.jpg'
+
+import CaseStudyNav from '../../../../Components/TechCaseStudyNav';
+const externalLink = "https://www.eduedgeglobal.com/";
 // Slider
 const mainSlider ={
     dot: false,
@@ -207,6 +210,11 @@ const DesigningAScalableContentDrivenEducationWebsiteForEduEdgeGlobal = () => {
 
         </div>
       </section>
+
+    <div className='btnSpaceEx center'><a href={externalLink} target="_blank" rel="noreferrer" className="btnDark fontM ripple-button"><span>Visit Site</span></a></div>
+    <CaseStudyNav visitLink={externalLink} />
+
+
 
       <Footer/>
     </>

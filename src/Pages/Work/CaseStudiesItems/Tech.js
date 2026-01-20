@@ -7,7 +7,7 @@ import Siyarams from '../../../Assets/Images/work/siyarams.webp';
 import Bitspilani from '../../../Assets/Images/work/Bitspilani.webp';
 import Tribevibe from '../../../Assets/Images/work/TribeVibe.webp';
 import Detour from '../../../Assets/Images/case-study/Detour/Detours.jpg';
-import Toko from '../../../Assets/Images/case-study/Toko/toko.jpg';
+import Toko from '../../../Assets/Images/case-study/Toko/Toko.jpg';
 
 import cloudtv from '../../../Assets/Images/case-study/CloudTV/CloudTV.jpg'
 import Luxe from '../../../Assets/Images/case-study/Luxe/Luxe.jpg'

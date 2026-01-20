@@ -18,6 +18,8 @@ import ourwork2 from '../../../../Assets/Images/work/tribevibe/2.webp';
 import ourwork3 from '../../../../Assets/Images/work/tribevibe/3.webp';
 import ourwork4 from '../../../../Assets/Images/work/tribevibe/4.webp';
 
+import CaseStudyNav from '../../../../Components/TechCaseStudyNav';
+const externalLink = "https://tribevibe.live/";
 
 // CaseStudySlider 
 const CaseStudySlider = {
@@ -297,6 +299,8 @@ const Tribevibe = () => {
         </section>   */}
 
 
+<div className='btnSpaceEx center'><a href={externalLink} target="_blank" rel="noreferrer" className="btnDark fontM ripple-button"><span>Visit Site</span></a></div>
+<CaseStudyNav visitLink={externalLink} />
 
 
     <Footer/>

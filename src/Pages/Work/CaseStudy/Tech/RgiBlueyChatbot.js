@@ -16,6 +16,8 @@ import ourwork1 from '../../../../Assets/Images/work/lakme/lk-main.webp'
 import ourwork2 from '../../../../Assets/Images/work/lakme/lk-1.webp'
 import ourwork3 from '../../../../Assets/Images/work/lakme/lk-2.webp'
 
+import CaseStudyNav from '../../../../Components/TechCaseStudyNav';
+const externalLink = "#";
 
 // CaseStudySlider 
 const CaseStudySlider = {
@@ -255,7 +257,9 @@ return (
 </section>
 
 
-
+{/* 
+<div className='btnSpaceEx center'><a href={externalLink} target="_blank" rel="noreferrer" className="btnDark fontM ripple-button"><span>Visit Site</span></a></div>
+<CaseStudyNav visitLink={externalLink} /> */}
 
 
 

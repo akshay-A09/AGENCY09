@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { techData } from '../Pages/Work/CaseStudiesItems/Tech'; 
+import a09 from "../Assets/Images/09.webp"
 
-const CaseStudyNav = () => {
+const CaseStudyNav = ({ visitLink }) => {
     const location = useLocation();
     const [navActive, setNavActive] = useState(false);
     
@@ -45,12 +46,16 @@ const CaseStudyNav = () => {
     return (
         <div className={`navItems ${navActive ? 'navActive' : ''}`}>
             <div className='navItemsList'>
-                <div className='navItemsListLink09'><Link to="/">09</Link></div>
+                <div className='navItemsListLink09'><Link to="/"> <img src={a09} loading='lazy'  /></Link></div>
                 <div className='navItemsListLink'>
                 <div className='navItemsListLinkPrev'><Link to={prevItem.link}>Prev</Link></div>
                 <div className='navItemsListLinkNext'><Link to={nextItem.link}>Next</Link></div>
+                <div className='navItemsListLinkList'><Link to="https://www.agency09.in/work/case-studies#tech">All</Link></div>
+                
                 </div>
-                <div className='navItemsListLinkAll'><Link to="/work/case-studies">View All</Link></div>
+                <div className='navItemsListLinkAll'><a href={visitLink || "https://www.agency09.in"} target="_blank" rel="noreferrer">
+                        Visit Site
+                    </a></div>
             </div>
         </div>
     );

@@ -16,7 +16,8 @@ import ourwork2 from '../../../../Assets/Images/case-study/Tvarana/group1.jpg'
 import ourwork3 from '../../../../Assets/Images/case-study/Tvarana/group2.jpg'
 import ourwork4 from '../../../../Assets/Images/case-study/Tvarana/group3.jpg'
 import ourwork5 from '../../../../Assets/Images/case-study/Tvarana/group4.jpg'
-
+import CaseStudyNav from '../../../../Components/TechCaseStudyNav';
+const externalLink = "https://www.tvarana.com/";
 
 
 // Slider
@@ -189,6 +190,9 @@ const WhereBrandMeetsPerformanceInWebflowArchitectureTvarana = () => {
 
         </div>
       </section>
+
+<div className='btnSpaceEx center'><a href={externalLink} target="_blank" rel="noreferrer" className="btnDark fontM ripple-button"><span>Visit Site</span></a></div>
+<CaseStudyNav visitLink={externalLink} />
 
       <Footer/>
     </>

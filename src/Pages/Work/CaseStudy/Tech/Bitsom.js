@@ -13,6 +13,11 @@ import bitsom1 from "../../../../Assets/Images/case-study/bitsom/bitsom1.jpg"
 import bitsom2 from "../../../../Assets/Images/case-study/bitsom/bitsom2.jpg"
 import bitsom3 from "../../../../Assets/Images/case-study/bitsom/bitsom3.jpg"
 
+
+
+import CaseStudyNav from '../../../../Components/TechCaseStudyNav';
+const externalLink = "https://www.bitsom.edu.in/";
+
 const Bitsom = () => {
     // Calculat Data
     const calculatData = [
@@ -232,6 +237,12 @@ const Bitsom = () => {
                 </div>
         </div></section> 
     {/* Business End */} 
+
+    <div className='btnSpaceEx center'><a href={externalLink} target="_blank" rel="noreferrer" className="btnDark fontM ripple-button"><span>Visit Site</span></a></div>
+
+    <CaseStudyNav visitLink={externalLink} />
+
+
 
     <Footer/>
     </>

@@ -19,6 +19,8 @@ import ourwork3 from '../../../../Assets/Images/case-study/CloudTV/group2.jpg'
 import ourwork4 from '../../../../Assets/Images/case-study/CloudTV/group3.jpg'
 import ourwork5 from '../../../../Assets/Images/case-study/CloudTV/group4.jpg'
 
+import CaseStudyNav from '../../../../Components/TechCaseStudyNav';
+const externalLink = "https://www.cloudtvos.com/";
 
 
 // CaseStudySlider 
@@ -315,6 +317,10 @@ const DesigningFluidDigitalExperiencesForConnectedTVCloudTVOS = () => {
         </section>  
 
  */}
+
+
+    <div className='btnSpaceEx center'><a href={externalLink} target="_blank" rel="noreferrer" className="btnDark fontM ripple-button"><span>Visit Site</span></a></div>
+    <CaseStudyNav visitLink={externalLink} />
 
 
     <Footer/>

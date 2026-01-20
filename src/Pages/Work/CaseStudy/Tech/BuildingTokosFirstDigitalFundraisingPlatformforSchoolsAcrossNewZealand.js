@@ -12,13 +12,13 @@ import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { GoPlus } from "react-icons/go";
 
 import logo from "../../../../Assets/Images/logos/work/Toko.png"
-import ourwork1 from '../../../../Assets/Images/case-study/Toko/toko.jpg';
+import ourwork1 from '../../../../Assets/Images/case-study/Toko/Toko.jpg';
 import ourwork2 from '../../../../Assets/Images/case-study/Toko/group1.jpg';
 import ourwork3 from '../../../../Assets/Images/case-study/Toko/group2.jpg';
 import ourwork4 from '../../../../Assets/Images/case-study/Toko/group3.jpg';
 import ourwork5 from '../../../../Assets/Images/case-study/Toko/group4.jpg';
 import CaseStudyNav from '../../../../Components/TechCaseStudyNav';
-
+const externalLink = "https://toko.co.nz/";
 // CaseStudySlider 
 const CaseStudySlider = {
     dots: false,
@@ -247,8 +247,8 @@ const BuildingTokosFirstDigitalFundraisingPlatformforSchoolsAcrossNewZealand = (
 </div>
 
 <div className='btnSpaceEx center'>
- <Link to="https://toko.co.nz/" target="_blank" className="btnDark fontM ripple-button"><span>Visit Site</span></Link>
- </div>
+ <a href={externalLink} target="_blank" rel="noreferrer" className="btnDark fontM ripple-button"><span>Visit Site</span></a>
+</div>
 
         </div>
     </section>
@@ -306,8 +306,7 @@ const BuildingTokosFirstDigitalFundraisingPlatformforSchoolsAcrossNewZealand = (
 
 
 
-    <CaseStudyNav/>
-
+    <CaseStudyNav visitLink={externalLink} />
 
 
     <Footer/>

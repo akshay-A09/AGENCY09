@@ -15,6 +15,8 @@ import ourwork3 from '../../../../Assets/Images/work/tata-trucks/tata-slide2.web
 import ourwork4 from '../../../../Assets/Images/work/tata-trucks/tata-slide3.webp';
 import ourwork5 from '../../../../Assets/Images/work/tata-trucks/tata-slide4.webp';
 
+import CaseStudyNav from '../../../../Components/TechCaseStudyNav';
+const externalLink = "#";
 // Slider
 const mainSlider ={
     dot: false,
@@ -209,6 +211,10 @@ const Interactive3DGameExperienceForTataMotorsAceProLaunch = () => {
 
         </div>
       </section>
+
+    {/* <div className='btnSpaceEx center'><a href={externalLink} target="_blank" rel="noreferrer" className="btnDark fontM ripple-button"><span>Visit Site</span></a></div>
+<CaseStudyNav visitLink={externalLink} /> */}
+
 
       <Footer/>
     </>

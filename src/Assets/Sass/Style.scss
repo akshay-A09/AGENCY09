@@ -69,41 +69,85 @@ body{
 
 .navItems{
     position: fixed;
-    bottom: 15px;
+    bottom: -100px;
+    scale: 0;
     left: 0;
     right: 0;
     width: fit-content;
-    background-color: #0009;
+    background-color:rgba(0, 0, 0, 0.624);
     z-index: 999999;
     border-radius: 10px;
-    padding: 7px;
+    padding: 5px;
+    text-transform: uppercase;
+    backdrop-filter: blur(.1rem);
+    transition: all 0.6s ease-in-out;
+    &.navActive{
+        bottom: 15px;
+        scale: 1;
+    }
+
+
+    a{
+        font-size: 14px;
+        
+    }
     .navItemsList{
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 5px;
+        a{
+            display: block;
+            padding:16px 18px;
+            border-radius: 6px;
+            font-size: 12px;
+        }
         .navItemsListLink09{
             a{
-                background-color: $black;
+                background-color: #222;
                 color: $white;
+                padding: 13px;
+                img{
+                    display: block;
+                    width: fit-content;
+                    height: 20px;
+                }
+                
             }
         }
-          a{
-            display: block;
-            padding:20px 14px;
-            border-radius: 10px;
-            }
+         
         .navItemsListLink{
             display: flex;
             justify-content: center;
             align-items: center;
-            .navItemsListLinkPrev,.navItemsListLinkNext{
+            background-color: #373737;
+            padding: 5px;
+            border-radius: 6px;
+            gap: 5px;
+            .navItemsListLinkPrev,.navItemsListLinkNext,.navItemsListLinkList{
                 a{
-                    background-color: $white;
-                    color: $black;
+                    background-color: #373737;
+                    color: $white;
+                    border: 1px solid #4f4b4b;
+                    padding: 11px;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        border-color: #ffffffba;
+                    }
                 }
             }
-            
         }
+          .navItemsListLinkAll{
+                a{
+                    background-color: $yellow;
+                    color: $black;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        background-color: $blue;
+                        color: $white;
+                    }
+                }
+            }
     }
 }
 
@@ -6082,7 +6126,9 @@ li.whoweare_active a{ color:#000; border-bottom:1px solid}
 .cSsecMinB .cSsecMinBRow ul li, .cSsecMinB .cSsecMinBRow ol li{padding-bottom: 5px;}
 .cSsecMinA .cSsecMinHead h1{font-size: 21px;}
 }
-
+@media only screen and (max-width: 468px) {
+    .navItems.navActive{scale: 0.9;}
+}
 
 .errorText {color : red;}
 // Mobile Responsive css End

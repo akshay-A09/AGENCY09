@@ -14,7 +14,8 @@ import ourwork2 from '../../../../Assets/Images/case-study/AdLeo/group1.jpg'
 import ourwork3 from '../../../../Assets/Images/case-study/AdLeo/group2.jpg'
 import ourwork4 from '../../../../Assets/Images/case-study/AdLeo/group3.jpg'
 import ourwork5 from '../../../../Assets/Images/case-study/AdLeo/group4.jpg'
-
+import CaseStudyNav from '../../../../Components/TechCaseStudyNav';
+const externalLink = "https://www.adleo.co.in/";
 // Slider
 const mainSlider ={
     dot: false,
@@ -201,6 +202,10 @@ const HighPerformanceMarketingWebsiteForAdleo = () => {
 
         </div>
       </section>
+
+
+    <div className='btnSpaceEx center'><a href={externalLink} target="_blank" rel="noreferrer" className="btnDark fontM ripple-button"><span>Visit Site</span></a></div>
+    <CaseStudyNav visitLink={externalLink} />
 
       <Footer/>
     </>

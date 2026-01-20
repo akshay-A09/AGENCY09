@@ -18,7 +18,8 @@ import ourwork2 from '../../../../Assets/Images/work/bitspilani/1.webp';
 import ourwork3 from '../../../../Assets/Images/work/bitspilani/2.webp';
 import ourwork4 from '../../../../Assets/Images/work/bitspilani/3.webp';
 import ourwork5 from '../../../../Assets/Images/work/bitspilani/4.webp';
-
+import CaseStudyNav from '../../../../Components/TechCaseStudyNav';
+const externalLink = "https://www.bits-pilani.ac.in/";
 
 
 // CaseStudySlider 
@@ -305,6 +306,10 @@ const TataTrucks = () => {
         </section>   */}
 
 
+
+<div className='btnSpaceEx center'><a href={externalLink} target="_blank" rel="noreferrer" className="btnDark fontM ripple-button"><span>Visit Site</span></a></div>
+
+<CaseStudyNav visitLink={externalLink} />
 
 
     <Footer/>
