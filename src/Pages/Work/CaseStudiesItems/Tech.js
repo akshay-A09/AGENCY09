@@ -233,9 +233,9 @@ export const techData = [
 // State for each tab
 
 const Tech = () => {
-    const [visibleTechItems, setVisibleTechItems] = useState(20);
+    const [visibleTechItems, setVisibleTechItems] = useState(9);
     const loadMoreTechItems = () => {
-        setVisibleTechItems((prev) => prev + 20);
+        setVisibleTechItems((prev) => prev + 9);
     };
 
   return (

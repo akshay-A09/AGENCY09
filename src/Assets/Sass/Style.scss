@@ -59,8 +59,6 @@ body{
 }
 #lg-download{display: none!important;}
  .o0{opacity: 0;}
-
-
 * {
     margin: auto;
     padding: 0;
@@ -68,6 +66,47 @@ body{
     outline: none;
     box-sizing: border-box;
 }
+
+.navItems{
+    position: fixed;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    background-color: #0009;
+    z-index: 999999;
+    border-radius: 10px;
+    padding: 7px;
+    .navItemsList{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .navItemsListLink09{
+            a{
+                background-color: $black;
+                color: $white;
+            }
+        }
+          a{
+            display: block;
+            padding:20px 14px;
+            border-radius: 10px;
+            }
+        .navItemsListLink{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .navItemsListLinkPrev,.navItemsListLinkNext{
+                a{
+                    background-color: $white;
+                    color: $black;
+                }
+            }
+            
+        }
+    }
+}
+
 #gameMin{display: none;}
 .game09{
     position: fixed;
@@ -4562,7 +4601,8 @@ footer{
         gap:50px;
         flex-wrap: wrap;
         *{
-            font-size: 15px;
+            font-size: 14px;
+            line-height: 20px;
         }
         .cSsecMinBCol{
             width: 30%;

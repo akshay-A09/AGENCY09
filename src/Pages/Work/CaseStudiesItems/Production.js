@@ -133,7 +133,7 @@ export const ProductionData = [
 // State for each tab
 
 const Production = () => {
-    const [visibleProductionItems, setVisibleProductionItems] = useState(5);
+    const [visibleProductionItems, setVisibleProductionItems] = useState(9);
     const loadMoreProductionItems = () => {
         setVisibleProductionItems((prev) => prev + 9);
     };

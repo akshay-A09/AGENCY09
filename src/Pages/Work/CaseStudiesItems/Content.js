@@ -61,9 +61,9 @@ export const ContentData = [
 // State for each tab
 
 const Content = () => {
-    const [visibleContentItems, setVisibleContentItems] = useState(5);
+    const [visibleContentItems, setVisibleContentItems] = useState(9);
     const loadMoreContentItems = () => {
-        setVisibleContentItems((prev) => prev + 5);
+        setVisibleContentItems((prev) => prev + 9);
     };
 
   return (
