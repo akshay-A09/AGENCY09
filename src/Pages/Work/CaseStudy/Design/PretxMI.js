@@ -22,6 +22,9 @@ import pretMi2 from '../../../../Assets/Images/work/pret-mi2.jpg'
 import pretMi3 from '../../../../Assets/Images/work/pret-mi3.jpg'
 import pretMi4 from '../../../../Assets/Images/work/pret-mi4.jpg'
 
+
+import CaseStudyNav from '../../../../Components/DesignCaseStudyNav';
+
 // CaseStudySlider 
 const CaseStudySlider = {
 dots: false,
@@ -263,7 +266,7 @@ return (
 </section>
 
 
-
+<CaseStudyNav/>
 
 
 

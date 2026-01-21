@@ -21,6 +21,8 @@ import ourwork5 from '../../../../Assets/Images/work/barc/barc-4.webp';
 import ourwork6 from '../../../../Assets/Images/work/barc/barc-5.webp';
 import ourwork7 from '../../../../Assets/Images/work/barc/barc-6.webp';
 
+import CaseStudyNav from '../../../../Components/DesignCaseStudyNav';
+
 
 // CaseStudySlider 
 const CaseStudySlider = {
@@ -303,7 +305,7 @@ const BARCIndiaYearbook = () => {
         </section>  
  */}
 
-
+<CaseStudyNav/>
 
     <Footer/>
     </>

@@ -15,6 +15,7 @@ import logo from '../../../../Assets/Images/logos/work/BFSI/rgi.png';
 import ourwork1 from '../../../../Assets/Images/work/lakme/lk-main.webp'
 import ourwork2 from '../../../../Assets/Images/work/lakme/lk-1.webp'
 import ourwork3 from '../../../../Assets/Images/work/lakme/lk-2.webp'
+import CaseStudyNav from '../../../../Components/DesignCaseStudyNav';
 
 
 // CaseStudySlider 
@@ -256,7 +257,7 @@ The company issues a quarterly magazine called R Health Beat, which is physicall
 
 
 
-
+<CaseStudyNav/>
 
 <Footer/>
 </>

@@ -24,6 +24,7 @@ import ourwork8 from '../../../../Assets/Images/work/octarine-organics/oo-7.webp
 import ourwork9 from '../../../../Assets/Images/work/octarine-organics/oo-8.webp'
 import ourwork10 from '../../../../Assets/Images/work/octarine-organics/oo-9.webp'
 
+import CaseStudyNav from '../../../../Components/DesignCaseStudyNav';
 
 // CaseStudySlider 
 const CaseStudySlider = {
@@ -277,7 +278,7 @@ const OctarineOrganicsEnchantingMushroomMagicBoxwithInnovativePackagingDesign = 
 
 
 
-
+<CaseStudyNav/>
 
     <Footer/>
     </>

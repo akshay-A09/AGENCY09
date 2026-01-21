@@ -17,6 +17,8 @@ import ourwork2 from '../../../../Assets/Images/work/pret_festive2.webp'
 import ourwork3 from '../../../../Assets/Images/work/pret_festive3.webp'
 import ourwork4 from '../../../../Assets/Images/work/pret_festive4.webp'
 
+import CaseStudyNav from '../../../../Components/DesignCaseStudyNav';
+
 // CaseStudySlider 
 const CaseStudySlider = {
 dots: false,
@@ -249,7 +251,7 @@ return (
 
 
 
-
+<CaseStudyNav/>
 
 <Footer/>
 </>
