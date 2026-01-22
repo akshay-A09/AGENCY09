@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { IoCloseCircle } from "react-icons/io5";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const StartAProjectFormPopup = ({ closeModal, defaultService }) => {
+  const location = useLocation();
+  const pageSlug = location.pathname.split('/').pop();
+  const submitId = `${pageSlug}_submit`;
   const [errorMessage, setErrorMessage] = useState('');
   const [formData, setFormData] = useState({
     name: '',
@@ -174,7 +177,7 @@ const StartAProjectFormPopup = ({ closeModal, defaultService }) => {
             <div className="errorText">{errorMessage}</div>
             <div className='FormGridS'>
               <div className='center pt-40'>
-                <button type="submit" className="btnYellow fontS ripple-button" disabled={isButtonDisabled}>
+                <button type="submit" id={submitId} className="btnYellow fontS ripple-button" disabled={isButtonDisabled}>
                   <span>{buttonText}</span>
                 </button>
               </div>
