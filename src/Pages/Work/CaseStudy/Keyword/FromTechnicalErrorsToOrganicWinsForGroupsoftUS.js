@@ -7,6 +7,9 @@ import 'slick-carousel/slick/slick.css';
 import SVGCurveLine from '../../../../Hooks/SVGCurveLine'; 
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import logo from "../../../../Assets/Images/logos/work/groupsoftus.gif"
+import CaseStudyNav from '../../../../Components/KeywordCaseStudyNav';
+
+
 const FromTechnicalErrorsToOrganicWinsForGroupsoftUS = () => {
   return (
     <>
@@ -119,6 +122,7 @@ const FromTechnicalErrorsToOrganicWinsForGroupsoftUS = () => {
 
         </div>
     </section>
+<CaseStudyNav/>
 
     <Footer/>
     </>

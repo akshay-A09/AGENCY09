@@ -16,6 +16,7 @@ import logo from "../../../../Assets/Images/logos/work/BFSI/dhanvarsha.png"
 import ourwork1 from '../../../../Assets/Images/work/dhanvarsha/dv-main.webp'
 import ourwork2 from '../../../../Assets/Images/work/dhanvarsha/dv-1.webp'
 import ourwork3 from '../../../../Assets/Images/work/dhanvarsha/dv-2.webp'
+import CaseStudyNav from '../../../../Components/PerformanceMarketingCaseStudyNav';
 
 
 
@@ -245,6 +246,7 @@ const SuccessfulMobileAppDownloadCampaignforDhanvarsha = () => {
     </section>
 
 
+<CaseStudyNav/>
 
 
 

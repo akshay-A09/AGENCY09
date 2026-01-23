@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { BrandDesignData } from '../Pages/Work/CaseStudiesItems/Design'; 
+import { KeywordData } from '../Pages/Work/CaseStudiesItems/Keyword'; 
 import a09 from "../Assets/Images/09.webp"
 
-const DesignCaseStudyNav = ({ visitLink }) => {
+const KeywordCaseStudyNav = ({ visitLink }) => {
     const location = useLocation();
     const [navActive, setNavActive] = useState(false);
     
-    const currentIndex = BrandDesignData.findIndex(item => item.link === location.pathname);
+    const currentIndex = KeywordData.findIndex(item => item.link === location.pathname);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -20,14 +20,14 @@ const DesignCaseStudyNav = ({ visitLink }) => {
 
                 // 1. Show if scrolled more than 200px
                 // 2. Hide if footer top is inside the visible window
-                if (scrollValue > 10 && footerPosition > windowHeight) {
+                if (scrollValue > 1 && footerPosition > windowHeight) {
                     setNavActive(true);
                 } else {
-                    setNavActive(false);
+                    setNavActive(true);
                 }
             } else {
                 // Fallback if no footer is found
-                setNavActive(scrollValue > 10);
+                setNavActive(scrollValue > 1);
             }
         };
 
@@ -40,8 +40,8 @@ const DesignCaseStudyNav = ({ visitLink }) => {
 
     if (currentIndex === -1) return null;
 
-    const prevItem = BrandDesignData[currentIndex === 0 ? BrandDesignData.length - 1 : currentIndex - 1];
-    const nextItem = BrandDesignData[currentIndex === BrandDesignData.length - 1 ? 0 : currentIndex + 1];
+    const prevItem = KeywordData[currentIndex === 0 ? KeywordData.length - 1 : currentIndex - 1];
+    const nextItem = KeywordData[currentIndex === KeywordData.length - 1 ? 0 : currentIndex + 1];
 
     return (
         <div className={`navItems ${navActive ? 'navActive' : ''}`}>
@@ -52,10 +52,10 @@ const DesignCaseStudyNav = ({ visitLink }) => {
                 <div className='navItemsListLinkNext'><Link to={nextItem.link}>Next</Link></div>
                 </div>
 
-                <div className='navItemsListLinkAll'><Link to="https://www.agency09.in/work/case-studies#design">All</Link></div>
+                <div className='navItemsListLinkAll'><Link to="https://www.agency09.in/work/case-studies#Keyword">All</Link></div>
             </div>
         </div>
     );
 };
 
-export default DesignCaseStudyNav;
+export default KeywordCaseStudyNav;

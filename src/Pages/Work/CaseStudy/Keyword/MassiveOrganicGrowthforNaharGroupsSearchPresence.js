@@ -7,6 +7,8 @@ import 'slick-carousel/slick/slick.css';
 import SVGCurveLine from '../../../../Hooks/SVGCurveLine'; 
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import logo from "../../../../Assets/Images/logos/work/real-estate/nahar-group.png"
+import CaseStudyNav from '../../../../Components/KeywordCaseStudyNav';
+
 const MassiveOrganicGrowthforNaharGroupsSearchPresence = () => {
   return (
     <>
@@ -118,6 +120,7 @@ const MassiveOrganicGrowthforNaharGroupsSearchPresence = () => {
 
         </div>
     </section>
+<CaseStudyNav/>
 
     <Footer/>
     </>

@@ -7,6 +7,8 @@ import 'slick-carousel/slick/slick.css';
 import SVGCurveLine from '../../../../Hooks/SVGCurveLine'; 
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import logo from "../../../../Assets/Images/logos/work/energy/apollo-energy.png"
+import CaseStudyNav from '../../../../Components/KeywordCaseStudyNav';
+
 const FromLowVisibilityToIndustryAuthorityForApolloEnergyAnalytics = () => {
   return (
     <>
@@ -124,6 +126,7 @@ const FromLowVisibilityToIndustryAuthorityForApolloEnergyAnalytics = () => {
 
         </div>
     </section>
+<CaseStudyNav/>
 
     <Footer/>
     </>

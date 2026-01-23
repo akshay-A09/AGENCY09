@@ -12,6 +12,7 @@ import ourwork2 from '../../../../Assets/Images/work/tata-trucks/tata-slide1.web
 import ourwork3 from '../../../../Assets/Images/work/tata-trucks/tata-slide2.webp';
 import YouTubePlaylistItems from '../../../../Hooks/YouTubePlaylistItems';
 
+import CaseStudyNav from '../../../../Components/ProductionCaseStudyNav';
 
 // CaseStudySlider 
 const CaseStudySlider = {
@@ -183,6 +184,7 @@ const apiKey = 'AIzaSyBkRuDWRBnBbl_qW3syuk_BEa7anG2uU2M';
     </section>
  
    
+<CaseStudyNav/>
 
 
 

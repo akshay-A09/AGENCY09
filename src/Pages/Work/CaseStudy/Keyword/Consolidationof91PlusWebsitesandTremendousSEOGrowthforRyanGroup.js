@@ -1,25 +1,26 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet';
-import Header from '../../../Components/Header';
-import Footer from '../../../Components/Footer';
+import Header from '../../../../Components/Header';
+import Footer from '../../../../Components/Footer';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
-import SVGCurveLine from '../../../Hooks/SVGCurveLine'; 
+import SVGCurveLine from '../../../../Hooks/SVGCurveLine'; 
 import { GoNorthStar } from "react-icons/go";
 import { PiSlideshow, PiStarFourFill } from "react-icons/pi";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { GoPlus } from "react-icons/go";
-import starY from '../../../Assets/Images/icons/star.webp';
+import starY from '../../../../Assets/Images/icons/star.webp';
 
-import logo from "../../../Assets/Images/logos/work/education/ryan.png"
-import ourwork1 from '../../../Assets/Images/work/ryan-group/ryangroup-main.webp';
-import ourwork2 from '../../../Assets/Images/work/ryan-group/ryanslide-1.webp';
-import ourwork3 from '../../../Assets/Images/work/ryan-group/ryanslide-2.webp';
-import ourwork4 from '../../../Assets/Images/work/ryan-group/ryanslide-3.webp';
-import ourwork5 from '../../../Assets/Images/work/ryan-group/ryanslide-4.webp';
-import ourwork6 from '../../../Assets/Images/work/ryan-group/ryanslide-5.webp';
+import logo from "../../../../Assets/Images/logos/work/education/ryan.png"
+import ourwork1 from '../../../../Assets/Images/work/ryan-group/ryangroup-main.webp';
+import ourwork2 from '../../../../Assets/Images/work/ryan-group/ryanslide-1.webp';
+import ourwork3 from '../../../../Assets/Images/work/ryan-group/ryanslide-2.webp';
+import ourwork4 from '../../../../Assets/Images/work/ryan-group/ryanslide-3.webp';
+import ourwork5 from '../../../../Assets/Images/work/ryan-group/ryanslide-4.webp';
+import ourwork6 from '../../../../Assets/Images/work/ryan-group/ryanslide-5.webp';
 
+import CaseStudyNav from '../../../../Components/KeywordCaseStudyNav';
 
 // CaseStudySlider 
 const CaseStudySlider = {
@@ -243,6 +244,7 @@ const Consolidationof91PlusWebsitesandTremendousSEOGrowthforRyanGroup = () => {
 
 
 
+<CaseStudyNav/>
 
 
     <Footer/>

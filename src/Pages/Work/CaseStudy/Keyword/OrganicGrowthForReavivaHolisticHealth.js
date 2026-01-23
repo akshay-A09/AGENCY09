@@ -7,6 +7,8 @@ import 'slick-carousel/slick/slick.css';
 import SVGCurveLine from '../../../../Hooks/SVGCurveLine'; 
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import logo from "../../../../Assets/Images/logos/work/Reaviva.png"
+import CaseStudyNav from '../../../../Components/KeywordCaseStudyNav';
+
 const OrganicGrowthForReavivaHolisticHealth = () => {
   return (
     <>
@@ -115,6 +117,7 @@ const OrganicGrowthForReavivaHolisticHealth = () => {
 
         </div>
     </section>
+<CaseStudyNav/>
 
     <Footer/>
     </>

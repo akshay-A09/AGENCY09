@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { BrandDesignData } from '../Pages/Work/CaseStudiesItems/Design'; 
+import { MediaData } from '../Pages/Work/CaseStudiesItems/PerformanceMarketing'; 
 import a09 from "../Assets/Images/09.webp"
 
-const DesignCaseStudyNav = ({ visitLink }) => {
+const PerformanceMarketingCaseStudyNav = ({ visitLink }) => {
     const location = useLocation();
     const [navActive, setNavActive] = useState(false);
     
-    const currentIndex = BrandDesignData.findIndex(item => item.link === location.pathname);
+    const currentIndex = MediaData.findIndex(item => item.link === location.pathname);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -40,8 +40,8 @@ const DesignCaseStudyNav = ({ visitLink }) => {
 
     if (currentIndex === -1) return null;
 
-    const prevItem = BrandDesignData[currentIndex === 0 ? BrandDesignData.length - 1 : currentIndex - 1];
-    const nextItem = BrandDesignData[currentIndex === BrandDesignData.length - 1 ? 0 : currentIndex + 1];
+    const prevItem = MediaData[currentIndex === 0 ? MediaData.length - 1 : currentIndex - 1];
+    const nextItem = MediaData[currentIndex === MediaData.length - 1 ? 0 : currentIndex + 1];
 
     return (
         <div className={`navItems ${navActive ? 'navActive' : ''}`}>
@@ -52,10 +52,10 @@ const DesignCaseStudyNav = ({ visitLink }) => {
                 <div className='navItemsListLinkNext'><Link to={nextItem.link}>Next</Link></div>
                 </div>
 
-                <div className='navItemsListLinkAll'><Link to="https://www.agency09.in/work/case-studies#design">All</Link></div>
+                <div className='navItemsListLinkAll'><Link to="https://www.agency09.in/work/case-studies#PerformanceMarketing">All</Link></div>
             </div>
         </div>
     );
 };
 
-export default DesignCaseStudyNav;
+export default PerformanceMarketingCaseStudyNav;

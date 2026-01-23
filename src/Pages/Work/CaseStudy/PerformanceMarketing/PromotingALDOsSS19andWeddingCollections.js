@@ -25,6 +25,7 @@ import ourwork9 from '../../../../Assets/Images/work/aldo/aldo-8.webp';
 import ourwork10 from '../../../../Assets/Images/work/aldo/aldo-9.webp';
 import ourwork11 from '../../../../Assets/Images/work/aldo/aldo-10.webp';
 
+import CaseStudyNav from '../../../../Components/PerformanceMarketingCaseStudyNav';
 
 // CaseStudySlider 
 const CaseStudySlider = {
@@ -273,6 +274,7 @@ const PromotingALDOsSS19andWeddingCollections = () => {
     </section>
 
 
+<CaseStudyNav/>
 
 
 

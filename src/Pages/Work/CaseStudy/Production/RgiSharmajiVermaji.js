@@ -19,6 +19,7 @@ import ourwork3 from '../../../../Assets/Images/work/lakme/lk-2.webp'
 import Sharmaji1 from '../../../../Assets/Images/work/Sharmaji1.webp'
 import Sharmaji2 from '../../../../Assets/Images/work/Sharmaji2.webp'
 import CustomVideoPlaylist from '../../../../Hooks/CaseStudyVideos';
+import CaseStudyNav from '../../../../Components/ProductionCaseStudyNav';
 
 
 // CaseStudySlider 
@@ -288,6 +289,7 @@ return (
 
 
 
+<CaseStudyNav/>
 
 
 <Footer/>

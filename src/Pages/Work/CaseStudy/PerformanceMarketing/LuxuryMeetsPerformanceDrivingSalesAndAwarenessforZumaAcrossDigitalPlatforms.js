@@ -13,6 +13,7 @@ import { IoArrowBackCircleOutline } from "react-icons/io5";
 import logo from "../../../../Assets/Images/logos/work/others/zuma.png"
 import ourwork1 from '../../../../Assets/Images/work/ryan-group/ryangroup-main.webp';
 
+import CaseStudyNav from '../../../../Components/PerformanceMarketingCaseStudyNav';
 
 // CaseStudySlider 
 const CaseStudySlider = {
@@ -235,6 +236,7 @@ const LuxuryMeetsPerformanceDrivingSalesAndAwarenessforZumaAcrossDigitalPlatform
 
 
 
+<CaseStudyNav/>
 
 
     <Footer/>

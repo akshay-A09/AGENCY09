@@ -23,6 +23,7 @@ import vidWork from '../../../../Assets/Video/chineseWok/CW1.mp4';
 import vidWork1 from '../../../../Assets/Video/chineseWok/CW2.mp4';
 import vidWork2 from '../../../../Assets/Video/chineseWok/CW3.mp4';
 
+import CaseStudyNav from '../../../../Components/PerformanceMarketingCaseStudyNav';
 
 // CaseStudySlider 
 const CaseStudySlider = {
@@ -267,6 +268,7 @@ const ChineseWoksPostLockdownRevivalInfluencerCampaignBoostsStarterSpread = () =
 
 
 
+<CaseStudyNav/>
 
 
     <Footer/>

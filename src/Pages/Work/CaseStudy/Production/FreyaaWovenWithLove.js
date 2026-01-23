@@ -20,6 +20,7 @@ import freyaa1 from '../../../../Assets/Images/work/freyaa1.webp'
 import freyaa2 from '../../../../Assets/Images/work/freyaa2.webp'
 import CustomVideoPlaylist from '../../../../Hooks/CaseStudyVideos';
 
+import CaseStudyNav from '../../../../Components/ProductionCaseStudyNav';
 
 // CaseStudySlider 
 const CaseStudySlider = {
@@ -251,6 +252,7 @@ For Women’s Day 2025, Freyaa wanted to go beyond cliched “empowerment” mes
 
 
 
+<CaseStudyNav/>
 
 
 

@@ -20,6 +20,7 @@ import ourwork5 from '../../../../Assets/Images/work/tata-trucks/tata-slide4.web
 import ourwork6 from '../../../../Assets/Images/work/tata-trucks/tata-slide5.webp';
 import ourwork7 from '../../../../Assets/Images/work/tata-trucks/tata-slide6.webp';
 
+import CaseStudyNav from '../../../../Components/ContentCaseStudyNav';
 
 // CaseStudySlider 
 const CaseStudySlider = {
@@ -283,6 +284,7 @@ const GodrejLaffaire = () => {
  */}
 
 
+<CaseStudyNav/>
 
     <Footer/>
     </>

@@ -15,6 +15,7 @@ import logo from '../../../../Assets/Images/logos/work/fashion_lifestyle/lakme.p
 import ourwork1 from '../../../../Assets/Images/work/lakme/lk-main.webp'
 import ourwork2 from '../../../../Assets/Images/work/lakme/lk-1.webp'
 import ourwork3 from '../../../../Assets/Images/work/lakme/lk-2.webp'
+import CaseStudyNav from '../../../../Components/ContentCaseStudyNav';
 
 
 // CaseStudySlider 
@@ -248,6 +249,7 @@ const LakmeFashionWeek = () => {
 
 
 
+<CaseStudyNav/>
 
     <Footer/>
     </>

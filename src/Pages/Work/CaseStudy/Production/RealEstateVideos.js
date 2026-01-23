@@ -11,6 +11,7 @@ import ourwork1 from '../../../../Assets/Images/work/tata-trucks/tata-main.webp'
 import ourwork2 from '../../../../Assets/Images/work/tata-trucks/tata-slide1.webp';
 import ourwork3 from '../../../../Assets/Images/work/tata-trucks/tata-slide2.webp';
 import YouTubePlaylistItems from '../../../../Hooks/YouTubePlaylistItems';
+import CaseStudyNav from '../../../../Components/ProductionCaseStudyNav';
 
 
 // CaseStudySlider 
@@ -184,6 +185,7 @@ const apiKey = 'AIzaSyBkRuDWRBnBbl_qW3syuk_BEa7anG2uU2M';
  
    
 
+<CaseStudyNav/>
 
 
     <Footer/>

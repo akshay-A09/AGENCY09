@@ -20,6 +20,7 @@ import ourwork4 from '../../../../Assets/Images/work/ryan-group/ryanslide-3.webp
 import ourwork5 from '../../../../Assets/Images/work/ryan-group/ryanslide-4.webp';
 import ourwork6 from '../../../../Assets/Images/work/ryan-group/ryanslide-5.webp';
 
+import CaseStudyNav from '../../../../Components/PerformanceMarketingCaseStudyNav';
 
 // CaseStudySlider 
 const CaseStudySlider = {
@@ -253,6 +254,7 @@ const MultichannelLeadGenCampaignforJPInfra = () => {
     </section>
 
 
+<CaseStudyNav/>
 
 
 

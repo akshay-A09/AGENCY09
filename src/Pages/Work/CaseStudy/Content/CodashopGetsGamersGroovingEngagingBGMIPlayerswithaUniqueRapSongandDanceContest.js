@@ -22,6 +22,9 @@ import ourwork6 from '../../../../Assets/Images/work/ryan-group/ryanslide-5.webp
 import vidWork from '../../../../Assets/Video/codashop/coda1.mp4';
 import vidWork2 from '../../../../Assets/Video/codashop/coda2.mp4';
 
+import CaseStudyNav from '../../../../Components/ContentCaseStudyNav';
+
+
 
 // CaseStudySlider 
 const CaseStudySlider = {
@@ -262,6 +265,7 @@ const CodashopGetsGamersGroovingEngagingBGMIPlayerswithaUniqueRapSongandDanceCon
 
 
 
+<CaseStudyNav/>
 
 
     <Footer/>

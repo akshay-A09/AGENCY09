@@ -12,6 +12,7 @@ import { IoArrowBackCircleOutline } from "react-icons/io5";
 
 import logo from "../../../../Assets/Images/logos/work/real-estate/credai-mchi.png"
 import ourwork1 from '../../../../Assets/Images/work/ryan-group/ryangroup-main.webp';
+import CaseStudyNav from '../../../../Components/PerformanceMarketingCaseStudyNav';
 
 
 // CaseStudySlider 
@@ -245,6 +246,7 @@ const DrivingRecordBreakingLeadGenerationfortheBiggestPropertyExpooftheYearbyCre
 
 
 
+<CaseStudyNav/>
 
 
     <Footer/>
