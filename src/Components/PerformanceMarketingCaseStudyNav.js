@@ -52,7 +52,7 @@ const PerformanceMarketingCaseStudyNav = ({ visitLink }) => {
                 <div className='navItemsListLinkNext'><Link to={nextItem.link}>Next</Link></div>
                 </div>
 
-                <div className='navItemsListLinkAll'><Link to="https://www.agency09.in/work/case-studies#PerformanceMarketing">All</Link></div>
+                <div className='navItemsListLinkAll'><Link to="https://www.agency09.in/work/case-studies#performance-marketing">All</Link></div>
             </div>
         </div>
     );

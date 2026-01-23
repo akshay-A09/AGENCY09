@@ -52,7 +52,7 @@ const ProductionCaseStudyNav = ({ visitLink }) => {
                 <div className='navItemsListLinkNext'><Link to={nextItem.link}>Next</Link></div>
                 </div>
 
-                <div className='navItemsListLinkAll'><Link to="https://www.agency09.in/work/case-studies#Production">All</Link></div>
+                <div className='navItemsListLinkAll'><Link to="https://www.agency09.in/work/case-studies#production">All</Link></div>
             </div>
         </div>
     );
