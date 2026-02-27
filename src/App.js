@@ -19,6 +19,7 @@ import OurClients from './Pages/Work/OurClients'
 import Ryangroup from './Pages/Work/CaseStudy/Tech/Ryangroup'
 import TataTrucks from './Pages/Work/CaseStudy/Tech/TataTrucks'
 import Siyaram from './Pages/Work/CaseStudy/Tech/Siyaram'
+
 import Groupsoft from './Pages/Work/CaseStudy/Tech/Groupsoft'
 import Bitspilani from './Pages/Work/CaseStudy/Tech/Bitspilani'
 import GodrejLaffaire from './Pages/Work/CaseStudy/Content/GodrejLaffaire'
@@ -77,7 +78,14 @@ import RgiRHealthBeatMagazine from './Pages/Work/CaseStudy/Design/RgiRHealthBeat
 import PretAManger149Campaign from './Pages/Work/CaseStudy/Content/PretAManger149Campaign'
 import PretFestivePackagingDiwali from './Pages/Work/CaseStudy/Design/PretFestivePackagingDiwali'
 import RangiloRe from './Pages/Work/CaseStudy/Production/RangiloRe'
+
 // New Dec 2025
+
+// New Feb 2026
+import OrmPortal from './Pages/Work/CaseStudy/Tech/ORMPortal'
+import RGIChatbot from './Pages/Work/CaseStudy/Tech/TransformingRGICustomerCommunicationwithanIntelligentWhatsAppChatbot'
+import Natch from './Pages/Work/CaseStudy/Tech/RevampingNatchSnacksWebsitetoDriveConversionsandReducePurchaseFriction'
+// New Feb 2026
 
 // SEO
 import IGCBDualCountrySEO from './Pages/Work/CaseStudy/Keyword/FixingSpeedAuthorityVisibilityForIGCBDualCountrySEOSuccess'
@@ -125,6 +133,7 @@ function App() {
           <Route exact path='/work/case-studies/ryangroup' element={<Ryangroup />} />
           <Route exact path='/work/case-studies/groupsoft' element={<Groupsoft />} />
           <Route exact path='/work/case-studies/siyaram' element={<Siyaram />} />
+          <Route exact path='/work/case-studies/ORMPortal' element={<OrmPortal/>} />
           <Route exact path='/work/case-studies/bits-pilani' element={<Bitspilani />} />
           <Route exact path='/work/case-studies/godrej-laffaire' element={<GodrejLaffaire />} />
           <Route exact path='/work/case-studies/barc-india-yearbook' element={<BARCIndiaYearbook />} />
@@ -171,7 +180,7 @@ function App() {
         <Route exact path='/work/case-studies/web-series' element={<WebSeries/>}/>
         <Route exact path='/work/case-studies/teaser-videos' element={<TeaserVideos/>}/>
         <Route exact path='/work/case-studies/campaign-videos' element={<CampaignVideos/>}/>
-
+        
         <Route exact path='/work/case-studies/pret-x-mi' element={<PretxMI/>}/>
         <Route exact path='/work/case-studies/aditya-birla-capital' element={<AdityaBirlaCapital/>}/>
         <Route exact path='/work/case-studies/rgi-sharmaji-vermaji' element={<RgiSharmajiVermaji/>}/>
@@ -182,7 +191,7 @@ function App() {
             <Route exact path='/work/case-studies/pret-a-manger-149-campaign' element={<PretAManger149Campaign/>}/>
           <Route exact path='/work/case-studies/pret-festive-packaging-diwali' element={<PretFestivePackagingDiwali/>}/> 
            <Route exact path='/work/case-studies/rangilo-re' element={<RangiloRe/>}/>     
-
+      <Route exact path='/work/case-studies/revamping-natch-snacks-website-to-drive-conversions-and-reduce-purchase-friction' element={<Natch />} />
        <Route exact path='/start-project-thank-you' element={<StartProjectThankYou/>}/>
        <Route exact path='/partner-with-us-thank-you' element={<PartnerWithUsThankYou/>}/>
        <Route exact path='/get-in-touch-thank-you' element={<GetInTouchThankYou/>}/>
@@ -201,7 +210,7 @@ function App() {
       <Route exact path="/work/case-studies/high-performance-marketing-website-for-adleo" element={<HighPerformanceMarketingWebsiteForAdleo />} />
       <Route exact path="/work/case-studies/designing-a-scalable-content-driven-education-website-for-eduedge-global" element={<DesigningAScalableContentDrivenEducationWebsiteForEduEdgeGlobal />} />
       <Route exact path="/work/case-studies/interactive-3d-game-experience-for-tata-motors-ace-pro-launch" element={<Interactive3DGameExperienceForTataMotorsAceProLaunch />} />
-
+      <Route exact path='/work/case-studies/transforming-rgi-customer-communication-with-an-intelligent-whatsapp-chatbot' element={<RGIChatbot />} />
       
           <Route exact path='/work/case-studies/building-tokos-first-digital-fundraising-platform-for-schools-across-new-zealand' element={<BuildingTokosFirstDigitalFundraisingPlatformforSchooqlsAcrossNewZealand />} />
           <Route exact path='/work/case-studies/transforming-detouroz-into-a-conversion-driven-campervan-booking-platform' element={<TransformingDetourozintoaConversionDrivenCampervanBookingPlatform />} />
