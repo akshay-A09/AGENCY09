@@ -15,7 +15,9 @@ import Tvarana from '../../../Assets/Images/case-study/Tvarana/Tvarana.jpg'
 import AdLeo from '../../../Assets/Images/case-study/AdLeo/AdLeo.jpg'
 import EduEdge from '../../../Assets/Images/case-study/EduEdge/EduEdge.jpg'
 import tataMain from '../../../Assets/Images/work/tata-trucks/tata-main.webp';
-
+import Natch from '../../../Assets/Images/work/natch/natch-main.webp'; 
+import ORM from '../../../Assets/Images/work/orm-portal/orm-portal-main-thumbnail.webp'; 
+import RGIChatbot from '../../../Assets/Images/work/RGI-chatbot/rgi-chatbot-main.webp'; 
 
 
 
@@ -23,6 +25,50 @@ import tataMain from '../../../Assets/Images/work/tata-trucks/tata-main.webp';
 export const techData = [
     // New
      
+    {
+        id: 1,
+        title: "Revamping Natch Snacks’ Website to Drive Conversions and Reduce Purchase Friction",
+        tags: [
+            { name: 'Website Strategy', },
+            { name: 'UI/UX', },
+            { name: 'Web Application', }
+        ],
+        image: Natch,
+        link: '/work/case-studies/revamping-natch-snacks-website-to-drive-conversions-and-reduce-purchase-friction',
+        brand: 'Natch',
+        department: 'Tech'
+    },
+
+     {
+        id: 1,
+        title: "Centralized ORM Portal: From Manual Tracking to Real-Time Intelligence",
+        tags: [
+            { name: 'Website Strategy', },
+            { name: 'UI/UX', },
+            { name: 'Web Application', }
+        ],
+        image: ORM,
+        link: '/work/case-studies/ORMPortal',
+        brand: 'ORMPortal',
+        department: 'Tech'
+    },
+
+     {
+        id: 1,
+        title: "Transforming RGI Customer Communication with an Intelligent WhatsApp Chatbot",
+        tags: [
+            { name: 'Website Strategy', },
+            { name: 'UI/UX', },
+            { name: 'Web Application', }
+        ],
+        image: RGIChatbot,
+        link: '/work/case-studies/transforming-rgi-customer-communication-with-an-intelligent-whatsapp-chatbot',
+        brand: 'RGIChatBot',
+        department: 'Tech'
+    },
+
+
+    
     {
         id: 1,
         title: "Building Toko’s First Digital Fundraising Platform for Schools Across New Zealand",

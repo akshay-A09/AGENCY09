@@ -16,9 +16,9 @@ import logo from "../../../../Assets/Images/logos/work/Natch.png"
 import ourwork1 from '../../../../Assets/Images/work/natch/natch-main.webp';
 import ourwork2 from '../../../../Assets/Images/work/natch/1.webp';
 import ourwork3 from '../../../../Assets/Images/work/natch/2.webp';
-import ourwork3 from '../../../../Assets/Images/work/natch/3.webp';
-import ourwork3 from '../../../../Assets/Images/work/natch/4.webp';
-import ourwork3 from '../../../../Assets/Images/work/natch/5.webp';
+import ourwork4 from '../../../../Assets/Images/work/natch/3.webp';
+import ourwork5 from '../../../../Assets/Images/work/natch/4.webp';
+import ourwork6 from '../../../../Assets/Images/work/natch/5.webp';
 
 
 
@@ -242,6 +242,12 @@ const TataTrucks = () => {
 
                 <div className='imgCol1 imgCol'>
                     <span><img src={ourwork3} loading='lazy' /></span>
+                </div>
+                <div className='imgCol1 imgCol'>
+                    <span><img src={ourwork4} loading='lazy' /></span>
+                </div>
+                <div className='imgCol1 imgCol'>
+                    <span><img src={ourwork5} loading='lazy' /></span>
                 </div>
 
     </Slider>

@@ -53,6 +53,10 @@ import RaisingStoreWalkInsforPretA from '../../../Assets/Images/logos/pret.webp'
 
 import pretFestive1 from '../../../Assets/Images/work/pret_festive1Cover.webp'
 
+import Natch from '../../../Assets/Images/work/natch/natch-main.webp'; 
+import ORM from '../../../Assets/Images/work/orm-portal/orm-portal-main-thumbnail.webp'; 
+import RGIChatbot from '../../../Assets/Images/work/RGI-chatbot/rgi-chatbot-main.webp'; 
+
 
 
 import apolloenergyanalytics from '../../../Assets/Images/work/Apollo_Energy_Analytics.jpg';
@@ -62,6 +66,7 @@ import igcb from '../../../Assets/Images/work/IGCB.jpg';
 import reaviva from '../../../Assets/Images/work/Reaviva.jpg';
 import shopzuma from '../../../Assets/Images/work/Shop_Zuma-1.jpg';
 import siyarmas from '../../../Assets/Images/work/Siyarams.jpg';
+
 
 // Tech
 export const allData = [
@@ -309,6 +314,48 @@ export const allData = [
         department: 'Tech'
 
     },  
+
+    {
+        id: 1,
+        title: "Revamping Natch Snacks’ Website to Drive Conversions and Reduce Purchase Friction",
+        tags: [
+            { name: 'Website Strategy', },
+            { name: 'UI/UX', },
+            { name: 'Web Application', }
+        ],
+        image: Natch,
+        link: '/work/case-studies/revamping-natch-snacks-website-to-drive-conversions-and-reduce-purchase-friction',
+        brand: 'Natch',
+        department: 'Tech'
+    },
+
+     {
+        id: 1,
+        title: "Centralized ORM Portal: From Manual Tracking to Real-Time Intelligence",
+        tags: [
+            { name: 'Website Strategy', },
+            { name: 'UI/UX', },
+            { name: 'Web Application', }
+        ],
+        image: ORM,
+        link: '/work/case-studies/ORMPortal',
+        brand: 'ORMPortal',
+        department: 'Tech'
+    },
+
+     {
+        id: 1,
+        title: "Transforming RGI Customer Communication with an Intelligent WhatsApp Chatbot",
+        tags: [
+            { name: 'Website Strategy', },
+            { name: 'UI/UX', },
+            { name: 'Web Application', }
+        ],
+        image: RGIChatbot,
+        link: '/work/case-studies/transforming-rgi-customer-communication-with-an-intelligent-whatsapp-chatbot',
+        brand: 'RGIChatBot',
+        department: 'Tech'
+    },
     
     
     {
@@ -672,6 +719,8 @@ export const allData = [
             brand: "Siyaram’s",
             department: 'Keyword'
         },
+
+        
     
         // {
         //     id: 1,

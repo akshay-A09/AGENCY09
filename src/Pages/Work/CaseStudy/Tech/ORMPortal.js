@@ -13,12 +13,13 @@ import { GoPlus } from "react-icons/go";
 import starY from '../../../../Assets/Images/icons/star.webp';
 
 import logo from "../../../../Assets/Images/logos/work/agency09.png"
-import ourwork1 from '../../../../Assets/Images/work/orm-portal/orm-portal-main.webp';
-import ourwork2 from '../../../../Assets/Images/work/orm-portal/1.webp';
-import ourwork3 from '../../../../Assets/Images/work/orm-portal/2.webp';
-import ourwork4 from '../../../../Assets/Images/work/orm-portal/3.webp';
-import ourwork5 from '../../../../Assets/Images/work/orm-portal/4.webp';
-import ourwork6 from '../../../../Assets/Images/work/orm-portal/5.webp';
+import ourwork1 from '../../../../Assets/Images/work/orm-portal/orm-portal-main-thumbnail.webp';
+import ourwork2 from '../../../../Assets/Images/work/orm-portal/orm-portal-main.webp';
+import ourwork3 from '../../../../Assets/Images/work/orm-portal/1.webp';
+import ourwork4 from '../../../../Assets/Images/work/orm-portal/2.webp';
+import ourwork5 from '../../../../Assets/Images/work/orm-portal/3.webp';
+import ourwork6 from '../../../../Assets/Images/work/orm-portal/4.webp';
+import ourwork7 from '../../../../Assets/Images/work/orm-portal/5.webp';
 
 import CaseStudyNav from '../../../../Components/TechCaseStudyNav';
 const externalLink = "https://a09.in/orm/public/login";
@@ -107,7 +108,7 @@ const TataTrucks = () => {
   return (
     <>
                 <Helmet>
-                  <title> Centralized ORM Portal: From Manual Tracking to Real-Time Intelligence</title>
+                  <title>Centralized ORM Portal: From Manual Tracking to Real-Time Intelligence</title>
                   <link rel="canonical" href="https://www.agency09.in/about"/>
                   <meta name="robots" content="index, follow"/> 
             
@@ -254,6 +255,9 @@ const TataTrucks = () => {
 
                 <div className ='imgCol1 imgCol'>
                     <span><img src={ourwork6} loading='lazy' /></span>
+                </div>
+                <div className ='imgCol1 imgCol'>
+                    <span><img src={ourwork7} loading='lazy' /></span>
                 </div>
     </Slider>
 </div>
