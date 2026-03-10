@@ -8,6 +8,7 @@ import WorkWithUs from './Pages/WorkWithUs'
 import JoinTheTeam from './Pages/JoinTheTeam'
 import Careers from './Pages/Careers'
 import Testimonials from './Pages/Testimonials'
+import TechPartner from './Pages/tech-partner'
 import Tech from './Pages/Solutions/Tech'
 import Content from './Pages/Solutions/Content'
 import Design from './Pages/Solutions/Design'
@@ -122,6 +123,7 @@ function App() {
           <Route exact path='/careers' element={<Careers />} />
           <Route exact path='/testimonials' element={<Testimonials />} />
           <Route exact path='/url-builder' element={<URLBuilder />} />
+          <Route exact path='/tech-partner' element={<TechPartner />} />
 
           <Route exact path='/solutions/tech' element={<Tech />} />
           <Route exact path='/solutions/content' element={<Content />} />
