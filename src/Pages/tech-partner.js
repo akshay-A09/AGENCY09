@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
+import ProjectForm from '../Components/Forms/ProjectForm';
+import AuditForm from '../Components/Forms/AuditForm';
 import './tech-partner.css';
 
 function TechPartner() {
@@ -64,28 +66,7 @@ function TechPartner() {
             <a href="#contact" className="btn-primary fade-up" style={{ transitionDelay: '0.4s' }}>Book a Call</a>
           </div>
           <div className="tech-partner-hero-form-card fade-up" style={{ transitionDelay: '0.2s' }}>
-            <h3>Start Your Project</h3>
-            <p>Tell us what you're building. We'll shape the right solution.</p>
-            <div className="form-field"><label>Name*</label><input type="text" placeholder="Your full name" /></div>
-            <div className="form-field"><label>Company Name*</label><input type="text" placeholder="Your company" /></div>
-            <div className="form-field"><label>Email ID*</label><input type="email" placeholder="hello@company.com" /></div>
-            <div className="form-field"><label>Phone Number*</label><input type="tel" placeholder="+91 98765 43210" /></div>
-            <div className="form-field">
-              <label>Project Type</label>
-              <select>
-                <option value="">Select type</option>
-                <option>Website / CMS</option>
-                <option>E-commerce</option>
-                <option>Mobile App</option>
-                <option>SaaS / Software</option>
-                <option>AI / Automation</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div className="tech-partner-hero-form-btns">
-              <a href="#" className="btn-primary" style={{ flex: 1 }}>Book a Call</a>
-              <a href="#audit" className="btn-outline-white" style={{ flex: 1 }}>Free Audit</a>
-            </div>
+            <ProjectForm />
           </div>
         </section>
 
@@ -378,13 +359,7 @@ function TechPartner() {
               </div>
             </div>
             <div className="audit-form-card fade-up" id="audit">
-              <div className="compliment-pill"><img src="https://www.figma.com/api/mcp/asset/eda3cf04-4f88-4046-9c1d-93e0503b9f8e" alt="" style={{ width: '12px', height: '12px' }} /> Complimentary · No commitment</div>
-              <h3>Request Your Free Audit</h3>
-              <p className="sub">Share the basics. Our senior technology team will prepare a tailored review within 48 hours.</p>
-              <div className="audit-field"><label>Email ID*</label><input type="email" placeholder="hello@company.com" /></div>
-              <div className="audit-field"><label>Work Email</label><input type="email" placeholder="you@company.com" /></div>
-              <div className="audit-field" style={{ marginBottom: '20px' }}><label>Company / Website URL</label><input type="url" placeholder="https://yourwebsite.com" /></div>
-              <a href="#" className="btn-outline-white" style={{ width: '100%', justifyContent: 'center' }}>Request Free Audit</a>
+              <AuditForm />
             </div>
           </div>
         </section>

@@ -1195,3 +1195,31 @@ h2.section-title {
         text-align: center;
     }
 }
+
+.audit-field{
+display:flex;
+flex-direction:column;
+margin-bottom:18px;
+}
+
+.form-field{
+display:flex;
+flex-direction:column;
+margin-bottom:16px;
+}
+
+.error-text{
+color:#ff4d4f;
+font-size:13px;
+margin-top:6px;
+}
+
+.input-error{
+border:1px solid #ff4d4f;
+}
+
+.form_response{
+margin-top:15px;
+color:#fff;
+font-size:14px;
+}
