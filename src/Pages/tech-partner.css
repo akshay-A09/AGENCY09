@@ -388,32 +388,32 @@ h2.section-title {
     max-width: 700px;
 }
 
-.services-grid {
+.tech-partner-services-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin-bottom: 20px;
 }
 
-.service-card {
+.tech-partner-services-grid .service-card {
     border: 1px solid var(--light-gray);
     border-radius: 16px;
     padding: 28px 28px 24px;
     transition: box-shadow 0.2s, transform 0.2s;
 }
 
-.service-card:hover {
+.tech-partner-services-grid .service-card:hover {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
     transform: translateY(-2px);
 }
 
-.service-card.highlight {
+.tech-partner-services-grid .service-card.highlight {
     background: var(--blue);
     color: #fff;
     border-color: var(--blue);
 }
 
-.service-icon {
+.tech-partner-services-grid .service-icon {
     width: 48px;
     height: 48px;
     background: var(--blue);
@@ -421,34 +421,34 @@ h2.section-title {
     margin-bottom: 16px;
 }
 
-.service-card.highlight .service-icon {
+.tech-partner-services-grid .service-card.highlight .service-icon {
     background: rgba(255, 255, 255, 0.2);
 }
 
-.service-card h3 {
+.tech-partner-services-grid .service-card h3 {
     font-weight: 900;
     font-size: 20px;
     margin-bottom: 12px;
 }
 
-.service-card ul {
+.tech-partner-services-grid .service-card ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 3px;
 }
 
-.service-card ul li {
+.tech-partner-services-grid .service-card ul li {
     font-size: 14px;
     color: var(--gray);
     line-height: 1.6;
 }
 
-.service-card.highlight ul li {
+.tech-partner-services-grid .service-card.highlight ul li {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.service-cta-text {
+.tech-partner-services-grid .service-cta-text {
     font-size: 15px;
     color: rgba(255, 255, 255, 0.85);
     margin-bottom: 20px;
@@ -497,7 +497,7 @@ h2.section-title {
     cursor: default;
 }
 
-.case-studies {
+.tech-partner-case-studies {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -509,24 +509,26 @@ h2.section-title {
     gap: 20px;
 }
 
-.case-card {
+.tech-partner-case-studies .case-card {
     border: 1px solid var(--light-gray);
     border-radius: 16px;
     overflow: hidden;
     transition: box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
 }
 
-.case-card:hover {
+.tech-partner-case-studies .case-card:hover {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.09);
 }
 
-.case-card img.case-img {
+.tech-partner-case-studies .case-card img.case-img {
     width: 100%;
     height: 280px;
     object-fit: cover;
 }
 
-.case-card-body {
+.tech-partner-case-studies .case-card-body {
     padding: 28px;
 }
 
@@ -541,26 +543,26 @@ h2.section-title {
     font-family: var(--font);
 }
 
-.case-card-body h3 {
+.tech-partner-case-studies .case-card-body h3 {
     font-weight: 900;
     font-size: 28px;
     margin-bottom: 12px;
 }
 
-.case-card-body p {
+.tech-partner-case-studies .case-card-body p {
     font-size: 15px;
     color: var(--black);
     line-height: 1.65;
     margin-bottom: 20px;
 }
 
-.case-divider {
+.tech-partner-case-studies .case-divider {
     border: none;
     border-top: 1px solid var(--light-gray);
     margin-bottom: 16px;
 }
 
-.case-tags {
+.tech-partner-case-studies .case-card .case-tags {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
@@ -915,12 +917,12 @@ h2.section-title {
 }
 
 @media (max-width: 1100px) {
-    .hero {
+    .tech-partner-hero {
         padding: 60px 32px;
         grid-template-columns: 1fr;
     }
 
-    .hero-form-card {
+    .tech-partner-hero-form-card {
         max-width: 500px;
     }
 
@@ -928,7 +930,7 @@ h2.section-title {
         padding: 60px 32px;
     }
 
-    .services-grid {
+    .tech-partner-services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -936,7 +938,7 @@ h2.section-title {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .case-studies {
+    .tech-partner-case-studies {
         grid-template-columns: 1fr;
     }
 
@@ -1045,7 +1047,7 @@ h2.section-title {
 }
 
 @media (max-width: 768px) {
-    .hero {
+    .tech-partner-hero {
         padding: 40px 20px;
         gap: 40px;
     }
@@ -1070,7 +1072,7 @@ h2.section-title {
         border-right: none;
     }
 
-    .services-grid {
+    .tech-partner-services-grid {
         grid-template-columns: 1fr;
     }
 
@@ -1120,33 +1122,54 @@ h2.section-title {
         align-items: flex-start;
     }
 
-    .case-studies {
+    .tech-partner-case-studies {
         display: none;
     }
 
-    /* hide desktop grid on mobile */
+    /* show accordion on mobile */
     .case-accordion {
         display: block;
     }
 
-    /* show accordion on mobile */
+    .case-accordion .case-card-body {
+        padding: 20px 24px;
+    }
+
+    .case-accordion .case-card-body p {
+        font-size: 14px;
+        color: var(--black);
+        line-height: 1.6;
+        margin-bottom: 16px;
+    }
+
+    .case-accordion .case-divider {
+        border: none;
+        border-top: 1px solid var(--light-gray);
+        margin-bottom: 16px;
+    }
+
+    .case-accordion .case-tags {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 480px) {
-    .hero h1 {
+    .tech-partner-hero h1 {
         font-size: 36px;
     }
 
-    .hero-stats {
+    .tech-partner-hero-stats {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .hero-form-btns {
+    .tech-partner-hero-form-btns {
         flex-direction: column;
     }
 
-    .hero-form-btns a {
+    .tech-partner-hero-form-btns a {
         width: 100%;
         text-align: center;
     }

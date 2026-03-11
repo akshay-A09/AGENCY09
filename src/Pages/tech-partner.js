@@ -140,7 +140,7 @@ function TechPartner() {
             <div className="label-pill"><img src="https://www.figma.com/api/mcp/asset/eda3cf04-4f88-4046-9c1d-93e0503b9f8e" alt="" /> What We Build</div>
             <h2 className="section-title">Technology Solutions<br />Built Around Business Needs</h2>
           </div>
-          <div className="services-grid fade-up">
+          <div className="tech-partner-services-grid fade-up">
             <div className="service-card">
               <div className="service-icon"></div>
               <h3>Digital Platforms</h3>
@@ -162,7 +162,7 @@ function TechPartner() {
               <ul><li>Customer Apps</li><li>Internal Apps</li><li>Field &amp; Delivery Apps</li><li>Cross-platform</li></ul>
             </div>
           </div>
-          <div className="services-grid fade-up">
+          <div className="tech-partner-services-grid fade-up">
             <div className="service-card">
               <div className="service-icon"></div>
               <h3>Automation</h3>
@@ -225,7 +225,7 @@ function TechPartner() {
             <div className="label-pill"><img src="https://www.figma.com/api/mcp/asset/eda3cf04-4f88-4046-9c1d-93e0503b9f8e" alt="" /> Outcomes</div>
             <h2 className="section-title">Technology Solutions<br />Built Around Business Needs</h2>
           </div>
-          <div className="case-studies">
+          <div className="tech-partner-case-studies">
             <div>
               <div className="case-card fade-up">
                 <img src="https://www.figma.com/api/mcp/asset/b55cccf6-677b-47c5-a677-14599a53c54f" alt="Tata Motors" className="case-img" />
@@ -284,7 +284,7 @@ function TechPartner() {
           </div>
 
           <div className="case-accordion">
-            <div className={`case -accordion - item ${openCase === 0 ? 'open' : ''} `}>
+            <div className={`case-accordion-item ${openCase === 0 ? 'open' : ''}`}>
               <button className="case-accordion-header" onClick={() => toggleCase(0)}>
                 <div className="case-acc-title">
                   <span className="acc-cat">Enterprise</span>
@@ -315,7 +315,7 @@ function TechPartner() {
               </div>
             </div>
 
-            <div className={`case -accordion - item ${openCase === 1 ? 'open' : ''} `}>
+            <div className={`case-accordion-item ${openCase === 1 ? 'open' : ''}`}>
               <button className="case-accordion-header" onClick={() => toggleCase(1)}>
                 <div className="case-acc-title">
                   <span className="acc-cat">Education</span>
@@ -337,7 +337,7 @@ function TechPartner() {
               </div>
             </div>
 
-            <div className={`case -accordion - item ${openCase === 2 ? 'open' : ''} `}>
+            <div className={`case-accordion-item ${openCase === 2 ? 'open' : ''}`}>
               <button className="case-accordion-header" onClick={() => toggleCase(2)}>
                 <div className="case-acc-title">
                   <span className="acc-cat">Operations</span>
@@ -421,7 +421,7 @@ function TechPartner() {
                 { q: "Which frameworks and languages do you use for mobile app development?", a: "We build mobile apps using Flutter and React Native for cross-platform projects, and native Swift/Kotlin for performance-critical iOS and Android applications." },
                 { q: "How do you ensure the security of eCommerce platforms?", a: "Security is built into every layer: SSL/TLS encryption, secure payment gateway integration, role-based access, regular audits, OWASP best practices, and PCI-DSS compliance for payment flows." }
               ].map((faq, idx) => (
-                <div key={idx} className={`faq - item ${openFaq === idx ? 'open' : ''} `}>
+                <div key={idx} className={`faq-item ${openFaq === idx ? 'open' : ''}`}>
                   <button className="faq-question" onClick={() => toggleFaq(idx)}>
                     {faq.q}<span className="faq-toggle">+</span>
                   </button>
@@ -442,7 +442,7 @@ function TechPartner() {
               ].map((faq, idx) => {
                 const globalIdx = idx + 6;
                 return (
-                  <div key={globalIdx} className={`faq - item ${openFaq === globalIdx ? 'open' : ''} `}>
+                  <div key={globalIdx} className={`faq-item ${openFaq === globalIdx ? 'open' : ''}`}>
                     <button className="faq-question" onClick={() => toggleFaq(globalIdx)}>
                       {faq.q}<span className="faq-toggle">+</span>
                     </button>
