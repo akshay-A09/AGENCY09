@@ -4,11 +4,36 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import ProjectForm from '../Components/Forms/ProjectForm';
 import AuditForm from '../Components/Forms/AuditForm';
+import AGENCY09logo from '../Assets/Images/agency09.webp';
 import './tech-partner.css';
+import RGI from '../Assets/Images/logos/rgi.jpg'
+import Samsonite from '../Assets/Images/logos/samsonite.jpg'
+import Lakme from '../Assets/Images/logos/lakme.jpg'
+import Siyaram from '../Assets/Images/logos/work/fashion_lifestyle/siyaram.png'
+import Godrej from '../Assets/Images/logos/godrej.jpg'
+import Tata from '../Assets/Images/logos/tata-motors.jpg'
+import Jupiter from '../Assets/Images/logos/work/health_wellness/jupiterhospital.png'
+import Digital from '../Assets/Images/icons/digital-platform.png'
+import ECommerce from '../Assets/Images/icons/e-commerce.png'
+import Software from '../Assets/Images/icons/software-and-product.png'
+import Mobile from '../Assets/Images/icons/mobile-apps.png'
+import Automation from '../Assets/Images/icons/automation.png'
+import Ai from '../Assets/Images/icons/ai-solutions.png'
+import Conversational from '../Assets/Images/icons/conversational-ai.png'
+import TataMotors from '../Assets/Images/work/tata-motors.png'
+import Ryan from '../Assets/Images/work/ryan.png'
+import Pride from '../Assets/Images/work/pride.png'
+import DigitalJourney from '../Assets/Images/icons/digital-journey.png'
+import Workflow from '../Assets/Images/icons/workflow.png'
+import System from '../Assets/Images/icons/system.png'
+import Growth from '../Assets/Images/icons/growth.png'
+
+
 
 function TechPartner() {
   const [openFaq, setOpenFaq] = useState(0);
   const [openCase, setOpenCase] = useState(0);
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -40,9 +65,31 @@ function TechPartner() {
 
   return (
     <>
-      <Header />
+      <header className="tech-partner-header">
+        <div className="tp-header-container">
+          <div className="tp-logo">
+            <Link to="/"><img src={AGENCY09logo} loading="lazy" alt="AGENCY09" /></Link>
+          </div>
+          <nav className={`tp-nav ${isMobileMenuOpen ? 'open' : ''}`}>
+            <ul>
+              <li><a href="#services" onClick={() => setMobileMenuOpen(false)}>SERVICES</a></li>
+              <li><a href="#work" onClick={() => setMobileMenuOpen(false)}>WORK</a></li>
+              <li><a href="#process" onClick={() => setMobileMenuOpen(false)}>PROCESS</a></li>
+              <li><a href="#faq" onClick={() => setMobileMenuOpen(false)}>FAQS</a></li>
+            </ul>
+          </nav>
+          <div className="tp-header-right">
+            <a href="#bannerform" className="btn-primary tp-header-btn">BOOK A CALL</a>
+            <button className={`tp-mobile-menu-btn ${isMobileMenuOpen ? 'open' : ''}`} onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
+              <span className="tp-bar"></span>
+              <span className="tp-bar"></span>
+              <span className="tp-bar"></span>
+            </button>
+          </div>
+        </div>
+      </header>
 
-      <div className="spacer"></div>
+      <div className="spacer tp-spacer"></div>
       <div className="app-wrapper">
         <section className="tech-partner-hero" style={{ paddingTop: '60px' }}>
           <div className="tech-partner-hero-bg">
@@ -50,7 +97,7 @@ function TechPartner() {
           </div>
           <div className="tech-partner-hero-content">
             <div className="label-pill fade-up">
-              <img src="https://www.figma.com/api/mcp/asset/eda3cf04-4f88-4046-9c1d-93e0503b9f8e" alt="" /> Technology Division
+              <img src="https://www.figma.com/api/mcp/asset/eda3cf04-4f88-4046-9c1d-93e0503b9f8e" alt="" /> Technology Partner
             </div>
             <h1 className="fade-up" style={{ transitionDelay: '0.1s' }}>
               Build Digital<br />Platforms That<br /><span className="blue">Scale Businesses.</span>
@@ -63,23 +110,23 @@ function TechPartner() {
               <div className="stat-pill"><span className="dot"></span><strong>90+</strong>&nbsp;Specialists</div>
               <div className="stat-pill"><span className="dot"></span><strong>600+</strong>&nbsp;Projects</div>
             </div>
-            <a href="#contact" className="btn-primary fade-up" style={{ transitionDelay: '0.4s' }}>Book a Call</a>
+            <a href="#contact" className="btn-primary fade-up" style={{ transitionDelay: '0.4s' }}>Request Free Audit</a>
           </div>
-          <div className="tech-partner-hero-form-card fade-up" style={{ transitionDelay: '0.2s' }}>
+          <div className="tech-partner-hero-form-card fade-up" style={{ transitionDelay: '0.2s' }} id="bannerform">
             <ProjectForm />
           </div>
         </section>
 
         <div className="trust-bar fade-up">
-          <p>Trusted by ambitious brands and enterprise teams</p>
+          <p>Trusted by 200+ ambitious brands and enterprise teams</p>
           <div className="logos-row">
-            <img src="https://www.figma.com/api/mcp/asset/0d921196-739b-4017-b56d-537d00a9017d" alt="Sandboxx" style={{ height: '44px' }} />
-            <img src="https://www.figma.com/api/mcp/asset/f4514b31-ba82-4804-9f50-7d2218ad1e7e" alt="Brand" style={{ height: '50px' }} />
-            <img src="https://www.figma.com/api/mcp/asset/19f5cba3-7d09-41d0-8795-04882233dd6e" alt="Brand" style={{ height: '44px' }} />
-            <img src="https://www.figma.com/api/mcp/asset/47323e5c-4ed9-43ed-b7ca-c24aca31d8db" alt="Brand" style={{ height: '40px' }} />
-            <img src="https://www.figma.com/api/mcp/asset/6d7b39d8-a9ee-4274-95f9-1c0e7f9da58e" alt="Brand" style={{ height: '40px' }} />
-            <img src="https://www.figma.com/api/mcp/asset/1b43364d-d2cf-41bc-942f-9a4460cdc5f1" alt="Brand" style={{ height: '40px' }} />
-            <img src="https://www.figma.com/api/mcp/asset/31e070ce-52ef-42bd-8d68-fe080f2c8ebd" alt="Brand" style={{ height: '40px' }} />
+            <img src={RGI} alt="RGI" />
+            <img src={Samsonite} alt="samsonite" />
+            <img src={Lakme} alt="Lakme fashion week" />
+            <img src={Siyaram} alt="Siyaram" />
+            <img src={Godrej} alt="Godrej" />
+            <img src={Tata} alt="Tata Motors" />
+            <img src={Jupiter} alt="Jupiter Hospital" />
           </div>
         </div>
 
@@ -112,7 +159,7 @@ function TechPartner() {
           </div>
           <div className="pain-footer fade-up">
             <p>If this sounds familiar, the problem usually isn't effort — it's the system.</p>
-            <a href="#contact" className="btn-primary">Book a Call</a>
+            <a href="#bannerform" className="btn-primary">Book a Call</a>
           </div>
         </section>
 
@@ -123,47 +170,60 @@ function TechPartner() {
           </div>
           <div className="tech-partner-services-grid fade-up">
             <div className="service-card">
-              <div className="service-icon"></div>
+              <div className="service-icon">
+                <img src={Digital} />
+              </div>
               <h3>Digital Platforms</h3>
               <ul><li>Corporate Websites</li><li>CMS Platforms</li><li>Web Applications</li><li>Landing Pages</li></ul>
             </div>
             <div className="service-card">
-              <div className="service-icon"></div>
+              <div className="service-icon">
+                <img src={ECommerce} />
+              </div>
               <h3>E-commerce</h3>
               <ul><li>Shopify Stores</li><li>Custom E-commerce</li><li>WooCommerce</li><li>D2C Storefronts</li></ul>
             </div>
             <div className="service-card">
-              <div className="service-icon"></div>
+              <div className="service-icon">
+                <img src={Software} />
+              </div>
               <h3>Software &amp; Product</h3>
               <ul><li>Custom Software</li><li>SaaS Platforms</li><li>Enterprise Dashboards</li><li>Internal Tools</li></ul>
             </div>
             <div className="service-card">
-              <div className="service-icon"></div>
+              <div className="service-icon">
+                <img src={Mobile} />
+              </div>
               <h3>Mobile Apps</h3>
               <ul><li>Customer Apps</li><li>Internal Apps</li><li>Field &amp; Delivery Apps</li><li>Cross-platform</li></ul>
             </div>
           </div>
           <div className="tech-partner-services-grid fade-up">
             <div className="service-card">
-              <div className="service-icon"></div>
+              <div className="service-icon">
+                <img src={Automation} />
+              </div>
               <h3>Automation</h3>
               <ul><li>Workflow Automation</li><li>CRM / ERP Integration</li><li>Data Systems</li><li>Process Engineering</li></ul>
             </div>
             <div className="service-card">
-              <div className="service-icon"></div>
+              <div className="service-icon">
+                <img src={Ai} />
+              </div>
               <h3>AI Solutions</h3>
               <ul><li>AI Copilots</li><li>AI Dashboards</li><li>Insight Engines</li><li>Predictive Systems</li></ul>
             </div>
             <div className="service-card">
-              <div className="service-icon"></div>
+              <div className="service-icon">
+                <img src={Conversational} />
+              </div>
               <h3>Conversational AI</h3>
               <ul><li>Custom Chatbots</li><li>WhatsApp Automation</li><li>Lead Qualification</li><li>AI Support Agents</li></ul>
             </div>
             <div className="service-card highlight">
-              <div className="service-icon"></div>
               <h3>Not sure which solution fits?</h3>
               <p className="service-cta-text">Let's figure out the right tech stack and approach for your business together.</p>
-              <a href="#contact" className="btn-outline-white">Book a Call</a>
+              <a href="#bannerform" className="btn-outline-white">Book a Call</a>
             </div>
           </div>
         </section>
@@ -203,7 +263,7 @@ function TechPartner() {
 
         <section id="work" style={{ background: '#fafafa' }}>
           <div className="section-header fade-up">
-            <div className="label-pill"><img src="https://www.figma.com/api/mcp/asset/eda3cf04-4f88-4046-9c1d-93e0503b9f8e" alt="" /> Outcomes</div>
+            <div className="label-pill"><img src={TataMotors} alt="" /> Outcomes</div>
             <h2 className="section-title">Technology Solutions<br />Built Around Business Needs</h2>
           </div>
           <div className="tech-partner-case-studies">
@@ -234,7 +294,7 @@ function TechPartner() {
             </div>
             <div className="case-col-right">
               <div className="case-card fade-up" style={{ transitionDelay: '0.1s' }}>
-                <img src="https://www.figma.com/api/mcp/asset/8c34112a-aeb0-4844-bb6f-d981606eac56" alt="Ryan Group" className="case-img" />
+                <img src={Ryan} alt="Ryan Group" className="case-img" />
                 <div className="case-card-body">
                   <span className="category-pill">Education</span>
                   <h3>Ryan Group</h3>
@@ -243,12 +303,12 @@ function TechPartner() {
                   <div className="case-tags">
                     <span className="tag" style={{ fontSize: '13px' }}>CMS Platform</span>
                     <span className="tag" style={{ fontSize: '13px' }}>Multi-site</span>
-                    <span className="tag" style={{ fontSize: '13px' }}>Automation</span>
+                    <span className="tag" style={{ fontSize: '13px' }}>Operational Efficiency Across Schools</span>
                   </div>
                 </div>
               </div>
               <div className="case-card fade-up" style={{ transitionDelay: '0.2s' }}>
-                <img src="https://www.figma.com/api/mcp/asset/a89f4b03-494a-4d09-bf54-2b23c0b5ca6c" alt="Pride of Cows" className="case-img" />
+                <img src={Pride} alt="Pride of Cows" className="case-img" />
                 <div className="case-card-body">
                   <span className="category-pill">Operations</span>
                   <h3>Pride of Cows</h3>
@@ -258,6 +318,8 @@ function TechPartner() {
                     <span className="tag" style={{ fontSize: '13px' }}>ERP</span>
                     <span className="tag" style={{ fontSize: '13px' }}>Mobile App</span>
                     <span className="tag" style={{ fontSize: '13px' }}>Analytics</span>
+                    <span className="tag" style={{ fontSize: '13px' }}>Business Operations Software</span>
+
                   </div>
                 </div>
               </div>
@@ -312,7 +374,7 @@ function TechPartner() {
                   <div className="case-tags">
                     <span className="tag" style={{ fontSize: '13px' }}>CMS Platform</span>
                     <span className="tag" style={{ fontSize: '13px' }}>Multi-site</span>
-                    <span className="tag" style={{ fontSize: '13px' }}>Automation</span>
+                    <span className="tag" style={{ fontSize: '13px' }}>Operational Efficiency Across Schools</span>
                   </div>
                 </div>
               </div>
@@ -335,6 +397,7 @@ function TechPartner() {
                     <span className="tag" style={{ fontSize: '13px' }}>ERP</span>
                     <span className="tag" style={{ fontSize: '13px' }}>Mobile App</span>
                     <span className="tag" style={{ fontSize: '13px' }}>Analytics</span>
+                    <span className="tag" style={{ fontSize: '13px' }}>Business Operations Software</span>
                   </div>
                 </div>
               </div>
@@ -370,14 +433,14 @@ function TechPartner() {
             <h2 className="section-title">The Cost of Waiting<br />Is Higher Than It Looks</h2>
           </div>
           <div className="cost-grid fade-up">
-            <div className="cost-card"><div className="cost-icon"></div><h3>Lost leads from weak digital journeys</h3><p>Traffic exists. Conversions don't follow. The digital presence is there but the pipeline doesn't reflect it.</p></div>
-            <div className="cost-card"><div className="cost-icon"></div><h3>Operational delays from manual workflows</h3><p>Manual processes don't scale. They create bottlenecks, errors, and team burnout that compound as you grow.</p></div>
-            <div className="cost-card"><div className="cost-icon"></div><h3>Fragmented systems slowing teams down</h3><p>Disconnected platforms mean duplicated effort, delayed reporting, and decisions made on incomplete information.</p></div>
-            <div className="cost-card"><div className="cost-icon"></div><h3>Missed growth from disconnected data</h3><p>Without unified data and automation, your growth opportunities stay invisible and your competitors move faster.</p></div>
+            <div className="cost-card"><div className="cost-icon"><img src={DigitalJourney} /></div><h3>Lost leads from weak digital journeys</h3><p>Traffic exists. Conversions don't follow. The digital presence is there but the pipeline doesn't reflect it.</p></div>
+            <div className="cost-card"><div className="cost-icon"><img src={Workflow} /></div><h3>Operational delays from manual workflows</h3><p>Manual processes don't scale. They create bottlenecks, errors, and team burnout that compound as you grow.</p></div>
+            <div className="cost-card"><div className="cost-icon"><img src={System} /></div><h3>Fragmented systems slowing teams down</h3><p>Disconnected platforms mean duplicated effort, delayed reporting, and decisions made on incomplete information.</p></div>
+            <div className="cost-card"><div className="cost-icon"><img src={Growth} /></div><h3>Missed growth from disconnected data</h3><p>Without unified data and automation, your growth opportunities stay invisible and your competitors move faster.</p></div>
           </div>
           <div className="cost-footer fade-up">
             <p>The businesses that move fastest are the ones that build first.</p>
-            <a href="#contact" className="btn-primary">Book a Call</a>
+            <a href="#bannerform" className="btn-primary">Book a Call</a>
           </div>
         </section>
 
@@ -435,20 +498,34 @@ function TechPartner() {
           <div className="label-pill" style={{ margin: '0 auto 24px', justifyContent: 'center' }}><img src="https://www.figma.com/api/mcp/asset/eda3cf04-4f88-4046-9c1d-93e0503b9f8e" alt="" /> Let's Build</div>
           <h2 className="fade-up">Technology That Moves<br />Your Business Forward</h2>
           <p className="fade-up">Whether you need a high-performance website, custom software, automation infrastructure, or AI-powered systems — let's build what your business needs next.</p>
-          <p className="sub fade-up">No sales pressure. Just a focused conversation about what you're building.</p>
           <div className="cta-btn-row fade-up">
-            <a href="#" className="btn-primary" style={{ fontSize: '20px', padding: '18px 48px' }}>Book a Call</a>
-            <a href="#audit" className="btn-outline-blue" style={{ fontSize: '20px', padding: '18px 48px' }}>Request a Free Audit</a>
+            <a href="#bannerform" className="btn-primary">Book a Call</a>
+            <a href="#audit" className="btn-outline-blue">Request a Free Audit</a>
           </div>
+          <p className="sub fade-up">No sales pressure. Just a focused conversation about what you're building.</p>
         </section>
 
 
         <div className="mobile-sticky-cta">
-          <a href="#contact" className="book">Book a Call</a>
+          <a href="#bannerform" className="book">Book a Call</a>
           <a href="#audit" className="audit">Request Free Audit</a>
         </div>
       </div>
-      <Footer />
+
+      <footer className="tp-footer">
+        <div className="tp-footer-container">
+          <div className="tp-footer-logo">
+            <Link to="/"><img src={AGENCY09logo} alt="AGENCY09" /></Link>
+          </div>
+          <div className="tp-footer-copy">
+            © 2026 Agency09. All rights reserved.
+          </div>
+          <div className="tp-footer-links">
+            <Link to="/privacy-policy">Privacy</Link>
+            <Link to="/connect">Contact</Link>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }

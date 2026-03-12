@@ -114,7 +114,7 @@ projectType:""
 });
 
 //setResponseMessage(data.message);
-window.location.href = 'https://www.agency09.in/TechProject/thank-you';
+window.location.href = 'https://www.agency09.in/tech-partner/tech-partner-thank-you';
 }
 
 }catch(error){
@@ -130,16 +130,17 @@ setIsSubmitting(false);
 
 return(
 
-<form className="tech-partner-hero-form-card" onSubmit={handleSubmit}>
+<form className="tech-partner-hero-form" onSubmit={handleSubmit}>
 
 <h3>Start Your Project</h3>
+<p>Tell us what you're building. We'll shape the right solution.</p>
 
 <div className="form-field">
-<label>Name*</label>
+{/* <label>Name*</label> */}
 <input
 type="text"
 name="name"
-placeholder="Your full name"
+placeholder="Name*"
 value={formData.name}
 onChange={handleChange}
 />
@@ -147,11 +148,11 @@ onChange={handleChange}
 </div>
 
 <div className="form-field">
-<label>Company*</label>
+{/* <label></label> */}
 <input
 type="text"
 name="company"
-placeholder="Company name"
+placeholder="Company*"
 value={formData.company}
 onChange={handleChange}
 />
@@ -159,11 +160,11 @@ onChange={handleChange}
 </div>
 
 <div className="form-field">
-<label>Email*</label>
+{/* <label>Email*</label> */}
 <input
 type="email"
 name="email"
-placeholder="hello@company.com"
+placeholder="Email ID*"
 value={formData.email}
 onChange={handleChange}
 />
@@ -171,11 +172,11 @@ onChange={handleChange}
 </div>
 
 <div className="form-field">
-<label>Phone*</label>
+{/* <label>Phone*</label> */}
 <input
 type="tel"
 name="phone"
-placeholder="+91 98765 43210"
+placeholder="Phone Number*"
 value={formData.phone}
 onChange={handleChange}
 />
@@ -183,13 +184,13 @@ onChange={handleChange}
 </div>
 
 <div className="form-field">
-<label>Project Type*</label>
+{/* <label>Project Type*</label> */}
 <select
 name="projectType"
 value={formData.projectType}
 onChange={handleChange}
 >
-<option value="">Select type</option>
+<option value="">Project Type</option>
 <option>Website</option>
 <option>Ecommerce</option>
 <option>Mobile App</option>

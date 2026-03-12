@@ -104,6 +104,7 @@ import DesigningAScalableContentDrivenEducationWebsiteForEduEdgeGlobal from './P
 import Interactive3DGameExperienceForTataMotorsAceProLaunch from './Pages/Work/CaseStudy/Tech/Interactive3DGameExperienceForTataMotorsAceProLaunch'
 import BuildingTokosFirstDigitalFundraisingPlatformforSchooqlsAcrossNewZealand from './Pages/Work/CaseStudy/Tech/BuildingTokosFirstDigitalFundraisingPlatformforSchoolsAcrossNewZealand'
 import TransformingDetourozintoaConversionDrivenCampervanBookingPlatform from './Pages/Work/CaseStudy/Tech/TransformingDetourozintoaConversionDrivenCampervanBookingPlatform'
+import TechPartnerThankYou from './Pages/tech-partner-thank-you'
 
 // SEO 
 
@@ -198,6 +199,7 @@ function App() {
        <Route exact path='/partner-with-us-thank-you' element={<PartnerWithUsThankYou/>}/>
        <Route exact path='/get-in-touch-thank-you' element={<GetInTouchThankYou/>}/>
        <Route exact path='/ai' element={<AI/>}/>
+       <Route exact path='tech-partner/tech-partner-thank-you' element={<TechPartnerThankYou/>} />
 
        <Route exact path="/work/case-studies/igcb-dual-country-seo-success" element={<IGCBDualCountrySEO />} />
       <Route exact path="/work/case-studies/groupsoft-us-organic-seo-recovery" element={<GroupsoftUS />} />

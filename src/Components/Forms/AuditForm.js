@@ -117,7 +117,7 @@ website: ""
 });
 
 //setResponseMessage(data.message);
-window.location.href = 'https://www.agency09.in/TechAudit/thank-you';
+window.location.href = 'https://www.agency09.in/tech-partner/tech-partner-thank-you';
 
 }
 
@@ -136,19 +136,20 @@ setButtonText("REQUEST FREE AUDIT");
 
 return (
 
-<form className="audit-form-card" onSubmit={handleSubmit}>
+<form className="audit-form" onSubmit={handleSubmit}>
 
+<div className="label-pill"><img src="https://www.figma.com/api/mcp/asset/eda3cf04-4f88-4046-9c1d-93e0503b9f8e" alt="" />Complimentary · No commitment</div>
 <h3>REQUEST YOUR FREE AUDIT</h3>
-
+<p>Share the basics. Our senior technology team will prepare a tailored review within 48 hours.</p>
 
 <div className="audit-field">
 
-<label>Email*</label>
+{/* <label>Email*</label> */}
 
 <input
 type="email"
 name="email"
-placeholder="hello@company.com"
+placeholder="Email ID*"
 value={formData.email}
 onChange={handleChange}
 className={errors.email ? "input-error" : ""}
@@ -164,12 +165,12 @@ className={errors.email ? "input-error" : ""}
 
 <div className="audit-field">
 
-<label>Work Email*</label>
+{/* <label>Work Email*</label> */}
 
 <input
 type="email"
 name="workEmail"
-placeholder="you@company.com"
+placeholder="Work Email"
 value={formData.workEmail}
 onChange={handleChange}
 className={errors.workEmail ? "input-error" : ""}
@@ -185,12 +186,12 @@ className={errors.workEmail ? "input-error" : ""}
 
 <div className="audit-field">
 
-<label>Company / Website URL*</label>
+{/* <label>Company / Website URL*</label> */}
 
 <input
 type="url"
 name="website"
-placeholder="https://yourwebsite.com"
+placeholder="Company / Website URL"
 value={formData.website}
 onChange={handleChange}
 className={errors.website ? "input-error" : ""}
