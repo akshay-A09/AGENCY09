@@ -140,7 +140,7 @@ return (
 
 <div className="label-pill"><img src="https://www.figma.com/api/mcp/asset/eda3cf04-4f88-4046-9c1d-93e0503b9f8e" alt="" />Complimentary · No commitment</div>
 <h3>REQUEST YOUR FREE AUDIT</h3>
-<p>Share the basics. Our senior technology team will prepare a tailored review within 48 hours.</p>
+<p>Share the basics. Our senior technology team will prepare a tailored review.</p>
 
 <div className="audit-field">
 

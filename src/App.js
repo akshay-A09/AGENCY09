@@ -86,6 +86,7 @@ import RangiloRe from './Pages/Work/CaseStudy/Production/RangiloRe'
 import OrmPortal from './Pages/Work/CaseStudy/Tech/ORMPortal'
 import RGIChatbot from './Pages/Work/CaseStudy/Tech/TransformingRGICustomerCommunicationwithanIntelligentWhatsAppChatbot'
 import Natch from './Pages/Work/CaseStudy/Tech/RevampingNatchSnacksWebsitetoDriveConversionsandReducePurchaseFriction'
+import Lvlup from './Pages/Work/CaseStudy/Keyword/FromInvisibletoAIDiscoverableLvlupGymsDigitalGrowthStory'
 // New Feb 2026
 
 // SEO
@@ -105,6 +106,7 @@ import Interactive3DGameExperienceForTataMotorsAceProLaunch from './Pages/Work/C
 import BuildingTokosFirstDigitalFundraisingPlatformforSchooqlsAcrossNewZealand from './Pages/Work/CaseStudy/Tech/BuildingTokosFirstDigitalFundraisingPlatformforSchoolsAcrossNewZealand'
 import TransformingDetourozintoaConversionDrivenCampervanBookingPlatform from './Pages/Work/CaseStudy/Tech/TransformingDetourozintoaConversionDrivenCampervanBookingPlatform'
 import TechPartnerThankYou from './Pages/tech-partner-thank-you'
+import PMEDubaiDigitalGrowthCaseStudySEOTrafficLeadGenerationSuccess from './Pages/Work/CaseStudy/Keyword/PMEDubaiDigitalGrowthCaseStudySEOTrafficLeadGenerationSuccess'
 
 // SEO 
 
@@ -215,10 +217,11 @@ function App() {
       <Route exact path="/work/case-studies/designing-a-scalable-content-driven-education-website-for-eduedge-global" element={<DesigningAScalableContentDrivenEducationWebsiteForEduEdgeGlobal />} />
       <Route exact path="/work/case-studies/interactive-3d-game-experience-for-tata-motors-ace-pro-launch" element={<Interactive3DGameExperienceForTataMotorsAceProLaunch />} />
       <Route exact path='/work/case-studies/transforming-rgi-customer-communication-with-an-intelligent-whatsapp-chatbot' element={<RGIChatbot />} />
-      
+      <Route exact path='/work/case-studies/from-invisible-to-AI-discoverable-lvlup-gyms-digital-growth-story' element={<Lvlup />} />
           <Route exact path='/work/case-studies/building-tokos-first-digital-fundraising-platform-for-schools-across-new-zealand' element={<BuildingTokosFirstDigitalFundraisingPlatformforSchooqlsAcrossNewZealand />} />
           <Route exact path='/work/case-studies/transforming-detouroz-into-a-conversion-driven-campervan-booking-platform' element={<TransformingDetourozintoaConversionDrivenCampervanBookingPlatform />} />
-      
+          <Route exact path='/work/case-studies/pme-dubai-digital-growth-case-study-seo-traffic-and-lead-generation-success' element={<PMEDubaiDigitalGrowthCaseStudySEOTrafficLeadGenerationSuccess/>} />
+'
         </Routes>
     </div>
   );

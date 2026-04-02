@@ -5,6 +5,8 @@ import worknahar from '../../../Assets/Images/work/nahar-group.jpg';
 import workryan from '../../../Assets/Images/work/ryan-group.jpg';
 import workmahindrasolariz from '../../../Assets/Images/work/mahindra-solarize.jpg';
 import worksiyarmas from '../../../Assets/Images/work/siyaram_new.jpg';
+import lvlup from '../../../Assets/Images/work/lvlup.webp'
+import PME from '../../../Assets/Images/work/pmeDubai.jpeg'
 
 import apolloenergyanalytics from '../../../Assets/Images/work/Apollo_Energy_Analytics.jpg';
 import Amazonas_4U from '../../../Assets/Images/work/Amazonas_4U.jpg';
@@ -17,6 +19,30 @@ import siyarmas from '../../../Assets/Images/work/Siyarams.jpg';
 // Keyword
 export const KeywordData = [
 
+     {
+                id: 1,
+                title: 'PME Dubai Digital Growth Case Study: SEO, Traffic & Lead Generation Success',
+                tags: [
+                    { name: 'Construction Machinery & Equipment', link: '' },
+                    { name: 'Digital Marketing, SEO, Website Launch', link: '' }
+                ],
+                image: PME,
+                link: '/work/case-studies/pme-dubai-digital-growth-case-study-seo-traffic-and-lead-generation-success',
+                brand: "PME Dubai",
+                department: 'Keyword'
+            },
+ {
+        id: 1,
+        title: 'From Invisible to AI-Discoverable: Lvlup Gyms Digital Growth Story',
+        tags: [
+            { name: 'Gymnastics', link: '' },
+            { name: 'Website & SEO', link: '' }
+        ],
+        image: lvlup,
+        link: '/work/case-studies/from-invisible-to-AI-discoverable-lvlup-gyms-digital-growth-story',
+        brand: "iGCB",
+        department: 'Keyword'
+    },
 
     {
         id: 1,

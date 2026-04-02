@@ -113,12 +113,7 @@ const HighPerformanceMarketingWebsiteForAdleo = () => {
               <div className='cSsecMinBCol'>
                 <h4>Overview</h4>
                 <p>
-                  To strengthen Adleo’s online presence and clearly communicate its wide range of branding and 
-                  marketing services, we designed and developed a modern, interactive marketing website.
-                </p>
-                <p>
-                  The website was crafted to reflect Adleo’s creative capabilities, improve brand visibility, 
-                  and deliver a smooth experience for users exploring services or submitting enquiries.
+                  To strengthen Adleo’s online presence and clearly communicate its wide range of branding and marketing services, we designed and developed a modern, interactive marketing website. The website was created to reflect Adleo’s creative capabilities, improve brand visibility, and provide a smooth experience for users exploring services or submitting enquiries.
                 </p>
               </div>
 
@@ -138,40 +133,40 @@ const HighPerformanceMarketingWebsiteForAdleo = () => {
               <div className='cSsecMinBCol'>
                 <h4>Objective</h4>
                 <ul>
-                  <li>Create a strong digital identity representing Adleo as a full-service agency.</li>
-                  <li>Clearly showcase all services in a structured, easy-to-understand manner.</li>
-                  <li>Engage visitors through modern design and smooth animations.</li>
-                  <li>Enable efficient lead generation through integrated enquiry forms.</li>
+                  <li>To create a strong digital identity that represents Adleo as a full-service branding and marketing agency.</li>
+                  <li>To clearly showcase all services in a structured and easy-to-understand manner.</li>
+                  <li>To engage visitors through modern design and smooth animations.</li>
+                  <li>To enable efficient lead generation through integrated enquiry forms.</li>
                 </ul>
               </div>
 
               <div className='cSsecMinBCol'>
                 <h4>Challenges</h4>
                 <ul>
-                  <li>Outdated website that no longer reflected Adleo’s brand positioning.</li>
-                  <li>Unclear service presentation making it hard to understand offerings.</li>
-                  <li>Lack of engagement beyond the first page.</li>
-                  <li>Performance and load speed issues affecting user experience.</li>
+                  <li>The existing website did not reflect Adleo’s current brand positioning and felt outdated for a modern branding agency.</li>
+                  <li>Services were not clearly presented, making it difficult for visitors to quickly understand the full scope of offerings.</li>
+                  <li>The website lacked engagement and did not encourage users to explore beyond the first page.</li>
+                  <li>The website performance and loading speed needed improvement to meet modern user expectations.</li>
                 </ul>
               </div>
 
               <div className='cSsecMinBCol'>
                 <h4>Approach</h4>
                 <ul>
-                  <li>Redesigned the site with a mobile-first, modern visual language.</li>
-                  <li>Structured services using a clear and intuitive sitemap.</li>
-                  <li>Introduced smooth, purposeful animations for engagement.</li>
-                  <li>Optimised performance and tested across devices for speed and stability.</li>
+                  <li>Redesigned the website with a mobile-first modern look and clear structure that aligns with brand and market positioning.</li>
+                  <li>Organised services through a well-planned sitemap, making it easier for users to discover and understand each offering.</li>
+                  <li>Introduced smooth, purposeful animations to increase engagement without affecting usability or speed.</li>
+                  <li>Optimised performance and conducted thorough testing to ensure fast load times and a smooth experience across devices.</li>
                 </ul>
               </div>
 
               <div className='cSsecMinBCol'>
                 <h4>Results</h4>
                 <ul>
-                  <li>Average session duration increased to over 3 minutes with 56% engagement.</li>
-                  <li>Indexed pages improved from 8 to 15.</li>
-                  <li>Page load time reduced from 8.9 seconds to under 3 seconds.</li>
-                  <li>Stronger digital presence supporting lead generation and credibility.</li>
+                  <li>Users spent more time exploring Adleo’s services, with average session duration improving from a few seconds to over 3 minutes and engagement reaching 56%.</li>
+                  <li>Improved Indexed pages increasing from 8 to 15.</li>
+                  <li>Faster page performance, with page load time improving from 8.9 seconds to under 3 seconds, delivering a smoother browsing experience.</li>
+                  <li>A stronger digital presence that supports lead generation and positions Adleo as a credible, modern branding and marketing agency.</li>
                 </ul>
               </div>
 

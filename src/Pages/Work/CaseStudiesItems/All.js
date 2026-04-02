@@ -5,6 +5,7 @@ import Ryan from '../../../Assets/Images/work/Ryan.webp';
 import GroupSoft from '../../../Assets/Images/work/GroupSoft.webp';
 import Siyarams from '../../../Assets/Images/work/siyarams.webp';
 import Bitspilani from '../../../Assets/Images/work/Bitspilani.webp';
+import lvlup from '../../../Assets/Images/work/lvlup.webp'
 
 import Tribevibe from '../../../Assets/Images/work/LaffaireSelect.jpg';
 import americanTourister from '../../../Assets/Images/work/AmericanTourister.webp';
@@ -56,7 +57,7 @@ import pretFestive1 from '../../../Assets/Images/work/pret_festive1Cover.webp'
 import Natch from '../../../Assets/Images/work/natch/natch-main.webp'; 
 import ORM from '../../../Assets/Images/work/orm-portal/orm-portal-main-thumbnail.webp'; 
 import RGIChatbot from '../../../Assets/Images/work/RGI-chatbot/rgi-chatbot-main.webp'; 
-
+import PME from '../../../Assets/Images/work/pmeDubai.jpeg'
 
 
 import apolloenergyanalytics from '../../../Assets/Images/work/Apollo_Energy_Analytics.jpg';
@@ -66,7 +67,7 @@ import igcb from '../../../Assets/Images/work/IGCB.jpg';
 import reaviva from '../../../Assets/Images/work/Reaviva.jpg';
 import shopzuma from '../../../Assets/Images/work/Shop_Zuma-1.jpg';
 import siyarmas from '../../../Assets/Images/work/Siyarams.jpg';
-
+import TataGame from '../../../Assets/Images/work/Tata-game-thumbnail.jpeg'
 
 // Tech
 export const allData = [
@@ -371,6 +372,20 @@ export const allData = [
         brand: "Siyaram's",
         department: 'Tech'
     },
+
+     {
+        id: 4,
+        title: "Interactive 3D Game Experience for Tata Motors’ Ace Pro Launch",
+        tags: [
+            { name: 'Web Design', link: '' },
+            { name: 'Web Development', link: '' },
+            { name: 'UI/UX Design', link: '' }
+        ],
+        image: TataGame,
+        link: '/work/case-studies/interactive-3d-game-experience-for-tata-motors-ace-pro-launch ',
+        brand: "Tata",
+        department: 'Tech'
+    },
   
   
 
@@ -477,6 +492,19 @@ export const allData = [
         image: workmahindrasolariz,
         link: '/work/case-studies/industry-leading-organic-search-results-from-scratch-for-mahindra-solarize',
         brand: "Mahindra Solarize",
+        department: 'Keyword'
+    },
+
+    {
+        id: 1,
+        title: 'From Invisible to AI-Discoverable: Lvlup Gyms Digital Growth Story',
+        tags: [
+            { name: 'Gymnastics', link: '' },
+            { name: 'Website & SEO', link: '' }
+        ],
+        image: lvlup,
+        link: '/work/case-studies/from-invisible-to-AI-discoverable-lvlup-gyms-digital-growth-story',
+        brand: "iGCB",
         department: 'Keyword'
     },
     // {
@@ -717,6 +745,19 @@ export const allData = [
             image: siyarmas,
             link: '/work/case-studies/siyaram-gmb-local-seo-management',
             brand: "Siyaram’s",
+            department: 'Keyword'
+        },
+
+        {
+            id: 12,
+            title: 'PME Dubai Digital Growth Case Study: SEO, Traffic & Lead Generation Success',
+            tags: [
+                { name: 'Construction Machinery & Equipment', link: '' },
+                { name: 'Digital Marketing, SEO, Website Launch', link: '' }
+            ],
+            image: PME,
+            link: '/work/case-studies/pme-dubai-digital-growth-case-study-seo-traffic-and-lead-generation-success',
+            brand: "PME Dubai",
             department: 'Keyword'
         },
 

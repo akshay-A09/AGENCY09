@@ -18,13 +18,28 @@ import tataMain from '../../../Assets/Images/work/tata-trucks/tata-main.webp';
 import Natch from '../../../Assets/Images/work/natch/natch-main.webp'; 
 import ORM from '../../../Assets/Images/work/orm-portal/orm-portal-main-thumbnail.webp'; 
 import RGIChatbot from '../../../Assets/Images/work/RGI-chatbot/rgi-chatbot-main.webp'; 
-
+import TataGame from '../../../Assets/Images/work/Tata-game-thumbnail.jpeg'
 
 
 // Tech
 export const techData = [
     // New
-     
+    
+    
+    {
+        id: 4,
+        title: "Interactive 3D Game Experience for Tata Motors’ Ace Pro Launch",
+        tags: [
+            { name: 'Web Design', link: '' },
+            { name: 'Web Development', link: '' },
+            { name: 'UI/UX Design', link: '' }
+        ],
+        image: TataGame,
+        link: '/work/case-studies/interactive-3d-game-experience-for-tata-motors-ace-pro-launch ',
+        brand: "Tata",
+        department: 'Tech'
+    },
+
     {
         id: 1,
         title: "Revamping Natch Snacks’ Website to Drive Conversions and Reduce Purchase Friction",

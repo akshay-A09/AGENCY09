@@ -9,11 +9,12 @@ import SVGCurveLine from '../../../../Hooks/SVGCurveLine';
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 
 import logo from "../../../../Assets/Images/logos/work/tataMotors2.png"
-import ourwork1 from '../../../../Assets/Images/work/tata-trucks/tata-main.webp';
+import tataThumbnailImage from '../../../../Assets/Images/work/Tata-game-thumbnail.jpeg';
 import ourwork2 from '../../../../Assets/Images/work/tata-trucks/tata-slide1.webp';
 import ourwork3 from '../../../../Assets/Images/work/tata-trucks/tata-slide2.webp';
 import ourwork4 from '../../../../Assets/Images/work/tata-trucks/tata-slide3.webp';
 import ourwork5 from '../../../../Assets/Images/work/tata-trucks/tata-slide4.webp';
+import ourwork6 from '../../../../Assets/Video/tata-game.mp4'
 
 import CaseStudyNav from '../../../../Components/TechCaseStudyNav';
 const externalLink = "#";
@@ -195,19 +196,21 @@ const Interactive3DGameExperienceForTataMotorsAceProLaunch = () => {
           <div className='cSsecMinC'>
             <div className='imgCol1 imgCol'>
               <span>
-                <img src={ourwork1} loading='lazy' alt='Tata Motors Ace Pro 3D Game'/>
+                <video controls poster={tataThumbnailImage} style={{ width: "100%", height: "100%", objectFit: "cover" }}>
+                  <source src={ourwork6} type='video/mp4' />
+                  </video>
               </span>
             </div>
           </div>
 
-          <div className='mainslider'>
+          {/* <div className='mainslider'>
             <Slider {...mainSlider} className='clientelSlider slick-slider'>
               <div className='imgCol1 imgCol'><span><img src={ourwork2} loading='lazy' /></span></div>
               <div className='imgCol1 imgCol'><span><img src={ourwork3} loading='lazy' /></span></div>
               <div className='imgCol1 imgCol'><span><img src={ourwork4} loading='lazy' /></span></div>
               <div className='imgCol1 imgCol'><span><img src={ourwork5} loading='lazy' /></span></div>
             </Slider>
-          </div>
+          </div> */}
 
         </div>
       </section>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import ProjectForm from '../Components/Forms/ProjectForm';
@@ -27,7 +28,7 @@ import DigitalJourney from '../Assets/Images/icons/digital-journey.png'
 import Workflow from '../Assets/Images/icons/workflow.png'
 import System from '../Assets/Images/icons/system.png'
 import Growth from '../Assets/Images/icons/growth.png'
-
+import Natch from '../Assets/Images/work/natch.jpeg'
 
 
 function TechPartner() {
@@ -65,6 +66,27 @@ function TechPartner() {
 
   return (
     <>
+
+     <Helmet>
+          <title>Build Digital Platforms That Scale Businesses | Top Creative & Digital Marketing Agency in Mumbai, India</title>
+          <link rel="canonical" href="https://www.agency09.in/about"/>
+          <meta name="robots" content="index, follow"/> 
+    
+          <meta name="description" content="From enterprise websites to AI-powered automation — we build technology systems designed for growth, operational efficiency, and long-term scale."/>
+          <meta property="og:title" content="Build Digital Platforms That Scale Businesses | Top Creative & Digital Marketing Agency in Mumbai, India"/> 
+          <meta property="og:description" content="From enterprise websites to AI-powered automation — we build technology systems designed for growth, operational efficiency, and long-term scale."/> 
+          <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
+          <meta property="og:type" content="website"/> 
+    
+    
+          <meta name="twitter:card" content="summary"/> 
+          <meta name="twitter:site" content="@AGENCY09"/> 
+          <meta name="twitter:creator" content="@AGENCY09"/> 
+          <meta name="twitter:url" content="https://www.agency09.in/about"/> 
+          <meta name="twitter:description" content="From enterprise websites to AI-powered automation — we build technology systems designed for growth, operational efficiency, and long-term scale."/> 
+          <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/> 
+    
+        </Helmet>
       <header className="tech-partner-header">
         <div className="tp-header-container">
           <div className="tp-logo">
@@ -308,17 +330,25 @@ function TechPartner() {
                 </div>
               </div>
               <div className="case-card fade-up" style={{ transitionDelay: '0.2s' }}>
-                <img src={Pride} alt="Pride of Cows" className="case-img" />
+                <img src={Natch} alt="Pride of Cows" className="case-img" />
                 <div className="case-card-body">
-                  <span className="category-pill">Operations</span>
-                  <h3>Pride of Cows</h3>
-                  <p>Built an end-to-end operational ecosystem: ERP, consumer app, delivery partner app, and analytics dashboards working as one connected system.</p>
+                  <span className="category-pill">FMCG</span>
+                  <h3>Natch Snacks</h3>
+                  <p>Reimagined the brand’s D2C website with a cleaner Shopify experience focused on clearer product journeys, lower buying friction, and stronger conversion intent.</p>
+                  <div className="metrics-row">
+                    <span className="metric-pill">Smoother buying journey</span>
+                    <span className="metric-pill">Better product discovery</span>
+                  </div>
+                  <div className="metrics-row">
+                    <span className="metric-pill">Optimised CTAs</span>
+                    <span className="metric-pill">Lower decision friction</span>
+                  </div>
                   <hr className="case-divider" />
                   <div className="case-tags">
-                    <span className="tag" style={{ fontSize: '13px' }}>ERP</span>
-                    <span className="tag" style={{ fontSize: '13px' }}>Mobile App</span>
-                    <span className="tag" style={{ fontSize: '13px' }}>Analytics</span>
-                    <span className="tag" style={{ fontSize: '13px' }}>Business Operations Software</span>
+                    <span className="tag" style={{ fontSize: '13px' }}>Website Revamp</span>
+                    <span className="tag" style={{ fontSize: '13px' }}>Shopify</span>
+                    <span className="tag" style={{ fontSize: '13px' }}>Conversion Optimisation</span>
+                    <span className="tag" style={{ fontSize: '13px' }}>Ux Enhancement</span>
 
                   </div>
                 </div>
@@ -383,21 +413,29 @@ function TechPartner() {
             <div className={`case-accordion-item ${openCase === 2 ? 'open' : ''}`}>
               <button className="case-accordion-header" onClick={() => toggleCase(2)}>
                 <div className="case-acc-title">
-                  <span className="acc-cat">Operations</span>
-                  <span className="acc-name">Pride of Cows</span>
+                  <span className="acc-cat">FMCG</span>
+                  <span className="acc-name">Natch Snacks</span>
                 </div>
                 <span className="case-acc-toggle">+</span>
               </button>
               <div className="case-accordion-body">
-                <img src="https://www.figma.com/api/mcp/asset/a89f4b03-494a-4d09-bf54-2b23c0b5ca6c" alt="Pride of Cows" className="case-img" />
+                <img src={Natch} alt="Natch Snacks" className="case-img" />
                 <div className="case-card-body">
-                  <p>Built an end-to-end operational ecosystem: ERP, consumer app, delivery partner app, and analytics dashboards working as one connected system.</p>
+                  <p>Reimagined the brand’s D2C website with a cleaner Shopify experience focused on clearer product journeys, lower buying friction, and stronger conversion intent.</p>
+                   <div className="metrics-row">
+                    <span className="metric-pill">Smoother buying journey</span>
+                    <span className="metric-pill">Better product discovery</span>
+                  </div>
+                  <div className="metrics-row">
+                    <span className="metric-pill">Optimised CTAs</span>
+                    <span className="metric-pill">Lower decision friction</span>
+                  </div>
                   <hr className="case-divider" />
                   <div className="case-tags">
-                    <span className="tag" style={{ fontSize: '13px' }}>ERP</span>
-                    <span className="tag" style={{ fontSize: '13px' }}>Mobile App</span>
-                    <span className="tag" style={{ fontSize: '13px' }}>Analytics</span>
-                    <span className="tag" style={{ fontSize: '13px' }}>Business Operations Software</span>
+                    <span className="tag" style={{ fontSize: '13px' }}>Website Revamp</span>
+                    <span className="tag" style={{ fontSize: '13px' }}>Shopify</span>
+                    <span className="tag" style={{ fontSize: '13px' }}>Conversion Optimisation</span>
+                    <span className="tag" style={{ fontSize: '13px' }}>Ux Enhancement</span>
                   </div>
                 </div>
               </div>
@@ -522,7 +560,6 @@ function TechPartner() {
           </div>
           <div className="tp-footer-links">
             <Link to="/privacy-policy">Privacy</Link>
-            <Link to="/connect">Contact</Link>
           </div>
         </div>
       </footer>
