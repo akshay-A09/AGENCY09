@@ -221,7 +221,6 @@ function App() {
           <Route exact path='/work/case-studies/building-tokos-first-digital-fundraising-platform-for-schools-across-new-zealand' element={<BuildingTokosFirstDigitalFundraisingPlatformforSchooqlsAcrossNewZealand />} />
           <Route exact path='/work/case-studies/transforming-detouroz-into-a-conversion-driven-campervan-booking-platform' element={<TransformingDetourozintoaConversionDrivenCampervanBookingPlatform />} />
           <Route exact path='/work/case-studies/pme-dubai-digital-growth-case-study-seo-traffic-and-lead-generation-success' element={<PMEDubaiDigitalGrowthCaseStudySEOTrafficLeadGenerationSuccess/>} />
-'
         </Routes>
     </div>
   );

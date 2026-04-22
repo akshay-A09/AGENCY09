@@ -29,7 +29,8 @@ import Workflow from '../Assets/Images/icons/workflow.png'
 import System from '../Assets/Images/icons/system.png'
 import Growth from '../Assets/Images/icons/growth.png'
 import Natch from '../Assets/Images/work/natch.jpeg'
-
+import Star from '../Assets/Images/icons/star-icon.png';
+import technologyBG from '../Assets/Images/technology-bg.png';
 
 function TechPartner() {
   const [openFaq, setOpenFaq] = useState(0);
@@ -115,11 +116,11 @@ function TechPartner() {
       <div className="app-wrapper">
         <section className="tech-partner-hero" style={{ paddingTop: '60px' }}>
           <div className="tech-partner-hero-bg">
-            <img src="https://www.figma.com/api/mcp/asset/3178ce01-a5a9-47e7-a9ea-68e9e420e81b" alt="" />
+            <img src={technologyBG} alt="" />
           </div>
           <div className="tech-partner-hero-content">
             <div className="label-pill fade-up">
-              <img src="https://www.figma.com/api/mcp/asset/eda3cf04-4f88-4046-9c1d-93e0503b9f8e" alt="" /> Technology Partner
+              <img src={Star} alt="" /> Technology Partner
             </div>
             <h1 className="fade-up" style={{ transitionDelay: '0.1s' }}>
               Build Digital<br />Platforms That<br /><span className="blue">Scale Businesses.</span>
@@ -154,7 +155,7 @@ function TechPartner() {
 
         <section id="recognition">
           <div className="section-header fade-up">
-            <div className="label-pill"><img src="https://www.figma.com/api/mcp/asset/eda3cf04-4f88-4046-9c1d-93e0503b9f8e" alt="" /> Recognition</div>
+            <div className="label-pill"><img src={Star} alt="" /> Recognition</div>
             <h2 className="section-title">Is This Where Your<br />Business Is Today?</h2>
           </div>
           <div className="pain-grid fade-up">
@@ -187,7 +188,7 @@ function TechPartner() {
 
         <section id="services" style={{ background: '#fafafa' }}>
           <div className="section-header fade-up">
-            <div className="label-pill"><img src="https://www.figma.com/api/mcp/asset/eda3cf04-4f88-4046-9c1d-93e0503b9f8e" alt="" /> What We Build</div>
+            <div className="label-pill"><img src={Star} alt="" /> What We Build</div>
             <h2 className="section-title">Technology Solutions<br />Built Around Business Needs</h2>
           </div>
           <div className="tech-partner-services-grid fade-up">
@@ -252,7 +253,7 @@ function TechPartner() {
 
         <section id="capabilities">
           <div className="section-header fade-up">
-            <div className="label-pill"><img src="https://www.figma.com/api/mcp/asset/eda3cf04-4f88-4046-9c1d-93e0503b9f8e" alt="" /> Capabilities</div>
+            <div className="label-pill"><img src={Star} alt="" /> Capabilities</div>
             <h2 className="section-title">Built Across Modern<br />Technology Stacks</h2>
           </div>
           <div className="stacks-grid fade-up">
@@ -291,7 +292,7 @@ function TechPartner() {
           <div className="tech-partner-case-studies">
             <div>
               <div className="case-card fade-up">
-                <img src="https://www.figma.com/api/mcp/asset/b55cccf6-677b-47c5-a677-14599a53c54f" alt="Tata Motors" className="case-img" />
+                <img src={TataMotors} alt="Tata Motors" className="case-img" />
                 <div className="case-card-body">
                   <span className="category-pill">Enterprise</span>
                   <h3>Tata Motors</h3>
@@ -366,7 +367,7 @@ function TechPartner() {
                 <span className="case-acc-toggle">+</span>
               </button>
               <div className="case-accordion-body">
-                <img src="https://www.figma.com/api/mcp/asset/b55cccf6-677b-47c5-a677-14599a53c54f" alt="Tata Motors" className="case-img" />
+                <img src={TataMotors} alt="Tata Motors" className="case-img" />
                 <div className="case-card-body">
                   <p>Unified a fragmented commercial vehicle digital ecosystem into a scalable, high-performance platform with measurable business impact across the full digital estate.</p>
                   <div className="metrics-row">
@@ -397,7 +398,7 @@ function TechPartner() {
                 <span className="case-acc-toggle">+</span>
               </button>
               <div className="case-accordion-body">
-                <img src="https://www.figma.com/api/mcp/asset/8c34112a-aeb0-4844-bb6f-d981606eac56" alt="Ryan Group" className="case-img" />
+                <img src={Ryan} alt="Ryan Group" className="case-img" />
                 <div className="case-card-body">
                   <p>Consolidated 100+ school websites under a single CMS — streamlining content management, brand consistency, and operations at scale.</p>
                   <hr className="case-divider" />
@@ -445,7 +446,7 @@ function TechPartner() {
 
         <section id="process">
           <div className="section-header fade-up">
-            <div className="label-pill"><img src="https://www.figma.com/api/mcp/asset/eda3cf04-4f88-4046-9c1d-93e0503b9f8e" alt="" /> How We Work</div>
+            <div className="label-pill"><img src={Star} alt="" /> How We Work</div>
             <h2 className="section-title">How We Build</h2>
           </div>
           <div className="how-section">
@@ -467,7 +468,7 @@ function TechPartner() {
 
         <section id="cost">
           <div className="section-header fade-up">
-            <div className="label-pill"><img src="https://www.figma.com/api/mcp/asset/eda3cf04-4f88-4046-9c1d-93e0503b9f8e" alt="" /> The Real Cost</div>
+            <div className="label-pill"><img src={Star} alt="" /> The Real Cost</div>
             <h2 className="section-title">The Cost of Waiting<br />Is Higher Than It Looks</h2>
           </div>
           <div className="cost-grid fade-up">
@@ -484,7 +485,7 @@ function TechPartner() {
 
         <section id="faq" style={{ background: '#fafafa' }}>
           <div className="section-header fade-up" style={{ textAlign: 'center' }}>
-            <div className="label-pill" style={{ margin: '0 auto 24px' }}><img src="https://www.figma.com/api/mcp/asset/eda3cf04-4f88-4046-9c1d-93e0503b9f8e" alt="" /> Questions</div>
+            <div className="label-pill" style={{ margin: '0 auto 24px' }}><img src={Star} alt="" /> Questions</div>
             <h2 className="section-title" style={{ maxWidth: '700px', margin: '0 auto' }}>Frequently Asked</h2>
           </div>
           <div className="faq-grid fade-up">
@@ -533,7 +534,7 @@ function TechPartner() {
         </section>
 
         <section className="cta-bottom" id="contact">
-          <div className="label-pill" style={{ margin: '0 auto 24px', justifyContent: 'center' }}><img src="https://www.figma.com/api/mcp/asset/eda3cf04-4f88-4046-9c1d-93e0503b9f8e" alt="" /> Let's Build</div>
+          <div className="label-pill" style={{ margin: '0 auto 24px', justifyContent: 'center' }}><img src={Star} alt="" /> Let's Build</div>
           <h2 className="fade-up">Technology That Moves<br />Your Business Forward</h2>
           <p className="fade-up">Whether you need a high-performance website, custom software, automation infrastructure, or AI-powered systems — let's build what your business needs next.</p>
           <div className="cta-btn-row fade-up">
