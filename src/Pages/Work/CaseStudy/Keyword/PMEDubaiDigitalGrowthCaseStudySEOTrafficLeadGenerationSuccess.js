@@ -171,7 +171,7 @@ const PMEDubaiDigitalGrowthCaseStudySEOTrafficLeadGenerationSuccess = () => {
                             <li><b>+440%</b> Growth in Organic Traffic</li>
                             <li><b>+ 225%</b> Growth in Mobile Traffic</li>
                             <li>Stronger Returning User Growth & Improved Brand Authority</li>
-                            <li>Generated 25000+ qualified leads overall.</li>
+                            <li>Generated 25000+ leads overall.</li>
                         </ul>
                     </div>
 
