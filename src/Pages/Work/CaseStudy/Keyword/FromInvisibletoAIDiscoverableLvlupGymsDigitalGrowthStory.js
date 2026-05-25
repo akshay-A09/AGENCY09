@@ -191,7 +191,6 @@ const FromInvisibletoAIDiscoverableLvlupGymsDigitalGrowthStory = () => {
                             <li>Improved visibility for gym-related queries in LLM responses</li>
                             <li>+34% organic impressions from search</li>
                             <li>Stronger brand recognition across AI tools</li>
-                            <li>What We Did (1-liner):</li>
                             <li>Made the website easier for LLMs to understand, trust, and reference.</li>
                             <li><b>70% Decreased:</b> Page Load Time</li>
                             <li><b>200% Increased:</b> Keywords Indexed</li>
