@@ -209,12 +209,12 @@ const Footer = () => {
     <div className='footerRow'>
       <h5>Our Ecosystem</h5>
       <ul>
-        <li><Link to='https://www.a09store.com/' target='_blank'><img loading='lazy' src={a09storeW} alt={a09storeW} /></Link></li>
-        <li><Link to='https://www.instaholidays.in/' target='_blank'><img loading='lazy' src={Instaw} alt={Instaw} /></Link></li>
-        <li><Link to='https://www.academy09.com/' target='_blank'><img loading='lazy' src={AZ9w} alt={AZ9w} /></Link></li>
-        <li><Link to='#' target='_blank'><img loading='lazy' src={LO9IX} alt={LO9IX} /></Link></li>
-        <li><Link to='https://www.pk-a.in/' target='_blank'><img loading='lazy' src={PKAw} alt={PKAw} /></Link></li>
-        <li><Link to='https://www.octarineorganics.com/' target='_blank'><img loading='lazy' src={OOw} alt={OOw} /></Link></li>
+        <li><Link to='https://www.a09store.com/' target='_blank'><img loading='lazy' src={a09storeW} alt="Our Ecosystem | A09STORE - AGENCY09" /></Link></li>
+        <li><Link to='https://www.instaholidays.in/' target='_blank'><img loading='lazy' src={Instaw} alt="Our Ecosystem | Insta Holidays - AGENCY09" /></Link></li>
+        <li><Link to='https://www.academy09.com/' target='_blank'><img loading='lazy' src={AZ9w} alt="Our Ecosystem | Academy09- AGENCY09" /></Link></li>
+        <li><Link to='#' target='_blank'><img loading='lazy' src={LO9IX} alt="Our Ecosystem | LO9IX - AGENCY09" /></Link></li>
+        <li><Link to='https://www.pk-a.in/' target='_blank'><img loading='lazy' src={PKAw} alt="Our Ecosystem | Pradeep Khakhar & Associates - AGENCY09" /></Link></li>
+        <li><Link to='https://www.octarineorganics.com/' target='_blank'><img loading='lazy' src={OOw} alt="Our Ecosystem | Octrine Organics - AGENCY09" /></Link></li>
       </ul>
     </div>
 

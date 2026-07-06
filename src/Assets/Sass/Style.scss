@@ -2000,6 +2000,9 @@ footer{
                 h1{
                     display: none;
                 }
+                h3{
+                    display:none;
+                }
                 .HeroBtn{
                     margin-left: 1vw;
                     padding: 0;
@@ -2058,6 +2061,13 @@ footer{
                 top: 0;
                 height: fit-content;
                 h1{
+                    font-size: 35px;
+                    font-family: $regular;
+                    color: $white;
+                    text-transform: capitalize;
+                    padding-bottom: 10px;
+                }
+                h3{
                     font-size: 35px;
                     font-family: $regular;
                     color: $white;

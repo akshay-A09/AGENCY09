@@ -46,48 +46,48 @@ const PartnerCompanies = () => {
 
 // Pilllars Data
 const PartnerCompanies = [
-  
-   {
-    link: 'https://www.a09store.com/',  
+  {
+    link: "https://www.a09store.com/",
     image: a09store,
-    Text: 'Look Cool, Feel Happy. E-Commerce merchandise store that empowers	 artists and seeks to build a community.',
-    siteUrl: 'www.a09store.com'
-    },
-    {
-      link: 'https://www.instaholidays.in/',  
-      image: instaHolidays,
-      Text: 'Crafting personalized travel experiences to make your holidays unforgettable. Discover the world with tailored itineraries and expert guidance.',
-      siteUrl: 'www.instaholidays.in'
-    },
-    {
-      link: '#',  
-      image: l09ix,
-      Text: "Logix is a leading tech company specializing in the development of custom software, mobile applications, and enterprise resource planning (ERP) systems, designed to streamline operations and enhance business productivity. Our innovative solutions cater to various industries, providing scalable and efficient tools to drive growth and optimize resources.",
-    },
-
-    {
-        link: 'https://www.academy09.com/',  
-        image: AcademyZeroNine,
-        Text: ' Empowering creative talent through hands-on digital marketing, creative & tech training.',
-        siteUrl: 'www.academy09.com'
-    },
-    
-
-    {
-        link: 'https://www.pk-a.in/',  
-        image: pk_a,
-        Text: 'Buy, Rent or Sell. Real estate done right with precision & Creativity',
-        siteUrl: 'www.pk-a.in'
-    },
-    {
-        link: 'https://www.octarineorganics.com/',  
-        image: OctrineOrganics,
-        Text: "Pioneering organic mushroom farming with a focus on health and sustainability. Bringing the best of nature's superfoods to your table.",
-        siteUrl: 'www.octarineorganics.com'
-    }
-    
-              
-  ]
+    alt: "Partner Companies | A09STORE - AGENCY09",
+    Text: "Look Cool, Feel Happy...",
+    siteUrl: "www.a09store.com",
+  },
+  {
+    link: "https://www.instaholidays.in/",
+    image: instaHolidays,
+    alt: "Partner Companies | Insta Holidays - AGENCY09",
+    Text: "Crafting personalized travel experiences...",
+    siteUrl: "www.instaholidays.in",
+  },
+  {
+    link: "#",
+    image: l09ix,
+    alt: "Partner Companies | LO9IX - AGENCY09",
+    Text: "Logix is a leading tech company...",
+  },
+  {
+    link: "https://www.academy09.com/",
+    image: AcademyZeroNine,
+    alt: "Partner Companies | Academy09- AGENCY09",
+    Text: "Empowering creative talent...",
+    siteUrl: "www.academy09.com",
+  },
+  {
+    link: "https://www.pk-a.in/",
+    image: pk_a,
+    alt: "Partner Companies | Pradeep Khakhar & Associates - AGENCY09",
+    Text: "Buy, Rent or Sell...",
+    siteUrl: "www.pk-a.in",
+  },
+  {
+    link: "https://www.octarineorganics.com/",
+    image: OctrineOrganics,
+    alt: "Partner Companies | Octrine Organics - AGENCY09",
+    Text: "Pioneering organic mushroom farming...",
+    siteUrl: "www.octarineorganics.com",
+  },
+];
   // Pilllars Data End
 
   return (
@@ -115,7 +115,7 @@ const PartnerCompanies = [
             <div key={index} className='item'>
                 <Link to={PartnerCompanies.link} target="_blank">
                     <div className='PartnerCompaniesCol'>
-                        <div className='PartnerCompaniesImg'><img src={PartnerCompanies.image} loading='lazy' alt='' /></div>
+                        <div className='PartnerCompaniesImg'><img src={PartnerCompanies.image} loading='lazy' alt={PartnerCompanies.alt}/></div>
                         <div className='PartnerCompaniesText'><p>{PartnerCompanies.Text}</p></div>
                         <div className='PartnerCompaniesUrl'><span>{PartnerCompanies.siteUrl}</span></div>
                     </div>
