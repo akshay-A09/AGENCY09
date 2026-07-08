@@ -2,6 +2,8 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import React from 'react'
 import './Assets/Sass/Style.scss'
 import Home from './Pages/Home'
+import './Assets/Sass/homeStyle.css'
+import HomeNew from './Pages/HomeNew'
 import About from './Pages/About'
 import Connect from './Pages/Connect'
 import WorkWithUs from './Pages/WorkWithUs'
@@ -117,6 +119,7 @@ function App() {
     <div className="App">
       
         <Routes location={location} key={location.pathname}>
+          <Route exact path='/home-new' element={<HomeNew />} />
           <Route exact path='/' element={<Home />} />
           <Route exact path='/about' element={<About />} />
           <Route exact path='/connect' element={<Connect />} />
