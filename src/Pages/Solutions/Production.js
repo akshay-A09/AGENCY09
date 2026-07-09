@@ -185,7 +185,7 @@ const servicesData = [
     {
       eventKey: "1",
       header: "Product Videos",
-      description: "Product Videos that Make People Stop and Shop Your product deserves more than just a spotlight — it deserves a story. At AGENCY09, we turn your products into heroes through visually stunning, strategically crafted videos that sell without shouting. From sleek tabletop shoots to lifestyle visuals that showcase real-world appeal, our team captures every angle, texture, and moment that makes your product stand out.",
+      description: "Product Videos that Make People Stop and Shop Your product deserves more than just a spotlight — it deserves a story. At AGENCY09, we turn your products into heroes through visually stunning, strategically crafted videos that sell without shouting. From sleek tabletop shoots to lifestyle visuals that showcase real-world appeal, our team delivers the expertise of a product photoshoots agency, capturing every angle, texture, and moment that makes your product stand out.",
       playlistLink: "https://www.youtube.com/playlist?list=PLjyBa6CjzBYNh6pb8q6ISg9JnjDK7aZOz",
       playlistId: "PLjyBa6CjzBYNP1PUiQYxsslERqHS8yKe1" // Has special viewer
     },
@@ -199,7 +199,7 @@ const servicesData = [
     {
       eventKey: "3",
       header: "AI Videos",
-      description: "Welcome to the future of content creation — where imagination meets intelligence. At AGENCY09, we harness the power of AI to produce videos faster, smarter, and more personalized than ever. From script generation and visual design to dynamic voiceovers and editing automation, we blend technology with storytelling to help your brand stay ahead of the curve.",
+      description: "Welcome to the future of content creation — where imagination meets intelligence. At AGENCY09, we harness the power of AI-driven technology and AI video production to create videos faster, smarter, and more personalized than ever. From script generation and visual design to dynamic voiceovers and editing automation, we blend technology with storytelling to help your brand stay ahead of the curve.",
       playlistLink: "https://www.youtube.com/playlist?list=PLjyBa6CjzBYObUVkdNrk2XRqt2_bCkxpT",
       playlistId: "PLjyBa6CjzBYObUVkdNrk2XRqt2_bCkxpT" // Has special viewer
     },
@@ -234,7 +234,7 @@ const servicesData = [
     {
       eventKey: "8",
       header: "Podcast",
-      description: "At AGENCY09, we create dynamic podcast videos that combine insightful conversations with compelling visuals. Whether it’s for brand storytelling, thought leadership, or engaging your community, our team ensures every podcast resonates with your audience. Let’s bring your voice to life with content that informs, entertains, and builds a loyal following.",
+      description: "At AGENCY09, we create dynamic podcast videos that combine insightful conversations with compelling visuals. Whether it’s for brand storytelling, thought leadership, or engaging your community, our team ensures every podcast resonates with your audience. As a podcast production agency in Mumbai, we bring your voice to life with content that informs, entertains, and builds a loyal following.",
       playlistLink: "https://www.youtube.com/playlist?list=PLjyBa6CjzBYNh6pb8q6ISg9JnjDK7aZOz",
       playlistId: "PLjyBa6CjzBYNh6pb8q6ISg9JnjDK7aZOz"
     },

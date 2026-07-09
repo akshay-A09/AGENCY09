@@ -11,7 +11,6 @@ import LogosSlider from '../Components/LogosSlider';
 import Social from '../Components/Social';
 import Calculat from '../Components/Calculat';
 import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import WeMakeIdeasPerform from '../Components/WeMakeIdeasPerform';
 import animateGsap from '../Components/Animation/HomeGsap';
 import { IoStarSharp } from "react-icons/io5";
@@ -38,8 +37,15 @@ import accordionPlus from '../Assets/Images/icons/accordion-plus.png';
 import accordionMinus from '../Assets/Images/icons/accordion-minus.png';
 import aiLabsGif from '../Assets/Images/AI-labs.gif';
 import logo09 from '../Assets/Images/09.png';
+import logo09Model from '../Assets/Images/09.glb';
 import starsIcon from '../Assets/Images/stars.png';
 import yellowStar from '../Assets/Images/yellow-star.png';
+import adityaBirla from '../Assets/Images/logos/brandlogo/aditya-birla.png';
+import reliance from '../Assets/Images/logos/brandlogo/reliance-general-insurance.png';
+import luxeCard from '../Assets/Images/logos/brandlogo/luxe-giftcard.png';
+import natch from '../Assets/Images/logos/brandlogo/natch.png';
+import rbl from '../Assets/Images/logos/brandlogo/rbl.png';
+
 
 
 const Counter = ({ end, duration = 2000 }) => {
@@ -418,51 +424,6 @@ const HomeNew = () => {
     return cleanup;
   }, []);
 
-  // Marquee refs + scroll-linked animation
-  const firstText = useRef(null);
-  const secondText = useRef(null);
-  const slider = useRef(null);
-
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    let xPercent = 0;
-    let direction = 1;
-    let animationFrame;
-
-    const animate = () => {
-      if (xPercent <= -100) xPercent = 0;
-      if (xPercent > 0) xPercent = -100;
-
-      gsap.set(firstText.current, { xPercent });
-      gsap.set(secondText.current, { xPercent });
-
-      xPercent += 0.05 * direction;
-      animationFrame = requestAnimationFrame(animate);
-    };
-    animationFrame = requestAnimationFrame(animate);
-
-    const trigger = gsap.to(slider.current, {
-      scrollTrigger: {
-        trigger: ".marquee",
-        start: "top bottom",
-        end: "bottom top",
-        scrub: 0.25,
-        onUpdate: (self) => {
-          direction = self.direction * -1;
-        },
-      },
-      x: "-=200",
-    });
-
-    return () => {
-      cancelAnimationFrame(animationFrame);
-      trigger.kill();
-      ScrollTrigger.getAll().forEach((st) => st.kill());
-    };
-  }, []);
-
-
   return (
     <>
 
@@ -545,7 +506,8 @@ const HomeNew = () => {
           <div className='selectWorkGrid'>
             {selectWorkData.map((item) => (
               <div className='selectWorkItem' key={item.id}>
-                <div className="workItemImage" style={{ backgroundImage: `url(${item.bgImage})` }}>
+                <div className="workItemImage">
+                  <img src={item.bgImage} alt={item.brand || "Work Image"} className="workItemImg" />
                   <div className="glassOverlay" style={{ backgroundImage: `url(${item.glassImage})` }}>
                     <div className="glassContent">
                       <div className="arrowIcon">
@@ -623,7 +585,16 @@ const HomeNew = () => {
             <div className="aiLabsMiddle">
               <div className="aiLabsGifWrap" style={{ backgroundImage: `url(${aiLabsGif})` }}>
                 <div className="aiLabsGlassBox">
-                  <img src={logo09} alt="09 Logo" className="logo09-img" />
+                  <model-viewer
+                    src={logo09Model}
+                    poster={logo09}
+                    alt="09 Logo"
+                    className="logo09-img logo09-model"
+                    auto-rotate
+                    camera-controls
+                    ar
+                    disable-zoom
+                  ></model-viewer>
                   <h3>AI Labs</h3>
                 </div>
               </div>
@@ -648,33 +619,88 @@ const HomeNew = () => {
       {/*marquee*/}
 
       <section className="homeMarquee">
-        <div className="marquee">
-          <div className="slideContainer">
-            <div className="slider" ref={slider}>
-
-              <div className="textWithStar">
-                <p ref={firstText}>
-                  Driving growth, with a focus on positivity, creativity, and doing what's right.
-                </p>
-                <span className="marqueeStar">
-                  <img src={yellowStar} alt="stars" />
-                </span>
-              </div>
-              <div className="textWithStar"></div>
-              <p ref={secondText}>
+        <div className="marqueetextWrap">
+          <div className="marqueeTrack">
+            <div className="textWithStar">
+              <p>
                 Driving growth, with a focus on positivity, creativity, and doing what's right.
               </p>
-
-              <span className="marqueeStar">
-                <img src={yellowStar} alt="stars" />
-              </span>
-              </div>
+              <img src={yellowStar} alt="" className="marqueeStarImg" />
+            </div>
+            <div className="textWithStar" aria-hidden="true">
+              <p>
+                Driving growth, with a focus on positivity, creativity, and doing what's right.
+              </p>
+              <img src={yellowStar} alt="" className="marqueeStarImg" />
             </div>
           </div>
+        </div>
       </section>
 
       {/*marquee*/}
 
+
+      {/*Brands*/}
+
+      <section className="homeBrands">
+        <div className="">
+          <div className="homeBrandsHd text-center">
+            <h2>Brands Grown</h2>
+          </div>
+
+          <div className="homeBrandsSliderWrap">
+            <div className="homeBrandsRow">
+              <div className="homeBrandsSlider">
+                <div className="brandItem"><img src={adityaBirla} alt="Brand Logo" /></div>
+                <div className="brandItem"><img src={reliance} alt="Brand Logo" /></div>
+                <div className="brandItem"><img src={luxeCard} alt="Brand Logo" /></div>
+                <div className="brandItem"><img src={natch} alt="Brand Logo" /></div>
+                <div className="brandItem"><img src={rbl} alt="Brand Logo" /></div>
+
+                {/* duplicate for seamless loop */}
+                <div className="brandItem"><img src={adityaBirla} alt="Brand Logo" /></div>
+                <div className="brandItem"><img src={reliance} alt="Brand Logo" /></div>
+                <div className="brandItem"><img src={luxeCard} alt="Brand Logo" /></div>
+                <div className="brandItem"><img src={natch} alt="Brand Logo" /></div>
+                <div className="brandItem"><img src={rbl} alt="Brand Logo" /></div>
+              </div>
+            </div>
+
+            <div className="homeBrandsRow reverse">
+              <div className="homeBrandsSlider">
+                <div className="brandItem"><img src={adityaBirla} alt="Brand Logo" /></div>
+                <div className="brandItem"><img src={reliance} alt="Brand Logo" /></div>
+                <div className="brandItem"><img src={luxeCard} alt="Brand Logo" /></div>
+                <div className="brandItem"><img src={natch} alt="Brand Logo" /></div>
+                <div className="brandItem"><img src={rbl} alt="Brand Logo" /></div>
+
+                {/* duplicate for seamless loop */}
+                <div className="brandItem"><img src={adityaBirla} alt="Brand Logo" /></div>
+                <div className="brandItem"><img src={reliance} alt="Brand Logo" /></div>
+                <div className="brandItem"><img src={luxeCard} alt="Brand Logo" /></div>
+                <div className="brandItem"><img src={natch} alt="Brand Logo" /></div>
+                <div className="brandItem"><img src={rbl} alt="Brand Logo" /></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      {/*Brands*/}
+
+      {/*Our Culture*/}
+      
+      <section className="homeCulture">
+        <div className="container">
+          <div className="homeCultureContent">
+            <p>We’re building a culture of progressive thinking open minded folks who are well equipped to tackle the nuances of communicating with the thumb generation.</p>
+            <div className="homeCultureBtn text-center">
+              <Link to="/culture" className="btn09">Our Culture</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+     {/*Our Culture*/}
 
 
       {/* Star IconWhat's NewStar Icon */}
@@ -682,14 +708,21 @@ const HomeNew = () => {
         <HomeBlogs />
       </section>
       {/* Star IconWhat's NewStar Icon End */}
+            
+      {/*CTA Home*/}
+      
+      <section className='Homebanner'>
+        <div className='container'>
+          <div className='bannerHeading'>
+            <h1>Let’s Talk<span>Growth</span></h1>
+            <div className='bannerbtn text-center'>
+              <Link className='btn09' href='/'>Let’s Talk</Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
-
-
-      {/* ServicesList */}
-      {/* ServicesList */}
-
-
-
+      {/*CTA Home*/}
       <Footer />
     </>
   )

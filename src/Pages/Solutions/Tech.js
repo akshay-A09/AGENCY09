@@ -159,7 +159,7 @@ const calculatData = [
     {
       key: "3",
       header: "Software Development",
-      description: "Bespoke software solutions that address your specific business challenges. Our software development services ensure functionality, scalability, and reliability.",
+      description: "Deliver bespoke software solutions that address your unique business challenges. As a trusted partner for businesses seeking a web software development company, we create scalable, reliable, and high-performing digital solutions designed to drive growth and operational efficiency.",
       tags: [],
     },
     {
