@@ -311,6 +311,26 @@ const faqsData = [
     question: "9. How can I get started with performance marketing services for my business?",
     answer: "Getting started with performance marketing services is simple. Contact us today to schedule a consultation with one of our experts. We'll discuss your goals, objectives, and budget, and develop a customized strategy to drive success for your business through performance marketing."
   },
+  {
+    key: "9",
+    question: "10. How can I increase ecommerce sales quickly?",
+    answer: "If you're looking at how to increase ecommerce sales, start by optimizing the fundamentals: improve website speed, simplify the checkout process, enhance product pages, and invest in targeted marketing campaigns. Small improvements across the customer journey can often deliver significant results. The most sustainable growth, however, comes from continuously analysing customer behaviour and refining the shopping experience based on data."
+  },
+  {
+    key: "10",
+    question: "11. What is a marketplace management agency?",
+    answer: "A marketplace management agency helps brands manage and grow their presence across ecommerce platforms such as Amazon, Flipkart, and Myntra. This includes everything from product listings and catalog management to advertising, inventory coordination, and performance optimisation. By ensuring consistent visibility and a seamless customer experience, brands can maximise their sales potential across multiple marketplaces."
+  },
+   {
+    key: "11",
+    question: "12. What is performance marketing?",
+    answer: "Unlike traditional advertising, where success can be difficult to measure, Performance Marketing Agency services focus on delivering measurable outcomes such as leads, sales, app installs, or website conversions. Every campaign is tracked against specific business objectives, allowing brands to optimise spend, improve efficiency, and make data-driven decisions that drive tangible results."
+  },
+   {
+    key: "12",
+    question: "13. How can influencer marketing help grow a brand?",
+    answer: "Growth today is often driven by trust, and influencers have built highly engaged communities around their expertise and interests. By partnering with the right creators, brands can increase awareness, reach new audiences, and build credibility in a more authentic way. Experienced influencer marketing agencies help identify the right partnerships, manage campaigns, and ensure collaborations deliver measurable business impact."
+  },
 ];
 // FAQS End
 

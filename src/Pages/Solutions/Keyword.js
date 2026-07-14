@@ -293,6 +293,21 @@ const faqsData = [
     question: "10. How can I get started with AGENCY09's SEO services?",
     answer: "To get started, simply contact us to schedule a consultation. We'll discuss your business goals, assess your current SEO performance, and develop a customized strategy to help you achieve your objectives."
   },
+   {
+    key: "10",
+    question: "11. How does Ecommerce SEO improve product visibility on Google?",
+    answer: "When customers search for products online, they typically engage with the results that appear first. Ecommerce SEO Services improve product visibility by optimising category pages, product listings, site structure, and relevant keywords, helping search engines better understand and rank your store. This leads to increased organic traffic, higher product discoverability, and more opportunities to convert searchers into customers."
+  },
+   {
+    key: "11",
+    question: "12. How does Local SEO help businesses attract nearby customers?",
+    answer: "Most customers turn to search engines when looking for products or services nearby. A local SEO agency helps businesses appear in relevant local searches by optimising their online presence, business listings, location-specific content, and search visibility. This makes it easier for nearby customers to discover, trust, and choose the business when they're ready to make a purchase or enquiry."
+  },
+  {
+    key: "12",
+    question: "13. How does ORM improve search engine results for a brand?",
+    answer: "A strong online reputation can influence everything from customer trust to purchase decisions. Through strategic reputation management, AGENCY09 helps brands improve how they appear in search results by amplifying credible content and strengthening their digital presence. Our ORM Services in India are designed to support long-term brand equity while ensuring search results accurately reflect the brand's value and achievements."
+  },
 
 ];
 // FAQS End

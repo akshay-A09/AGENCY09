@@ -1,0 +1,33 @@
+.text-type {
+  display: inline-block;
+  white-space: pre-wrap;
+}
+
+.text-type__cursor {
+  margin-left: 0.25rem;
+  display: inline-block;
+  opacity: 1;
+}
+
+.text-type__cursor--hidden {
+  display: none;
+}
+
+.bannerHeading h1 span {
+  font-size: 10vw;
+}
+
+.bannerHeading h1 span.banner-first-line span {
+  color: var(--black) !important;
+  font-size: 7.6vw;
+}
+
+@media (max-width: 768px) {
+  .bannerHeading h1 span {
+    font-size: 17.3vw !important;
+  }
+
+  .bannerHeading h1 span.banner-first-line span {
+    font-size: 13vw !important;
+  }
+}

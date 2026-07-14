@@ -423,6 +423,26 @@ const faqsData = [
     key: "11",
     question: "12. How do you handle project timelines and delivery? ",
     answer: "We follow an agile development methodology to ensure timely delivery and flexibility. Regular updates and feedback loops are maintained to keep the project on track and aligned with your business objectives."
+  },
+   {
+    key: "12",
+    question: "13. What are the benefits of custom web app development? ",
+    answer: "Custom web app development enables businesses to build solutions tailored to their specific goals and workflows. Unlike ready-made software, custom applications offer greater flexibility, scalability, and seamless integrations. At AGENCY09, our approach to web apps development focuses on creating secure, user-centric platforms that streamline operations, enhance customer experiences, and support sustainable business growth."
+  },
+    {
+    key: "13",
+    question: "14. What is the difference between a CMS website and a custom-coded website? ",
+    answer: "A CMS website is built on a content management system that allows businesses to easily update and manage content without technical expertise. A custom-coded website, on the other hand, is developed from the ground up to meet specific business requirements, offering greater flexibility and customization. At AGENCY09, we help brands choose the right approach, whether it's CMS website development for efficiency and ease of management or a custom solution designed for unique business needs and future growth."
+  },
+  {
+    key: "14",
+    question: "15. Are you experienced in working with Shopify? ",
+    answer: "Absolutely. As one of the Shopify development companies in India, we create robust online stores using Shopify’s ecosystem to deliver seamless shopping experiences."
+  },
+  {
+    key: "15",
+    question: "16. Do you offer custom mobile app development? ",
+    answer: "Yes, we are a custom mobile app development company, building tailor-made iOS and Android applications that match your specific business goals and user needs."
   }
 ];
 // FAQS End

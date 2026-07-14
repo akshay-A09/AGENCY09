@@ -113,7 +113,7 @@ const Design = () => {
     {
       key: "0",
       header: "Brand Identity",
-      description: "Develop a cohesive and compelling brand identity that reflects your core values and vision. Create logos, color palettes, typography, and brand guidelines that ensure consistency across all touchpoints.",
+      description: "Develop a cohesive brand architecture and distinctive brand identity that align with your vision and values. From strategic brand frameworks to logos, color palettes, typography, and comprehensive brand guidelines, create a unified foundation that ensures consistency and strengthens recognition across every touchpoint.",
       tags: [],
     },
     {
@@ -233,6 +233,31 @@ const faqsData = [
     question: "9. How can I request a quote for AGENCY09's services?",
     answer: "Ready to elevate your brand? Contact us today for a personalized quote. Let's discuss how we can bring your brand vision to life with our creative design services. You can reach out via our website or contact information provided."
   },
+   {
+    key: "9",
+    question: "10. What is a brand strategy agency?",
+    answer: "A brand strategy agency helps businesses define how they are perceived in the market by creating a clear positioning, purpose, messaging, and identity framework. At AGENCY09, we develop brand strategies that align business objectives with customer expectations, helping brands build stronger connections, differentiate themselves, and drive sustainable growth."
+  },
+   {
+    key: "10",
+    question: "11. How does design strategy align with business goals?",
+    answer: "A strong design strategy ensures that every design decision supports broader business objectives, from improving customer experience and engagement to driving conversions and brand recall. At AGENCY09, we combine creativity with strategic thinking to create design solutions that not only look compelling but also contribute to measurable business growth."
+  },
+   {
+    key: "11",
+    question: "12. Why is concept-driven creativity important in branding?",
+    answer: "Brands are remembered not just for what they say, but for the ideas they stand for. Concept driven creativity ensures that every campaign, visual, and message stems from a central idea, creating consistency and meaning across touchpoints. This approach helps brands cut through clutter, build stronger recall, and create experiences that resonate with audiences long after the campaign ends."
+  },
+  {
+    key: "12",
+    question: "13. What is the role of AI in next-generation design?",
+    answer: "AI is transforming how brands approach design by enabling faster ideation, deeper audience insights, and more personalized experiences. However, technology alone cannot replace strategic thinking and human creativity. A next gen design agency combines the efficiency of AI with creative expertise to develop design solutions that are innovative, relevant, and aligned with evolving consumer expectations."
+  },
+ {
+    key: "13",
+    question: "14. Can content design increase conversion rates?",
+    answer: "Yes. Effective content design goes beyond aesthetics, it structures information in a way that guides users toward action. By improving clarity, hierarchy, readability, and user experience, a content design agency can help reduce friction in the customer journey, making it easier for audiences to engage, enquire, or make a purchase."
+  },
   
 ];
 // FAQS End
@@ -291,7 +316,7 @@ const schemaData = {
             "@type": "Service",
             "name": "Brand Identity",
             "description":
-              "Develop a cohesive and compelling brand identity that reflects your core values and vision. Create logos, color palettes, typography, and brand guidelines that ensure consistency across all touchpoints."
+              "Develop a cohesive brand architecture and distinctive brand identity that align with your vision and values. From strategic brand frameworks to logos, color palettes, typography, and comprehensive brand guidelines, create a unified foundation that ensures consistency and strengthens recognition across every touchpoint."
           }
         },
         {
