@@ -4,9 +4,25 @@ import godrejlaffaire from '../../../Assets/Images/work/Laffaire.webp';
 import RGI from '../../../Assets/Images/work/rgi.webp';
 import lakme from '../../../Assets/Images/work/lakme.webp';
 import workcodashop from '../../../Assets/Images/work/codashop/codaShoptm.jpg';
+import godrejlaffaireDiwali from '../../../Assets/Images/work/godrej_diwali.jpeg'
 
 // Content
 export const ContentData = [
+    {
+        id: 6,
+        title: 'Building the Everyday Ally: Kanta Didi for Godrej L’Affaire',
+        tags: [
+            { name: 'Brand Strategy', },
+            { name: 'Community Management', },
+            { name: 'IP Creation', }
+        ],
+        image: godrejlaffaireDiwali,
+        link: '/work/case-studies/godrej-laffaire-diwali-campaign',
+        brand: "Godrej Laffaire",
+        department: 'Content'
+    },
+   
+   
     {
         id: 6,
         title: 'Unearthing India’s Next Big Content Creator with Godrej L’Affaire Select',

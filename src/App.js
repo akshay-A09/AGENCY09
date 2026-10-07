@@ -3,7 +3,7 @@ import React from 'react'
 import './Assets/Sass/Style.scss'
 import Home from './Pages/Home'
 import './Assets/Sass/homeStyle.css'
-import HomeNew from './Pages/HomeNew'
+import HomeOld from './Pages/HomeOld'
 import About from './Pages/About'
 import Connect from './Pages/Connect'
 import WorkWithUs from './Pages/WorkWithUs'
@@ -89,6 +89,7 @@ import OrmPortal from './Pages/Work/CaseStudy/Tech/ORMPortal'
 import RGIChatbot from './Pages/Work/CaseStudy/Tech/TransformingRGICustomerCommunicationwithanIntelligentWhatsAppChatbot'
 import Natch from './Pages/Work/CaseStudy/Tech/RevampingNatchSnacksWebsitetoDriveConversionsandReducePurchaseFriction'
 import Lvlup from './Pages/Work/CaseStudy/Keyword/FromInvisibletoAIDiscoverableLvlupGymsDigitalGrowthStory'
+import BodhiTreeSystems from './Pages/Work/CaseStudy/Tech/BodhiTreeSystemsFromStaticFramestoaLivingMotionLedExperience'
 // New Feb 2026
 
 // SEO
@@ -109,7 +110,7 @@ import BuildingTokosFirstDigitalFundraisingPlatformforSchooqlsAcrossNewZealand f
 import TransformingDetourozintoaConversionDrivenCampervanBookingPlatform from './Pages/Work/CaseStudy/Tech/TransformingDetourozintoaConversionDrivenCampervanBookingPlatform'
 import TechPartnerThankYou from './Pages/tech-partner-thank-you'
 import PMEDubaiDigitalGrowthCaseStudySEOTrafficLeadGenerationSuccess from './Pages/Work/CaseStudy/Keyword/PMEDubaiDigitalGrowthCaseStudySEOTrafficLeadGenerationSuccess'
-
+import BuildingtheEverydayAllyKantaDidiforGodrejLaffaire, { GodrejLaffaireDiwaliCampaign } from './Pages/Work/CaseStudy/Content/GodrejLaffaireDiwaliCampaign'
 // SEO 
 
  
@@ -119,8 +120,8 @@ function App() {
     <div className="App">
       
         <Routes location={location} key={location.pathname}>
-          <Route exact path='/home-new' element={<HomeNew />} />
           <Route exact path='/' element={<Home />} />
+          <Route exact path='/homeOld' element={<HomeOld />} />
           <Route exact path='/about' element={<About />} />
           <Route exact path='/connect' element={<Connect />} />
           <Route exact path='/service/design' element={<Design />} />
@@ -206,6 +207,8 @@ function App() {
        <Route exact path='/ai' element={<AI/>}/>
        <Route exact path='tech-partner/tech-partner-thank-you' element={<TechPartnerThankYou/>} />
 
+      <Route exact path='/work/case-studies/bodhi-tree-systems-from-static-frames-to-a-living' element={<BodhiTreeSystems />} />
+      <Route exact path="/work/case-studies/godrej-laffaire-diwali-campaign" element={<GodrejLaffaireDiwaliCampaign />} />
        <Route exact path="/work/case-studies/igcb-dual-country-seo-success" element={<IGCBDualCountrySEO />} />
       <Route exact path="/work/case-studies/groupsoft-us-organic-seo-recovery" element={<GroupsoftUS />} />
       <Route exact path="/work/case-studies/amazonas-4u-organic-growth" element={<Amazonas4U />} />

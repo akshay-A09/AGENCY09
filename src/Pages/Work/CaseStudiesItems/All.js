@@ -68,10 +68,24 @@ import reaviva from '../../../Assets/Images/work/Reaviva.jpg';
 import shopzuma from '../../../Assets/Images/work/Shop_Zuma-1.jpg';
 import siyarmas from '../../../Assets/Images/work/Siyarams.jpg';
 import TataGame from '../../../Assets/Images/work/Tata-game-thumbnail.jpeg'
+import godrejlaffaireDiwali from '../../../Assets/Images/work/godrej_diwali.jpeg'
+import BodhiTree from '../../../Assets/Images/work/bodhiTree/bodhiTree_thumbnail.webp'
 
 // Tech
 export const allData = [
-  
+   {
+            id: 0,
+            title: "Bodhi Tree Systems: From Static Frames to a Living, Motion-Led Experience",
+            tags: [
+                { name: 'Web Design', link: '' },
+                { name: 'Web Development', link: '' },
+                { name: 'UI/UX Design', link: '' }
+            ],
+            image: BodhiTree,
+            link: '/work/case-studies/bodhi-tree-systems-from-static-frames-to-a-living',
+            brand: "Bodhi Tree Systems",
+            department: 'Tech'
+        },
     
     {
         id: 0,
@@ -245,7 +259,24 @@ export const allData = [
         link: '/work/case-studies/bits-pilani',
         brand: "Bits Pilani",
         department: 'Tech'
-    }, {
+    }, 
+   
+    {
+        id: 7,
+        title: 'Building the Everyday Ally: Kanta Didi for Godrej L’Affaire',
+        tags: [
+            { name: 'Brand Strategy', },
+            { name: 'Community Management', },
+            { name: 'IP Creation', }
+        ],
+        image: godrejlaffaireDiwali,
+        link: '/work/case-studies/godrej-laffaire-diwali-campaign',
+        brand: "Godrej Laffaire",
+        department: 'Content'
+    },  
+  
+  
+    {
         id: 6,
         title: 'Unearthing India’s Next Big Content Creator with Godrej L’Affaire Select',
         tags: [
@@ -258,6 +289,7 @@ export const allData = [
         brand: "Godrej Laffaire",
         department: 'Content'
     },
+
    
     {
         id: 2,

@@ -19,12 +19,25 @@ import Natch from '../../../Assets/Images/work/natch/natch-main.webp';
 import ORM from '../../../Assets/Images/work/orm-portal/orm-portal-main-thumbnail.webp'; 
 import RGIChatbot from '../../../Assets/Images/work/RGI-chatbot/rgi-chatbot-main.webp'; 
 import TataGame from '../../../Assets/Images/work/Tata-game-thumbnail.jpeg'
+import BodhiTree from '../../../Assets/Images/work/bodhiTree/bodhiTree_thumbnail.webp'
 
 
 // Tech
 export const techData = [
     // New
-    
+     {
+        id: 1,
+        title: "Bodhi Tree Systems: From Static Frames to a Living, Motion-Led Experience",
+        tags: [
+            { name: 'Web Design', link: '' },
+            { name: 'Web Development', link: '' },
+            { name: 'UI/UX Design', link: '' }
+        ],
+        image: BodhiTree,
+        link: '/work/case-studies/bodhi-tree-systems-from-static-frames-to-a-living',
+        brand: "Bodhi Tree Systems",
+        department: 'Tech'
+    },
     
     {
         id: 4,

@@ -4,248 +4,984 @@ import { Link } from 'react-router-dom';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import HeroBanner from '../Components/HeroBanner';
+
 import Services from '../Components/Services';
 import ServicesList from '../Components/ServicesList';
 import LogosSlider from '../Components/LogosSlider';
 import Social from '../Components/Social';
 import Calculat from '../Components/Calculat';
+import gsap from 'gsap'
 import WeMakeIdeasPerform from '../Components/WeMakeIdeasPerform';
-import animateGsap from '../Components/Animation/HomeGsap'; 
 import { IoStarSharp } from "react-icons/io5";
+import { IoMdHeart } from "react-icons/io";
 import { SlArrowRightCircle } from "react-icons/sl";
-import SVGCurveLine from '../Hooks/SVGCurveLine'; 
-// Images
-import barc from '../Assets/Images/work/BARC.webp';
-import godrejlaffaire from '../Assets/Images/work/Laffaire.webp';
-import TataMotors from '../Assets/Images/work/Tatamotors-new.jpg';
-import Tribevibe from '../Assets/Images/work/LaffaireSelect.jpg';
-import GroupSoft from '../Assets/Images/work/GroupSoft.webp';
-import podcast from '../Assets/Images/work/podcast-new.jpg';
-import rgi from '../Assets/Images/work/rgi.webp';
+import SVGCurveLine from '../Hooks/SVGCurveLine';
 import HomeBlogs from "../Components/HomeBlogs";
-// Images end
+import TextType from '../Components/TextType';
 
-// Array of work items
-export const workItems = [
-  {
-    id: 1,
-    title: "Driving Visibility and Engagement for Tata Motors' Commercial Vehicle Lineup",
-    tags: [
-        { name: 'Digital Strategy', },
-        { name: 'UI/UX', },
-        { name: 'Web Development', }
-    ],
-    image: TataMotors,
-    link: '/work/case-studies/tata-trucks',
-    brand: 'TATA Trucks',
-    department: 'Tech'
-},
- {
-    id: 2,
-    title: 'Visualizing Insights: Award-Winning Yearbook for BARC India',
-    tags: [
-        { name: 'Annual Report', },
-        { name: 'Book Design', },
-        { name: 'Infographics', }
-    ],
-    image: barc,
-    link: '/work/case-studies/barc-india-yearbook',
-    brand: "BARC India Yearbook",
-    department: 'Design'
-  },
-{
-    id: 6,
-    title: 'Unearthing India’s Next Big Content Creator with Godrej L’Affaire Select',
-    tags: [
-        { name: 'Brand Strategy', },
-        { name: 'Community Management', },
-        { name: 'IP Creation', }
-    ],
-    image: godrejlaffaire,
-    link: '/work/case-studies/godrej-laffaire',
-    brand: "Godrej Laffaire",
-    department: 'Content'
-},
-    {
-        id: 5,
-        title: 'Modernizing Digital Identity: Revamped Website for Global SaaS Company Groupsoft',
-        tags: [
-        ],
-        image: GroupSoft,
-        link: '/work/case-studies/groupsoft',
-        brand: "Groupsoft",
-        department: 'Tech'
-    },
-{
-        id: 1,
-        title: "Podcast - Tata Steel",
-        tags: [
-        ],
-        image: podcast,
-        link: '/work/case-studies/podcast',
-        brand: "",
-        department: "Production"
-    },
+// new homepage Images
+import pretBg from '../Assets/Images/pret-bg.jpg';
+import glassImg from '../Assets/Images/Glass.png';
+import arrowImg from '../Assets/Images/arrow.png';
+import tata from '../Assets/Images/tata.jpg';
+import adityaBirlaCapital from '../Assets/Images/aditya-birla-capital.jpg';
+import relianceGeneral from '../Assets/Images/reliance-general-insurance.jpg';
+import godrejImg from '../Assets/Images/godrej-laffair.jpg';
+import zuma from '../Assets/Images/zuma.jpg';
+import starIcon from '../Assets/Images/star-icon.png';
+import accordionPlus from '../Assets/Images/icons/accordion-plus.svg';
+import accordionMinus from '../Assets/Images/icons/accordion-minus.svg';
+import aiLabsGif from '../Assets/Images/AI-labs.gif';
+import logo09Model from '../Assets/Images/09.glb';
+import starsIcon from '../Assets/Images/stars.png';
+import yellowStar from '../Assets/Images/yellow-star.png';
+import adityaBirla from '../Assets/Images/logos/brandlogo/aditya-birla.png';
+import reliance from '../Assets/Images/logos/brandlogo/reliance-general-insurance.png';
+import luxeCard from '../Assets/Images/logos/brandlogo/luxe-giftcard.png';
+import natch from '../Assets/Images/logos/brandlogo/natch.png';
+import rbl from '../Assets/Images/logos/brandlogo/rbl.png';
 
- {
-        id: 1,
-        title: 'Innovative Product Communication for Enhanced Brand Visibility',
-        tags: [
-        ],
-        image: rgi,
-        link: '/work/case-studies/product-communication-for-reliance-general-insurance',
-        brand: "",
-        department: 'Content'
-    },
-];
+import adityaBirlaLogo from '../Assets/Images/logos/homelogo/01.jpg';
+import tataMotorsCommercial from '../Assets/Images/logos/homelogo/02.jpg';
+import godrejLaffaireLogo from '../Assets/Images/logos/homelogo/03.jpg';
+import induslnd from '../Assets/Images/logos/homelogo/04.jpg';
+import pret from '../Assets/Images/logos/homelogo/05.jpg';
+import jupiter from '../Assets/Images/logos/homelogo/06.jpg';
+import ryan from '../Assets/Images/logos/homelogo/07.jpg';
+import barc from '../Assets/Images/logos/homelogo/08.jpg';
+import siyaram from '../Assets/Images/logos/homelogo/09.jpg';
+import bitspilani from '../Assets/Images/logos/homelogo/10.jpg';
+import trust from '../Assets/Images/logos/homelogo/11.jpg';
+import wurthLogo from '../Assets/Images/logos/homelogo/12.jpg';
+import rblLogo from '../Assets/Images/logos/homelogo/13.jpg';
+import freyaa from '../Assets/Images/logos/homelogo/14.jpg';
+import hp from '../Assets/Images/logos/homelogo/15.jpg';
+import natchLogo from '../Assets/Images/logos/homelogo/16.jpg';
+import oxemberg from '../Assets/Images/logos/homelogo/17.jpg';
+import lakmefashion from '../Assets/Images/logos/homelogo/18.jpg';
+import nathseeds from '../Assets/Images/logos/homelogo/19.jpg';
+import chinesewok from '../Assets/Images/logos/homelogo/20.jpg';
+import tribevibe from '../Assets/Images/logos/homelogo/21.jpg';
+import prideofcows from '../Assets/Images/logos/homelogo/22.jpg';
+import aldo from '../Assets/Images/logos/homelogo/23.jpg';
+import movado from '../Assets/Images/logos/homelogo/24.jpg';
+import zeronine from '../Assets/Images/logos/zeronine.png';
 
-const Home = () => {
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+
+const Counter = ({ end, duration = 2000 }) => {
+  const [count, setCount] = useState(0);
+  const [hasStarted, setHasStarted] = useState(false);
+  const ref = useRef(null);
 
   useEffect(() => {
-    const cleanup = animateGsap();
-    return cleanup;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setHasStarted(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    if (!hasStarted) return;
+
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      setCount(Math.floor(progress * end));
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+  }, [hasStarted, end, duration]);
+
+  return <span ref={ref}>{count}</span>;
+};
+
+
+
+// Images end
+
+export const statsData = [
+  {
+    id: 1,
+    end: 13,
+    desc: <>years of solving for<br /> tomorrow, everyday</>
+  },
+  {
+    id: 2,
+    end: 85,
+    desc: <>Specialists - Cross functional,<br />Cross Disciplinary, Always Connected</>
+  },
+  {
+    id: 6,
+    end: 600,
+    desc: <>Project delivered<br /> across 4 continents</>
+  }
+];
+
+export const whatWeDoData = [
+  {
+    id: 1,
+    title: "Strategy & Growth",
+    subItems: [
+      "Brand strategy & positioning", "Brand launch & relaunch",
+      "Audience insight & segmentation", "Marketing consulting (CMO)",
+      "Go-to-market & growth playbooks", "IP creation",
+      "eCommerce growth"
+    ],
+    link: "/work/case-studies#all"
+  },
+  {
+    id: 2,
+    title: "Creative & Content",
+    subItems: [
+      "Social media content", "Copywriting",
+      "Visual design", "Creative campaigns"
+    ],
+    link: "/work/case-studies#content"
+  },
+  {
+    id: 3,
+    title: "Tech & Platforms",
+    subItems: [
+      "Website development", "Mobile app development",
+      "E-commerce platforms", "Custom software solutions"
+    ],
+    link: "/work/case-studies#tech"
+  },
+  {
+    id: 4,
+    title: "Media & Performance",
+    subItems: [
+      "Performance marketing", "Media planning & buying",
+      "SEO & SEM", "Data analytics & reporting"
+    ],
+    link: "/work/case-studies#performance-marketing"
+  },
+  {
+    id: 5,
+    title: "Search & Discovery",
+    subItems: [
+      "Search engine optimization", "App store optimization",
+      "Voice search strategy", "Local SEO"
+    ],
+    link: "/work/case-studies#keyword"
+  },
+  {
+    id: 6,
+    title: "Films & Production",
+    subItems: [
+      "Corporate films", "Ad commercials",
+      "2D/3D animation", "Product shoots"
+    ],
+    link: "/work/case-studies#production"
+  }
+];
+
+export const aiLabsLeftData = [
+  {
+    id: 1,
+    title: "AI Video",
+    description: <>Predictive insights and market intelligence</>
+  },
+  {
+    id: 2,
+    title: "AI Music & Voiceovers",
+    description: <>Scalable content creation, personalisation and optimisation.</>
+  },
+  {
+    id: 3,
+    title: "Automation",
+    description: <>Smarter workflows that improve speed and efficiency.</>
+  }
+];
+
+export const aiLabsRightData = [
+  {
+    id: 1,
+    title: "AI Characters & Mascots",
+    description: <>Predictive insights and market intelligence</>
+  },
+  {
+    id: 2,
+    title: "AI 3D",
+    description: <>Scalable content creation, personalisation and optimisation.</>
+  },
+  {
+    id: 3,
+    title: "Deep Research",
+    description: <>Smarter workflows that improve speed and efficiency.</>
+  }
+];
+
+const WhatWeDoAccordion = () => {
+  const [openId, setOpenId] = useState(null);
+
+  const toggle = (id) => {
+    if (openId === id) setOpenId(null);
+    else setOpenId(id);
+  }
+
+  return (
+    <div className="accordionGrid">
+      <div className="accordionCol">
+        {whatWeDoData.filter((_, i) => i % 2 === 0).map((item) => (
+          <div className={`accItem ${openId === item.id ? 'open' : ''}`} key={item.id}>
+            <div className="accHeader" onClick={() => toggle(item.id)}>
+              <div className="accTitleWrap">
+                <h3>{item.title}</h3>
+                <span className="accArrow"><img src={arrowImg} alt="" /></span>
+              </div>
+              <div className="accIcon">
+                <img src={openId === item.id ? accordionMinus : accordionPlus} alt="Toggle" />
+              </div>
+            </div>
+            <div className={`accBodyWrap ${openId === item.id ? 'open' : ''}`}>
+              <div className="accBodyInner">
+                {item.subItems && item.subItems.length > 0 && (
+                  <div className="accBody">
+                    <div className="accSubItemsGrid">
+                      {item.subItems.map((sub, index) => (
+                        <div className="accSubItem" key={index}>
+                          <span className="accLine"></span>
+                          <p>{sub}</p>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="accBtnWrap">
+                      <Link to={item.link} className="btn09 btn-outline">View Work</Link>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="accordionCol">
+        {whatWeDoData.filter((_, i) => i % 2 !== 0).map((item) => (
+          <div className={`accItem ${openId === item.id ? 'open' : ''}`} key={item.id}>
+            <div className="accHeader" onClick={() => toggle(item.id)}>
+              <div className="accTitleWrap">
+                <h3>{item.title}</h3>
+                <span className="accArrow"><img src={arrowImg} alt="" /></span>
+              </div>
+              <div className="accIcon">
+                <img src={openId === item.id ? accordionMinus : accordionPlus} alt="Toggle" />
+              </div>
+            </div>
+            <div className={`accBodyWrap ${openId === item.id ? 'open' : ''}`}>
+              <div className="accBodyInner">
+                {item.subItems && item.subItems.length > 0 && (
+                  <div className="accBody">
+                    <div className="accSubItemsGrid">
+                      {item.subItems.map((sub, index) => (
+                        <div className="accSubItem" key={index}>
+                          <span className="accLine"></span>
+                          <p>{sub}</p>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="accBtnWrap">
+                      <Link to={item.link} className="btn09 btn-outline">View Work</Link>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+// Array of select work items
+export const selectWorkData = [
+  {
+    id: 1,
+    bgImage: pretBg,
+    glassImage: glassImg,
+    desc: <>Growing Pret's discovery with one value hook</>,
+    stats: [
+      { value: "523%", label: "Rise in sandwich sales" },
+    ],
+    brand: "Pret",
+    tags: "Strategy | Outdoor | Social | Content",
+    link: "/work/case-studies/pret-x-mi"
+  },
+
+  {
+    id: 2,
+    bgImage: tata,
+    glassImage: glassImg,
+    desc: <>Growing Tata Motors' digital ecosystem through consolidation</>,
+    stats: [
+      { value: "4.33L", label: "Monthly traffic across 7 sites" },
+    ],
+    brand: "Tata Motors",
+    tags: "UI UX | Web Design | Development",
+    link: "/work/case-studies/tata-trucks"
+  },
+  {
+    id: 3,
+    bgImage: adityaBirlaCapital,
+    glassImage: glassImg,
+    desc: <>Growing Aditya Birla Capital's LinkedIn into a category leader</>,
+    stats: [
+      { value: "566K", label: "Followers" },
+      { value: "9.1x", label: "BFSI engagement" }
+    ],
+    brand: "Aditya Birla Capital",
+    tags: "Employer Branding | Social | Content",
+    link: "/work/case-studies/strengthening-abfls-social-media-presence-with-a-high-impact-follower-growth-campaign"
+  },
+  {
+    id: 4,
+    bgImage: relianceGeneral,
+    glassImage: glassImg,
+    desc: <>Growing Reliance General Insurance's relevance with #Womentum</>,
+    stats: [
+      { value: "73L+", label: "Reach, nationwide" },
+    ],
+    brand: "Reliance General Insurance",
+    tags: "Influencer Management",
+    link: "/work/case-studies/boosting-agent-recruitment-with-a-targeted-meta-lead-generation-campaign-for-reliance-general-insurance"
+  },
+  {
+    id: 5,
+    bgImage: godrejImg,
+    glassImage: glassImg,
+    desc: <>Growing Godrej L’Affaire’s creator ecosystem through a culture-led IP</>,
+    stats: [
+      { value: "100M+", label: "Views" },
+      { value: "12,000+", label: "Creators" }
+    ],
+    brand: "Godrej L’Affaire",
+    tags: "Strategy | Influencer | Social | Content",
+    link: "/work/case-studies/godrej-laffaire"
+  },
+  {
+    id: 6,
+    bgImage: zuma,
+    glassImage: glassImg,
+    desc: <>Growing Zuma's luxury sales by converting high-intent demand</>,
+    stats: [
+      { value: "2Cr+", label: "In online sales" },
+    ],
+    brand: "Zuma",
+    tags: "Performance Marketing",
+    link: "/work/case-studies/luxury-meets-performance-driving-sales-and-awareness-for-zuma-across-digital-platforms"
+  }
+];
+
+// Array of work items
+
+
+const Home = () => {
+  const sectionRef = useRef(null);
+  const modelViewerRef = useRef(null);
+  const marqueeRef = useRef(null);
+  const [firstCompleted, setFirstCompleted] = useState(false);
+  const [secondCompleted, setSecondCompleted] = useState(false);
+
+  const BASE_THETA = 90;   // straight-on default
+  const BASE_PHI = 90;     // fixed vertical angle, no up/down tilt
+  const MAX_SWING = 15;    // max left/right degrees (tune 10-25 to taste)
+  const EASE = 0.06;       // lower = smoother/slower follow, higher = snappier
+
+  // Start marquee animation when section comes into view
+  useEffect(() => {
+    const marqueeEl = marqueeRef.current;
+    if (!marqueeEl) return;
+
+    let observer;
+
+    const timer = setTimeout(() => {
+      observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              if (observer) {
+                observer.unobserve(entry.target);
+              }
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+      observer.observe(marqueeEl);
+    }, 150);
+
+    return () => {
+      clearTimeout(timer);
+      if (observer) {
+        observer.disconnect();
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,  // Animation duration
+      once: true,     // Whether animation should happen only once
+      offset: 100,      // Offset (in px) from the original trigger point
+    });
+  }, []);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const modelViewer = modelViewerRef.current;
+    if (!section || !modelViewer) return;
+
+    let targetTheta = BASE_THETA;
+    let currentTheta = BASE_THETA;
+    let rafId;
+
+    const handleMouseMove = (e) => {
+      const rect = section.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width;
+      const clampedX = Math.min(Math.max(x, 0), 1);
+      targetTheta = BASE_THETA + (clampedX - 0.5) * 2 * MAX_SWING;
+    };
+
+    const handleMouseLeave = () => {
+      targetTheta = BASE_THETA;
+    };
+
+    const animate = () => {
+      currentTheta += (targetTheta - currentTheta) * EASE;
+      modelViewer.cameraOrbit = `${currentTheta.toFixed(2)}deg ${BASE_PHI}deg 105%`;
+      rafId = requestAnimationFrame(animate);
+    };
+
+    section.addEventListener('mousemove', handleMouseMove);
+    section.addEventListener('mouseleave', handleMouseLeave);
+    rafId = requestAnimationFrame(animate);
+
+    return () => {
+      section.removeEventListener('mousemove', handleMouseMove);
+      section.removeEventListener('mouseleave', handleMouseLeave);
+      cancelAnimationFrame(rafId);
+    };
+  }, []);
 
   return (
     <>
 
-<Helmet>
-    <title>Advertising Agency | Brand Agency in Mumbai - AGENCY09 </title>
-    <meta name="robots" content="index, follow"/> 
-    <meta name="title" content="AGENCY09"/>
+      <Helmet>
+        <title>Advertising Agency | Brand Agency in Mumbai - AGENCY09 </title>
+        <meta name="robots" content="index, follow" />
+        <meta name="title" content="AGENCY09" />
 
-    <meta name="description" content="AGENCY09 is a leading advertising agency in Mumbai. We grow brands with ideas for content, technology, design & data to implement growth strategies with results."/>
-    <link rel="canonical" href="https://www.agency09.in/"/>
+        <meta name="description" content="AGENCY09 is a leading advertising agency in Mumbai. We grow brands with ideas for content, technology, design & data to implement growth strategies with results." />
+        <link rel="canonical" href="https://www.agency09.in/" />
 
-    <meta property="og:title" content="Advertising Agency | Brand Agency in Mumbai - AGENCY09 "/> 
-    <meta property="og:description" content="AGENCY09 is a leading advertising agency in Mumbai. We grow brands with ideas for content, technology, design & data to implement growth strategies with results."/> 
-    <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
-    <meta property="og:type" content="website"/> 
+        <meta property="og:title" content="Advertising Agency | Brand Agency in Mumbai - AGENCY09 " />
+        <meta property="og:description" content="AGENCY09 is a leading advertising agency in Mumbai. We grow brands with ideas for content, technology, design & data to implement growth strategies with results." />
+        <meta property="og:image" content="https://www.agency09.in/agency09.png" />
+        <meta property="og:type" content="website" />
 
 
-    <meta name="twitter:card" content="summary" /> 
-    <meta name="twitter:site" content="@AGENCY09" /> 
-    <meta name="twitter:creator" content="@AGENCY09" /> 
-    <meta name="twitter:url" content="https://www.agency09.in/"/> 
-    <meta name="twitter:description" content=" AGENCY09 is a leading advertising agency in Mumbai. We grow brands with ideas for content, technology, design & data to implement growth strategies with results."/> 
-    <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/>
-</Helmet>
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@AGENCY09" />
+        <meta name="twitter:creator" content="@AGENCY09" />
+        <meta name="twitter:url" content="https://www.agency09.in/" />
+        <meta name="twitter:description" content=" AGENCY09 is a leading advertising agency in Mumbai. We grow brands with ideas for content, technology, design & data to implement growth strategies with results." />
+        <meta name="twitter:image" content="https://www.agency09.in/agency09.png" />
+      </Helmet>
 
 
 
       <Header />
 
       {/* Hero */}
-        <HeroBanner/>
-      {/* Hero */}
-        
-
-    {/* Our Work */}
-    <section className='ourWorkHm ourWork'>
-      <div className='container'>
-        <div className='Heading center'>  
-          
-        <h2 className='sizeH1 uppercase workTitle'><span>We</span> <span>grow</span> <span>brands</span> <span><i className="iconF arrowBtn"><SlArrowRightCircle /></i></span> <br/> <span><i className="iconF"><IoStarSharp /></i></span> <span>with</span>  <span className='underline'>ideas <hr/></span> <span>for</span> <span>content,</span> <span>technology, </span>
-       <span>design & data.</span><span><i className="iconF"><IoStarSharp /></i></span></h2>
-          <div className='btnSpaceEx'>     
-            <div className="btnDark ripple-button titalBtn"><span>Our Work</span></div>
-          </div>
-        </div>
-
-
-        <div className='workGrid'>
-            {workItems.map((item) => (
-              <div className='workGridItem' key={item.id}>
-                <div className='workGridItemLink'>
-                  <Link to={item.link} className='workGridItemLink'>
-                    <div className='cursor09'></div>
-                    <div className='workGridItemImg'>
-                      <img src={item.image} alt={item.title} loading="lazy"/>
-                      <div className='workGridItemHover'>
-                          <div className='workGridItemHoverIn'>
-                              {/* <h3>{item.title}</h3>
-                              <h4>{item.brand}</h4> */}
-                              <p>{item.department}</p>
-                          </div>
-                      </div>
-                    </div>
-                    <div className='workGridItemText'>
-                      <h3>{item.title}</h3>
-                    </div>
-                  </Link>
-                  <div className='workGridItemTags'>
-                    {item.tags.map((tag, index) => (
-                      <Link to={tag.link} className='workGridItemTag' key={index}>{tag.name}</Link>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className='btnSpaceEx center'>     
-            <Link to="/work/case-studies" className="btnDark fontL ripple-button"><span>See More Work</span></Link>
-          </div>
-
-      </div>
-    </section>
-    {/* Our Work */}
-
-    {/* content & tech */}
-      <WeMakeIdeasPerform />
-    {/* content & tech */}
-
-
-    {/* Star IconWhat's NewStar Icon */}
-    <section className="homeBlogsSection">
-      <HomeBlogs />
-    </section>
-    {/* Star IconWhat's NewStar Icon End */}
-
-
-    {/* Services */}
-    <Services />         
-    {/* Services */}
-
-    {/* ServicesList */}
-        <ServicesList />         
-    {/* ServicesList */}
-
-    
-
-    {/* Work Logos */}
-    <div className='strokeB container'>
-          <SVGCurveLine/>
-    </div>
-       <LogosSlider />
-    <div className='strokeB container'>
-          <SVGCurveLine/>
-    </div>
-    {/* Work Logos End */}
-
-
-    {/* Calculat */}
-    <section className='Calculat'>
+      <section className='Homebanner'>
         <div className='container'>
-           <Calculat /> 
-           <div className='strokeB'>
-             <SVGCurveLine/>
-           </div>         
+          <div className='bannerHeading'>
+            <h1 data-aos="fade-up">
+              <TextType
+                as="span"
+                className="banner-first-line"
+                text="We Deliver"
+                loop={false}
+                typingSpeed={75}
+                showCursor={!firstCompleted}
+                cursorCharacter="_"
+                onSentenceComplete={() => setFirstCompleted(true)}
+              />
+              {firstCompleted && (
+                <TextType
+                  as="span"
+                  text="Growth"
+                  loop={false}
+                  typingSpeed={75}
+                  showCursor={!secondCompleted}
+                  cursorCharacter="_"
+                  onSentenceComplete={() => setSecondCompleted(true)}
+                />
+              )}
+            </h1>
+            <div className='bannerbtn text-center' data-aos="fade-up" data-aos-delay="600">
+              <Link className='btn09' to="/connect">Let’s Talk</Link>
+            </div>
+          </div>
         </div>
       </section>
-    {/* Calculat End */}
+      {/* Hero */}
 
 
-    {/* Social */}
-      <Social />                  
-    {/* Social End */}
-    
-      
+      {/* Our Ideas */}
+
+      <section className='homeAbout'>
+        <div className='container'>
+          <div className='homeAboutHd text-center'>
+            <h2 data-aos="fade-up">We Grow Brands with Ideas for<br /> Content, Tech, Design & Data</h2>
+          </div>
+          <div className='homeAboutContent'>
+            <div className='statsRow'>
+              {statsData.map((stat, index) => (
+                <React.Fragment key={stat.id}>
+                  <div className='statItem'>
+                    <h3><Counter end={stat.end} duration={2000} />+</h3>
+                    <p data-aos="fade-up">{stat.desc}</p>
+                  </div>
+                  {index < statsData.length - 1 && (
+                    <div className='statItem'>
+                      <img src={starIcon} alt="Star Icon" className="starIcon" />
+                    </div>
+                  )}
+                </React.Fragment>
+              ))}
+            </div>
+
+          </div>
+        </div>
+      </section>
+      {/* Our Ideas */}
+
+      {/* Select Work */}
+
+      <section className='selectWork'>
+        <div className='container'>
+          <div className='selectWorkHd text-center'>
+            <h2 data-aos="fade-up">Selected Work</h2>
+          </div>
+          <div className='selectWorkGrid'>
+            {selectWorkData.map((item) => (
+              <Link to={item.link || '/work'} className='selectWorkItem' key={item.id}>
+                <div className="workItemImage">
+                  <img src={item.bgImage} alt={item.brand || "Work Image"} className="workItemImg" />
+                  <div className="glassOverlay" style={{ backgroundImage: `url(${item.glassImage})` }}>
+                    <div className="glassContent">
+                      <div className="arrowIcon">
+                        <img src={arrowImg} alt="arrow" />
+                      </div>
+                      <div className="glassTextWrap">
+                        <p className="glassDesc" data-aos="fade-up">{item.desc}</p>
+                        <div className="glassStats" data-aos="fade-up" data-aos-delay="200">
+                          {item.stats.map((stat, index) => (
+                            <div className="gStat" key={index}>
+                              <h4>{stat.value}</h4><span>{stat.label}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="workItemFooter">
+                  <div className="workBrand">{item.brand}</div>
+                  <div className="workTags">{item.tags}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className='selectworkBtn text-center' data-aos="fade-up">
+            <Link className='btn09' to="/work/case-studies">View All Work</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Select Work */}
+
+      {/*Idea*/}
+      <section className='homeIdea'>
+        <div className='container'>
+          <div className='ideaWrap'>
+            <div className='ideaLeft'>
+              <h2 data-aos="fade-up">WE MAKE<br /> IDEAS PERFORM <img src={starIcon} alt="Star" className="ideaStar" /></h2>
+            </div>
+            <div className='ideaRight'>
+              <p data-aos="fade-up">We are an independent agency combining content & tech to implement growth strategies with results.</p>
+              <div className='ideaBtnWrap' data-aos="fade-up">
+                <Link to="/about" className="btn09">Know More</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*Idea*/}
+
+      {/*What We Do*/}
+
+      <section className='homeWhatwedo' ref={sectionRef}>
+        <div className='container'>
+          <div className='homeWhatwedoHd text-center'>
+            <h2 data-aos="fade-up">What We Do</h2>
+          </div>
+          <div className='homewhatwedoAccordian'>
+            <WhatWeDoAccordion />
+          </div>
+          <div className='ai-labs-list'>
+            <div className="aiLabsLeft">
+              {aiLabsLeftData.map((item) => (
+                <div className="aiLabItem" key={item.id}>
+                  <div className="aiLabItemHeader">
+                    <img src={starsIcon} alt="stars" className="aiLabStar" />
+                    <h4>{item.title}</h4>
+                  </div>
+                  <p data-aos="fade-up">{item.description}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="aiLabsMiddle">
+              <div className="aiLabsGifWrap" style={{ backgroundImage: `url(${aiLabsGif})` }}>
+                <div className="aiLabsGlassBox" ref={sectionRef}>
+                  <img src={zeronine} />
+                  <h3>AI Labs</h3>
+                </div>
+              </div>
+            </div>
+
+            <div className="aiLabsRight">
+              {aiLabsRightData.map((item) => (
+                <div className="aiLabItem" key={item.id}>
+                  <div className="aiLabItemHeader">
+                    <img src={starsIcon} alt="stars" className="aiLabStar" />
+                    <h4>{item.title}</h4>
+                  </div>
+                  <p data-aos="fade-up">{item.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*What We Do*/}
+
+      {/*marquee*/}
+
+      <section className="homeMarquee" ref={marqueeRef}>
+        <div className="marqueetextWrap">
+          <div className="marqueeTrack">
+            <div className="textWithStar">
+              <p>
+                Driving growth, with a focus on positivity, creativity, and doing what's right.
+              </p>
+              <img src={yellowStar} alt="" className="marqueeStarImg" />
+            </div>
+            <div className="textWithStar" aria-hidden="true">
+              <p>
+                Driving growth, with a focus on positivity, creativity, and doing what's right.
+              </p>
+              <img src={yellowStar} alt="" className="marqueeStarImg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/*marquee*/}
+
+
+      {/*Brands*/}
+
+      <section className="homeBrands">
+        <div className="">
+          <div className="homeBrandsHd text-center">
+            <h2 data-aos="fade-up">Brands</h2>
+          </div>
+
+          <div className="homeBrandsSliderWrap">
+
+            {/* First Row - Reverse */}
+            <div className="homeBrandsRow reverse">
+              <div className="homeBrandsSlider">
+
+                {/* First Set */}
+                <div className="brandItem">
+                  <img src={adityaBirlaLogo} alt="Aditya Birla Capital" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={tataMotorsCommercial} alt="Tata Motors Commercial Vehicles" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={godrejLaffaireLogo} alt="Godrej" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={induslnd} alt="Induslnd Bank" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={pret} alt="Pret" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={jupiter} alt="Jupiter Hospital" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={ryan} alt="Ryan School" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={barc} alt="BARC" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={siyaram} alt="Siyaram's" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={bitspilani} alt="Bits Pilani" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={trust} alt="Trust" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={wurthLogo} alt="Wurth" />
+                </div>
+
+
+                {/* Exact Duplicate */}
+
+                  <div className="brandItem">
+                  <img src={adityaBirlaLogo} alt="Aditya Birla Capital" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={tataMotorsCommercial} alt="Tata Motors Commercial Vehicles" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={godrejLaffaireLogo} alt="Godrej" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={induslnd} alt="Induslnd Bank" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={pret} alt="Pret" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={jupiter} alt="Jupiter Hospital" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={ryan} alt="Ryan School" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={barc} alt="BARC" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={siyaram} alt="Siyaram's" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={bitspilani} alt="Bits Pilani" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={trust} alt="Trust" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={wurthLogo} alt="Wurth" />
+                </div>
+
+              </div>
+            </div>
+
+
+            {/* Second Row - Normal */}
+            <div className="homeBrandsRow">
+              <div className="homeBrandsSlider">
+
+                {/* First Set */}
+                <div className="brandItem">
+                  <img src={rblLogo} alt="RBL" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={freyaa} alt="Freyaa" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={hp} alt="HP" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={natchLogo} alt="Natch" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={oxemberg} alt="Oxemberg" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={lakmefashion} alt="Lakme Fashion" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={nathseeds} alt="Natch" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={chinesewok} alt="Chinese Wok" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={tribevibe} alt="TribeVibe" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={prideofcows} alt="Pride of Cows" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={aldo} alt="Aldo" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={movado} alt="Movado" />
+                </div>
+
+
+
+                {/* Exact Duplicate */}
+               <div className="brandItem">
+                  <img src={rblLogo} alt="RBL" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={freyaa} alt="Freyaa" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={hp} alt="HP" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={natchLogo} alt="Natch" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={oxemberg} alt="Oxemberg" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={lakmefashion} alt="Lakme Fashion" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={nathseeds} alt="Natch" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={chinesewok} alt="Chinese Wok" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={tribevibe} alt="TribeVibe" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={prideofcows} alt="Pride of Cows" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={aldo} alt="Aldo" />
+                </div>
+
+                <div className="brandItem">
+                  <img src={movado} alt="Movado" />
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      {/*Brands*/}
+
+      {/*Our Culture*/}
+
+      <section className="homeCulture">
+        <div className="container">
+          <div className="homeCultureContent">
+            <p data-aos="fade-up">We’re building a culture of progressive thinking open minded folks who are well equipped to tackle the nuances of communicating with the thumb generation.</p>
+            <div className="homeCultureBtn text-center" data-aos="fade-up" data-aos-delay="200">
+              <Link to="/careers" className="btn09">Our Culture</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*Our Culture*/}
+
+
+      {/* Star IconWhat's NewStar Icon */}
+      <section className="homeBlogsSection">
+        <HomeBlogs />
+      </section>
+      {/* Star IconWhat's NewStar Icon End */}
+
+      {/*CTA Home*/}
+
+      <section className='Homebanner homeCta'>
+        <div className='container'>
+          <div className='bannerHeading'>
+            <h3 data-aos="fade-up">Let’s Talk<span>Growth</span></h3>
+            <div className='bannerbtn text-center' data-aos="fade-up">
+              <Link className='btn09' to="/connect">Connect Now</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/*CTA Home*/}
       <Footer />
     </>
   )
 }
 
 export default Home
-
