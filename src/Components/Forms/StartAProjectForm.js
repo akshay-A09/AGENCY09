@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+
+import React, { useState, useEffect, useRef } from 'react';
 
 function StartAProjectForm() {
   const [errorMessage, setErrorMessage] = useState('');
+
   const [formData, setFormData] = useState({
     name: '',
     companyName: '',
@@ -14,52 +16,141 @@ function StartAProjectForm() {
     message: ''
   });
 
-  const [errors, setErrors] = useState({
-    name: '',
-    companyName: '',
-    number: '',
-    email: '',
-    website: '',
-    country: '',
-    service: '',
-    budget: ''
-  });
-
+  const [errors, setErrors] = useState({});
   const [buttonText, setButtonText] = useState('Submit');
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState('');
+
+  const captchaContainerRef = useRef(null);
+  const captchaWidgetId = useRef(null);
+
+  const countries = [
+    'India', 'UAE', 'Australia', 'New Zealand',
+    'Saudi Arabia', 'USA', 'UK', 'Europe', 'Others'
+  ];
+
+  const services = [
+    'Launch of a brand from scratch',
+    'Everything about Website - Mobile App',
+    'AI Based Marketing Tools',
+    'Organic Search Presence (SEO) & Reputation',
+    'Increase social engagements and community (SMM)',
+    'Running Ads & Lead-Based Campaigns',
+    'Brand Identity and Packaging',
+    'Continuous Video Content',
+    'Influencer Tie-Ups',
+    'Quick turn around tasks',
+    'HR based communication',
+    'Distribution / Channel Marcom',
+    'Deliver IP’s and Tactical Campaigns',
+    'Google based integration like GA4 and Google My Business',
+    'Customised Softwares',
+    'Consistent - Emailer - Brochure - Leaflets',
+    'Others'
+  ];
+
+  // Load and render Google reCAPTCHA v2
+  useEffect(() => {
+    let cancelled = false;
+
+    const renderCaptcha = () => {
+      if (
+        cancelled ||
+        !captchaContainerRef.current ||
+        !window.grecaptcha?.render ||
+        captchaWidgetId.current !== null
+      ) {
+        return;
+      }
+
+      captchaWidgetId.current = window.grecaptcha.render(
+        captchaContainerRef.current,
+        {
+          sitekey: '6Ld6hestAAAAAGygJlzMvi2IsZVlHucqB-hfIIoD',
+          callback: (token) => {
+            setCaptchaToken(token);
+            setErrors((prev) => ({ ...prev, captcha: '' }));
+          },
+          'expired-callback': () => setCaptchaToken(''),
+          'error-callback': () => {
+            setCaptchaToken('');
+            setErrorMessage(
+              'Unable to load CAPTCHA. Please try again.'
+            );
+          }
+        }
+      );
+    };
+
+    if (window.grecaptcha?.render) {
+      renderCaptcha();
+    } else {
+      window.onStartProjectCaptchaApiReady = renderCaptcha;
+
+      if (
+        !document.querySelector(
+          'script[data-start-project-recaptcha]'
+        )
+      ) {
+        const script = document.createElement('script');
+        script.src =
+          'https://www.google.com/recaptcha/api.js?onload=onStartProjectCaptchaApiReady&render=explicit';
+        script.async = true;
+        script.defer = true;
+        script.dataset.startProjectRecaptcha = 'true';
+        script.onerror = () => {
+          setErrorMessage('Unable to load CAPTCHA. Please refresh and try again.');
+        };
+        document.head.appendChild(script);
+      }
+    }
+
+    return () => {
+      cancelled = true;
+      delete window.onStartProjectCaptchaApiReady;
+    };
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
-    setErrors(prevErrors => ({
-      ...prevErrors,
-      [name]: ''
-    }));
+
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    setErrors((prev) => ({ ...prev, [name]: '' }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setErrorMessage('');
 
     const newErrors = {};
-    if (!formData.name) newErrors.name = 'Name is required';
-    if (!formData.companyName) newErrors.companyName = 'Company name is required';
+
+    if (!formData.name.trim()) newErrors.name = 'Name is required';
+    if (!formData.companyName.trim()) {
+      newErrors.companyName = 'Company name is required';
+    }
+
     if (!formData.number) {
       newErrors.number = 'Phone number is required';
     } else if (!/^\d{10}$/.test(formData.number)) {
       newErrors.number = 'Phone number must be 10 digits';
     }
+
     if (!formData.email) {
       newErrors.email = 'Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = 'Invalid email format';
     }
-    if (!formData.website) newErrors.website = 'Website is required';
+
+    if (!formData.website.trim()) {
+      newErrors.website = 'Website is required';
+    }
     if (!formData.country) newErrors.country = 'Country is required';
     if (!formData.service) newErrors.service = 'Service is required';
-    if (!formData.budget) newErrors.budget = 'Budget is required';
+    if (!formData.budget.trim()) newErrors.budget = 'Budget is required';
+
+    if (!captchaToken) {
+      newErrors.captcha = 'Please complete the CAPTCHA verification';
+    }
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
@@ -69,138 +160,202 @@ function StartAProjectForm() {
     setButtonText('Processing...');
     setIsButtonDisabled(true);
 
-    
-    const grecaptcha = window.grecaptcha;
-    grecaptcha.ready(async () => {
-      const token = await grecaptcha.execute('6LelbAYqAAAAAGvo7ZJ_k3t_R1z4rJKA7Aeu7ojF', { action: 'submit' });
-      try {
-        const response = await fetch('https://www.agency09.in/test_api/enquiryApi.php', {
+    try {
+      const response = await fetch(
+        'https://www.agency09.in/test_api/enquiryApi.php',
+        {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({ ...formData, recaptcha_token: token })
-        });
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            ...formData,
+            recaptcha_token: captchaToken
+          })
+        }
+      );
 
-        if (!response.ok) {
-          throw new Error('Failed to submit form');
+      const responseData = await response.json();
+
+      if (!response.ok || Number(responseData.status) !== 1) {
+        setErrorMessage(
+          responseData.message || 'Failed to submit form'
+        );
+
+        setCaptchaToken('');
+
+        if (
+          captchaWidgetId.current !== null &&
+          window.grecaptcha?.reset
+        ) {
+          window.grecaptcha.reset(captchaWidgetId.current);
         }
 
-        const responseData = await response.json();
-        if (responseData.status === 1) {
-          setErrorMessage(responseData.message);
-          setFormData({
-            name: '',
-            companyName: '',
-            number: '',
-            email: '',
-            website: '',
-            country: '',
-            service: '',
-            budget: '',
-            message: ''
-          });
-          // ✅ Redirect to Thank You page
-          window.location.href = 'https://www.agency09.in/start-project-thank-you';
-        } else {
-          setErrorMessage(responseData.message);
-        }
-      
-      } catch (error) {
-        console.error('Error submitting form:', error.message);
-        setErrorMessage('Error submitting form');
-      } finally {
-        setButtonText('Submit');
-        setIsButtonDisabled(false);
+        return;
       }
-    });
+
+      window.location.href =
+        'https://www.agency09.in/start-project-thank-you';
+
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setErrorMessage('Error submitting form. Please try again.');
+
+      setCaptchaToken('');
+
+      if (
+        captchaWidgetId.current !== null &&
+        window.grecaptcha?.reset
+      ) {
+        window.grecaptcha.reset(captchaWidgetId.current);
+      }
+    } finally {
+      setButtonText('Submit');
+      setIsButtonDisabled(false);
+    }
   };
 
-  const countries = [
-    'India','UAE', 'Australia', 'New Zealand', 'Saudi Arabia', 'USA', 'UK', 'Europe', 'Others'
-  ];
-
- const services = [
-  'Launch of a brand from scratch',
-  'Everything about Website - Mobile App',
-  'AI Based Marketing Tools',
-  'Organic Search Presence (SEO) & Reputation',
-  'Increase social engagements and community (SMM)',
-  'Running Ads & Lead-Based Campaigns',
-  'Brand Identity and Packaging',
-  'Continuous Video Content',
-  'Influencer Tie-Ups',
-  'Quick turn around tasks',
-  'HR based communication',
-  'Distribution / Channel Marcom',
-  'Deliver IP’s and Tactical Campaigns',
-  'Google based integration like GA4 and Google My Business',
-  'Customised Softwares',
-  'Consistent - Emailer - Brochure - Leaflets',
-  'Others'
-];
-
-
   return (
-    <div className='contactForm formDark '>
+    <div className="contactForm formDark">
       <form onSubmit={handleSubmit}>
-        <div className='FormGridTwo'>
-          <div className='form-group'>
-            <input className='form-control' placeholder='Name' type="text" id="name" name="name" value={formData.name} onChange={handleChange} />
+        <div className="FormGridTwo">
+          <div className="form-group">
+            <input
+              className="form-control"
+              placeholder="Name*"
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
             {errors.name && <span className="errorText">{errors.name}</span>}
           </div>
-          <div className='form-group'>
-            <input className='form-control' placeholder='Company Name*' type="text" id="companyName" name="companyName" value={formData.companyName} onChange={handleChange} />
+
+          <div className="form-group">
+            <input
+              className="form-control"
+              placeholder="Company Name*"
+              type="text"
+              name="companyName"
+              value={formData.companyName}
+              onChange={handleChange}
+            />
             {errors.companyName && <span className="errorText">{errors.companyName}</span>}
           </div>
-          <div className='form-group'>
-            <input className='form-control' placeholder='Phone Number*' type="number" id="number" name="number" value={formData.number} onChange={handleChange} />
+
+          <div className="form-group">
+            <input
+              className="form-control"
+              placeholder="Phone Number*"
+              type="tel"
+              name="number"
+              value={formData.number}
+              onChange={handleChange}
+            />
             {errors.number && <span className="errorText">{errors.number}</span>}
           </div>
-          <div className='form-group'>
-            <input className='form-control' placeholder='Email ID*' type="text" id="email" name="email" value={formData.email} onChange={handleChange} />
+
+          <div className="form-group">
+            <input
+              className="form-control"
+              placeholder="Email ID*"
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
             {errors.email && <span className="errorText">{errors.email}</span>}
           </div>
-          <div className='form-group'>
-            <input className='form-control' placeholder='Current Website*' type="text" id="website" name="website" value={formData.website} onChange={handleChange} />
+
+          <div className="form-group">
+            <input
+              className="form-control"
+              placeholder="Current Website*"
+              type="text"
+              name="website"
+              value={formData.website}
+              onChange={handleChange}
+            />
             {errors.website && <span className="errorText">{errors.website}</span>}
           </div>
-          <div className='form-group'>
-            <select className='form-control' value={formData.country} onChange={handleChange} name="country">
+
+          <div className="form-group">
+            <select
+              className="form-control"
+              name="country"
+              value={formData.country}
+              onChange={handleChange}
+            >
               <option value="">Country</option>
-              {countries.map((country, index) => (
-                <option key={index} value={country}>{country}</option>
+              {countries.map((country) => (
+                <option key={country} value={country}>{country}</option>
               ))}
             </select>
             {errors.country && <span className="errorText">{errors.country}</span>}
           </div>
-          <div className='form-group'>
-            <select className='form-control' value={formData.service} onChange={handleChange} name="service">
+
+          <div className="form-group">
+            <select
+              className="form-control"
+              name="service"
+              value={formData.service}
+              onChange={handleChange}
+            >
               <option value="">Services</option>
-              {services.map((service, index) => (
-                <option key={index} value={service}>{service}</option>
+              {services.map((service) => (
+                <option key={service} value={service}>{service}</option>
               ))}
             </select>
             {errors.service && <span className="errorText">{errors.service}</span>}
           </div>
-          <div className='form-group'>
-            <input className='form-control' placeholder='Budget' type="text" id="budget" name="budget" value={formData.budget} onChange={handleChange} />
+
+          <div className="form-group">
+            <input
+              className="form-control"
+              placeholder="Budget*"
+              type="text"
+              name="budget"
+              value={formData.budget}
+              onChange={handleChange}
+            />
             {errors.budget && <span className="errorText">{errors.budget}</span>}
           </div>
         </div>
-        <div className='FormGridS1'>
-          <div className='form-group'>
-            <textarea className='form-control textarea' placeholder='Message (Optional)' id="message" name="message" value={formData.message} onChange={handleChange} />
+
+        <div className="FormGridS1">
+          <div className="form-group">
+            <textarea
+              className="form-control textarea"
+              placeholder="Message (Optional)"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+            />
           </div>
         </div>
-        <div className='FormGridS1'>
-          <div className='form-group-btn center'>
-            <button type="submit" className="btnBlack fontS ripple-button" id="start-project-submit" disabled={isButtonDisabled}>
+
+        {/* Google reCAPTCHA v2 */}
+        <div className="FormGridS1">
+          <div className="form-group">
+            <div ref={captchaContainerRef}></div>
+            {errors.captcha && (
+              <span className="errorText">{errors.captcha}</span>
+            )}
+          </div>
+        </div>
+
+        <div className="FormGridS1">
+          <div className="form-group-btn center">
+            <button
+              type="submit"
+              className="btnBlack fontS ripple-button"
+              id="start-project-submit"
+              disabled={isButtonDisabled}
+            >
               <span>{buttonText}</span>
             </button>
           </div>
         </div>
       </form>
+
       <div className="form_response">
         {errorMessage && <span className="error">{errorMessage}</span>}
       </div>
