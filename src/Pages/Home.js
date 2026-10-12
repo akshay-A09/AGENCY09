@@ -779,7 +779,7 @@ const Home = () => {
 
                 {/* Exact Duplicate */}
 
-                  <div className="brandItem">
+                <div className="brandItem">
                   <img src={adityaBirlaLogo} alt="Aditya Birla Capital" />
                 </div>
 
@@ -887,7 +887,7 @@ const Home = () => {
 
 
                 {/* Exact Duplicate */}
-               <div className="brandItem">
+                <div className="brandItem">
                   <img src={rblLogo} alt="RBL" />
                 </div>
 
@@ -970,8 +970,8 @@ const Home = () => {
       <section className='Homebanner homeCta'>
         <div className='container'>
           <div className='bannerHeading'>
-            <h3 data-aos="fade-up">Let’s Talk<span>Growth</span></h3>
-            <div className='bannerbtn text-center' data-aos="fade-up">
+            <h3>Let’s Talk<span>Growth</span></h3>
+            <div className='bannerbtn text-center'>
               <Link className='btn09' to="/connect">Connect Now</Link>
             </div>
           </div>

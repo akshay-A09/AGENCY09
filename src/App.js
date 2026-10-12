@@ -23,6 +23,8 @@ import Ryangroup from './Pages/Work/CaseStudy/Tech/Ryangroup'
 import TataTrucks from './Pages/Work/CaseStudy/Tech/TataTrucks'
 import Siyaram from './Pages/Work/CaseStudy/Tech/Siyaram'
 
+import Influencer from './Pages/Solutions/Influencer'
+
 import Groupsoft from './Pages/Work/CaseStudy/Tech/Groupsoft'
 import Bitspilani from './Pages/Work/CaseStudy/Tech/Bitspilani'
 import GodrejLaffaire from './Pages/Work/CaseStudy/Content/GodrejLaffaire'
@@ -113,6 +115,7 @@ import PMEDubaiDigitalGrowthCaseStudySEOTrafficLeadGenerationSuccess from './Pag
 import BuildingtheEverydayAllyKantaDidiforGodrejLaffaire, { GodrejLaffaireDiwaliCampaign } from './Pages/Work/CaseStudy/Content/GodrejLaffaireDiwaliCampaign'
 // SEO 
 
+
  
 function App() {
   const location = useLocation();
@@ -131,6 +134,7 @@ function App() {
           <Route exact path='/testimonials' element={<Testimonials />} />
           <Route exact path='/url-builder' element={<URLBuilder />} />
           <Route exact path='/tech-partner' element={<TechPartner />} />
+          <Route exact path="/solutions/influencer" element={<Influencer />} />
 
           <Route exact path='/solutions/tech' element={<Tech />} />
           <Route exact path='/solutions/content' element={<Content />} />

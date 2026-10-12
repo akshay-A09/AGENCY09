@@ -5,7 +5,7 @@
 h1{line-height:1;font-size:var(--font-large);font-family:delight-black;letter-spacing:-2%}
 h2{line-height:1.2;font-size:var(--font-medium);font-family:delight-regular;letter-spacing:-2%}
 h3{line-height:1.3;font-size:var(--font-medium);letter-spacing:-2%}
-p{font-family:delight-regular;}
+p{font-family:delight-regular}
 .container{width:var(--container)}
 .Homebanner{background-image:url('../Images/hero/banner-bg.png');background-size:cover;background-position:center;background-repeat:no-repeat;width:100%;height:100vh;display:flex;align-items:center;justify-content:center;margin-top:100px}
 .bannerHeading{text-align:center;display:flex;flex-direction:column;align-items:center}
@@ -24,7 +24,7 @@ p{font-family:delight-regular;}
 .statsRow{display:flex;justify-content:space-between;align-items:center;width:100%;margin:0 auto}
 .statItem{display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:space-between}
 .statItem h3{color:var(--blue);margin:0;font-family:delight-bold;font-weight:700}
-.statItem p{margin:10px 0 0;font-size:18px;font-weight:500;color:var(--light-black);text-transform:none;font-family:delight-regular;letter-spacing:-2%;}
+.statItem p{margin:10px 0 0;font-size:18px;font-weight:500;color:var(--light-black);text-transform:none;font-family:delight-regular;letter-spacing:-2%}
 .starIcon{width:50px;height:auto}
 .text-center{text-align:center}
 .selectWork{padding:150px 0 80px}
@@ -103,7 +103,7 @@ p{font-family:delight-regular;}
 .aiLabsGifWrap{width:100%;aspect-ratio:1/1;max-width:100%;background-size:cover;background-position:center;border-radius:25px;display:flex;justify-content:center;align-items:center;position:relative;border:1px solid #fffFFF33}
 .aiLabsGlassBox{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:15px;background:rgba(255,255,255,.4);backdrop-filter:blur(12px);padding:30px;border-radius:40px;border:1px solid rgba(255,255,255,.5);width:85%;aspect-ratio:1/1}
 model-viewer{margin:0}
-.aiLabsGlassBox img{width:150px;height:auto;object-fit:contain;}
+.aiLabsGlassBox img{width:150px;height:auto;object-fit:contain}
 .logo09-model{width:100%;max-width:160px;height:100%;min-height:180px;background:0 0;transform-origin:center center;will-change:transform;transition:transform .25s ease-out}
 .aiLabsGlassBox h3{font-family:var(--font-medium);font-weight:500;margin:0;color:var(--black);letter-spacing:-1.5px}
 .aiLabsGlassBox .logo09-model{width:100%}
@@ -140,10 +140,105 @@ to{transform:translate3d(0,0,0)}
 .homeCultureContent{width:55%;margin:auto;text-align:center}
 .homeCultureContent p{font-size:28px;line-height:1.1;color:var(--black);margin:0 0 30px;display:flex;align-items:flex-end;gap:15px;letter-spacing:-2%}
 .homeBlogsSection .iconSVG{display:none}
-.homeBlogsSection h2{text-transform:capitalize;}
-
+.homeBlogsSection h2{text-transform:capitalize}
+.influencerHd{font-size:54px;font-weight:400;font-family:delight-regular;margin-bottom:30px}
+.InfluencerSolutionsRow .SolutionsCol{width:60%}
+.InfluencerSolutionsRow .trustedBy{margin-top:60px}
+.engagementModels .heading{text-align:center}
+.influencerSecCaseStudy .btnSpaceEx{padding:30px 0 0}
+.influencerSecCaseStudy .CaseStudyTitale{font-size:16px!important;font-weight:500}
+.InfluencerSolutionsRow .InfluencerColImg{width:40%}
+.influencerSecFaq .container{width:75%}
+.influencerSecFaq .accordion .accordion-header button{border-top:1px solid #ddd!important;font-size:20px!important;font-weight:400!important}
+.influencerSecFaq .accordion .accordion-header button::after{background:#006dea}
+.influencerSecFaq .accordion .accordion-header button::before{background:#006dea}
+.InfluencerSolutionsRow{gap:4rem}
+.InfluencerServiesBtn{right:12%!important;bottom:-50px!important;width:100px!important}
+.influencerCta h3{font-size:60px!important;line-height:50px!important;text-transform:initial!important;letter-spacing:-2%;gap:0!important}
+.influencerCta h3 span{font-size:60px!important}
+.InfluencerColImg img{height:100%;object-fit:cover;width:100%}
+.influencerSecServicesFaqList .accordion-button{font-size:34px!important;font-weight:300!important;border-top:1px solid #ddd!important;text-transform:capitalize!important}
+.influencerSecServicesFaq{border-bottom:2px solid #090909;padding-bottom:30px}
+.creatorSection{padding:120px 0;position:relative;background-color:#fff}
+.creatorSectionRow{display:flex;align-items:center;justify-content:space-between;gap:60px}
+.creatorSectionLeft{flex:1;max-width:480px}
+.creatorSectionHeading{font-size:54px;line-height:1.15;font-family:delight-regular,sans-serif;color:var(--black,#090909);letter-spacing:-2%;font-weight:400;margin:0}
+.creatorSectionLeft .creatorSectionHeading{color:#b8b8b8}
+.creatorSectionLeft .creatorWord{display:inline-block;color:#b8b8b8;background:linear-gradient(90deg,#090909 0,#090909 100%) no-repeat,linear-gradient(90deg,#b8b8b8 0,#b8b8b8 100%) no-repeat;background-size:0 100%,100% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.creatorSection.inView .creatorSectionLeft .creatorWord,.creatorSectionLeft .creatorSectionHeading.inView .creatorWord{animation:creatorWordHighlight .45s cubic-bezier(.25,1,.5,1) both;animation-delay:calc(.12s + var(--w) * .14s)}
+@keyframes creatorWordHighlight{
+0%{background-size:0 100%,100% 100%;color:#b8b8b8}
+100%{background-size:100% 100%,100% 100%;color:var(--black,#090909)}
+}
+.creatorSectionRight{flex:1.2;display:flex;justify-content:center;align-items:center}
+.creatorEcosystemContainer{position:relative;width:100%;max-width:75%;aspect-ratio:1/1;margin:0 0 0 auto}
+.creatorDiagramLines{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:1}
+.creatorDiagramLines .diagramSquare{position:absolute;top:25%;bottom:25%;left:25%;right:25%;border:1px solid #e2e2e2;box-sizing:border-box;-webkit-mask-image:linear-gradient(#000,#000),linear-gradient(#000,#000),linear-gradient(#000,#000),linear-gradient(#000,#000);-webkit-mask-position:top left,top right,bottom left,bottom right;-webkit-mask-size:27% 27%,27% 27%,27% 27%,27% 27%;-webkit-mask-repeat:no-repeat;mask-image:linear-gradient(#000,#000),linear-gradient(#000,#000),linear-gradient(#000,#000),linear-gradient(#000,#000);mask-position:top left,top right,bottom left,bottom right;mask-size:27% 27%,27% 27%,27% 27%,27% 27%;mask-repeat:no-repeat}
+.creatorDiagramLines .diagramCenterCross{position:absolute;top:50%;left:50%;width:44px;height:44px;transform:translate(-50%,-50%)}
+.creatorDiagramLines .diagramCenterCross::before{content:'';position:absolute;top:0;bottom:0;left:50%;width:1px;background-color:#d2d2d2;transform:translateX(-50%)}
+.creatorDiagramLines .diagramCenterCross::after{content:'';position:absolute;left:0;right:0;top:50%;height:1px;background-color:#d2d2d2;transform:translateY(-50%)}
+.creatorCard{position:absolute;width:23%;aspect-ratio:1/1;background-color:#f7f7f8;display:flex;align-items:flex-end;justify-content:flex-start;padding:20px;box-sizing:border-box;z-index:2;transition:transform .25s ease,box-shadow .25s ease;cursor:default;border-radius:0}
+.creatorCard:hover{box-shadow:0 10px 25px rgba(0,0,0,.08)}
+.creatorCardText{font-size:16px;line-height:16px;font-weight:600;font-family:delight-regular;letter-spacing:-2%;margin:0;color:#090909}
+.creatorCard.cardUGC{top:0;left:0}
+.creatorCard.cardUGC:hover{transform:scale(1.03)}
+.creatorCard.cardAffiliate{top:0;right:0;background-color:#f10079}
+.creatorCard.cardAffiliate:hover{transform:scale(1.03)}
+.creatorCard.cardAffiliate .creatorCardText{color:#fff}
+.creatorCard.cardCommunity{bottom:0;left:0}
+.creatorCard.cardCommunity:hover{transform:scale(1.03)}
+.creatorCard.cardArtists{bottom:0;right:0}
+.creatorCard.cardArtists:hover{transform:scale(1.03)}
+.creatorCard.cardNano{top:13%;left:50%;transform:translateX(-50%)}
+.creatorCard.cardNano:hover{transform:translateX(-50%) scale(1.03)}
+.creatorCard.cardExperts{left:13%;top:50%;transform:translateY(-50%);background-color:#20c7e8}
+.creatorCard.cardExperts:hover{transform:translateY(-50%) scale(1.03)}
+.creatorCard.cardExperts .creatorCardText{color:#090909}
+.creatorCard.cardMacro{right:13%;top:50%;transform:translateY(-50%);background-color:#090909}
+.creatorCard.cardMacro:hover{transform:translateY(-50%) scale(1.03)}
+.creatorCard.cardMacro .creatorCardText{color:#fff}
+.creatorCard.cardCelebrities{bottom:13%;left:50%;transform:translateX(-50%)}
+.creatorCard.cardCelebrities:hover{transform:translateX(-50%) scale(1.03)}
+.InfluencerSolutionsRow .SolutionsCol .trustedBy ul img{width:130px;object-fit:contain}
+@media (max-width:991px){
+.creatorSection{padding:70px 0}
+.creatorSectionRow{flex-direction:column;text-align:left;gap:50px}
+.creatorSectionLeft{max-width:100%;width:100%;margin-bottom:30px}
+.creatorSectionHeading{font-size:38px}
+.creatorCard{padding:12px 10px}
+.creatorCardText{font-size:12px}
+}
+@media (max-width:576px){
+.creatorSectionHeading{font-size:28px}
+.creatorCard{padding:8px 6px}
+.creatorCardText{font-size:10px;line-height:1.2}
+.creatorDiagramLines .diagramCenterCross{width:28px;height:28px}
+}
+.engagementModels{padding:80px 0 100px;background-color:#fff}
+.engagementModels .creatorSectionHeading{margin-bottom:40px}
+.engagementModelsRows{display:flex;flex-direction:column;gap:24px}
+.engagementRow{display:grid;gap:25px}
+.engagementRow4{grid-template-columns:repeat(4,1fr);margin:0}
+.engagementRow3{grid-template-columns:repeat(3,1fr);margin:0}
+.engagementCol{background-color:#f9f9f9;padding:35px 30px;min-height:180px;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;transition:transform .25s ease,box-shadow .25s ease;border-radius:4px;box-sizing:border-box;width:100%;margin:0}
+.engagementCol:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(0,0,0,.05)}
+.engagementIcon{margin-bottom:24px;display:flex;align-items:flex-start;margin:0}
+.engagementIcon img{width:44px;height:44px;object-fit:contain;display:block}
+.engagementTitle{font-size:18px;font-weight:500;font-family:delight-regular,sans-serif;color:#090909;line-height:1.25;margin:0;letter-spacing:-1.5%}
+@media (max-width:991px){
+.engagementModels{padding:60px 0}
+.engagementRow4{grid-template-columns:repeat(2,1fr)}
+.engagementRow3{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:576px){
+.engagementRow3,.engagementRow4{grid-template-columns:repeat(2,1fr);gap:16px}
+.engagementCol{padding:24px 20px;min-height:140px}
+.engagementIcon{margin-bottom:16px}
+.engagementIcon img{width:36px;height:36px}
+.engagementTitle{font-size:16px}
+}
 @media (max-width:768px){
-.Homebanner{padding-bottom:0px;margin-top:0px;}
+.Homebanner{padding-bottom:0;margin-top:0}
 .homeCultureContent{width:100%;padding:0 30px}
 .ideaLeft h2{gap:5px}
 .homeCultureContent p{font-size:20px;line-height:1.2}
@@ -206,4 +301,81 @@ h2{font-size:38px!important}
 .arrowIcon{opacity:1;transform:translateY(0);width:fit-content;height:fit-content}
 .glassContent{gap:6px}
 .glassStats{gap:5px}
+.InfluencerColImg{position:relative!important;top:initial!important;opacity:1!important}
+.InfluencerSolutionsRow{flex-direction:column-reverse!important;gap:30px!important}
+.influencerHd{font-size:40px}
+.influencerSecFaq .container{width:var(--container)}
+.influencerSecFaq .accordion .accordion-header button{font-size:17px!important}
+.creatorSectionRow{display:block}
+.creatorEcosystemContainer{width:100%;max-width:100%}
+.influencerCta h3{font-size:40px!important;line-height:35px!important;letter-spacing:0!important}
+.influencerCta h3 span{font-size:40px!important}
+.influencerSecServicesFaq{padding-top:80px!important}
+.influencerSecServicesFaqList .accordion-button{font-size:20px!important}
+}
+.creatorEcosystemContainer .creatorCard{background-color:#f5f5f5;cursor:pointer;opacity:0;transition:opacity .3s ease}
+.creatorEcosystemContainer.inView .creatorCard{opacity:1}
+.creatorEcosystemContainer .creatorCardText{color:#111;transition:color .3s ease}
+.creatorEcosystemContainer .cardAffiliate{background-color:#ff1f8f}
+.creatorEcosystemContainer .cardExperts{background-color:#00cde0}
+.creatorEcosystemContainer .cardMacro{background-color:#0a0a0a}
+.creatorEcosystemContainer .cardAffiliate .creatorCardText,.creatorEcosystemContainer .cardMacro .creatorCardText{color:#fff}
+.creatorEcosystemContainer.inView:has(.creatorCard:hover) .creatorCard{opacity:.2}
+.creatorEcosystemContainer.inView:has(.creatorCard:hover) .creatorCard:hover{opacity:1}
+.creatorEcosystemContainer .diagramSquare::before{content:"";position:absolute;top:-1px;right:-1px;bottom:-1px;left:-1px;border:2px solid #111;border-radius:inherit;pointer-events:none;opacity:0;clip-path:inset(0 50% 0 0);transition:opacity .3s ease,clip-path .4s ease;-webkit-mask-image:linear-gradient(#000,#000),linear-gradient(#000,#000),linear-gradient(#000,#000),linear-gradient(#000,#000);-webkit-mask-position:top left,top right,bottom left,bottom right;-webkit-mask-size:27% 27%,27% 27%,27% 27%,27% 27%;-webkit-mask-repeat:no-repeat;mask-image:linear-gradient(#000,#000),linear-gradient(#000,#000),linear-gradient(#000,#000),linear-gradient(#000,#000);mask-position:top left,top right,bottom left,bottom right;mask-size:27% 27%,27% 27%,27% 27%,27% 27%;mask-repeat:no-repeat}
+.creatorEcosystemContainer.inView:has(.cardExperts:hover) .diagramSquare::before{opacity:1;clip-path:inset(0 50% 0 0)}
+.creatorEcosystemContainer.inView:has(.cardMacro:hover) .diagramSquare::before{opacity:1;clip-path:inset(0 0 0 50%)}
+.creatorEcosystemContainer.inView:has(.cardNano:hover) .diagramSquare::before{opacity:1;clip-path:inset(0 0 50% 0)}
+.creatorEcosystemContainer.inView:has(.cardCelebrities:hover) .diagramSquare::before{opacity:1;clip-path:inset(50% 0 0 0)}
+@keyframes ecoCardIn{
+from{opacity:0;translate:0 24px}
+to{opacity:1;translate:0 0}
+}
+@keyframes ecoFillCyan{
+from{background-color:#f5f5f5}
+to{background-color:#00cde0}
+}
+@keyframes ecoFillPink{
+from{background-color:#f5f5f5}
+to{background-color:#ff1f8f}
+}
+@keyframes ecoFillBlack{
+from{background-color:#f5f5f5}
+to{background-color:#0a0a0a}
+}
+@keyframes ecoTextToWhite{
+from{color:#111}
+to{color:#fff}
+}
+@keyframes ecoLineDraw{
+from{clip-path:inset(0 100% 100% 0);opacity:0}
+to{clip-path:inset(0 0 0 0);opacity:1}
+}
+@keyframes ecoSignal{
+0%{top:0;left:0;opacity:0}
+5%{opacity:1}
+25%{top:0;left:100%}
+50%{top:100%;left:100%}
+75%{top:100%;left:0}
+95%{opacity:1}
+100%{top:0;left:0;opacity:0}
+}
+.creatorEcosystemContainer.inView .cardUGC{animation:ecoCardIn .45s ease .1s backwards}
+.creatorEcosystemContainer.inView .cardNano{animation:ecoCardIn .45s ease .25s backwards}
+.creatorEcosystemContainer.inView .cardAffiliate{animation:ecoCardIn .45s ease .4s backwards,ecoFillPink .4s ease 1.5s backwards}
+.creatorEcosystemContainer.inView .cardExperts{animation:ecoCardIn .45s ease .55s backwards,ecoFillCyan .4s ease 1.35s backwards}
+.creatorEcosystemContainer.inView .cardMacro{animation:ecoCardIn .45s ease .7s backwards,ecoFillBlack .4s ease 1.65s backwards}
+.creatorEcosystemContainer.inView .cardCommunity{animation:ecoCardIn .45s ease .85s backwards}
+.creatorEcosystemContainer.inView .cardCelebrities{animation:ecoCardIn .45s ease 1s backwards}
+.creatorEcosystemContainer.inView .cardArtists{animation:ecoCardIn .45s ease 1.15s backwards}
+.creatorEcosystemContainer.inView .cardAffiliate .creatorCardText{animation:ecoTextToWhite .4s ease 1.5s backwards}
+.creatorEcosystemContainer.inView .cardMacro .creatorCardText{animation:ecoTextToWhite .4s ease 1.65s backwards}
+.creatorEcosystemContainer .diagramCenterCross,.creatorEcosystemContainer .diagramSquare{opacity:0}
+.creatorEcosystemContainer.inView .diagramCenterCross,.creatorEcosystemContainer.inView .diagramSquare{opacity:1}
+.creatorEcosystemContainer.inView .diagramCenterCross{animation:ecoLineDraw .6s ease-out .5s backwards}
+.creatorEcosystemContainer.inView .diagramSquare{animation:ecoLineDraw .7s ease-out 1s backwards}
+.creatorEcosystemContainer .diagramSquare::after{content:"";position:absolute;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background-color:#ff1f8f;box-shadow:0 0 8px #ff1f8f;top:0;left:0;opacity:0}
+.creatorEcosystemContainer.inView .diagramSquare::after{animation:ecoSignal 4s linear 2s infinite}
+@media (prefers-reduced-motion:reduce){
+.creatorEcosystemContainer .creatorCard,.creatorEcosystemContainer .creatorCardText,.creatorEcosystemContainer .diagramCenterCross,.creatorEcosystemContainer .diagramSquare,.creatorEcosystemContainer .diagramSquare::after,.creatorSectionLeft .creatorHeadingHighlight{animation:none!important;transition:none!important;background-size:100% 100%,100% 100%!important;opacity:1}
 }
