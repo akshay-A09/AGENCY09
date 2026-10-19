@@ -508,18 +508,18 @@ const schemaData = {
       <title>Keyword | Best SEO Agency in Mumbai, India - AGENCY09</title>
       <meta name="robots" content="index, follow"/> 
 
-      <meta name="description" content="Grow your digital presence with AGENCY09, your trusted SEO agency in Mumbai, India. We offer YouTube SEO, eCommerce SEO, B2B SEO, App Store optimization services, ORM, and more."/>
+      <meta name="description" content="AGENCY09 is a leading SEO agency in India offering technical, eCommerce, B2B, YouTube, local SEO, ASO, ORM, and AI search optimization (AEO/GEO) worldwide."/>
       <link rel="canonical" href="https://www.agency09.in/services/keyword.php"/>
 
       <meta property="og:title" content="Keyword | Best SEO Agency in Mumbai, India - AGENCY09"/> 
-      <meta property="og:description" content="Grow your digital presence with AGENCY09, your trusted SEO agency in Mumbai, India. We offer YouTube SEO, eCommerce SEO, B2B SEO, App Store optimization services, ORM, and more."/> 
+      <meta property="og:description" content="AGENCY09 is a leading SEO agency in India offering technical, eCommerce, B2B, YouTube, local SEO, ASO, ORM, and AI search optimization (AEO/GEO) worldwide."/> 
       <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
       <meta property="og:type" content="website"/> 
       <meta name="twitter:card" content="summary"/> 
       <meta name="twitter:site" content="@AGENCY09"/> 
       <meta name="twitter:creator" content="@AGENCY09"/> 
       <meta name="twitter:url" content="https://www.agency09.in/services/keyword.php"/> 
-      <meta name="twitter:description" content="Grow your digital presence with AGENCY09, your trusted SEO agency in Mumbai, India. We offer YouTube SEO, eCommerce SEO, B2B SEO, App Store optimization services, ORM, and more."/> 
+      <meta name="twitter:description" content="AGENCY09 is a leading SEO agency in India offering technical, eCommerce, B2B, YouTube, local SEO, ASO, ORM, and AI search optimization (AEO/GEO) worldwide."/> 
       <meta name="twitter:image" content="https://www.agency09.in/agency09.png"/>
       <script type="application/ld+json" innerHTML={JSON.stringify(schemaData)} />
       <script type="application/ld+json" innerHTML={JSON.stringify(faqSchema)} />
