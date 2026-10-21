@@ -597,9 +597,16 @@ const schemaData = {
           </div>
 
 
-          <div class="prod-video">
-            <iframe loading='lazy' width="100%" height="700" src="https://www.youtube.com/embed/T0KEVe_5r2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <p className='prod-video-desc'> AGENCY<b>09</b> | AI Showreel 2026 </p>
+          <div class="prod-video-wrap">
+            <div class="prod-video">
+              <iframe loading='lazy' width="100%" height="700" src="https://www.youtube.com/embed/T0KEVe_5r2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <p className='prod-video-desc'> AGENCY<b>09</b> | AI Showreel 2026 </p>
+            </div>
+
+            <div class="prod-video">
+            <iframe loading='lazy' width="100%" height="700" src="https://www.youtube.com/embed/QU86yaAh68Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <p className='prod-video-desc'> AGENCY<b>09</b> | 09films - Production - Showreel 2025 </p>
+            </div>
           </div>
 
       </div></section> 
