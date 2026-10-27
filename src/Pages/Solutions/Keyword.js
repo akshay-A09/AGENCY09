@@ -101,7 +101,7 @@ const Keyword = () => {
       key: "2",
       header: "GMB (Google My Business)",
       description: "Enhance your local search presence with our Google My Business optimization services. We manage your GMB profile to ensure accurate information, engaging content, and positive reviews, helping you attract local customers.",
-      tags: [],
+      tags: ["GMB Agency", "GMB Services", "Google Business Optimization", "GMB Expert", "Local SEO Services", "Google Maps Optimization", "GMB Expert in Mumbai", "Local SEO Agency"],
     },
     {
       key: "3",
@@ -131,14 +131,14 @@ const Keyword = () => {
     {
       key: "7",
       header: "AEO (Answer Engine Optimisation)",
-      description: "Rank where users get direct answers. Our AEO services focus on optimising content for featured snippets, FAQs and AI-driven answer engines ensuring your brand appears in zero-click searches and voice results.",
-      tags: [],
+      description: "Rank where users seek direct answers. Our answer engine optimization services help brands improve visibility across featured snippets, FAQs, voice search and AI-powered answer engines.",
+      tags: ["AEO Agency", "AEO Services", "Answer Engine Optimization", "AI SEO Agency", "AEO Agency in India"],
     },
     {
       key: "8",
       header: "GEO (Generative Engine Optimisation)",
-      description: "Prepare your content for generative search experiences. We optimise your website and content to be easily understood, cited and surfaced by generative AI platforms to improve brand visibility beyond traditional search results.",
-      tags: [],
+      description: "Improve your brand’s visibility across AI-generated search results. Our generative engine optimization services help businesses strengthen their presence across AI search platforms and generative answer experiences.",
+      tags: ["GEO Agency", "GEO Services", "Generative Engine Optimization", "AI Search Optimization Agency", "GEO Agency in India"],
     },
     {
       key: "9",
@@ -293,20 +293,59 @@ const faqsData = [
     question: "10. How can I get started with AGENCY09's SEO services?",
     answer: "To get started, simply contact us to schedule a consultation. We'll discuss your business goals, assess your current SEO performance, and develop a customized strategy to help you achieve your objectives."
   },
+
    {
     key: "10",
-    question: "11. How does Ecommerce SEO improve product visibility on Google?",
-    answer: "When customers search for products online, they typically engage with the results that appear first. Ecommerce SEO Services improve product visibility by optimising category pages, product listings, site structure, and relevant keywords, helping search engines better understand and rank your store. This leads to increased organic traffic, higher product discoverability, and more opportunities to convert searchers into customers."
-  },
-   {
-    key: "11",
-    question: "12. How does Local SEO help businesses attract nearby customers?",
+    question: "11. How does Local SEO help businesses attract nearby customers?",
     answer: "Most customers turn to search engines when looking for products or services nearby. A local SEO agency helps businesses appear in relevant local searches by optimising their online presence, business listings, location-specific content, and search visibility. This makes it easier for nearby customers to discover, trust, and choose the business when they're ready to make a purchase or enquiry."
   },
-  {
+
+   {
+    key: "11",
+    question: "12. What is AEO (Answer Engine Optimisation), and how can it improve my brand's visibility?",
+    answer: "AEO helps your brand appear in direct answers across search engines, voice assistants, and AI tools, improving visibility and helping potential customers discover your business."
+  },
+
+   {
     key: "12",
-    question: "13. How does ORM improve search engine results for a brand?",
-    answer: "A strong online reputation can influence everything from customer trust to purchase decisions. Through strategic reputation management, AGENCY09 helps brands improve how they appear in search results by amplifying credible content and strengthening their digital presence. Our ORM Services in India are designed to support long-term brand equity while ensuring search results accurately reflect the brand's value and achievements."
+    question: "13. What is the difference between SEO and AEO?",
+    answer: "SEO focuses on ranking pages to earn clicks. AEO focuses on being the answer itself, whether in a featured snippet, voice result or AI response. Both share the same technical base, but AEO adds question-led formatting, concise answers, schema markup and stronger entity clarity."
+  },
+
+  {
+    key: "13",
+    question: "14. How do I get my website into featured snippets and People Also Ask?",
+    answer: "Use question-based headings, then give a direct 40-60 word answer immediately below. Support it with lists, tables or steps, add FAQ or HowTo schema where suitable, and link to the page internally. Prioritise queries where you already rank on page one, as these convert to snippets most easily."
+  },
+
+  {
+    key: "14",
+    question: "15. How does AEO help with voice search and zero-click results?",
+    answer: "Voice assistants read out a single answer, usually pulled from featured snippets or local listings. AEO helps you earn that answer through conversational, concise phrasing, fast mobile pages and a complete Google Business Profile. Even without a click, you gain brand visibility that drives later branded searches and enquiries."
+  },
+
+  {
+    key: "15",
+    question: "16. What is GEO (Generative Engine Optimisation)?",
+    answer: "GEO is optimising your brand and content to be cited in AI-generated answers from tools like ChatGPT, Gemini, Perplexity and Google AI Overviews. It focuses on entity clarity, authoritative citations, structured content and brand mentions across trusted sources, so AI systems recognise and reference you."
+  },
+
+  {
+    key: "16",
+    question: "17. What is the difference between GEO and SEO?",
+    answer: "SEO aims to rank pages in search results and drive clicks. GEO aims to make your brand part of the answer AI generates, often without a click. SEO is the foundation, since AI engines draw on indexed, authoritative content, while GEO adds citation-building, entity optimisation and prompt-level tracking."
+  },
+
+  {
+    key: "17",
+    question: "18. How is AI search visibility measured?",
+    answer: "Track brand mentions, citations and share of voice across a fixed set of prompts in each AI platform, benchmarked against competitors. Add referral traffic from AI sources in GA4 and monitor branded search growth. Report monthly, since AI answers fluctuate and single snapshots are unreliable."
+  },
+
+  {
+    key: "18",
+    question: "19. How do I make my website AI-ready?",
+    answer: "Ensure AI bots can crawl and render your pages, keep schema complete and accurate, and write answer-first content with clear headings. Strengthen entity consistency and author credentials, and keep key information in plain HTML rather than scripts. An AI-readiness audit should cover each of these areas."
   },
 
 ];
@@ -315,7 +354,7 @@ const faqsData = [
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Keyword | Best SEO Agency in Mumbai, India - AGENCY09",
+  "name": "AEO & GEO Agency in India | AI SEO Services - AGENCY09",
   "alternateName": "SEO agency in Mumbai,",
   "url": "https://www.agency09.in/solutions/keyword",
   "image": "https://www.agency09.in/static/media/agency-light.cb89964a3a95c2a6e647.webp",
@@ -505,13 +544,13 @@ const schemaData = {
   return (
     <>
     <Helmet>
-      <title>Keyword | Best SEO Agency in Mumbai, India - AGENCY09</title>
+      <title>AEO & GEO Agency in India | AI SEO Services - AGENCY09</title>
       <meta name="robots" content="index, follow"/> 
 
       <meta name="description" content="AGENCY09 is a leading SEO agency in India offering technical, eCommerce, B2B, YouTube, local SEO, ASO, ORM, and AI search optimization (AEO/GEO) worldwide."/>
       <link rel="canonical" href="https://www.agency09.in/services/keyword.php"/>
 
-      <meta property="og:title" content="Keyword | Best SEO Agency in Mumbai, India - AGENCY09"/> 
+      <meta property="og:title" content="AEO & GEO Agency in India | AI SEO Services - AGENCY09"/> 
       <meta property="og:description" content="AGENCY09 is a leading SEO agency in India offering technical, eCommerce, B2B, YouTube, local SEO, ASO, ORM, and AI search optimization (AEO/GEO) worldwide."/> 
       <meta property="og:image" content="https://www.agency09.in/agency09.png"/> 
       <meta property="og:type" content="website"/> 
