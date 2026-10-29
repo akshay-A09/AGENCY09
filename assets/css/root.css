@@ -1,0 +1,69 @@
+/* assets/css/root.css */
+@font-face { font-family: 'Delight'; src: url('../css/fonts/delight-vf.woff2') format('woff2'); font-weight: 100 900; font-style: normal; font-display: swap; }
+:root {
+  --color-blue: #006DEA;
+  --color-yellow: #FFF118;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-green: #69E879;
+  --color-magenta: #bf1690;
+  --color-pink: #FF4081;
+  --color-grey: #404040;
+  --color-grey2: #DDD;
+  --font-primary: 'Delight';
+  --fw-thin: 100;
+  --fw-extralight: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  --fw-black: 900;
+  --fs-xs: 12px;
+  --fs-sm: 14px;
+  --fs-base: 16px;
+  --fs-md: 18px;
+  --fs-lg: 20px;
+  --fs-xl: 24px;
+  --fs-2xl: 32px;
+  --fs-3xl: 40px;
+  --fs-4xl: 48px;
+  --fs-display: 64px;
+  --fs-h1: var(--fs-4xl);
+  --fs-h2: var(--fs-3xl);
+  --fs-h3: var(--fs-2xl);
+  --fs-h4: var(--fs-xl);
+  --fs-h5: var(--fs-lg);
+  --fs-h6: var(--fs-md);
+}
+
+/* assets/css/style.css */
+
+/* Reset & Utilities */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
+*, body { scrollbar-width: thin; scrollbar-color: #00000061 #ffffff00; }
+.slick-disabled { display: none !important; }
+body { font-family: var(--font-primary); font-size: var(--fs-base); font-weight: var(--fw-regular); color: var(--color-black); background-color: var(--color-white); line-height: 1.6; min-height: 100vh; -webkit-font-smoothing: antialiased; }
+img, picture, video, canvas, svg {max-width: 100%; }
+input, button, textarea, select { font: inherit; }
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-primary); font-weight: var(--fw-bold); line-height: 1.2; margin-bottom: 0.5em; color: var(--color-black); }
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: var(--fs-h4); }
+h5 { font-size: var(--fs-h5); }
+h6 { font-size: var(--fs-h6); }
+.text-thin { font-weight: var(--fw-thin); }
+.text-regular { font-weight: var(--fw-regular); }
+.text-medium { font-weight: var(--fw-medium); }
+.text-bold { font-weight: var(--fw-bold); }
+.text-black { font-weight: var(--fw-black); }
+.text-center {text-align: center;}
+section {padding: 50px 0;}
+.container {width: 90%;    margin-left: auto; 
+    margin-right: auto; 
+    position: relative; }
